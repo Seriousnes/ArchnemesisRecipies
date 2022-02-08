@@ -1,0 +1,65 @@
+﻿@page "/"
+@using AutoMapper
+@inject HttpClient _client;
+@inject IMapper _mapper;
+
+<PageTitle>Archnemesis Recipe Helper</PageTitle>
+
+@foreach (var tier in Mods?.GroupBy(x => x.ModTier).OrderBy(x => x.Key))
+{
+    <div class="row">
+        <div class="col" align="center">
+              <h2>Tier @tier.Key</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+    @foreach (var mod in tier.OrderBy(x => x.Name))
+    {
+        <ArchnemesisModTemplate Model=mod OnHighlightHandler=HighlightHandler />
+    }
+    </div>
+}
+
+@code {
+    public List<ArchnemesisModViewModel> Mods { get; set; } = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        Mods = _mapper.Map<List<ArchnemesisMod>, List<ArchnemesisModViewModel>>(await _client.GetFromJsonAsync<List<ArchnemesisMod>>("archnemesis_recipies.json"));
+
+        Mods.ForEach(x => 
+        {
+            x.Components = Mods.Where(m => x.ComponentNames.Contains(m.Name)).ToList();
+            x.ComponentOf = Mods.Where(m => m.ComponentNames.Contains(x.Name)).ToList();
+        });
+    }
+
+    protected void HighlightHandler(ArchnemesisModViewModel mod)
+    {           
+        // deselect other mods first
+        if (mod.Selected)
+        {
+            Mods.Where(x => x != mod).ToList().ForEach(x => x.Selected = false);
+        }
+
+        Mods.ForEach(x =>
+        {
+            if (x.Selected || x.MouseOver)
+            {
+                x.Style = "recipe";
+            }
+            else if (x.Components.Any(c => c.Selected || c.MouseOver))
+            {
+                x.Style = "componentof";
+            } else if (x.ComponentOf.Any(c => c.Selected || c.MouseOver))
+            {
+                x.Style = "components";
+            }
+            else
+            {
+                x.Style = "";
+            }
+        });
+    }
+}
