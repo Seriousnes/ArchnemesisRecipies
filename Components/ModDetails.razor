@@ -1,0 +1,58 @@
+﻿@if (Model is not null)
+{
+    <div class="col-12">
+        <h2><img src="images/@(Model.Image)" />@Model.Name</h2>
+        <div class="row"><span class="mod">@Model.Mod</span></div>
+        <div class="row"><span class="rewards">@Model.Type</span></div>
+        <div class="row"><span class="effects">@Model.Effect</span></div>
+        @*<div class="row justify-content-start">*@    
+        @foreach (var item in Model.Components)
+        {
+            @*<div class="col">*@
+                <img src="images/@(item.Image)" @onclick="(e) => Click(item)" />
+            @*</div>*@
+        } 
+        @*</div>*@
+    </div>
+}
+
+@code {
+    [Parameter]
+    public ArchnemesisModViewModel Model { get; set; }
+
+    [Parameter]
+    public Action<ArchnemesisModViewModel, MouseEventArgs> OnClick { get; set; }
+
+    private double? _x = null;
+    private double? _y = null;
+
+    private string GetPosition()
+    {
+        if (_x is double x && _y is double y)
+        {
+            return $"left: {x}px; top: {y}px;";
+        }
+        return "left: 0px";
+    }
+
+    private string GetClass()
+    {
+        if (_x is not null)
+        {
+            return "tooltip-wrapper";
+        }
+        return "";
+    }
+
+    public void SetModel(ArchnemesisModViewModel model)
+    {
+        this.Model = model;
+        StateHasChanged();
+    }
+
+    void Click(ArchnemesisModViewModel mod, MouseEventArgs e = null)
+    {
+        mod.Selected = true;
+        OnClick(mod, e);
+    }    
+}

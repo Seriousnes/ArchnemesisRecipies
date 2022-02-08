@@ -5,23 +5,48 @@
 
 <PageTitle>Archnemesis Recipe Helper</PageTitle>
 
-@foreach (var tier in Mods?.GroupBy(x => x.ModTier).OrderBy(x => x.Key))
-{
+<div>
     <div class="row">
-        <div class="col" align="center">
-              <h2>Tier @tier.Key</h2>
+        <div class="col col-lg-8">
+            @foreach (var tier in Mods?.GroupBy(x => x.ModTier).OrderBy(x => x.Key))
+            {
+                <div class="row">
+                    <div class="col" align="center">
+                          <h3>Tier @tier.Key</h3>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                @foreach (var mod in tier.OrderBy(x => x.Name))
+                {
+                    <ArchnemesisModTemplate Model=mod OnHighlightHandler=HighlightHandler />
+                }
+                </div>
+            }
+        </div>
+        <div class="col col-lg-4" style="border-left: 1px #aa9e82 solid;">
+        @foreach (var item in _selected)
+        {
+            <div class="row">                
+                <ModDetails Model=item OnClick=HighlightHandler />
+            </div>
+        }   
+        @if (_selected.Any())
+        {
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-dark" type="button" @onclick="(e) => { Mods.ForEach(x => x.Selected = false); HighlightHandler(null, new MouseEventArgs { Button = 0 }); }">Reset</button>
+                </div>
+            </div>    
+        }
+            
         </div>
     </div>
-    <div class="row justify-content-center">
-    @foreach (var mod in tier.OrderBy(x => x.Name))
-    {
-        <ArchnemesisModTemplate Model=mod OnHighlightHandler=HighlightHandler />
-    }
-    </div>
-}
+</div>
 
 @code {
     public List<ArchnemesisModViewModel> Mods { get; set; } = new();
+    private IList<ArchnemesisModViewModel> _selected = new List<ArchnemesisModViewModel>();
+    private ModDetails _tooltip;
 
     protected override async Task OnInitializedAsync()
     {
@@ -35,31 +60,62 @@
         });
     }
 
-    protected void HighlightHandler(ArchnemesisModViewModel mod)
-    {           
-        // deselect other mods first
-        if (mod.Selected)
-        {
-            Mods.Where(x => x != mod).ToList().ForEach(x => x.Selected = false);
-        }
+    protected void HighlightHandler(ArchnemesisModViewModel mod, MouseEventArgs e)
+    {
+        // remove all styles
+        Mods.ForEach(x => x.Style = "");
 
-        Mods.ForEach(x =>
+        if (e?.Button == 0)
         {
-            if (x.Selected || x.MouseOver)
+            _selected = new List<ArchnemesisModViewModel>();
+            if (e.ShiftKey)
             {
-                x.Style = "recipe";
+                _selected = Mods.Where(x => x.Selected).ToList();        
             }
-            else if (x.Components.Any(c => c.Selected || c.MouseOver))
+            else if (mod is not null)
             {
-                x.Style = "componentof";
-            } else if (x.ComponentOf.Any(c => c.Selected || c.MouseOver))
-            {
-                x.Style = "components";
+                _selected.Add(mod);
+                Mods.ForEach(x => x.Selected = false);
+                mod.Selected = true;
             }
-            else
-            {
-                x.Style = "";
-            }
-        });
+        }   
+
+        // set selected styles
+        HighlightComponents(Mods.Where(x => x.Selected), 0);
+        HighlightComponents(Mods.Where(x => x.MouseOver), 0);
+
+        // parent styles
+        HighlightParents(Mods.Where(x => x.Selected).SelectMany(x => x.ComponentOf));
+        HighlightParents(Mods.Where(x => x.MouseOver).SelectMany(x => x.ComponentOf));
+
+        StateHasChanged();
     }
+
+    private void HighlightComponents(IEnumerable<ArchnemesisModViewModel> mods, int depth)
+    {
+        depth = depth < -1 ? -1 : depth;
+        foreach(var mod in mods)
+        {
+            if (string.IsNullOrEmpty(mod.Style))
+            {
+                mod.Style = depth switch
+                {
+                    -1 => "parent",
+                    0 => "selected",
+                    _ => $"component-{depth}"
+                };    
+            }
+
+            HighlightComponents(mod.Components, depth + 1);
+        }
+    }
+
+    private void HighlightParents(IEnumerable<ArchnemesisModViewModel> mods)
+    {
+        foreach(var mod in mods.Where(x => string.IsNullOrEmpty(x.Style)))
+        {
+            mod.Style = "parent";
+        }
+    }
+
 }

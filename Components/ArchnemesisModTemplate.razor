@@ -1,32 +1,32 @@
 ﻿<div class="col mod" align="center">
     <div><img class="@Model.Style" src="images/@(Model.Image)" @onmouseover="MouseOver" @onmouseout="MouseOut" @onclick="Click" /></div>
     <span class="mod-name">@Model.Name</span>            
-</div>  
+</div> 
 
 @code {
 
     [Parameter]
     public ArchnemesisModViewModel Model { get; set; }
     [Parameter]
-    public EventCallback<ArchnemesisModViewModel> OnHighlightHandler { get; set; }
+    public Action<ArchnemesisModViewModel, MouseEventArgs> OnHighlightHandler { get; set; }
 
     private bool _keepHighlighted;
 
     void MouseOver(MouseEventArgs e)
     {
-        Model.MouseOver = true;        
-        OnHighlightHandler.InvokeAsync(Model);
+        Model.MouseOver = true;
+        OnHighlightHandler(Model, null);
     }
 
     void MouseOut(MouseEventArgs e)
     {           
         Model.MouseOver = false;
-        OnHighlightHandler.InvokeAsync(Model);
+        OnHighlightHandler(Model, null);
     }
 
     void Click(MouseEventArgs e)
     {
         Model.Selected = !Model.Selected;
-        OnHighlightHandler.InvokeAsync(Model);
+        OnHighlightHandler(Model, e);
     }
 }
