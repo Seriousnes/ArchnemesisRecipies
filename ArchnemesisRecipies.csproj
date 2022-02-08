@@ -23,195 +23,199 @@
     <Content Update="wwwroot\archnemesis_recipies.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModPantheonAbberath.png">
+    <Content Update="wwwroot\images\mods\ModPantheonAbberath.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModPantheonArakaali.png">
+    <Content Update="wwwroot\images\mods\ModPantheonArakaali.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModPantheonBrineking.png">
+    <Content Update="wwwroot\images\mods\ModPantheonBrineking.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModPantheonInnocence.png">
+    <Content Update="wwwroot\images\mods\ModPantheonInnocence.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModPantheonKitava.png">
+    <Content Update="wwwroot\images\mods\ModPantheonKitava.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModPantheonLunaris.png">
+    <Content Update="wwwroot\images\mods\ModPantheonLunaris.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModPantheonShakari.png">
+    <Content Update="wwwroot\images\mods\ModPantheonShakari.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModPantheonSolaris.png">
+    <Content Update="wwwroot\images\mods\ModPantheonSolaris.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModPantheonTukohama.png">
+    <Content Update="wwwroot\images\mods\ModPantheonTukohama.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillBloodletter.png">
+    <Content Update="wwwroot\images\mods\ModRareKillBloodletter.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillBombardier.png">
+    <Content Update="wwwroot\images\mods\ModRareKillBombardier.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillBonebreaker.png">
+    <Content Update="wwwroot\images\mods\ModRareKillBonebreaker.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillCaster.png">
+    <Content Update="wwwroot\images\mods\ModRareKillCaster.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillChargegenerator.png">
+    <Content Update="wwwroot\images\mods\ModRareKillChargegenerator.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillConsecration.png">
+    <Content Update="wwwroot\images\mods\ModRareKillConsecration.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillDeadeye.png">
+    <Content Update="wwwroot\images\mods\ModRareKillDeadeye.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillDefender.png">
+    <Content Update="wwwroot\images\mods\ModRareKillDefender.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillEnergyShield.png">
+    <Content Update="wwwroot\images\mods\ModRareKillEnergyShield.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillFire.png">
+    <Content Update="wwwroot\images\mods\ModRareKillFire.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillFlametouched.png">
+    <Content Update="wwwroot\images\mods\ModRareKillFlametouched.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillFreezer.png">
+    <Content Update="wwwroot\images\mods\ModRareKillFreezer.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillFrosttouched.png">
+    <Content Update="wwwroot\images\mods\ModRareKillFrosttouched.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillGargantuan.png">
+    <Content Update="wwwroot\images\mods\ModRareKillGargantuan.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillJuggernaut.png">
+    <Content Update="wwwroot\images\mods\ModRareKillJuggernaut.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillOppressor.png">
+    <Content Update="wwwroot\images\mods\ModRareKillOppressor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillPoison.png">
+    <Content Update="wwwroot\images\mods\ModRareKillPoison.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillRage.png">
+    <Content Update="wwwroot\images\mods\ModRareKillRage.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillRampage.png">
+    <Content Update="wwwroot\images\mods\ModRareKillRampage.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillShocker.png">
+    <Content Update="wwwroot\images\mods\ModRareKillShocker.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillSoulconduit.png">
+    <Content Update="wwwroot\images\mods\ModRareKillSoulconduit.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillSpeed.png">
+    <Content Update="wwwroot\images\mods\ModRareKillSpeed.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillSteelattuned.png">
+    <Content Update="wwwroot\images\mods\ModRareKillSteelattuned.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillStormtouched.png">
+    <Content Update="wwwroot\images\mods\ModRareKillStormtouched.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillVampiric.png">
+    <Content Update="wwwroot\images\mods\ModRareKillVampiric.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillVoidtouched.png">
+    <Content Update="wwwroot\images\mods\ModRareKillVoidtouched.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRareKillWealthy.png">
+    <Content Update="wwwroot\images\mods\ModRareKillWealthy.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeAssassin.png">
+    <Content Update="wwwroot\images\mods\ModRecipeAssassin.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeCold.png">
+    <Content Update="wwwroot\images\mods\ModRecipeCold.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeCorpseeploder.png">
+    <Content Update="wwwroot\images\mods\ModRecipeCorpseeploder.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeCorrupter.png">
+    <Content Update="wwwroot\images\mods\ModRecipeCorrupter.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeCycleofelements.png">
+    <Content Update="wwwroot\images\mods\ModRecipeCycleofelements.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeDivinetouched.png">
+    <Content Update="wwwroot\images\mods\ModRecipeDivinetouched.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeExecutioner.png">
+    <Content Update="wwwroot\images\mods\ModRecipeExecutioner.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeFire.png">
+    <Content Update="wwwroot\images\mods\ModRecipeFire.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeFlaskdrain.png">
+    <Content Update="wwwroot\images\mods\ModRecipeFlaskdrain.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeFrostwalker.png">
+    <Content Update="wwwroot\images\mods\ModRecipeFrostwalker.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeGraspingVines.png">
+    <Content Update="wwwroot\images\mods\ModRecipeGraspingVines.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeHeraldoftheobelisk.png">
+    <Content Update="wwwroot\images\mods\ModRecipeHeraldoftheobelisk.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeHexer.png">
+    <Content Update="wwwroot\images\mods\ModRecipeHexer.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeLightningwalker.png">
+    <Content Update="wwwroot\images\mods\ModRecipeLightningwalker.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeLivingCrystal.png">
+    <Content Update="wwwroot\images\mods\ModRecipeLivingCrystal.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeManaDonut.png">
+    <Content Update="wwwroot\images\mods\ModRecipeManaDonut.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeMirrorImage.png">
+    <Content Update="wwwroot\images\mods\ModRecipeMirrorImage.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeNecromancer.png">
+    <Content Update="wwwroot\images\mods\ModRecipeNecromancer.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipePrismatic.png">
+    <Content Update="wwwroot\images\mods\ModRecipePrismatic.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeRejuvenating.png">
+    <Content Update="wwwroot\images\mods\ModRecipeRejuvenating.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeSaplings.png">
+    <Content Update="wwwroot\images\mods\ModRecipeSaplings.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeSouleater.png">
+    <Content Update="wwwroot\images\mods\ModRecipeSouleater.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeTimeBubble.png">
+    <Content Update="wwwroot\images\mods\ModRecipeTimeBubble.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeTrickster.png">
+    <Content Update="wwwroot\images\mods\ModRecipeTrickster.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeUnionofsouls.png">
+    <Content Update="wwwroot\images\mods\ModRecipeUnionofsouls.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeVolatileflameblood.png">
+    <Content Update="wwwroot\images\mods\ModRecipeVolatileflameblood.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\ModRecipeVoodoodoll.png">
+    <Content Update="wwwroot\images\mods\ModRecipeVoodoodoll.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\rewards\" />
   </ItemGroup>
 
 </Project>

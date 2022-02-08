@@ -1,13 +1,21 @@
 ﻿@page "/"
 @using AutoMapper
-@inject HttpClient _client;
-@inject IMapper _mapper;
+@using System.Text.RegularExpressions
+@inject HttpClient _client
+@inject IMapper _mapper
 
 <PageTitle>Archnemesis Recipe Helper</PageTitle>
 
 <div>
     <div class="row">
         <div class="col col-lg-8">
+            <div class="row">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="search-label">Search</span>
+                  <input type="text" class="form-control" id="search-term" aria-describedby="search-label" autocomplete="off" @bind="searchTerm" @bind:event="oninput">
+                  <button class="btn btn-dark" type="button" @onclick="() => searchTerm = string.Empty">Clear</button>
+                </div>
+            </div>
             @foreach (var tier in Mods?.GroupBy(x => x.ModTier).OrderBy(x => x.Key))
             {
                 <div class="row">
@@ -46,7 +54,7 @@
 @code {
     public List<ArchnemesisModViewModel> Mods { get; set; } = new();
     private IList<ArchnemesisModViewModel> _selected = new List<ArchnemesisModViewModel>();
-    private ModDetails _tooltip;
+    private string _searchTerm;     
 
     protected override async Task OnInitializedAsync()
     {
@@ -58,12 +66,32 @@
             x.Components = Mods.Where(m => x.ComponentNames.Contains(m.Name)).ToList();
             x.ComponentOf = Mods.Where(m => m.ComponentNames.Contains(x.Name)).ToList();
         });
+    }    
+
+    private string searchTerm
+    {
+        get => _searchTerm;
+        set
+        {
+            _searchTerm = value;
+            UpdateSearchResults();
+        }
+    }
+
+    private void UpdateSearchResults()
+    {
+        try
+        {
+            var r = new Regex(searchTerm, RegexOptions.IgnoreCase);        
+            Mods.ForEach(x => x.Fade = !r.IsMatch(x.Name));
+        }
+        catch { }        
     }
 
     protected void HighlightHandler(ArchnemesisModViewModel mod, MouseEventArgs e)
     {
         // remove all styles
-        Mods.ForEach(x => x.Style = "");
+        Mods.ForEach(x => x.HighlightStyle = string.Empty);
 
         if (e?.Button == 0)
         {
@@ -72,7 +100,7 @@
             {
                 _selected = Mods.Where(x => x.Selected).ToList();        
             }
-            else if (mod is not null)
+            else if (mod is { Selected: true })
             {
                 _selected.Add(mod);
                 Mods.ForEach(x => x.Selected = false);
@@ -95,9 +123,9 @@
     {
         foreach(var mod in mods)
         {
-            if (string.IsNullOrEmpty(mod.Style))
+            if (string.IsNullOrEmpty(mod.HighlightStyle))
             {
-                mod.Style = depth switch
+                mod.HighlightStyle = depth switch
                 {
                     0 => "selected",
                     _ => $"component-{depth}"
@@ -112,13 +140,12 @@
     {
         foreach(var mod in mods)
         {
-            if (string.IsNullOrEmpty(mod.Style))
+            if (string.IsNullOrEmpty(mod.HighlightStyle))
             {
-                mod.Style = $"parent-{depth}";
+                mod.HighlightStyle = $"parent-{depth}";
             }
 
             HighlightParents(mod.ComponentOf, depth + 1);
         }
     }
-
 }

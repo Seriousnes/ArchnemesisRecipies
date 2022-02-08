@@ -1,18 +1,36 @@
-﻿@if (Model is not null)
+﻿@inject IJSRuntime JSRuntime
+
+@if (Model is not null)
 {
     <div class="col-12">
-        <h2><img src="images/@(Model.Image)" />@Model.Name</h2>
+        <div class="row" @onclick="CopyRegex">
+            <h2 data-bs-toggle="tooltip" data-bs-placement="top" title="^@Model.Regex">
+                <img src="images/mods/@(Model.Image)" />
+                @Model.Name
+            </h2>            
+        </div>
         <div class="row"><span class="mod">@Model.Mod</span></div>
-        <div class="row"><span class="rewards">@Model.Type</span></div>
+        <div class="row">
+            @if (!string.IsNullOrEmpty(Model.Type))
+            {
+                <div class="col">
+                @foreach (var reward in Model.Type.Split(" "))
+                {
+                    <img src="@GetRewardImage(reward)" />
+                }        
+                </div>    
+            }
+        </div>   
         <div class="row"><span class="effects">@Model.Effect</span></div>
         @*<div class="row justify-content-start">*@    
         @foreach (var item in Model.Components)
         {
             @*<div class="col">*@
-                <img src="images/@(item.Image)" @onclick="(e) => Click(item)" />
+                <img src="images/mods/@(item.Image)" @onclick="(e) => Click(item)" alt- />
             @*</div>*@
         } 
         @*</div>*@
+
     </div>
 }
 
@@ -24,7 +42,7 @@
     public Action<ArchnemesisModViewModel, MouseEventArgs> OnClick { get; set; }
 
     private double? _x = null;
-    private double? _y = null;
+    private double? _y = null;    
 
     private string GetPosition()
     {
@@ -44,6 +62,11 @@
         return "";
     }
 
+    private async void CopyRegex()
+    {
+        await JSRuntime.InvokeVoidAsync("copyClipboard", $"^{Model.Regex}");
+    }
+
     public void SetModel(ArchnemesisModViewModel model)
     {
         this.Model = model;
@@ -55,4 +78,37 @@
         mod.Selected = true;
         OnClick(mod, e);
     }    
+
+    private string GetRewardImage(string reward)
+    {
+        return (_rewards.TryGetValue(reward, out var result)) ? result : "";        
+    }
+
+    private static Dictionary<string, string> _rewards = new()
+        {
+            { "Generic", "images/rewards/HeistRewardGeneric.png" },
+            { "Gems", "images/rewards/HeistRewardGems.png" },
+            { "Armor", "images/rewards/HeistRewardArmour.png" },
+            { "Abyss", "images/rewards/HeistRewardAbyss.png" },
+            { "Blight", "images/rewards/HeistRewardBlight.png" },
+            { "Breach", "images/rewards/HeistRewardBreach.png" },
+            { "Currency", "images/rewards/HeistRewardCurrency.png" },
+            { "Delirium", "images/rewards/HeistRewardDelirium.png" },
+            { "Divination", "images/rewards/HeistRewardDivination.png" },
+            { "Essences", "images/rewards/HeistRewardEssences.png" },
+            { "Fossils", "images/rewards/HeistRewardFossils.png" },
+            { "Fragments", "images/rewards/HeistRewardFragments.png" },
+            { "Harbinger", "images/rewards/HeistRewardHarbinger.png" },
+            { "Labyrinth", "images/rewards/HeistRewardLabyrinth.png" },
+            { "Legion", "images/rewards/HeistRewardLegion.png" },
+            { "Maps", "images/rewards/HeistRewardMaps.png" },
+            { "Metamorph", "images/rewards/HeistRewardMetamorph.png" },
+            { "Scarabs", "images/rewards/HeistRewardScarabs.png" },
+            { "Trinkets", "images/rewards/HeistRewardTrinkets.png" },
+            { "Uniques", "images/rewards/HeistRewardUniques.png" },
+            { "Weapon", "images/rewards/HeistRewardWeapon.png" },
+            { "Expedition", "images/rewards/RewardIconExpedition.png" },
+            { "Heist", "images/rewards/RewardIconHeist.png" },
+            { "Ritual", "images/rewards/RewardIconRitual.png" }
+        };
 }

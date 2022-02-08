@@ -12,6 +12,7 @@ namespace ArchnemesisRecipies.Utility
                 .ForMember(x => x.Image, src => src.MapFrom(x => x.Image))
                 .ForMember(x => x.Mod, src => src.MapFrom(x => x.Mod))
                 .ForMember(x => x.Effect, src => src.MapFrom(x => x.Effect.Trim()))
+                .ForMember(x => x.Regex, src => src.MapFrom(x => x.Regex))
                 .ForMember(x => x.ComponentNames, src => src.MapFrom(x => x.ComponentNames))
                 .ForMember(x => x.Components, src => src.Ignore());
         }

@@ -13,5 +13,6 @@ namespace ArchnemesisRecipies.Models
         [JsonPropertyName("Components")]
         public List<string> ComponentNames { get; set; } = new();
         public string Effect { get; set; }
+        public string Regex { get; set; }
     }
 }

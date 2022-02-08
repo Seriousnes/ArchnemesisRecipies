@@ -1,6 +1,6 @@
 ﻿<div class="col mod" align="center">
-    <div><img class="@Model.Style" src="images/@(Model.Image)" @onmouseover="MouseOver" @onmouseout="MouseOut" @onclick="Click" /></div>
-    <span class="mod-name">@Model.Name</span>            
+    <div><img class="@Model.GetStyle()" src="images/mods/@(Model.Image)" @onmouseover="MouseOver" @onmouseout="MouseOut" @onclick="Click" /></div>
+    <span class="mod-name @(Model.Fade ? "faded" : "")">@Model.Name</span>            
 </div> 
 
 @code {
@@ -9,8 +9,6 @@
     public ArchnemesisModViewModel Model { get; set; }
     [Parameter]
     public Action<ArchnemesisModViewModel, MouseEventArgs> OnHighlightHandler { get; set; }
-
-    private bool _keepHighlighted;
 
     void MouseOver(MouseEventArgs e)
     {
