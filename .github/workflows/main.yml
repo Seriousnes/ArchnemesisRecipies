@@ -11,7 +11,7 @@ jobs:
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v1.9.0
       with:        
-        dotnet-version: 6.0.1
+        dotnet-version: 6.0.x
     - name: Publish .NET Core Project
       run: dotnet publish ArchnemesisRecipies.csproj -c Release -o release -nologo
     - name: Commit wwwroot to GitHub Pages
