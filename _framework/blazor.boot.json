@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "ArchnemesisRecipies.dll": "sha256-1ROZr7qlacQtXi7FQwWohjFSo2vl5OUG0dxfRW\/UnMY=",
+      "ArchnemesisRecipies.dll": "sha256-GDotgt8nuYM+dlgYCFVQlTpbekJ6IAGUkWVOEUni2t8=",
       "AutoMapper.dll": "sha256-uNYyaL9rpjmA2uF9zP55k5t9afAfIQUk0oArKTAeAS0=",
       "AutoMapper.Extensions.Microsoft.DependencyInjection.dll": "sha256-o+ciZOc+lg+enKIuHnXAnocXep\/1rkNZ0wj+RhtAqyI=",
       "Havit.Blazor.Components.Web.Bootstrap.dll": "sha256-nAIAZ+DCJLUF70fN6Yzi8IYRGTlgb7i1hAz0MDVoJdk=",

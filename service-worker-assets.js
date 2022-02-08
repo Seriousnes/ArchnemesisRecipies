@@ -5,7 +5,7 @@
       "url": "archnemesis_recipies.json"
     },
     {
-      "hash": "sha256-BRx4sjuYENKZEu3Mm4kjxp0b7RaaYitUwUQB7BLuWcc=",
+      "hash": "sha256-AX0Ib+WD1TZsiZvm2hRWrhBnxPKqkwAPc7XLhcToWdM=",
       "url": "css\/app.css"
     },
     {
@@ -365,11 +365,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-vK+7IoJQHJr0shEIyO2Qhu+N1ebr6Mu0ou3mZokaEoM=",
+      "hash": "sha256-08mfiuqOpEVS60VNcKPQAifs+9no03B3n5BgX2k37Qo=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-1ROZr7qlacQtXi7FQwWohjFSo2vl5OUG0dxfRW\/UnMY=",
+      "hash": "sha256-GDotgt8nuYM+dlgYCFVQlTpbekJ6IAGUkWVOEUni2t8=",
       "url": "_framework\/ArchnemesisRecipies.dll"
     },
     {
@@ -721,5 +721,5 @@
       "url": "_content\/Havit.Blazor.Components.Web.Bootstrap\/Havit.Blazor.Components.Web.Bootstrap.bundle.scp.css"
     }
   ],
-  "version": "PtY3o3eu"
+  "version": "sKQarAXw"
 };
