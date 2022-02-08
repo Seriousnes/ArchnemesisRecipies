@@ -39,6 +39,10 @@ h1:focus {
 }
 
 h2 {
+    color: var(--rare-color)
+}
+
+h3 {
     color: var(--magic-color)
 }
 
@@ -63,15 +67,23 @@ img {
     border-style: solid;
 }
 
-img.recipe {
+img.selected {
     border-color: var(--rare-color);
 }
 
-img.components {
+img.component-1 {
     border-color: var(--green-color);    
 }
 
-img.componentof {
+img.component-2 {
+    border-color: var(--prophecy-color);    
+}
+
+img.component-3 {
+    border-color: var(--fractured-color);
+}
+
+img.parent {
     border-color: var(--corrupted-color);
 }
 
@@ -117,5 +129,17 @@ img.componentof {
 }
 
 .mod-name {
-    color: var(--craftaffectwarning-color)
+    color: var(--craftaffectwarning-color);
+}
+
+.mod {
+    color: var(--magic-color);
+}
+
+.rewards {
+    color: var(--currency-color);
+}
+
+.effects {
+    color: white;
 }
