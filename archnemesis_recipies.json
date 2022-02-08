@@ -6,7 +6,8 @@
     "Type": "Generic Gems",
     "Components": [
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "toxic"
   },
   {
     "Name": "Chaosweaver",
@@ -15,7 +16,8 @@
     "Type": "Gems",
     "Components": [
     ],
-    "Effect": ""
+    "Effect": "",
+    "Regex": "chaosweaver"
   },
   {
     "Name": "Frostweaver",
@@ -24,7 +26,8 @@
     "Type": "Armour",
     "Components": [
     ],
-    "Effect": ""
+    "Effect": "",
+    "Regex": "frostweaver"
   },
   {
     "Name": "Permafrost",
@@ -33,7 +36,8 @@
     "Type": "Generic Armour",
     "Components": [
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "permafrost"
   },
   {
     "Name": "Hasted",
@@ -42,7 +46,8 @@
     "Type": "Generic",
     "Components": [
     ],
-    "Effect": ""
+    "Effect": "",
+    "Regex": "hasted"
   },
   {
     "Name": "Deadeye",
@@ -51,7 +56,8 @@
     "Type": "Armour Trinkets",
     "Components": [
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "deadeye"
   },
   {
     "Name": "Bombardier",
@@ -60,7 +66,8 @@
     "Type": "Weapon Armour",
     "Components": [
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "bombardier"
   },
   {
     "Name": "Flameweaver",
@@ -69,7 +76,8 @@
     "Type": "Weapon",
     "Components": [
     ],
-    "Effect": ""
+    "Effect": "",
+    "Regex": "flameweaver"
   },
   {
     "Name": "Incendiary",
@@ -78,7 +86,8 @@
     "Type": "Generic Weapon",
     "Components": [
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "incendiary"
   },
   {
     "Name": "Arcane Buffer",
@@ -87,7 +96,8 @@
     "Type": "Essences",
     "Components": [
     ],
-    "Effect": ""
+    "Effect": "",
+    "Regex": "arcane.buffer"
   },
   {
     "Name": "Echoist",
@@ -96,7 +106,8 @@
     "Type": "Generic Currency",
     "Components": [
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "echoist"
   },
   {
     "Name": "Stormweaver",
@@ -105,7 +116,8 @@
     "Type": "Trinkets",
     "Components": [
     ],
-    "Effect": ""
+    "Effect": "",
+    "Regex": "stormweaver"
   },
   {
     "Name": "Dynamo",
@@ -114,7 +126,8 @@
     "Type": "Generic Trinkets",
     "Components": [
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "dynamo"
   },
   {
     "Name": "Bonebreaker",
@@ -123,7 +136,8 @@
     "Type": "Generic Weapon",
     "Components": [
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "bonebreaker"
   },
   {
     "Name": "Bloodletter",
@@ -132,7 +146,8 @@
     "Type": "Weapon Trinkets",
     "Components": [
     ],
-    "Effect": " Items dropped from the Monster and its Minions are Corrupted"
+    "Effect": " Items dropped from the Monster and its Minions are Corrupted",
+    "Regex": "bloodletter"
   },
   {
     "Name": "Steel-infused",
@@ -141,7 +156,8 @@
     "Type": "Weapon",
     "Components": [
     ],
-    "Effect": ""
+    "Effect": "",
+    "Regex": "steel-infused"
   },
   {
     "Name": "Gargantuan",
@@ -150,7 +166,8 @@
     "Type": "Currency",
     "Components": [
     ],
-    "Effect": ""
+    "Effect": "",
+    "Regex": "gargantuan"
   },
   {
     "Name": "Berserker",
@@ -159,7 +176,8 @@
     "Type": "Uniques",
     "Components": [
     ],
-    "Effect": ""
+    "Effect": "",
+    "Regex": "berserker"
   },
   {
     "Name": "Sentinel",
@@ -168,7 +186,8 @@
     "Type": "Armour Armour",
     "Components": [
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "sentinel"
   },
   {
     "Name": "Juggernaut",
@@ -177,7 +196,8 @@
     "Type": "Harbinger",
     "Components": [
     ],
-    "Effect": ""
+    "Effect": "",
+    "Regex": "juggernaut"
   },
   {
     "Name": "Vampiric",
@@ -186,7 +206,8 @@
     "Type": "Fossils",
     "Components": [
     ],
-    "Effect": ""
+    "Effect": "",
+    "Regex": "vampiric"
   },
   {
     "Name": "Overcharged",
@@ -195,7 +216,8 @@
     "Type": "Trinkets Trinkets",
     "Components": [
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "overcharged"
   },
   {
     "Name": "Soul Conduit",
@@ -204,7 +226,8 @@
     "Type": "Maps",
     "Components": [
     ],
-    "Effect": ""
+    "Effect": "",
+    "Regex": "soul.conduit"
   },
   {
     "Name": "Opulent",
@@ -213,7 +236,8 @@
     "Type": "",
     "Components": [
     ],
-    "Effect": ""
+    "Effect": "",
+    "Regex": "opulent"
   },
   {
     "Name": "Malediction",
@@ -222,7 +246,8 @@
     "Type": "DivinationCards",
     "Components": [
     ],
-    "Effect": ""
+    "Effect": "",
+    "Regex": "malediction"
   },
   {
     "Name": "Consecrator",
@@ -231,7 +256,8 @@
     "Type": "Fragments",
     "Components": [
     ],
-    "Effect": ""
+    "Effect": "",
+    "Regex": "consecrator"
   },
   {
     "Name": "Frenzied",
@@ -240,7 +266,8 @@
     "Type": "Generic Uniques",
     "Components": [
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "frenzied"
   },
   {
     "Name": "Heralding Minions",
@@ -251,7 +278,8 @@
       "Dynamo",
       "Arcane Buffer"
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "(dyn|arc)"
   },
   {
     "Name": "Empowering Minions",
@@ -263,7 +291,8 @@
       "Executioner",
       "Gargantuan"
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "(nec|exe|gar)"
   },
   {
     "Name": "Assassin",
@@ -274,7 +303,8 @@
       "Deadeye",
       "Vampiric"
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "(dea|vam)"
   },
   {
     "Name": "Trickster",
@@ -286,7 +316,8 @@
       "Assassin",
       "Echoist"
     ],
-    "Effect": "  "
+    "Effect": "  ",
+    "Regex": "(ass|ove|ech)"
   },
   {
     "Name": "Necromancer",
@@ -297,7 +328,8 @@
       "Bombardier",
       "Overcharged"
     ],
-    "Effect": "Rewards are rolled 2 additional times, choosing the rarest result"
+    "Effect": "Rewards are rolled 2 additional times, choosing the rarest result",
+    "Regex": "(bom|ove)"
   },
   {
     "Name": "Rejuvenating",
@@ -308,7 +340,8 @@
       "Gargantuan",
       "Vampiric"
     ],
-    "Effect": "Rewards are rolled 1 additional time, choosing the rarest result"
+    "Effect": "Rewards are rolled 1 additional time, choosing the rarest result",
+    "Regex": "(gar|vam)"
   },
   {
     "Name": "Executioner",
@@ -319,7 +352,8 @@
       "Frenzied",
       "Berserker"
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "(fre|ber)"
   },
   {
     "Name": "Hexer",
@@ -330,7 +364,8 @@
       "Chaosweaver",
       "Echoist"
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "(cha|ech)"
   },
   {
     "Name": "Drought Bringer",
@@ -341,7 +376,8 @@
       "Malediction",
       "Deadeye"
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "(male|dea)"
   },
   {
     "Name": "Entangler",
@@ -352,7 +388,8 @@
       "Toxic",
       "Bloodletter"
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "(tox|blo)"
   },
   {
     "Name": "Temporal Bubble",
@@ -364,7 +401,8 @@
       "Hexer",
       "Arcane Buffer"
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "(hex|jug|arc)"
   },
   {
     "Name": "Treant Horde",
@@ -376,7 +414,8 @@
       "Sentinel",
       "Steel-infused"
     ],
-    "Effect": "Monster's Minions drop a randomly-chosen Reward Type"
+    "Effect": "Monster's Minions drop a randomly-chosen Reward Type",
+    "Regex": "(tox|sen|ste)"
   },
   {
     "Name": "Frost Strider",
@@ -387,7 +426,8 @@
       "Frostweaver",
       "Hasted"
     ],
-    "Effect": "  "
+    "Effect": "  ",
+    "Regex": "(frostw|has)"
   },
   {
     "Name": "Ice Prison",
@@ -398,7 +438,8 @@
       "Permafrost",
       "Sentinel"
     ],
-    "Effect": " Rewards are rolled 1 additional time, choosing the rarest result"
+    "Effect": " Rewards are rolled 1 additional time, choosing the rarest result",
+    "Regex": "(per|sen)"
   },
   {
     "Name": "Soul Eater",
@@ -410,7 +451,8 @@
       "Necromancer",
       "Gargantuan"
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "(nec|soul.c|gar)"
   },
   {
     "Name": "Flame Strider",
@@ -421,7 +463,8 @@
       "Flameweaver",
       "Hasted"
     ],
-    "Effect": "  "
+    "Effect": "  ",
+    "Regex": "(flamew|has)"
   },
   {
     "Name": "Corpse Detonator",
@@ -432,7 +475,8 @@
       "Necromancer",
       "Incendiary"
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "(nec|inc)"
   },
   {
     "Name": "Evocationist",
@@ -444,7 +488,8 @@
       "Frostweaver",
       "Stormweaver"
     ],
-    "Effect": "   "
+    "Effect": "   ",
+    "Regex": "(flamew|frostw|stormw)"
   },
   {
     "Name": "Magma Barrier",
@@ -455,7 +500,8 @@
       "Incendiary",
       "Bonebreaker"
     ],
-    "Effect": " Rewards are rolled 1 additional time, choosing the rarest result"
+    "Effect": " Rewards are rolled 1 additional time, choosing the rarest result",
+    "Regex": "(inc|bon)"
   },
   {
     "Name": "Mirror Image",
@@ -466,7 +512,8 @@
       "Echoist",
       "Soul Conduit"
     ],
-    "Effect": "Rewards are rolled 2 additional times, choosing the rarest result"
+    "Effect": "Rewards are rolled 2 additional times, choosing the rarest result",
+    "Regex": "(ech|soul.c)"
   },
   {
     "Name": "Storm Strider",
@@ -477,7 +524,8 @@
       "Stormweaver",
       "Hasted"
     ],
-    "Effect": "  "
+    "Effect": "  ",
+    "Regex": "(stormw|has)"
   },
   {
     "Name": "Mana Siphoner",
@@ -488,7 +536,8 @@
       "Consecrator",
       "Dynamo"
     ],
-    "Effect": " Rewards are rolled 1 additional time, choosing the rarest result"
+    "Effect": " Rewards are rolled 1 additional time, choosing the rarest result",
+    "Regex": "(con|dyn)"
   },
   {
     "Name": "Corrupter",
@@ -499,7 +548,8 @@
       "Bloodletter",
       "Chaosweaver"
     ],
-    "Effect": " Items dropped from the Monster and its Minions are Corrupted"
+    "Effect": " Items dropped from the Monster and its Minions are Corrupted",
+    "Regex": "(blo|cha)"
   },
   {
     "Name": "Invulnerable",
@@ -511,7 +561,8 @@
       "Juggernaut",
       "Consecrator"
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "(sen|jug|con)"
   },
   {
     "Name": "Crystal-skinned",
@@ -523,7 +574,8 @@
       "Rejuvenating",
       "Berserker"
     ],
-    "Effect": " "
+    "Effect": "",
+    "Regex": "(rej|per|ber)"
   },
   {
     "Name": "Empowered Elements",
@@ -535,7 +587,8 @@
       "Steel-infused",
       "Chaosweaver"
     ],
-    "Effect": " Rewards are rolled 1 additional time, choosing the rarest result"
+    "Effect": " Rewards are rolled 1 additional time, choosing the rarest result",
+    "Regex": "(evo|ste|cha)"
   },
   {
     "Name": "Effigy",
@@ -547,7 +600,8 @@
       "Malediction",
       "Corrupter"
     ],
-    "Effect": " Rewards are rolled 1 additional time, choosing the rarest result"
+    "Effect": " Rewards are rolled 1 additional time, choosing the rarest result",
+    "Regex": "(hex|mal|cor)"
   },
   {
     "Name": "Lunaris-touched",
@@ -559,7 +613,8 @@
       "Frost Strider",
       "Empowering Minions"
     ],
-    "Effect": "All Reward Types have an additional reward"
+    "Effect": "All Reward Types have an additional reward",
+    "Regex": "(emp|inv|frost.s)"
   },
   {
     "Name": "Solaris-touched",
@@ -571,7 +626,8 @@
       "Magma Barrier",
       "Empowering Minions"
     ],
-    "Effect": "All Reward Types have an additional reward"
+    "Effect": "All Reward Types have an additional reward",
+    "Regex": "(emp|inv|mag)"
   },
   {
     "Name": "Arakaali-touched",
@@ -583,7 +639,8 @@
       "Entangler",
       "Assassin"
     ],
-    "Effect": "All Reward Types are Divination Cards"
+    "Effect": "All Reward Types are Divination Cards",
+    "Regex": "(cor|ent|ass)"
   },
   {
     "Name": "Brine King-touched",
@@ -595,7 +652,8 @@
       "Storm Strider",
       "Heralding Minions"
     ],
-    "Effect": "  Rewards are rolled 6 additional times, choosing the rarest result"
+    "Effect": "  Rewards are rolled 6 additional times, choosing the rarest result",
+    "Regex": "(ice|storm.s|her)"
   },
   {
     "Name": "Tukohama-touched",
@@ -607,7 +665,8 @@
       "Executioner",
       "Magma Barrier"
     ],
-    "Effect": "  Rewards are rolled 4 additional times, choosing the rarest result"
+    "Effect": "  Rewards are rolled 4 additional times, choosing the rarest result",
+    "Regex": "(exe|mag|bon)"
   },
   {
     "Name": "Abberath-touched",
@@ -619,7 +678,8 @@
       "Frenzied",
       "Rejuvenating"
     ],
-    "Effect": "  Rewards are rolled 4 additional times, choosing the rarest result"
+    "Effect": "  Rewards are rolled 4 additional times, choosing the rarest result",
+    "Regex": "(flame.s|rej|fre)"
   },
   {
     "Name": "Shakari-touched",
@@ -631,7 +691,8 @@
       "Soul Eater",
       "Drought Bringer"
     ],
-    "Effect": "All Reward Types are Uniques"
+    "Effect": "All Reward Types are Uniques",
+    "Regex": "(soul.e|ent|dro)"
   },
   {
     "Name": "Innocence-touched",
@@ -644,7 +705,8 @@
       "Mirror Image",
       "Mana Siphoner"
     ],
-    "Effect": "  All Reward Types are Currency"
+    "Effect": "  All Reward Types are Currency",
+    "Regex": "(lun|sol|mir|man)"
   },
   {
     "Name": "Kitava-touched",
@@ -657,6 +719,7 @@
       "Corrupter",
       "Corpse Detonator"
     ],
-    "Effect": "Rewards are doubled"
+    "Effect": "Rewards are doubled",
+    "Regex": "(abb|cor|tuk|cor)"
   }
 ]

@@ -67,6 +67,14 @@ img {
     border-style: solid;
 }
 
+img.faded {
+    filter: grayscale(100%)
+}
+
+span.faded {
+    color: var(--normal-color);
+}
+
 img.selected {
     border-color: var(--title-color);
 }

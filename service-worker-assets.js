@@ -1,11 +1,11 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-bCC5XwP2yuK37U5mEnVgrtChqvDmsw61CJtHuD9Rbm0=",
+      "hash": "sha256-8rM4U\/kzke0Eka9NtpUBtPau1x\/GzqNBgX4nLDY6xLk=",
       "url": "archnemesis_recipies.json"
     },
     {
-      "hash": "sha256-AX0Ib+WD1TZsiZvm2hRWrhBnxPKqkwAPc7XLhcToWdM=",
+      "hash": "sha256-d2qJ9ikbNzhBk16OJ\/rUbl5O3+lJpcVYwN1ADWKfR0E=",
       "url": "css\/app.css"
     },
     {
@@ -66,258 +66,354 @@
     },
     {
       "hash": "sha256-W49xsUNxURZdY8KsPuQCH+dapYjxIWyQLOX+EV+c8mY=",
-      "url": "images\/ModPantheonAbberath.png"
+      "url": "images\/mods\/ModPantheonAbberath.png"
     },
     {
       "hash": "sha256-lIX8wJykrRuL2IHN\/Ufi6ZNfiWQMZOWrkgsLG1EUBHE=",
-      "url": "images\/ModPantheonArakaali.png"
+      "url": "images\/mods\/ModPantheonArakaali.png"
     },
     {
       "hash": "sha256-fSQXC6ilNKP0iNO38eXCsETzne1GVgKag1DgasJDZJU=",
-      "url": "images\/ModPantheonBrineking.png"
+      "url": "images\/mods\/ModPantheonBrineking.png"
     },
     {
       "hash": "sha256-b7rqv1BNyUW3rFYRz6a1zq+MmA15BCd3hgN\/XnpANtQ=",
-      "url": "images\/ModPantheonInnocence.png"
+      "url": "images\/mods\/ModPantheonInnocence.png"
     },
     {
       "hash": "sha256-HY4W4XWn7v0AaIrhAPaaS5IMwOHUtyevBi8gLcsNQDw=",
-      "url": "images\/ModPantheonKitava.png"
+      "url": "images\/mods\/ModPantheonKitava.png"
     },
     {
       "hash": "sha256-cxFFE+KhJCvQqKzG2DrP6w44\/zWcYfVUp8jIiOG\/jaQ=",
-      "url": "images\/ModPantheonLunaris.png"
+      "url": "images\/mods\/ModPantheonLunaris.png"
     },
     {
       "hash": "sha256-btTljioo5e3usJowIMtYBBmrIDX88rAKho1o2fAxdJ4=",
-      "url": "images\/ModPantheonShakari.png"
+      "url": "images\/mods\/ModPantheonShakari.png"
     },
     {
       "hash": "sha256-fY5MHYzLtPkYO9FAho4X\/ib9uEsIpBeCpUJtz3TM+fI=",
-      "url": "images\/ModPantheonSolaris.png"
+      "url": "images\/mods\/ModPantheonSolaris.png"
     },
     {
       "hash": "sha256-\/VPOZO+b+huOEIqqof82p3I2s4itzsJMuHYvHlWANJI=",
-      "url": "images\/ModPantheonTukohama.png"
+      "url": "images\/mods\/ModPantheonTukohama.png"
     },
     {
       "hash": "sha256-sg+\/3J\/WSFl2i3mgMfdBnihDG8WlSeAs9qaId1cmnAk=",
-      "url": "images\/ModRareKillBloodletter.png"
+      "url": "images\/mods\/ModRareKillBloodletter.png"
     },
     {
       "hash": "sha256-eGhcJwEg2u712\/b2Z2+1zNKT+4AzSAV4l4nRXsn\/nTA=",
-      "url": "images\/ModRareKillBombardier.png"
+      "url": "images\/mods\/ModRareKillBombardier.png"
     },
     {
       "hash": "sha256-DWnolwqtNX3KIEElwXR1I59SSlfQwUPzOO6f+8Zcuj8=",
-      "url": "images\/ModRareKillBonebreaker.png"
+      "url": "images\/mods\/ModRareKillBonebreaker.png"
     },
     {
       "hash": "sha256-rL3bVS+w6fZP296gaW8StMt++XQEGYeRldL2Tx4FBXg=",
-      "url": "images\/ModRareKillCaster.png"
+      "url": "images\/mods\/ModRareKillCaster.png"
     },
     {
       "hash": "sha256-rG47+VcOU\/keB3kfgMp8MckfntOR9r55MWAZAzNxHCg=",
-      "url": "images\/ModRareKillChargegenerator.png"
+      "url": "images\/mods\/ModRareKillChargegenerator.png"
     },
     {
       "hash": "sha256-cLOUsS7crAAmS5B7ooB3GHwgybpvQriAMjjem\/Lbq90=",
-      "url": "images\/ModRareKillConsecration.png"
+      "url": "images\/mods\/ModRareKillConsecration.png"
     },
     {
       "hash": "sha256-VwvJtZijmIShj2TCMcIYb0QmY38bhMDk062L4Urserc=",
-      "url": "images\/ModRareKillDeadeye.png"
+      "url": "images\/mods\/ModRareKillDeadeye.png"
     },
     {
       "hash": "sha256-yOZ3\/kpP9zSfILa+jDAHG95aEI20S3jfYYR9MOiTSf8=",
-      "url": "images\/ModRareKillDefender.png"
+      "url": "images\/mods\/ModRareKillDefender.png"
     },
     {
       "hash": "sha256-rVvuLeaAcpKNm5VEDrqlDfbPUJNzM30SXc+GRAP3YYA=",
-      "url": "images\/ModRareKillEnergyShield.png"
+      "url": "images\/mods\/ModRareKillEnergyShield.png"
     },
     {
       "hash": "sha256-f9w2yIbNQQINVm8XfRvhOVrixY5VykY3As+drKQN1\/M=",
-      "url": "images\/ModRareKillFire.png"
+      "url": "images\/mods\/ModRareKillFire.png"
     },
     {
       "hash": "sha256-b1UmgKIzPBsuCX38wHtWm2b6DnIy4aNb3dxA2Qy\/9Ec=",
-      "url": "images\/ModRareKillFlametouched.png"
+      "url": "images\/mods\/ModRareKillFlametouched.png"
     },
     {
       "hash": "sha256-mfMpZeOLehnqIPHPyGlWkTVlHzMY5kA6crpeKkNyq5s=",
-      "url": "images\/ModRareKillFreezer.png"
+      "url": "images\/mods\/ModRareKillFreezer.png"
     },
     {
       "hash": "sha256-HkVvAHPOsemuXc4DBAr0EdAUtxk6l5r5yrmo7jWhkBM=",
-      "url": "images\/ModRareKillFrosttouched.png"
+      "url": "images\/mods\/ModRareKillFrosttouched.png"
     },
     {
       "hash": "sha256-5QCCXOLjUOkE3fn4f8WxevFHGeX0NFM1f3xfTMEC4iE=",
-      "url": "images\/ModRareKillGargantuan.png"
+      "url": "images\/mods\/ModRareKillGargantuan.png"
     },
     {
       "hash": "sha256-E2vEaC\/vHCySm\/IspqFnntXzCOsZZGnOnZFbHVW1\/Hg=",
-      "url": "images\/ModRareKillJuggernaut.png"
+      "url": "images\/mods\/ModRareKillJuggernaut.png"
     },
     {
       "hash": "sha256-oVegK1Hk1Tw89Fo2xZe5kp5JsgQc1KwVJX\/Rnhln5dI=",
-      "url": "images\/ModRareKillOppressor.png"
+      "url": "images\/mods\/ModRareKillOppressor.png"
     },
     {
       "hash": "sha256-HXXJmkcozYzf2SH5sTLVqc4sLhE33OJ3ZsL7g7F64Co=",
-      "url": "images\/ModRareKillPoison.png"
+      "url": "images\/mods\/ModRareKillPoison.png"
     },
     {
       "hash": "sha256-ckZ\/uVROvIcWjSPc0hltMEYO\/Lq6umZ6zlhblnHVN1E=",
-      "url": "images\/ModRareKillRage.png"
+      "url": "images\/mods\/ModRareKillRage.png"
     },
     {
       "hash": "sha256-S3jbssel4WyGnovKAsM3xdOsNvyCTZ4EiM7MEmYAnRQ=",
-      "url": "images\/ModRareKillRampage.png"
+      "url": "images\/mods\/ModRareKillRampage.png"
     },
     {
       "hash": "sha256-nT17\/gwXX\/dod\/866f4D8e2JEus9qG211V14thMZ8YY=",
-      "url": "images\/ModRareKillShocker.png"
+      "url": "images\/mods\/ModRareKillShocker.png"
     },
     {
       "hash": "sha256-XZwIZ2x872VPyRZzgcUY7M\/PpvmLigIzPv9SgOY45bg=",
-      "url": "images\/ModRareKillSoulconduit.png"
+      "url": "images\/mods\/ModRareKillSoulconduit.png"
     },
     {
       "hash": "sha256-wRc9rQY4ZW4OlKZiNeOs3Hoh9Wl95uY41cHqAZXaKKU=",
-      "url": "images\/ModRareKillSpeed.png"
+      "url": "images\/mods\/ModRareKillSpeed.png"
     },
     {
       "hash": "sha256-azvuENInjsisv5q7+KHzvTTI8JKqjgAQJV0vIuxqBAs=",
-      "url": "images\/ModRareKillSteelattuned.png"
+      "url": "images\/mods\/ModRareKillSteelattuned.png"
     },
     {
       "hash": "sha256-ZE5XDvADk\/xTlTZjG\/+n\/SzMDQE9BviuCGcmqgAxbT0=",
-      "url": "images\/ModRareKillStormtouched.png"
+      "url": "images\/mods\/ModRareKillStormtouched.png"
     },
     {
       "hash": "sha256-BYWcA+wXfAaLzn3uvMAoFhcg7sFWk3XXpfUv1dPxtmk=",
-      "url": "images\/ModRareKillVampiric.png"
+      "url": "images\/mods\/ModRareKillVampiric.png"
     },
     {
       "hash": "sha256-S\/f3BaDWqh+6aqS+A9ewxAIE0oUhxnEg\/hE3PURm4QI=",
-      "url": "images\/ModRareKillVoidtouched.png"
+      "url": "images\/mods\/ModRareKillVoidtouched.png"
     },
     {
       "hash": "sha256-1bYwytn1F51I8i3XVjjzUdStIXcW03tSVKvbqD7TEQk=",
-      "url": "images\/ModRareKillWealthy.png"
+      "url": "images\/mods\/ModRareKillWealthy.png"
     },
     {
       "hash": "sha256-QrHYAjr8XELOPnFZIMJ7fVMuIpph73wF+qw8HZVVe7U=",
-      "url": "images\/ModRecipeAssassin.png"
+      "url": "images\/mods\/ModRecipeAssassin.png"
     },
     {
       "hash": "sha256-aHKRJ7w0BZw\/blBFApsK9PgBe9RuQ\/BaRYJLAhOVgj4=",
-      "url": "images\/ModRecipeCold.png"
+      "url": "images\/mods\/ModRecipeCold.png"
     },
     {
       "hash": "sha256-EwQ9xWiKTnDs6Ab0KQc3CG3D5KREB96LqGg\/y2LymgU=",
-      "url": "images\/ModRecipeCorpseeploder.png"
+      "url": "images\/mods\/ModRecipeCorpseeploder.png"
     },
     {
       "hash": "sha256-ojIw33icFcot54nGa2NF24wievTMfMVhVkfl8uqrpnE=",
-      "url": "images\/ModRecipeCorrupter.png"
+      "url": "images\/mods\/ModRecipeCorrupter.png"
     },
     {
       "hash": "sha256-7FzqyakFCNHMynpqOGPHEycuAa1oFid5slXg1F\/Eq+A=",
-      "url": "images\/ModRecipeCycleofelements.png"
+      "url": "images\/mods\/ModRecipeCycleofelements.png"
     },
     {
       "hash": "sha256-CWuZQnLTxh1oh2M8kXT8RCUQv\/lsrF\/Y8r7+0tTAYoI=",
-      "url": "images\/ModRecipeDivinetouched.png"
+      "url": "images\/mods\/ModRecipeDivinetouched.png"
     },
     {
       "hash": "sha256-kUSSYY8jlzWZ9tr+6es4GRmRRmSX\/T7vceeoVYCMWQs=",
-      "url": "images\/ModRecipeExecutioner.png"
+      "url": "images\/mods\/ModRecipeExecutioner.png"
     },
     {
       "hash": "sha256-Pk7CDkz0J1osP7TLHqiOUDl2VNDWZl+828rBRuUTzdo=",
-      "url": "images\/ModRecipeFire.png"
+      "url": "images\/mods\/ModRecipeFire.png"
     },
     {
       "hash": "sha256-oGz66wVbLBcfrOojVnIxX22UoPIX76g9WGa82f2zp0Y=",
-      "url": "images\/ModRecipeFlaskdrain.png"
+      "url": "images\/mods\/ModRecipeFlaskdrain.png"
     },
     {
       "hash": "sha256-Mc0zluluGazrkozolAB10eXaj095HbO1kCtqtq7oC2c=",
-      "url": "images\/ModRecipeFrostwalker.png"
+      "url": "images\/mods\/ModRecipeFrostwalker.png"
     },
     {
       "hash": "sha256-YyR7pFnSNp9gnPWUsDPLpgNOQJ+OWm1STocZMsVqbiU=",
-      "url": "images\/ModRecipeGraspingVines.png"
+      "url": "images\/mods\/ModRecipeGraspingVines.png"
     },
     {
       "hash": "sha256-q2mkL9+OGXLKJE4AESdNDowEuEyG3HxoYtDb5LANY4I=",
-      "url": "images\/ModRecipeHeraldoftheobelisk.png"
+      "url": "images\/mods\/ModRecipeHeraldoftheobelisk.png"
     },
     {
       "hash": "sha256-V9ghdzlRI0\/ozfyhh\/NNH4OhBakp5ZI\/t1bxcQyjSFs=",
-      "url": "images\/ModRecipeHexer.png"
+      "url": "images\/mods\/ModRecipeHexer.png"
     },
     {
       "hash": "sha256-K+AM91zAFMomQoZkDB+osWDTppRZkt91NsWTKttzv0Q=",
-      "url": "images\/ModRecipeLightningwalker.png"
+      "url": "images\/mods\/ModRecipeLightningwalker.png"
     },
     {
       "hash": "sha256-ejQMlr+5ZLhWjg0EGlBeGgOd7+UfIy2EEtieO3w6s8E=",
-      "url": "images\/ModRecipeLivingCrystal.png"
+      "url": "images\/mods\/ModRecipeLivingCrystal.png"
     },
     {
       "hash": "sha256-\/pRaTSIO3aoFA7bmgUc++Wsi4O9cBdx8TW9m3PIiBwY=",
-      "url": "images\/ModRecipeManaDonut.png"
+      "url": "images\/mods\/ModRecipeManaDonut.png"
     },
     {
       "hash": "sha256-U6cvBwzId97WHEXXGDjCwRA0zbx7eoigTTvBc\/J+VT8=",
-      "url": "images\/ModRecipeMirrorImage.png"
+      "url": "images\/mods\/ModRecipeMirrorImage.png"
     },
     {
       "hash": "sha256-UARTf+eEXsZe5hUb3m8x0DxYDlWNyHymhz7x03ytjNg=",
-      "url": "images\/ModRecipeNecromancer.png"
+      "url": "images\/mods\/ModRecipeNecromancer.png"
     },
     {
       "hash": "sha256-cArM3YfIH30OLmnSDYEQoMHRW7NXp9xdKgNSECrEhx0=",
-      "url": "images\/ModRecipePrismatic.png"
+      "url": "images\/mods\/ModRecipePrismatic.png"
     },
     {
       "hash": "sha256-Evk1JMTnr9l0Fqjg1Xoiv9Qn3Ys1DHDGWYll4QuGeQ8=",
-      "url": "images\/ModRecipeRejuvenating.png"
+      "url": "images\/mods\/ModRecipeRejuvenating.png"
     },
     {
       "hash": "sha256-TmyQgUClsGZVNQA7EF+Z+t++RAvmD5ZdDr8o121poXs=",
-      "url": "images\/ModRecipeSaplings.png"
+      "url": "images\/mods\/ModRecipeSaplings.png"
     },
     {
       "hash": "sha256-YQrsMgKjmjZQUB7Gp7XKq15AD7w2szxgzAKeA1K9EzM=",
-      "url": "images\/ModRecipeSouleater.png"
+      "url": "images\/mods\/ModRecipeSouleater.png"
     },
     {
       "hash": "sha256-LRk18LZRU7SA0l04Is+Mpvryp5yQ01ymU4flY9yLngw=",
-      "url": "images\/ModRecipeTimeBubble.png"
+      "url": "images\/mods\/ModRecipeTimeBubble.png"
     },
     {
       "hash": "sha256-0Q\/IZAw1QvJG4rlhIorP7CpalWpxmjE6ihnbmOVXpcI=",
-      "url": "images\/ModRecipeTrickster.png"
+      "url": "images\/mods\/ModRecipeTrickster.png"
     },
     {
       "hash": "sha256-TzdZAuIFEj5NiaX0V5V2FGlHVkR1W1iXje24OG7uSoQ=",
-      "url": "images\/ModRecipeUnionofsouls.png"
+      "url": "images\/mods\/ModRecipeUnionofsouls.png"
     },
     {
       "hash": "sha256-zgpMU36zUpY0IXKfLaaD+AF3DDOKue3806S9fsPw\/Rw=",
-      "url": "images\/ModRecipeVolatileflameblood.png"
+      "url": "images\/mods\/ModRecipeVolatileflameblood.png"
     },
     {
       "hash": "sha256-HqfUWDf2DFwJ7PJVR21mdw4PO\/pw1br3BVlF+mfbajg=",
-      "url": "images\/ModRecipeVoodoodoll.png"
+      "url": "images\/mods\/ModRecipeVoodoodoll.png"
     },
     {
-      "hash": "sha256-M0n6t99dULBbLheUEi8jAHJTBwdAdmG\/hY5lbHt+yMY=",
+      "hash": "sha256-jtn\/vf+M1o4LhaqOCV7h9ppZlFBKHUqdOmHV6GX1Dc8=",
+      "url": "images\/rewards\/HeistRewardAbyss.png"
+    },
+    {
+      "hash": "sha256-PILZDoZ2AgaVvQ4JkyBFNjpwM5mOcbfRohfU3DBJTuI=",
+      "url": "images\/rewards\/HeistRewardArmour.png"
+    },
+    {
+      "hash": "sha256-nqqAspcmOTwf26mnrGqc+vZhw62n1crQt4w+o6ruGTM=",
+      "url": "images\/rewards\/HeistRewardBlight.png"
+    },
+    {
+      "hash": "sha256-QHl72+ChCJOD+qj5OMdCj+71cG04OvReWIPwmGZhxhs=",
+      "url": "images\/rewards\/HeistRewardBreach.png"
+    },
+    {
+      "hash": "sha256-1op2qy0VD90JFTiAmcAVkHe+xHjNdVyDOfnHoH2Ep3k=",
+      "url": "images\/rewards\/HeistRewardCurrency.png"
+    },
+    {
+      "hash": "sha256-bi6pEb4yYgXHRTwYuyjqb7dJ\/0XKI98eFBa9QGEQ5RU=",
+      "url": "images\/rewards\/HeistRewardDelirium.png"
+    },
+    {
+      "hash": "sha256-VmkwxBFFz12nMJfRdOBzHSB3oUBIIiuJeYKsnqvKi4Q=",
+      "url": "images\/rewards\/HeistRewardDivination.png"
+    },
+    {
+      "hash": "sha256-ATpQocAmchZP77PyZFgMOXjxU5+Xck96tQBGOn+gQt4=",
+      "url": "images\/rewards\/HeistRewardEssences.png"
+    },
+    {
+      "hash": "sha256-4SDKYPL9TenU6X6+kQuYDNmt3JGgfSCeVdvqmmrESxM=",
+      "url": "images\/rewards\/HeistRewardFossils.png"
+    },
+    {
+      "hash": "sha256-DUMGeFQJuwbWT7C9n+VSN79GVWQ5x1uVzQVc\/P43DGY=",
+      "url": "images\/rewards\/HeistRewardFragments.png"
+    },
+    {
+      "hash": "sha256-WxOxT5xjmdEb+CUERNMm4QQs5Eko+PMlMDcjcYw7gL4=",
+      "url": "images\/rewards\/HeistRewardGems.png"
+    },
+    {
+      "hash": "sha256-ACiof\/BAMSfK3Fz4f4hDJq0r5vFXSIFIPRnS8C9BcwQ=",
+      "url": "images\/rewards\/HeistRewardGeneric.png"
+    },
+    {
+      "hash": "sha256-aKJMT\/26Os+c8fgLevIskvqguVGvQiJX3WZWO5Jq4yw=",
+      "url": "images\/rewards\/HeistRewardHarbinger.png"
+    },
+    {
+      "hash": "sha256-N1bXGBVwRHF\/hEFIGyDJ5aA6oanTqo08z+QyBhEfskc=",
+      "url": "images\/rewards\/HeistRewardLabyrinth.png"
+    },
+    {
+      "hash": "sha256-Nc4TqxU9uBntm8dGe9BlKLbGCDQPE4CNMC1srP7ABew=",
+      "url": "images\/rewards\/HeistRewardLegion.png"
+    },
+    {
+      "hash": "sha256-zrhqB52Cq6wZm4j35FUWeT9siLlC8fAEEFVmi6X2JLA=",
+      "url": "images\/rewards\/HeistRewardMaps.png"
+    },
+    {
+      "hash": "sha256-JinTwsl\/tvhtbxalG+nWJKvSqEC\/+IG2pKXHrVq4E0o=",
+      "url": "images\/rewards\/HeistRewardMetamorph.png"
+    },
+    {
+      "hash": "sha256-GYbpktCEHTU0doc6YYwFgC882WX\/y2gBrZh\/jT\/bggo=",
+      "url": "images\/rewards\/HeistRewardScarabs.png"
+    },
+    {
+      "hash": "sha256-9Ul8Q2prKMlwq9QWIcXXDdRnJXh+bbwmMRXvSK7wliI=",
+      "url": "images\/rewards\/HeistRewardTrinkets.png"
+    },
+    {
+      "hash": "sha256-mVYOIdomHIWZlojj\/uAfykRSzI3O1\/I9FDiW2nrF0Ho=",
+      "url": "images\/rewards\/HeistRewardUniques.png"
+    },
+    {
+      "hash": "sha256-0Yv2uyLRmQVjSD+\/udwnu3UN\/Z5xtTSR2HvAS7AhICA=",
+      "url": "images\/rewards\/HeistRewardWeapon.png"
+    },
+    {
+      "hash": "sha256-RQ51KXWTzXenewBNJ\/RTmiWKUcJWodQIWQjBK\/3Kiuk=",
+      "url": "images\/rewards\/RewardIconExpedition.png"
+    },
+    {
+      "hash": "sha256-sLqL8mavLNVA1yt3DIkuT2flKOn9HskUrplPwUwi7PA=",
+      "url": "images\/rewards\/RewardIconHeist.png"
+    },
+    {
+      "hash": "sha256-2I1YrMRlHyKozpnKCN9ql5BRFjeNWnjpKVa4eExyejo=",
+      "url": "images\/rewards\/RewardIconRitual.png"
+    },
+    {
+      "hash": "sha256-NS6gYF22tfBwgeq5HjAmdmu17mi+FZ4xSC7KitovXP0=",
       "url": "index.html"
     },
     {
@@ -337,15 +433,15 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-awQsJ\/WxYhouHPuE+i3eJqjA4XClQlr2rD6nKvW80ww=",
-      "url": "_framework\/dotnet.6.0.1.jumy5461sl.js"
+      "hash": "sha256-wbTVn69TU0+WI83iB+kky8tf\/BjZdYJeM0rUP96ur\/c=",
+      "url": "_framework\/dotnet.6.0.2.0c4ewytdwm.js"
     },
     {
-      "hash": "sha256-2kYo2V\/aZ7htYEvY5PVJlrMYhFf1jH8\/VS+SP7B7QUg=",
+      "hash": "sha256-9CBC8Dy2PSGOWOyYnxE7NSoyYzDDDcaexiBpkBhI80U=",
       "url": "_framework\/dotnet.timezones.blat"
     },
     {
-      "hash": "sha256-bxECtWW45VwGuhtEvznFHHDNj4dgblnpcjcqKR44GgE=",
+      "hash": "sha256-K3JNG2KmmxJjhVUWd8I1bhpCGQUbI\/ddIkZyC9nM4gw=",
       "url": "_framework\/dotnet.wasm"
     },
     {
@@ -365,11 +461,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-08mfiuqOpEVS60VNcKPQAifs+9no03B3n5BgX2k37Qo=",
+      "hash": "sha256-q8IgDLhU3LJnLJ2xU\/SmmunqMSWF6YpQEokzvsNUKSc=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-GDotgt8nuYM+dlgYCFVQlTpbekJ6IAGUkWVOEUni2t8=",
+      "hash": "sha256-R9H4\/xqn90sV0mtnuVruQcXGLl2lrQ4vHG05\/PVoHWg=",
       "url": "_framework\/ArchnemesisRecipies.dll"
     },
     {
@@ -393,7 +489,7 @@
       "url": "_framework\/Havit.Core.dll"
     },
     {
-      "hash": "sha256-47wJgNNuH07Gpu+F\/yZQDeQO6m85nTqQhZxCX1wy53w=",
+      "hash": "sha256-5XSbibVUkGl6Jrp87mntbgaa658RToYA\/r\/30e0ssvM=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll"
     },
     {
@@ -409,7 +505,7 @@
       "url": "_framework\/Microsoft.AspNetCore.Components.WebAssembly.dll"
     },
     {
-      "hash": "sha256-q8x4Ydq+c9HP89OJMeATmYiBpPd2GdyhB0bU+dJcgTA=",
+      "hash": "sha256-08jxOpygUAKtn0+a+KAxNkBSM15mwfTG45NTQoibFeU=",
       "url": "_framework\/Microsoft.CSharp.dll"
     },
     {
@@ -465,143 +561,143 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-Agd28hR44Z\/HtH0TIOWAFJJH+IBJGjlMyrxrusXqrOg=",
+      "hash": "sha256-zL6eSgxiSU7r\/2OuQd1dk5VWuX6eqfLYQXu0vs8+KKQ=",
       "url": "_framework\/netstandard.dll"
     },
     {
-      "hash": "sha256-yFdW+La\/5QBlNX7koEdax5FmNloCTiw10oe6FWmS3oQ=",
+      "hash": "sha256-AC6stgDVSt30EDjPaKqxWyo8TUMsA7HzZISD5ReI8RM=",
       "url": "_framework\/System.Collections.Concurrent.dll"
     },
     {
-      "hash": "sha256-v2vy6pp10\/mo3XowH+c1a\/JwO5JjD\/7zA9NdxdI5M40=",
+      "hash": "sha256-ABvSasmmLJ\/RRHXCZqly4IgfXdR17aPgzlMXo1Yl1l8=",
       "url": "_framework\/System.Collections.dll"
     },
     {
-      "hash": "sha256-peniyOsn\/n2mPImn9TjhNhj\/LC1LtoPOMGAAAQxFqLU=",
+      "hash": "sha256-6qQFtXwwvT9nBAUgUQO+4Xuujz3skwxMDLprGO9iBlY=",
       "url": "_framework\/System.Collections.NonGeneric.dll"
     },
     {
-      "hash": "sha256-C3RKPVgH0LpKcXNuMbrpGq3XisW4PkmWd\/5zGFux9ko=",
+      "hash": "sha256-viQv6buVVslVnRl9gDXpeVMSAwkkz+pUgHb3U3uqyUA=",
       "url": "_framework\/System.Collections.Specialized.dll"
     },
     {
-      "hash": "sha256-OPrapRfZYFDOXLd3WmDPoaHxE0oL5BiqhVRh1XfxSp4=",
+      "hash": "sha256-okZd9dlqjPWSIiSVfEmLIcu4XNQBQbAWHwyonbGLNOA=",
       "url": "_framework\/System.ComponentModel.Annotations.dll"
     },
     {
-      "hash": "sha256-0wL1XbOGv224hyXbnGmWwnRc11am9UKqeKk+awaJjtY=",
+      "hash": "sha256-TOeHn27zzrK+mlIlyYwc4whFVZeMr12ZGFQFSUsxBzA=",
       "url": "_framework\/System.ComponentModel.dll"
     },
     {
-      "hash": "sha256-PvqyT5I1GKoVqfIT\/uXxPKmwME1OnT3AY6Ue1BYX\/30=",
+      "hash": "sha256-YZA+M+5yqfz2ogFsOSWtao4Cnx6ng+2FBSqU7NVprIg=",
       "url": "_framework\/System.ComponentModel.Primitives.dll"
     },
     {
-      "hash": "sha256-Ba5vd+9+4FJ514P1TERcPpwPYn1ydJBjw352b7QTltY=",
+      "hash": "sha256-KSRaifzJkhe3Jc9HJhJjIZO1DVVjRHCbFyqAlJMKj7U=",
       "url": "_framework\/System.ComponentModel.TypeConverter.dll"
     },
     {
-      "hash": "sha256-+rlHvqcDXddIHCY+nz+hn3Mt+HlxkMhlvVISFQtqax4=",
+      "hash": "sha256-J8FnFg3wF4ox1TnpsukmLtno1icrEdQvdcPdqu37daw=",
       "url": "_framework\/System.Diagnostics.FileVersionInfo.dll"
     },
     {
-      "hash": "sha256-0qwYeDixwegO3aGuwcQelwAHGRDBHfXDHYeEVXqmp\/w=",
+      "hash": "sha256-tFXweo6xweD+oSSTJ6pts1wGykfq4LlTqgo7eJGqO2g=",
       "url": "_framework\/System.Diagnostics.TraceSource.dll"
     },
     {
-      "hash": "sha256-Pxo\/he5qzWqd3FOuTUdr7TWZhdwxb76SsWaDfUinYZA=",
+      "hash": "sha256-kETW2R4N7mwTy3AYLVpR64HFLR9+Kb3fpGhoAu957w0=",
       "url": "_framework\/System.dll"
     },
     {
-      "hash": "sha256-bfQX6Pdi1JAkFTJCYR7302AyHkJkHxv87JzKn1u1phk=",
+      "hash": "sha256-iOegMC01plE41qKBAHcVhkPvhw\/0tTEf71120\/iOSkQ=",
       "url": "_framework\/System.Linq.dll"
     },
     {
-      "hash": "sha256-wgTEc\/bHzu1GSBy0bknMNlg\/EybEZ2XtYrzz3NmHfaY=",
+      "hash": "sha256-Ux03fsnt8KU4AKfdW9XrQGUYC3t\/Vm6L8hXuhcFjwj8=",
       "url": "_framework\/System.Linq.Expressions.dll"
     },
     {
-      "hash": "sha256-PwKKsj511enWU+Hseen6QwfUkkVulh4Yc6La9DbNCUQ=",
+      "hash": "sha256-mSaxtUejbT41ebeRNUv6w9xD+6XiCWbH44d35JIDSDg=",
       "url": "_framework\/System.Linq.Queryable.dll"
     },
     {
-      "hash": "sha256-mxH68hfT2Zi5DOKZuc\/0R8FgB0S\/z\/ETbq6OCIu5kQ8=",
+      "hash": "sha256-mwfkRdI3z07kAbmL6k\/YoLIBA\/HjRUI00SBJDUDNCmk=",
       "url": "_framework\/System.Memory.dll"
     },
     {
-      "hash": "sha256-kjJl0FIAAo81F1iNrZd23\/ePuzVe93de1PisxL9nEEU=",
+      "hash": "sha256-KPnd3KtU90e6OGEYWrfgSoshUxIHZOw2JUDmUu4BBDI=",
       "url": "_framework\/System.Net.Http.dll"
     },
     {
-      "hash": "sha256-3no\/YmYlnjcGWz3\/55pqBufHeyR2mzVOviYGnujGh\/g=",
+      "hash": "sha256-pFcAe\/+80hbZFri5xsj43YB9Te7O\/QjYbUm2EWi9BJY=",
       "url": "_framework\/System.Net.Http.Json.dll"
     },
     {
-      "hash": "sha256-W8HPD9syno9fvCVIzvwhSwsMGFH\/RJS3yThGOoo3JNo=",
+      "hash": "sha256-X6vdQ3A2gvvytPONGaTugQRLCUL\/7z4vNbduipHB7BE=",
       "url": "_framework\/System.Net.Mail.dll"
     },
     {
-      "hash": "sha256-c87V6YqTw7dSpcKnTohBM9nU5D17XadG334yFGWHZ4g=",
+      "hash": "sha256-UHclwDbhiXK5qEyO\/DJc7VHBDK53Rt+zRfJtud4jsU8=",
       "url": "_framework\/System.Net.Primitives.dll"
     },
     {
-      "hash": "sha256-rsANdRH1d96svWihNzJGRkpRq+ThVBLTILcSizH3uAA=",
+      "hash": "sha256-YaVriGsC\/aJhEIetJifk5xEeVTOsiFNtjMfnkTvbda0=",
       "url": "_framework\/System.ObjectModel.dll"
     },
     {
-      "hash": "sha256-zTJ5EOXMQXoFJ8dmEK8Ez2j+kYSDKXciKIpedx\/wGLs=",
+      "hash": "sha256-IjF+8Y5ralbYVwW8A95cQ0TuhEA8GXe6gJp7+G9kEX0=",
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-PaIi5devrmNtRlQKya2n9qIF8rRUSzQr3UgonC\/Gh9Q=",
+      "hash": "sha256-jgV+AvKdDEntYxHyNF1Y5vyTAKDIuH0DrefarzoDQ6M=",
       "url": "_framework\/System.Private.Runtime.InteropServices.JavaScript.dll"
     },
     {
-      "hash": "sha256-GLSjbXBzILJbJkDupSVJ7wkjZDIeODLDR3ERPCsH\/rk=",
+      "hash": "sha256-KR31Een\/Ht7X9Fvl2ttMePHdJr9KB25a4eBo1ieRzg8=",
       "url": "_framework\/System.Private.Uri.dll"
     },
     {
-      "hash": "sha256-NJPcPizDV6A4CjOnszxYro9mJMWaHq2cGM2\/A0bAFNY=",
+      "hash": "sha256-KwdHFKy9LFj6xfXZg8Wyi8jq3DQFNrVYYQW2\/YnUW8E=",
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-O4ix42jufYIPADMLH8sfxkg6SlldVfN4kfFi8t+ocOs=",
+      "hash": "sha256-k96dhPnDg6gsu6xctLmQio9Tba31uabBm3dwZBFOuOw=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
-      "hash": "sha256-\/V2SXBi8f5wOZ20ygpPrUUWhH5NlG0qSIyxy3enW80w=",
+      "hash": "sha256-YGrkUaTGlrm1HT2caLQ9qSkLEXp1MfNn1w4JKEHQhEE=",
       "url": "_framework\/System.Runtime.InteropServices.RuntimeInformation.dll"
     },
     {
-      "hash": "sha256-lUm8Fi9Ms9DB\/kToOPcG5uhzZCsjlkETjueQ5M\/nF2I=",
+      "hash": "sha256-88k18scU5tNP6Epa0dHoXxtRGXB11mJQKJU5+kK3G6M=",
       "url": "_framework\/System.Runtime.Serialization.Primitives.dll"
     },
     {
-      "hash": "sha256-EoYjNrAT1wBmy+OcoQWQZIKwdYi0c7fC8DOltuETtL0=",
+      "hash": "sha256-egt0UsbNtydpXxtAoCJwt\/GSNHx9hn9Yv1QWER6PT9A=",
       "url": "_framework\/System.Security.Cryptography.Algorithms.dll"
     },
     {
-      "hash": "sha256-Wp58QgC2BvCTgO4ta0vGzw533AQ84TT5ezyewq54KYo=",
+      "hash": "sha256-zLWm50Ab6LUXmoKKEkatFrsYAkEIffqN7AHzP0mtvBg=",
       "url": "_framework\/System.Security.Cryptography.Csp.dll"
     },
     {
-      "hash": "sha256-DrXkV\/okbDULoCl+NQIK7Q8EWrB7fCpb9fi72C2zHkw=",
+      "hash": "sha256-tgPdyJYTjmiZa+wkq18Juevo5Kl1BCEvCOcUL7SsPS8=",
       "url": "_framework\/System.Security.Cryptography.Primitives.dll"
     },
     {
-      "hash": "sha256-8MgxqGsBjU\/FR\/ntwAQr0x\/AG7jJ9f8Kn9shBpC23Dc=",
+      "hash": "sha256-rzFuMXwq2ZVLfojxA8YTR2Xwk9cIdpBRQwD7kKsSp0Y=",
       "url": "_framework\/System.Text.Encodings.Web.dll"
     },
     {
-      "hash": "sha256-FOveHMxnSB+NqKRxnxAAEakqsUG\/DiCrwOYMm3H1CMI=",
+      "hash": "sha256-+qcuInkBMDJflWV6jwjU4ZwiV7Ee4qCzalzT8a8tOy4=",
       "url": "_framework\/System.Text.Json.dll"
     },
     {
-      "hash": "sha256-TvDx5XNFQlqrszPUQDDs9PgfYvAM7s0Oi1BmgC+tSU8=",
+      "hash": "sha256-GYD\/Pe92HmJN+3CDtFRzCaaCjC06I9UkNQocTbKoav0=",
       "url": "_framework\/System.Text.RegularExpressions.dll"
     },
     {
-      "hash": "sha256-8+BZ5UGR6RV\/LyzMEj\/aNsu\/2sZTi17WNpwIm31xyGI=",
+      "hash": "sha256-SR+bTEJMVwX3fMHVRlRYFLo9NL\/yiv5xkNqdUfDUMQ0=",
       "url": "_framework\/System.Threading.dll"
     },
     {
@@ -721,5 +817,5 @@
       "url": "_content\/Havit.Blazor.Components.Web.Bootstrap\/Havit.Blazor.Components.Web.Bootstrap.bundle.scp.css"
     }
   ],
-  "version": "sKQarAXw"
+  "version": "bkEwf7om"
 };
