@@ -68,23 +68,51 @@ img {
 }
 
 img.selected {
-    border-color: var(--rare-color);
+    border-color: var(--title-color);
 }
 
 img.component-1 {
-    border-color: var(--green-color);    
+    border-color: var(--rare-color);    
 }
 
 img.component-2 {
-    border-color: var(--prophecy-color);    
+    border-color: var(--legacy-color);    
 }
 
 img.component-3 {
-    border-color: var(--fractured-color);
+    border-color: var(--scourged-color);
 }
 
-img.parent {
+img.component-4 {
     border-color: var(--corrupted-color);
+}
+
+img.component-5 {
+    border-color: var(--prophecy-color);
+}
+
+img.parent-1 {
+    border-color: var(--divination-color);
+}
+
+img.parent-2 {
+    border-color: var(--gem-color);
+}
+
+img.parent-3 {
+    border-color: var(--magic-color);
+}
+
+img.parent-4 {
+    border-color: var(--cold-color);
+}
+
+img.parent-5 {
+    border-color: var(--chaos-color);
+}
+
+img.parent-6 {
+    border-color: var(--fire-color);
 }
 
 .valid.modified:not([type=checkbox]) {

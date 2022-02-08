@@ -85,22 +85,20 @@
         HighlightComponents(Mods.Where(x => x.MouseOver), 0);
 
         // parent styles
-        HighlightParents(Mods.Where(x => x.Selected).SelectMany(x => x.ComponentOf));
-        HighlightParents(Mods.Where(x => x.MouseOver).SelectMany(x => x.ComponentOf));
+        HighlightParents(Mods.Where(x => x.Selected).SelectMany(x => x.ComponentOf), 1);
+        HighlightParents(Mods.Where(x => x.MouseOver).SelectMany(x => x.ComponentOf), 1);
 
         StateHasChanged();
     }
 
     private void HighlightComponents(IEnumerable<ArchnemesisModViewModel> mods, int depth)
     {
-        depth = depth < -1 ? -1 : depth;
         foreach(var mod in mods)
         {
             if (string.IsNullOrEmpty(mod.Style))
             {
                 mod.Style = depth switch
                 {
-                    -1 => "parent",
                     0 => "selected",
                     _ => $"component-{depth}"
                 };    
@@ -110,11 +108,16 @@
         }
     }
 
-    private void HighlightParents(IEnumerable<ArchnemesisModViewModel> mods)
+    private void HighlightParents(IEnumerable<ArchnemesisModViewModel> mods, int depth)
     {
-        foreach(var mod in mods.Where(x => string.IsNullOrEmpty(x.Style)))
+        foreach(var mod in mods)
         {
-            mod.Style = "parent";
+            if (string.IsNullOrEmpty(mod.Style))
+            {
+                mod.Style = $"parent-{depth}";
+            }
+
+            HighlightParents(mod.ComponentOf, depth + 1);
         }
     }
 
