@@ -1,0 +1,662 @@
+[
+  {
+    "Name": "Toxic",
+    "Image": "ModRareKillPoison.png",
+    "Mod": "Monster has augmented Poison powers",
+    "Type": "Generic Gems",
+    "Components": [
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Chaosweaver",
+    "Image": "ModRareKillVoidtouched.png",
+    "Mod": "Monster is imbued with Chaos Damage and Resistance",
+    "Type": "Gems",
+    "Components": [
+    ],
+    "Effect": ""
+  },
+  {
+    "Name": "Frostweaver",
+    "Image": "ModRareKillFrosttouched.png",
+    "Mod": "Monster is imbued with Cold Damage and Resistance",
+    "Type": "Armour",
+    "Components": [
+    ],
+    "Effect": ""
+  },
+  {
+    "Name": "Permafrost",
+    "Image": "ModRareKillFreezer.png",
+    "Mod": "Monster has augmented Freeze and Chill powers",
+    "Type": "Generic Armour",
+    "Components": [
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Hasted",
+    "Image": "ModRareKillSpeed.png",
+    "Mod": "Monster is faster",
+    "Type": "Generic",
+    "Components": [
+    ],
+    "Effect": ""
+  },
+  {
+    "Name": "Deadeye",
+    "Image": "ModRareKillDeadeye.png",
+    "Mod": "Monster is Accurate and applies Marks",
+    "Type": "Armour Trinkets",
+    "Components": [
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Bombardier",
+    "Image": "ModRareKillBombardier.png",
+    "Mod": "Monster has augmented Projectile powers and periodically unleashes a barrage of mortars",
+    "Type": "Weapon Armour",
+    "Components": [
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Flameweaver",
+    "Image": "ModRareKillFlametouched.png",
+    "Mod": "Monster is imbued with Fire Damage and Resistance",
+    "Type": "Weapon",
+    "Components": [
+    ],
+    "Effect": ""
+  },
+  {
+    "Name": "Incendiary",
+    "Image": "ModRareKillFire.png",
+    "Mod": "Monster has augmented Ignite powers",
+    "Type": "Generic Weapon",
+    "Components": [
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Arcane Buffer",
+    "Image": "ModRareKillEnergyShield.png",
+    "Mod": "Monster has augmented Energy Shield powers and releases a stunning nova when Energy Shield breaks",
+    "Type": "Essences",
+    "Components": [
+    ],
+    "Effect": ""
+  },
+  {
+    "Name": "Echoist",
+    "Image": "ModRareKillCaster.png",
+    "Mod": "Monster repeats skills additional times",
+    "Type": "Generic Currency",
+    "Components": [
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Stormweaver",
+    "Image": "ModRareKillStormtouched.png",
+    "Mod": "Monster is imbued with Lightning Damage and Resistance",
+    "Type": "Trinkets",
+    "Components": [
+    ],
+    "Effect": ""
+  },
+  {
+    "Name": "Dynamo",
+    "Image": "ModRareKillShocker.png",
+    "Mod": "Monster has augmented Shock powers",
+    "Type": "Generic Trinkets",
+    "Components": [
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Bonebreaker",
+    "Image": "ModRareKillBonebreaker.png",
+    "Mod": "Monster has augmented Stun powers. Monster hits are slower and can't be evaded",
+    "Type": "Generic Weapon",
+    "Components": [
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Bloodletter",
+    "Image": "ModRareKillBloodletter.png",
+    "Mod": "Monster has augmented Bleed powers. Monster Maims nearby enemies",
+    "Type": "Weapon Trinkets",
+    "Components": [
+    ],
+    "Effect": " Items dropped from the Monster and its Minions are Corrupted"
+  },
+  {
+    "Name": "Steel-infused",
+    "Image": "ModRareKillSteelattuned.png",
+    "Mod": "Monster is imbued with Physical Damage and Physical Damage Reduction",
+    "Type": "Weapon",
+    "Components": [
+    ],
+    "Effect": ""
+  },
+  {
+    "Name": "Gargantuan",
+    "Image": "ModRareKillGargantuan.png",
+    "Mod": "Monster is massive, granting more Life, Area of Effect, and Damage",
+    "Type": "Currency",
+    "Components": [
+    ],
+    "Effect": ""
+  },
+  {
+    "Name": "Berserker",
+    "Image": "ModRareKillRage.png",
+    "Mod": "Monster Enrages as it loses life",
+    "Type": "Uniques",
+    "Components": [
+    ],
+    "Effect": ""
+  },
+  {
+    "Name": "Sentinel",
+    "Image": "ModRareKillDefender.png",
+    "Mod": "Monster is imbued with Block and Spell Block. Monster Triggers Reckoning when hit",
+    "Type": "Armour Armour",
+    "Components": [
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Juggernaut",
+    "Image": "ModRareKillJuggernaut.png",
+    "Mod": "Monster cannot be Slowed or Stunned. Monster gains Endurance Charges",
+    "Type": "Harbinger",
+    "Components": [
+    ],
+    "Effect": ""
+  },
+  {
+    "Name": "Vampiric",
+    "Image": "ModRareKillVampiric.png",
+    "Mod": "Monster has augmented Life Leech powers",
+    "Type": "Fossils",
+    "Components": [
+    ],
+    "Effect": ""
+  },
+  {
+    "Name": "Overcharged",
+    "Image": "ModRareKillChargegenerator.png",
+    "Mod": "Monster grants Charges to itself and Allies over time",
+    "Type": "Trinkets Trinkets",
+    "Components": [
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Soul Conduit",
+    "Image": "ModRareKillSoulconduit.png",
+    "Mod": "On death, Monster and nearby Allies are revived",
+    "Type": "Maps",
+    "Components": [
+    ],
+    "Effect": ""
+  },
+  {
+    "Name": "Opulent",
+    "Image": "ModRareKillWealthy.png",
+    "Mod": "Monster is fabulously wealthy",
+    "Type": "",
+    "Components": [
+    ],
+    "Effect": ""
+  },
+  {
+    "Name": "Malediction",
+    "Image": "ModRareKillOppressor.png",
+    "Mod": "Monster has a weakening Aura",
+    "Type": "DivinationCards",
+    "Components": [
+    ],
+    "Effect": ""
+  },
+  {
+    "Name": "Consecrator",
+    "Image": "ModRareKillConsecration.png",
+    "Mod": "Monster periodically creates Consecrated Ground, healing allies and making them immune to curses and ailments",
+    "Type": "Fragments",
+    "Components": [
+    ],
+    "Effect": ""
+  },
+  {
+    "Name": "Frenzied",
+    "Image": "ModRareKillRampage.png",
+    "Mod": "Monster and allies periodically Enrage",
+    "Type": "Generic Uniques",
+    "Components": [
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Heralding Minions",
+    "Image": "ModRecipeHeraldoftheobelisk.png",
+    "Mod": "Monster's minions summon invulnerable Lightning Totems on death",
+    "Type": "Fragments Fragments",
+    "Components": [
+      "Dynamo",
+      "Arcane Buffer"
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Empowering Minions",
+    "Image": "ModRecipeUnionofsouls.png",
+    "Mod": "Monster's minions are empowered. Minions empower the Monster with additional modifiers on death",
+    "Type": "Blight Ritual",
+    "Components": [
+      "Necromancer",
+      "Executioner",
+      "Gargantuan"
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Assassin",
+    "Image": "ModRecipeAssassin.png",
+    "Mod": "Monster has augmented Critical powers and has Shroud Walker",
+    "Type": "Currency Currency",
+    "Components": [
+      "Deadeye",
+      "Vampiric"
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Trickster",
+    "Image": "ModRecipeTrickster.png",
+    "Mod": "Monster has damage avoidance. Monster periodically Flees",
+    "Type": "Currency Uniques DivinationCards",
+    "Components": [
+      "Overcharged",
+      "Assassin",
+      "Echoist"
+    ],
+    "Effect": "  "
+  },
+  {
+    "Name": "Necromancer",
+    "Image": "ModRecipeNecromancer.png",
+    "Mod": "Monster can raise Undead. Minions are empowered and revive shortly after dying",
+    "Type": "Generic",
+    "Components": [
+      "Bombardier",
+      "Overcharged"
+    ],
+    "Effect": "Rewards are rolled 2 additional times, choosing the rarest result"
+  },
+  {
+    "Name": "Rejuvenating",
+    "Image": "ModRecipeRejuvenating.png",
+    "Mod": "Monster has Life Regeneration. Periodically releases a wave that heals nearby allies and prevents enemy Life and Energy Shield recovery",
+    "Type": "Currency",
+    "Components": [
+      "Gargantuan",
+      "Vampiric"
+    ],
+    "Effect": "Rewards are rolled 1 additional time, choosing the rarest result"
+  },
+  {
+    "Name": "Executioner",
+    "Image": "ModRecipeExecutioner.png",
+    "Mod": "Monster gains Damage based on missing enemy Life. Monster has an aura that prevents enemies recovering Life and Energy Shield above 50%",
+    "Type": "Legion Breach",
+    "Components": [
+      "Frenzied",
+      "Berserker"
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Hexer",
+    "Image": "ModRecipeHexer.png",
+    "Mod": "Monster is Hexproof. Monster is followed by a Hexing Effigy that creates Hexing areas",
+    "Type": "Essences Essences",
+    "Components": [
+      "Chaosweaver",
+      "Echoist"
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Drought Bringer",
+    "Image": "ModRecipeFlaskdrain.png",
+    "Mod": "Monster disables Flask effects on hit. Monster has an aura that drains Flask charges and prevents gaining Flask charges",
+    "Type": "Labyrinth Labyrinth",
+    "Components": [
+      "Malediction",
+      "Deadeye"
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Entangler",
+    "Image": "ModRecipeGraspingVines.png",
+    "Mod": "Monster creates Thorned Vines that slow and deal Chaos Damage over time.",
+    "Type": "Fossils Fossils",
+    "Components": [
+      "Toxic",
+      "Bloodletter"
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Temporal Bubble",
+    "Image": "ModRecipeTimeBubble.png",
+    "Mod": "Monster is protected by a Temporal Bubble that severely slows those in it and cannot be damaged by those outside of it",
+    "Type": "Heist Expedition",
+    "Components": [
+      "Juggernaut",
+      "Hexer",
+      "Arcane Buffer"
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Treant Horde",
+    "Image": "ModRecipeSaplings.png",
+    "Mod": "Monster's minions are replaced with powerful Treants. Some Damage taken from the monster is split between the Treants",
+    "Type": "Generic",
+    "Components": [
+      "Toxic",
+      "Sentinel",
+      "Steel-infused"
+    ],
+    "Effect": "Monster's Minions drop a randomly-chosen Reward Type"
+  },
+  {
+    "Name": "Frost Strider",
+    "Image": "ModRecipeFrostwalker.png",
+    "Mod": "Monster leaves Chilling Ground in its wake. Minions create Frost Bearers on death",
+    "Type": "Armour Armour Armour",
+    "Components": [
+      "Frostweaver",
+      "Hasted"
+    ],
+    "Effect": "  "
+  },
+  {
+    "Name": "Ice Prison",
+    "Image": "ModRecipeCold.png",
+    "Mod": "Monster periodically entraps players in a cage of ice",
+    "Type": "Armour Armour",
+    "Components": [
+      "Permafrost",
+      "Sentinel"
+    ],
+    "Effect": " Rewards are rolled 1 additional time, choosing the rarest result"
+  },
+  {
+    "Name": "Soul Eater",
+    "Image": "ModRecipeSouleater.png",
+    "Mod": "Monster empowers when nearby allies die. Periodically summons Phantasms",
+    "Type": "Maps Maps",
+    "Components": [
+      "Soul Conduit",
+      "Necromancer",
+      "Gargantuan"
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Flame Strider",
+    "Image": "ModRecipeFire.png",
+    "Mod": "Monster leaves Burning Ground in its wake. Minions create Flame Bearers on death",
+    "Type": "Weapon Weapon Weapon",
+    "Components": [
+      "Flameweaver",
+      "Hasted"
+    ],
+    "Effect": "  "
+  },
+  {
+    "Name": "Corpse Detonator",
+    "Image": "ModRecipeCorpseeploder.png",
+    "Mod": "Monster detonates nearby Corpses. Monster periodically creates Corpses",
+    "Type": "DivinationCards DivinationCards",
+    "Components": [
+      "Necromancer",
+      "Incendiary"
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Evocationist",
+    "Image": "ModRecipePrismatic.png",
+    "Mod": "Monster is imbued with Elemental Damage, Resistances and Ailments",
+    "Type": "Generic Weapon Armour Trinkets",
+    "Components": [
+      "Flameweaver",
+      "Frostweaver",
+      "Stormweaver"
+    ],
+    "Effect": "   "
+  },
+  {
+    "Name": "Magma Barrier",
+    "Image": "ModRecipeVolatileflameblood.png",
+    "Mod": "Monster is protected by a Magmatic shield that explodes when depleted. Monster periodically creates Volatile Flamebloods",
+    "Type": "Weapon Weapon",
+    "Components": [
+      "Incendiary",
+      "Bonebreaker"
+    ],
+    "Effect": " Rewards are rolled 1 additional time, choosing the rarest result"
+  },
+  {
+    "Name": "Mirror Image",
+    "Image": "ModRecipeMirrorImage.png",
+    "Mod": "Monster can create illusions of itself",
+    "Type": "Scarabs",
+    "Components": [
+      "Echoist",
+      "Soul Conduit"
+    ],
+    "Effect": "Rewards are rolled 2 additional times, choosing the rarest result"
+  },
+  {
+    "Name": "Storm Strider",
+    "Image": "ModRecipeLightningwalker.png",
+    "Mod": "Monster leaves Shocking Ground in its wake and spawns Lightning Mirages when hit. Minions create Storm Bearers on death",
+    "Type": "Trinkets Trinkets Trinkets",
+    "Components": [
+      "Stormweaver",
+      "Hasted"
+    ],
+    "Effect": "  "
+  },
+  {
+    "Name": "Mana Siphoner",
+    "Image": "ModRecipeManaDonut.png",
+    "Mod": "Monster is surrounded by a ring that deals Lightning Damage over time as well as draining Mana",
+    "Type": "Trinkets Trinkets",
+    "Components": [
+      "Consecrator",
+      "Dynamo"
+    ],
+    "Effect": " Rewards are rolled 1 additional time, choosing the rarest result"
+  },
+  {
+    "Name": "Corrupter",
+    "Image": "ModRecipeCorrupter.png",
+    "Mod": "Monster inflicts Corrupted Blood on Hit and when Hit. Minions create Corrupted Bubbles on death",
+    "Type": "Abyss Abyss",
+    "Components": [
+      "Bloodletter",
+      "Chaosweaver"
+    ],
+    "Effect": " Items dropped from the Monster and its Minions are Corrupted"
+  },
+  {
+    "Name": "Invulnerable",
+    "Image": "ModRecipeDivinetouched.png",
+    "Mod": "Monster and its Minions periodically become immune to all Damage. Minions cannot die while Monster is alive",
+    "Type": "Delirium Metamorphosis",
+    "Components": [
+      "Sentinel",
+      "Juggernaut",
+      "Consecrator"
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Crystal-skinned",
+    "Image": "ModRecipeLivingCrystal.png",
+    "Mod": "Monster triggers the creation of Crystals when hit. Crystals explode when the Monster dies",
+    "Type": "Harbinger Harbinger",
+    "Components": [
+      "Permafrost",
+      "Rejuvenating",
+      "Berserker"
+    ],
+    "Effect": " "
+  },
+  {
+    "Name": "Empowered Elements",
+    "Image": "ModRecipeCycleofelements.png",
+    "Mod": "Monster cycles between imbued damage of a particular type and immunity to all other damage types",
+    "Type": "Uniques Uniques",
+    "Components": [
+      "Evocationist",
+      "Steel-infused",
+      "Chaosweaver"
+    ],
+    "Effect": " Rewards are rolled 1 additional time, choosing the rarest result"
+  },
+  {
+    "Name": "Effigy",
+    "Image": "ModRecipeVoodoodoll.png",
+    "Mod": "Monster creates an Effigy of the player. Damage dealt to the Effigy is also reflected to the bonded player",
+    "Type": "DivinationCards DivinationCards",
+    "Components": [
+      "Hexer",
+      "Malediction",
+      "Corrupter"
+    ],
+    "Effect": " Rewards are rolled 1 additional time, choosing the rarest result"
+  },
+  {
+    "Name": "Lunaris-touched",
+    "Image": "ModPantheonLunaris.png",
+    "Mod": "Monster uses the abilities of Lunaris",
+    "Type": "Uniques",
+    "Components": [
+      "Invulnerable",
+      "Frost Strider",
+      "Empowering Minions"
+    ],
+    "Effect": "All Reward Types have an additional reward"
+  },
+  {
+    "Name": "Solaris-touched",
+    "Image": "ModPantheonSolaris.png",
+    "Mod": "Monster uses the abilities of Solaris",
+    "Type": "Scarabs",
+    "Components": [
+      "Invulnerable",
+      "Magma Barrier",
+      "Empowering Minions"
+    ],
+    "Effect": "All Reward Types have an additional reward"
+  },
+  {
+    "Name": "Arakaali-touched",
+    "Image": "ModPantheonArakaali.png",
+    "Mod": "Monster uses the abilities of Arakaali",
+    "Type": "DivinationCards",
+    "Components": [
+      "Corpse Detonator",
+      "Entangler",
+      "Assassin"
+    ],
+    "Effect": "All Reward Types are Divination Cards"
+  },
+  {
+    "Name": "Brine King-touched",
+    "Image": "ModPantheonBrineking.png",
+    "Mod": "Monster uses the abilities of the Brine King",
+    "Type": "Armour Armour Armour",
+    "Components": [
+      "Ice Prison",
+      "Storm Strider",
+      "Heralding Minions"
+    ],
+    "Effect": "  Rewards are rolled 6 additional times, choosing the rarest result"
+  },
+  {
+    "Name": "Tukohama-touched",
+    "Image": "ModPantheonTukohama.png",
+    "Mod": "Monster uses the abilities of Tukohama",
+    "Type": "Weapon Weapon Fragments",
+    "Components": [
+      "Bonebreaker",
+      "Executioner",
+      "Magma Barrier"
+    ],
+    "Effect": "  Rewards are rolled 4 additional times, choosing the rarest result"
+  },
+  {
+    "Name": "Abberath-touched",
+    "Image": "ModPantheonAbberath.png",
+    "Mod": "Monster uses the abilities of Abberath",
+    "Type": "Trinkets Trinkets Maps",
+    "Components": [
+      "Flame Strider",
+      "Frenzied",
+      "Rejuvenating"
+    ],
+    "Effect": "  Rewards are rolled 4 additional times, choosing the rarest result"
+  },
+  {
+    "Name": "Shakari-touched",
+    "Image": "ModPantheonShakari.png",
+    "Mod": "Monster uses the abilities of Shakari",
+    "Type": "Uniques",
+    "Components": [
+      "Entangler",
+      "Soul Eater",
+      "Drought Bringer"
+    ],
+    "Effect": "All Reward Types are Uniques"
+  },
+  {
+    "Name": "Innocence-touched",
+    "Image": "ModPantheonInnocence.png",
+    "Mod": "Monster uses the abilities of Innocence",
+    "Type": "Currency Currency Currency",
+    "Components": [
+      "Lunaris-touched",
+      "Solaris-touched",
+      "Mirror Image",
+      "Mana Siphoner"
+    ],
+    "Effect": "  All Reward Types are Currency"
+  },
+  {
+    "Name": "Kitava-touched",
+    "Image": "ModPantheonKitava.png",
+    "Mod": "Monster uses the abilities of Kitava",
+    "Type": "Generic",
+    "Components": [
+      "Tukohama-touched",
+      "Abberath-touched",
+      "Corrupter",
+      "Corpse Detonator"
+    ],
+    "Effect": "Rewards are doubled"
+  }
+]
