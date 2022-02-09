@@ -14,9 +14,9 @@
             @if (!string.IsNullOrEmpty(Model.Type))
             {
                 <div class="col">
-                @foreach (var reward in Model.Type.Split(" "))
+                @foreach (var reward in Model.GetImageUrls())
                 {
-                    <img src="@GetRewardImage(reward)" data-bs-toggle="tooltip" data-bs-placement="top" title="@reward" />
+                    @((MarkupString)reward);
                 }        
                 </div>    
             }
@@ -51,38 +51,5 @@
     {
         mod.Selected = true;
         OnClick(mod, e);
-    }    
-
-    private string GetRewardImage(string reward)
-    {
-        return (_rewards.TryGetValue(reward, out var result)) ? result : "";        
-    }
-
-    private static Dictionary<string, string> _rewards = new()
-        {
-            { "Generic", "images/rewards/HeistRewardGeneric.png" },
-            { "Gems", "images/rewards/HeistRewardGems.png" },
-            { "Armour", "images/rewards/HeistRewardArmour.png" },
-            { "Abyss", "images/rewards/HeistRewardAbyss.png" },
-            { "Blight", "images/rewards/HeistRewardBlight.png" },
-            { "Breach", "images/rewards/HeistRewardBreach.png" },
-            { "Currency", "images/rewards/HeistRewardCurrency.png" },
-            { "Delirium", "images/rewards/HeistRewardDelirium.png" },
-            { "DivinationCards", "images/rewards/HeistRewardDivination.png" },
-            { "Essences", "images/rewards/HeistRewardEssences.png" },
-            { "Fossils", "images/rewards/HeistRewardFossils.png" },
-            { "Fragments", "images/rewards/HeistRewardFragments.png" },
-            { "Harbinger", "images/rewards/HeistRewardHarbinger.png" },
-            { "Labyrinth", "images/rewards/HeistRewardLabyrinth.png" },
-            { "Legion", "images/rewards/HeistRewardLegion.png" },
-            { "Maps", "images/rewards/HeistRewardMaps.png" },
-            { "Metamorphosis", "images/rewards/HeistRewardMetamorph.png" },
-            { "Scarabs", "images/rewards/HeistRewardScarabs.png" },
-            { "Trinkets", "images/rewards/HeistRewardTrinkets.png" },
-            { "Uniques", "images/rewards/HeistRewardUniques.png" },
-            { "Weapon", "images/rewards/HeistRewardWeapon.png" },
-            { "Expedition", "images/rewards/RewardIconExpedition.png" },
-            { "Heist", "images/rewards/RewardIconHeist.png" },
-            { "Ritual", "images/rewards/RewardIconRitual.png" }
-        };
+    } 
 }

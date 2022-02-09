@@ -1,8 +1,19 @@
 ﻿@inject IJSRuntime JSRuntime
 
-<div class="col mod" align="center">
-    <div><img class="@Model.GetStyle()" src="images/mods/@(Model.Image)" @onmouseover="MouseOver" @onmouseout="MouseOut" @onclick="Click" /></div>
-    <span class="mod-name @(Model.Fade ? "faded" : "")">@Model.Name</span>            
+<div class="col mod" align="center">    
+    <div class="row">
+        <div class="col">
+            <img class="@Model.GetStyle()" src="images/mods/@(Model.Image)" @onmouseover="MouseOver" @onmouseout="MouseOut" @onclick="Click" /></div>
+        </div>
+    <div class="row"><span class="mod-name @(Model.Fade ? "faded" : "")">@Model.Name</span></div>
+    <div class="row justify-content-center">
+        <div class="col" style="display: contents">
+        @foreach (var reward in Model.GetImageUrls(group: true, imgStyle: "small-image"))
+        {
+            @((MarkupString)reward);
+        }   
+        </div>
+    </div>      
 </div> 
 
 @code {
