@@ -461,11 +461,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-q8IgDLhU3LJnLJ2xU\/SmmunqMSWF6YpQEokzvsNUKSc=",
+      "hash": "sha256-VuxpqiTXQh7K2WEdkbz+Pavz00DqTqjK+qvz9hRWzeo=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-R9H4\/xqn90sV0mtnuVruQcXGLl2lrQ4vHG05\/PVoHWg=",
+      "hash": "sha256-j2MklxOOKiArY+BCWK3q6rCr2dGTexVQ8ADGJyi4yXU=",
       "url": "_framework\/ArchnemesisRecipies.dll"
     },
     {
@@ -497,7 +497,7 @@
       "url": "_framework\/Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
-      "hash": "sha256-Zh3GUSOahBDWWaqMu4uevzth3N8CxQW4SWASwycTaXw=",
+      "hash": "sha256-6UYRuaaJDyljaTotQot02e4bfQ42ZEvh8G\/yYN3d24Y=",
       "url": "_framework\/Microsoft.AspNetCore.Components.Web.dll"
     },
     {
@@ -817,5 +817,5 @@
       "url": "_content\/Havit.Blazor.Components.Web.Bootstrap\/Havit.Blazor.Components.Web.Bootstrap.bundle.scp.css"
     }
   ],
-  "version": "bkEwf7om"
+  "version": "ghtQN97+"
 };

@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "ArchnemesisRecipies.dll": "sha256-R9H4\/xqn90sV0mtnuVruQcXGLl2lrQ4vHG05\/PVoHWg=",
+      "ArchnemesisRecipies.dll": "sha256-j2MklxOOKiArY+BCWK3q6rCr2dGTexVQ8ADGJyi4yXU=",
       "AutoMapper.dll": "sha256-uNYyaL9rpjmA2uF9zP55k5t9afAfIQUk0oArKTAeAS0=",
       "AutoMapper.Extensions.Microsoft.DependencyInjection.dll": "sha256-o+ciZOc+lg+enKIuHnXAnocXep\/1rkNZ0wj+RhtAqyI=",
       "Havit.Blazor.Components.Web.Bootstrap.dll": "sha256-nAIAZ+DCJLUF70fN6Yzi8IYRGTlgb7i1hAz0MDVoJdk=",
@@ -15,7 +15,7 @@
       "Havit.Core.dll": "sha256-fhoNSpbg2UKjxUxjMSM1Lx\/7rGvuxIEjlNG+HtmcH98=",
       "Microsoft.AspNetCore.Components.dll": "sha256-5XSbibVUkGl6Jrp87mntbgaa658RToYA\/r\/30e0ssvM=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-gdztdXMbrPwFXQ4svJBNcM2rDgtc2Dnx1fHTJf3Vzm4=",
-      "Microsoft.AspNetCore.Components.Web.dll": "sha256-Zh3GUSOahBDWWaqMu4uevzth3N8CxQW4SWASwycTaXw=",
+      "Microsoft.AspNetCore.Components.Web.dll": "sha256-6UYRuaaJDyljaTotQot02e4bfQ42ZEvh8G\/yYN3d24Y=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-kkNJ2UP2JuYeVrhHr2mG1gYv2EShFOTNOoUL9kIDYNc=",
       "Microsoft.CSharp.dll": "sha256-08jxOpygUAKtn0+a+KAxNkBSM15mwfTG45NTQoibFeU=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-zhFtW4kE16TdrpPne9I1Cu9o0KYzrS50VE9MVSifJg4=",
