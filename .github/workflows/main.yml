@@ -16,6 +16,8 @@ jobs:
       run: dotnet publish ArchnemesisRecipies.csproj -c Release -o release -nologo
     - name: Change base-tag in index.html from / to ArchnemesisRecipies
       run: sed -i 's/<base href="\/" \/>/<base href="\/ArchnemesisRecipies\/" \/>/g' release/wwwroot/index.html
+    - name: Change  service-worker.js path
+      run: sed -i 's/service-worker.js/ArchnemesisRecipies\/service-worker.js/g' release/wwwroot/sw-registrator.js
     - name: Add .nojekyll file
       run: touch release/wwwroot/.nojekyll
     - name: Commit wwwroot to GitHub Pages
