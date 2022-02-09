@@ -640,7 +640,7 @@
       "Assassin"
     ],
     "Effect": "All Reward Types are Divination Cards",
-    "Regex": "(cor|ent|ass)"
+    "Regex": "(corp|ent|ass)"
   },
   {
     "Name": "Brine King-touched",

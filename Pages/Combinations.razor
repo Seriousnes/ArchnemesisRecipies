@@ -1,0 +1,97 @@
+﻿@using AutoMapper
+@using System.Text.RegularExpressions
+@inject HttpClient _client
+@inject IMapper _mapper
+
+<div class="col col-lg-8">            
+    <ModList Mods=Mods OnClick=HighlightHandler OnMouseOver=HighlightHandler />
+</div>
+<div class="col col-lg-4" style="border-left: 1px #aa9e82 solid;">
+    @foreach (var item in _selected)
+    {
+        <div class="row">                
+            <ModDetails Model=item OnClick=HighlightHandler />
+        </div>
+    }   
+    @if (_selected.Any())
+    {
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-dark" type="button" @onclick="() => Reset()">Reset</button>
+            </div>
+        </div>    
+    }            
+</div>
+
+@code {
+    [Parameter]
+    public List<ArchnemesisModViewModel> Mods { get; set; } = new();
+    private IList<ArchnemesisModViewModel> _selected = new List<ArchnemesisModViewModel>();
+
+    public void Reset()
+    {
+        Mods.ForEach(x => x.Selected = false); 
+        HighlightHandler(null, new MouseEventArgs { Button = 0 });         
+    }
+
+    protected void HighlightHandler(ArchnemesisModViewModel mod, MouseEventArgs e)
+    {
+        // remove all styles
+        Mods.ForEach(x => x.HighlightStyle = string.Empty);
+
+        if (e?.Button == 0)
+        {
+            _selected = new List<ArchnemesisModViewModel>();
+            if (e.ShiftKey)
+            {
+                _selected = Mods.Where(x => x.Selected).ToList();        
+            }
+            else if (mod is { Selected: true })
+            {
+                _selected.Add(mod);
+                Mods.ForEach(x => x.Selected = false);
+                mod.Selected = true;
+            }
+        }   
+
+        // set selected styles
+        HighlightComponents(Mods.Where(x => x.Selected), 0);
+        HighlightComponents(Mods.Where(x => x.MouseOver), 0);
+
+        // parent styles
+        HighlightParents(Mods.Where(x => x.Selected).SelectMany(x => x.ComponentOf), 1);
+        HighlightParents(Mods.Where(x => x.MouseOver).SelectMany(x => x.ComponentOf), 1);
+
+        StateHasChanged();
+    }
+
+    private void HighlightComponents(IEnumerable<ArchnemesisModViewModel> mods, int depth)
+    {
+        foreach(var mod in mods)
+        {
+            if (string.IsNullOrEmpty(mod.HighlightStyle))
+            {
+                mod.HighlightStyle = depth switch
+                {
+                    0 => "selected",
+                    _ => $"component-{depth}"
+                };    
+            }
+
+            HighlightComponents(mod.Components, depth + 1);
+        }
+    }
+
+    private void HighlightParents(IEnumerable<ArchnemesisModViewModel> mods, int depth)
+    {
+        foreach(var mod in mods)
+        {
+            if (string.IsNullOrEmpty(mod.HighlightStyle))
+            {
+                mod.HighlightStyle = $"parent-{depth}";
+            }
+
+            HighlightParents(mod.ComponentOf, depth + 1);
+        }
+    }
+}

@@ -1,0 +1,12 @@
+﻿<img class="@AdditonalStyles @Model.GetStyle()" src="images/mods/@(Model.Image)"/>@if(ShowName) { @Model.Name }
+
+@code {
+    [Parameter]
+    public ArchnemesisModViewModel Model { get; set; }
+
+    [Parameter]
+    public string AdditonalStyles { get; set; }
+
+    [Parameter]
+    public bool ShowName { get; set; }
+}

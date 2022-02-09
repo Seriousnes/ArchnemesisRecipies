@@ -6,57 +6,43 @@
 
 <PageTitle>Archnemesis Recipe Helper</PageTitle>
 
-<div>
-    <div class="row">
-        <div class="col col-lg-8">
-            <div class="row">
-                <div class="col-4">
-                    <div class="input-group mb-3">
-                      <span class="input-group-text" id="search-label">Search</span>
-                      <input type="text" class="form-control" id="search-term" aria-describedby="search-label" autocomplete="off" @bind="searchTerm" @bind:event="oninput">
-                      <button class="btn btn-dark" type="button" @onclick="() => searchTerm = string.Empty">Clear</button>
-                    </div>
-                </div>
-            </div>
-            @foreach (var tier in Mods?.GroupBy(x => x.ModTier).OrderBy(x => x.Key))
-            {
-                <div class="row">
-                    <div class="col" align="center">
-                          <h3>Tier @tier.Key</h3>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                @foreach (var mod in tier.OrderBy(x => x.Name))
-                {
-                    <ArchnemesisModTemplate Model=mod OnHighlightHandler=HighlightHandler />
-                }
-                </div>
-            }
-        </div>
-        <div class="col col-lg-4" style="border-left: 1px #aa9e82 solid;">
-        @foreach (var item in _selected)
-        {
-            <div class="row">                
-                <ModDetails Model=item OnClick=HighlightHandler />
-            </div>
-        }   
-        @if (_selected.Any())
-        {
-            <div class="row">
-                <div class="col">
-                    <button class="btn btn-dark" type="button" @onclick="(e) => { Mods.ForEach(x => x.Selected = false); HighlightHandler(null, new MouseEventArgs { Button = 0 }); }">Reset</button>
-                </div>
-            </div>    
-        }
-            
+<div class="row mb-3 align-items-center">
+    <div class="col-4">
+        <div class="input-group">
+            <span class="input-group-text" id="search-label">Search</span>
+            <input type="text" class="form-control" id="search-term" aria-describedby="search-label" autocomplete="off" @bind="searchTerm" @bind:event="oninput">
+            <button class="btn btn-dark" type="button" @onclick="() => searchTerm = string.Empty">Clear</button>
         </div>
     </div>
+    <div class="col-4">
+        <span class="effects">Mode: </span>
+        @foreach (var mode in (OperationMode[])Enum.GetValues(typeof(OperationMode)))
+        {
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="mode" id="mode-@((int)mode)" value="@((int)mode)" checked="@(mode == OperationMode.Combination)" @onchange="OnOperationChange" />
+                <label class="form-check-label effects" for="mode-@((int)mode)">@mode.GetDescription()</label>
+            </div>        
+        }
+    </div>
+</div>
+<div class="row">
+    @switch (_mode)
+    {
+        case OperationMode.Combination:
+            <Combinations @ref=_combinations Mods=Mods />
+            break;
+        case OperationMode.RecipeBuilder:
+            <Recipe @ref=_recipe Mods=Mods />
+            break;
+    }
 </div>
 
 @code {
-    public List<ArchnemesisModViewModel> Mods { get; set; } = new();
-    private IList<ArchnemesisModViewModel> _selected = new List<ArchnemesisModViewModel>();
-    private string _searchTerm;     
+    private List<ArchnemesisModViewModel> Mods { get; set; } = new();    
+    private string _searchTerm;
+    private OperationMode _mode = OperationMode.Combination;
+    private Combinations _combinations;
+    private Recipe _recipe;
 
     protected override async Task OnInitializedAsync()
     {
@@ -68,7 +54,7 @@
             x.Components = Mods.Where(m => x.ComponentNames.Contains(m.Name)).ToList();
             x.ComponentOf = Mods.Where(m => m.ComponentNames.Contains(x.Name)).ToList();
         });
-    }    
+    }        
 
     private string searchTerm
     {
@@ -80,6 +66,20 @@
         }
     }
 
+    private void OnOperationChange(ChangeEventArgs e)
+    {
+        var newMode = ((OperationMode)Convert.ToInt32(e.Value));
+
+        switch (_mode)
+        {
+            case OperationMode.Combination:
+                _combinations.Reset();
+                break;
+        }
+
+        _mode = newMode;
+    }
+
     private void UpdateSearchResults()
     {
         try
@@ -88,66 +88,5 @@
             Mods.ForEach(x => x.Fade = !r.IsMatch(x.Name) && !r.IsMatch(x.Type));
         }
         catch { }        
-    }
-
-    protected void HighlightHandler(ArchnemesisModViewModel mod, MouseEventArgs e)
-    {
-        // remove all styles
-        Mods.ForEach(x => x.HighlightStyle = string.Empty);
-
-        if (e?.Button == 0)
-        {
-            _selected = new List<ArchnemesisModViewModel>();
-            if (e.ShiftKey)
-            {
-                _selected = Mods.Where(x => x.Selected).ToList();        
-            }
-            else if (mod is { Selected: true })
-            {
-                _selected.Add(mod);
-                Mods.ForEach(x => x.Selected = false);
-                mod.Selected = true;
-            }
-        }   
-
-        // set selected styles
-        HighlightComponents(Mods.Where(x => x.Selected), 0);
-        HighlightComponents(Mods.Where(x => x.MouseOver), 0);
-
-        // parent styles
-        HighlightParents(Mods.Where(x => x.Selected).SelectMany(x => x.ComponentOf), 1);
-        HighlightParents(Mods.Where(x => x.MouseOver).SelectMany(x => x.ComponentOf), 1);
-
-        StateHasChanged();
-    }
-
-    private void HighlightComponents(IEnumerable<ArchnemesisModViewModel> mods, int depth)
-    {
-        foreach(var mod in mods)
-        {
-            if (string.IsNullOrEmpty(mod.HighlightStyle))
-            {
-                mod.HighlightStyle = depth switch
-                {
-                    0 => "selected",
-                    _ => $"component-{depth}"
-                };    
-            }
-
-            HighlightComponents(mod.Components, depth + 1);
-        }
-    }
-
-    private void HighlightParents(IEnumerable<ArchnemesisModViewModel> mods, int depth)
-    {
-        foreach(var mod in mods)
-        {
-            if (string.IsNullOrEmpty(mod.HighlightStyle))
-            {
-                mod.HighlightStyle = $"parent-{depth}";
-            }
-
-            HighlightParents(mod.ComponentOf, depth + 1);
-        }
     }
 }

@@ -1,0 +1,110 @@
+﻿@using AutoMapper
+@using System.Text.RegularExpressions
+@inject HttpClient _client
+@inject IMapper _mapper
+
+<div class="col col-lg-6">            
+    <ModList Mods=_showMods OnClick=SelectMod OnMouseOver=MouseOver />
+</div>
+<div class="col col-lg-6" style="border-left: 1px #aa9e82 solid;">
+    <div class="row">
+        <h5 class="mod-name">Selected mods for recipe:</h5>
+    </div>
+    <div class="row align-items-center mb-2">
+        <div class="col">
+            @if (_selectedMods.Count == 0)
+            {
+                <span class="rewards">Select 1 to 4 mods from the list on the left to begin.</span>
+            }
+            else
+            {
+                @foreach (var mod in _selectedMods)
+                {
+                    <img src="images/mods/@(mod.Image)" @onclick="(e) => SelectMod(mod, e)" data-bs-toggle="tooltip" data-bs-placement="top" title="@mod.Name" />                
+                }               
+            }                       
+        </div>
+    </div> 
+    @if(_selectedMods.Count > 0)
+    {
+        <div class="row">
+            <h5 class="rewards">Effects of selected mods:</h5>                        
+        </div>
+
+        @foreach (var item in _selectedMods)
+        {
+            <div class="row"><h6 class="mod-name">@item.Name</h6></div>
+            <div class="row">                
+                <div class="col">
+                    <Image Model=item AdditonalStyles="medium-image"></Image><span class="mod">@(!string.IsNullOrEmpty(item.Effect) ? item.Effect : "No additional effects")</span>
+                    <span class="rewards">(</span>
+                    @foreach (var reward in item.GetImageUrls(group: true, imgStyle: "small-image"))
+                    {
+                        @((MarkupString)reward);
+                    }   
+                    <span class="rewards">)</span>
+                </div>
+            </div>
+        }
+
+        <div class="row">        
+            <h5 class="rewards">Total T1 mods required:</h5>            
+        </div>
+        @foreach (var v in _t1List.GroupBy(x => x).OrderBy(x => x.Count()))
+        {
+            <div class="row">
+                <div class="col">
+                    <span class="effects">@(v.Count()) x</span><Image Model=v.Key AdditonalStyles="small-image"></Image><span class="mod">@v.Key.Name</span>
+                </div>
+            </div>
+        }
+    }             
+</div>
+
+@code {
+    [Parameter]
+    public List<ArchnemesisModViewModel> Mods { get; set; } = new();
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+        _showMods = Mods.Where(x => x.ModTier > 1).ToList();        
+
+        StateHasChanged();
+    }
+
+    private List<ArchnemesisModViewModel> _selectedMods = new();
+    private List<ArchnemesisModViewModel> _showMods;
+    private List<ArchnemesisModViewModel> _t1List = new();
+
+    private void SelectMod(ArchnemesisModViewModel mod, MouseEventArgs e)
+    {
+        if (!_selectedMods.Contains(mod))
+        {
+            if (_selectedMods.Count < 4)
+            {
+                _selectedMods.Add(mod);        
+            }            
+        }               
+        else if (_selectedMods.Contains(mod))
+        {
+            _selectedMods.Remove(mod);
+        }
+
+        _t1List = _selectedMods.SelectMany(x => GetComponentCount(x)).ToList();
+        mod.Selected = false;    
+        StateHasChanged();
+    }   
+
+    private void MouseOver(ArchnemesisModViewModel mod, MouseEventArgs e)
+    {
+        mod.HighlightStyle = mod.MouseOver ? "selected" : "";
+    }
+
+    private List<ArchnemesisModViewModel> GetComponentCount(ArchnemesisModViewModel mod)
+    {
+        var result = mod.Components.Where(x => x.ModTier == 1).ToList();
+        result.AddRange(mod.Components.Where(x => x.ModTier > 1).SelectMany(x => GetComponentCount(x)));
+        return result;
+    }
+}

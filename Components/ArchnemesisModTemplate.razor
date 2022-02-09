@@ -3,8 +3,9 @@
 <div class="col mod @(Model.Fade ? "faded" : "")" align="center">    
     <div class="row">
         <div class="col">
-            <img class="@Model.GetStyle()" src="images/mods/@(Model.Image)" @onmouseover="MouseOver" @onmouseout="MouseOut" @onclick="Click" /></div>
+            <img class="bordered @Model.GetStyle("special-background")" src="images/mods/@(Model.Image)" @onmouseover="MouseOver" @onmouseout="MouseOut" @onclick="Click" />
         </div>
+    </div>
     <div class="row"><span class="mod-name">@Model.Name</span></div>
     <div class="row justify-content-center">
         <div class="col" style="display: contents">
@@ -21,18 +22,27 @@
     [Parameter]
     public ArchnemesisModViewModel Model { get; set; }
     [Parameter]
-    public Action<ArchnemesisModViewModel, MouseEventArgs> OnHighlightHandler { get; set; }
+    public Action<ArchnemesisModViewModel, MouseEventArgs> OnClick { get; set; }
 
+    [Parameter]
+    public Action<ArchnemesisModViewModel, MouseEventArgs> OnMouseOver { get; set; }
+    
     void MouseOver(MouseEventArgs e)
     {
         Model.MouseOver = true;
-        OnHighlightHandler(Model, null);
+        if (OnMouseOver != null)
+        {
+            OnMouseOver(Model, null);    
+        }           
     }
 
     void MouseOut(MouseEventArgs e)
     {           
         Model.MouseOver = false;
-        OnHighlightHandler(Model, null);
+        if (OnMouseOver != null)
+        {
+            OnMouseOver(Model, null);
+        }
     }
 
     async void Click(MouseEventArgs e)
@@ -44,7 +54,10 @@
         else
         {
             Model.Selected = !Model.Selected;
-            OnHighlightHandler(Model, e);    
+            if (OnClick != null)
+            {
+                OnClick(Model, e);    
+            }
         }                                    
     }
 }

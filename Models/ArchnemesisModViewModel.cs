@@ -13,9 +13,14 @@ namespace ArchnemesisRecipies.Models
         public bool MouseOver { get; set; }
         public bool Selected { get; set; }
 
-        public string GetStyle()
+        public string GetStyle(string additionalHighlights = "")
         {
-            return string.Join(" ", HighlightStyle, Fade ? "faded" : "");
+            var highlightStyle = HighlightStyle;
+            if (!string.IsNullOrEmpty(highlightStyle) && !string.IsNullOrEmpty(additionalHighlights))
+            {
+                highlightStyle += $" {additionalHighlights}";
+            }
+            return string.Join(" ", highlightStyle, Fade ? "faded" : "");
         }
 
         public IEnumerable<string> GetImageUrls(bool group = true, string imgStyle = "")

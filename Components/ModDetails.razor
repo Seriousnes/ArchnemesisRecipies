@@ -4,8 +4,9 @@
 {
     <div class="col-12">
         <div class="row" @onclick="CopyRegex">
-            <h2 data-bs-toggle="tooltip" data-bs-placement="top" title="^@Model.Regex">
-                <img src="images/mods/@(Model.Image)" />
+            <h2 class="mod-name" data-bs-toggle="tooltip" data-bs-placement="top" title="^@Model.Regex">
+                <Image Model=Model ShowName=true></Image>
+                @*<img src="images/mods/@(Model.Image)" />*@
                 @Model.Name
             </h2>            
         </div>
