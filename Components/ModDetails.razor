@@ -16,7 +16,7 @@
                 <div class="col">
                 @foreach (var reward in Model.Type.Split(" "))
                 {
-                    <img src="@GetRewardImage(reward)" />
+                    <img src="@GetRewardImage(reward)" data-bs-toggle="tooltip" data-bs-placement="top" title="@reward" />
                 }        
                 </div>    
             }
