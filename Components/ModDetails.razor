@@ -22,15 +22,10 @@
             }
         </div>   
         <div class="row"><span class="effects">@Model.Effect</span></div>
-        @*<div class="row justify-content-start">*@    
         @foreach (var item in Model.Components)
         {
-            @*<div class="col">*@
-                <img src="images/mods/@(item.Image)" @onclick="(e) => Click(item)" alt- />
-            @*</div>*@
+            <img src="images/mods/@(item.Image)" @onclick="(e) => Click(item, e)" data-bs-toggle="tooltip" data-bs-placement="top" title="@item.Name" />
         } 
-        @*</div>*@
-
     </div>
 }
 
@@ -40,27 +35,6 @@
 
     [Parameter]
     public Action<ArchnemesisModViewModel, MouseEventArgs> OnClick { get; set; }
-
-    private double? _x = null;
-    private double? _y = null;    
-
-    private string GetPosition()
-    {
-        if (_x is double x && _y is double y)
-        {
-            return $"left: {x}px; top: {y}px;";
-        }
-        return "left: 0px";
-    }
-
-    private string GetClass()
-    {
-        if (_x is not null)
-        {
-            return "tooltip-wrapper";
-        }
-        return "";
-    }
 
     private async void CopyRegex()
     {

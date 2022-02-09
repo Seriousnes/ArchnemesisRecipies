@@ -1,4 +1,6 @@
-﻿<div class="col mod" align="center">
+﻿@inject IJSRuntime JSRuntime
+
+<div class="col mod" align="center">
     <div><img class="@Model.GetStyle()" src="images/mods/@(Model.Image)" @onmouseover="MouseOver" @onmouseout="MouseOut" @onclick="Click" /></div>
     <span class="mod-name @(Model.Fade ? "faded" : "")">@Model.Name</span>            
 </div> 
@@ -22,9 +24,16 @@
         OnHighlightHandler(Model, null);
     }
 
-    void Click(MouseEventArgs e)
+    async void Click(MouseEventArgs e)
     {
-        Model.Selected = !Model.Selected;
-        OnHighlightHandler(Model, e);
+        if (e.Detail > 1)
+        {
+            await JSRuntime.InvokeVoidAsync("copyClipboard", $"^{Model.Regex}");
+        }
+        else
+        {
+            Model.Selected = !Model.Selected;
+            OnHighlightHandler(Model, e);    
+        }                                    
     }
 }
