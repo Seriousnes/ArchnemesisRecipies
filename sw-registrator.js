@@ -6,7 +6,7 @@
         return;
     }
 
-    navigator.serviceWorker.register('/service-worker.js')
+    navigator.serviceWorker.register('/ArchnemesisRecipies/service-worker.js')
         .then(registration => {
             console.info(`Service worker registration successful (scope: ${registration.scope})`);
 
