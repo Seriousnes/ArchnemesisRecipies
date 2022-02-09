@@ -1,4 +1,12 @@
-﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+﻿@font-face {
+    font-family: 'FontinSmallCaps';
+    src: url('https://web.poecdn.com/font/fontin-smallcaps-webfont.eot');
+    src: local("?"), url('https://web.poecdn.com/font/fontin-smallcaps-webfont.woff') format("woff"), url('https://web.poecdn.com/font/fontin-smallcaps-webfont.ttf') format("truetype"), url('https://web.poecdn.com/font/fontin-smallcaps-webfont.svg#webfontSCusr8QL') format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
 :root {
     --unique-color: #af6025;
@@ -29,7 +37,7 @@
 }
 
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'FontinSmallCaps', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
     background-color: #222;
     font-size: .9375rem;
 }
