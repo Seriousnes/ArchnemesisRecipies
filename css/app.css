@@ -42,6 +42,10 @@ html, body {
     font-size: .9375rem;
 }
 
+div {
+    cursor: default;
+}
+
 h1:focus {
     outline: none;
 }

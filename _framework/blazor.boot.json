@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "ArchnemesisRecipies.dll": "sha256-wZr02ZUyIsd+ugkb8DbhJYsEjYK9gQBZZ0+0zsAn+hk=",
+      "ArchnemesisRecipies.dll": "sha256-U\/CecEZYCojra4uW66itwiJFae8j5X0soD1KuZLTubs=",
       "AutoMapper.dll": "sha256-uNYyaL9rpjmA2uF9zP55k5t9afAfIQUk0oArKTAeAS0=",
       "AutoMapper.Extensions.Microsoft.DependencyInjection.dll": "sha256-o+ciZOc+lg+enKIuHnXAnocXep\/1rkNZ0wj+RhtAqyI=",
       "Microsoft.AspNetCore.Components.dll": "sha256-OTyJE+yls5ZwdP+B+mmfGe4IUTfjk1SusYrnQ21xpmM=",
