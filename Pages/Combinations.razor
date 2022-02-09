@@ -39,8 +39,6 @@
 
     protected void HighlightHandler(ArchnemesisModViewModel mod, MouseEventArgs e)
     {
-        _tooltip.SetData(mod?.MouseOver ?? false ? mod : null, e);
-
         // remove all styles
         Mods.ForEach(x => x.HighlightStyle = string.Empty);
 
@@ -57,7 +55,9 @@
                 Mods.ForEach(x => x.Selected = false);
                 mod.Selected = true;
             }
-        }   
+        }
+
+        SetTooltipData(mod, e);
 
         // set selected styles
         HighlightComponents(Mods.Where(x => x.Selected), 0);
@@ -68,6 +68,17 @@
         HighlightParents(Mods.Where(x => x.MouseOver).SelectMany(x => x.ComponentOf), 1);
 
         StateHasChanged();
+    }
+
+    private void SetTooltipData(ArchnemesisModViewModel mod, MouseEventArgs e)
+    {
+        // don't show tooltip if the mod is selected
+        ArchnemesisModViewModel tooltipData = null;
+        if (mod is { MouseOver: true } && !_selected.Contains(mod))
+        {
+            tooltipData = mod;
+        }
+        _tooltip.SetData(tooltipData, e);
     }
 
     private void HighlightComponents(IEnumerable<ArchnemesisModViewModel> mods, int depth)

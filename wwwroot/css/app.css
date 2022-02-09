@@ -226,3 +226,13 @@ img.parent-6 {
 .effects {
     color: white;
 }
+
+.builds-into {
+    color: var(--divination-color);
+    text-decoration: underline;
+}
+
+.builds-from {
+    color: var(--rare-color);
+    text-decoration: underline;
+}

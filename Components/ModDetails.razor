@@ -8,23 +8,74 @@
                 <Image Model=Model ShowName=true />
             </h2>            
         </div>
-        <div class="row"><span class="mod">@Model.Mod</span></div>
-        <div class="row">
-            @if (!string.IsNullOrEmpty(Model.Type))
-            {
-                <div class="col">
-                @foreach (var reward in Model.GetImageUrls(group: false))
-                {
-                    @((MarkupString)reward);
-                }        
-                </div>    
-            }
-        </div>   
-        <div class="row"><span class="effects">@Model.Effect</span></div>
-        @foreach (var item in Model.Components)
+        @if (!string.IsNullOrEmpty(Model.Mod))
         {
-            <img src="images/mods/@(item.Image)" @onclick="(e) => Click(item, e)" data-bs-toggle="tooltip" data-bs-placement="top" title="@item.Name" />
-        } 
+            <div class="row pb-1">
+                <div class="col">
+                    <span class="mod">@Model.Mod</span>    
+                </div>
+            </div>
+        }
+        @if (!string.IsNullOrEmpty(Model.Effect))
+        {
+            <div class="row pb-1">
+                <div class="col">
+                    <span class="effects">@Model.Effect</span>    
+                </div>
+            </div>
+        }
+        @if (!string.IsNullOrEmpty(Model.Type))
+        {
+            <div class="row justify-content-start align-items-center">
+                <div class="col-md-auto">
+                    <span class="rewards">Rewards:</span>
+                </div>
+                <div class="col">
+                    @foreach (var reward in Model.GetImageUrls(group: false))
+                    {
+                        @((MarkupString)reward)
+                    }        
+                </div>                
+            </div>   
+        }
+        @if (Model.Components.Any())
+        {
+            <div class="row">
+                <span class="builds-from">Builds from</span>
+            </div>
+            <div class="row justify-content-start pb-1">
+            @foreach (var item in Model.Components)
+            {
+                <div class="col-md-auto">
+                    <div class="row">
+                        <div class="col" align="center">
+                            <img src="images/mods/@(item.Image)" @onclick="(e) => Click(item, e)" />
+                        </div>
+                    </div>
+                    <div class="row"><span class="mod-name small">@item.Name</span></div>            
+                </div>
+            } 
+            </div>    
+        }
+        @if (Model.ComponentOf.Any())
+        {
+            <div class="row">
+                <span class="builds-into">Builds into</span>
+            </div>
+            <div class="row justify-content-start pb-1">
+            @foreach (var item in Model.ComponentOf)
+            {
+                <div class="col-md-auto">
+                    <div class="row">
+                        <div class="col" align="center">
+                            <img src="images/mods/@(item.Image)" @onclick="(e) => Click(item, e)" />
+                        </div>
+                    </div>
+                    <div class="row"><span class="mod-name small">@item.Name</span></div>            
+                </div>
+            } 
+            </div>    
+        }        
     </div>
 }
 
