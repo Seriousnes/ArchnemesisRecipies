@@ -25,6 +25,12 @@
     <script src="_framework/blazor.webassembly.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>    
     <script>
+        window.onload = function () {
+            document.addEventListener("contextmenu", (e) => {
+                e.preventDefault();
+            }, false);
+        }
+
         function copyClipboard(value) {
             navigator.clipboard.writeText(value);
         }

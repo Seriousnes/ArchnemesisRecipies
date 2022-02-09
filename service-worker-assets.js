@@ -413,7 +413,7 @@
       "url": "images\/rewards\/RewardIconRitual.png"
     },
     {
-      "hash": "sha256-NS6gYF22tfBwgeq5HjAmdmu17mi+FZ4xSC7KitovXP0=",
+      "hash": "sha256-MqeHBmLzSEH1ukLuSNNF5C2EDjN6yb4lmZhi+Rv6Rfg=",
       "url": "index.html"
     },
     {
@@ -817,5 +817,5 @@
       "url": "_content\/Havit.Blazor.Components.Web.Bootstrap\/Havit.Blazor.Components.Web.Bootstrap.bundle.scp.css"
     }
   ],
-  "version": "U2j6CFXe"
+  "version": "nUQQsb7S"
 };
