@@ -94,11 +94,8 @@ img.group-end {
     margin-right: -10px;
 }
 
-img.faded {
-    filter: grayscale(100%)
-}
-
-span.faded {
+.faded {
+    filter: grayscale(100%);
     color: var(--normal-color);
 }
 

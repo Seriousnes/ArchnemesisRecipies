@@ -10,10 +10,12 @@
     <div class="row">
         <div class="col col-lg-8">
             <div class="row">
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="search-label">Search</span>
-                  <input type="text" class="form-control" id="search-term" aria-describedby="search-label" autocomplete="off" @bind="searchTerm" @bind:event="oninput">
-                  <button class="btn btn-dark" type="button" @onclick="() => searchTerm = string.Empty">Clear</button>
+                <div class="col-4">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="search-label">Search</span>
+                      <input type="text" class="form-control" id="search-term" aria-describedby="search-label" autocomplete="off" @bind="searchTerm" @bind:event="oninput">
+                      <button class="btn btn-dark" type="button" @onclick="() => searchTerm = string.Empty">Clear</button>
+                    </div>
                 </div>
             </div>
             @foreach (var tier in Mods?.GroupBy(x => x.ModTier).OrderBy(x => x.Key))
@@ -83,7 +85,7 @@
         try
         {
             var r = new Regex(searchTerm, RegexOptions.IgnoreCase);        
-            Mods.ForEach(x => x.Fade = !r.IsMatch(x.Name));
+            Mods.ForEach(x => x.Fade = !r.IsMatch(x.Name) && !r.IsMatch(x.Type));
         }
         catch { }        
     }

@@ -1,4 +1,4 @@
-// version 1.0.19
+// version 1.0.20
 
 self.importScripts('./service-worker-assets.js');
 self.addEventListener('install', event => event.waitUntil(onInstall(event)));
