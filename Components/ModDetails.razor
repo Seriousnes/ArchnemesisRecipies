@@ -2,12 +2,10 @@
 
 @if (Model is not null)
 {
-    <div class="col-12">
+    <div class="">
         <div class="row" @onclick="CopyRegex">
             <h2 class="mod-name" data-bs-toggle="tooltip" data-bs-placement="top" title="^@Model.Regex">
-                <Image Model=Model ShowName=true></Image>
-                @*<img src="images/mods/@(Model.Image)" />*@
-                @Model.Name
+                <Image Model=Model ShowName=true />
             </h2>            
         </div>
         <div class="row"><span class="mod">@Model.Mod</span></div>

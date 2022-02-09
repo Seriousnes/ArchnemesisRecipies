@@ -11,7 +11,7 @@
         <h5 class="mod-name">Selected mods for recipe:</h5>
     </div>
     <div class="row align-items-center mb-2">
-        <div class="col">
+        <div class="col-4">
             @if (_selectedMods.Count == 0)
             {
                 <span class="rewards">Select 1 to 4 mods from the list on the left to begin.</span>
@@ -23,6 +23,12 @@
                     <img src="images/mods/@(mod.Image)" @onclick="(e) => SelectMod(mod, e)" data-bs-toggle="tooltip" data-bs-placement="top" title="@mod.Name" />                
                 }               
             }                       
+        </div>
+        <div class="col-4">
+            @if(_selectedMods.Count > 0)
+            {
+                <button class="btn btn-secondary" type="button" @onclick="() => _selectedMods.Clear()">Clear</button>
+            }
         </div>
     </div> 
     @if(_selectedMods.Count > 0)
@@ -57,6 +63,9 @@
     }             
 </div>
 
+<TooltipContainer @ref=_tooltip />
+
+
 @code {
     [Parameter]
     public List<ArchnemesisModViewModel> Mods { get; set; } = new();
@@ -72,6 +81,7 @@
     private List<ArchnemesisModViewModel> _selectedMods = new();
     private List<ArchnemesisModViewModel> _showMods;
     private List<ArchnemesisModViewModel> _t1List = new();
+    private TooltipContainer _tooltip;
 
     private void SelectMod(ArchnemesisModViewModel mod, MouseEventArgs e)
     {
@@ -94,6 +104,7 @@
 
     private void MouseOver(ArchnemesisModViewModel mod, MouseEventArgs e)
     {
+        _tooltip.SetData(mod?.MouseOver ?? false ? mod : null, e);
         mod.HighlightStyle = mod.MouseOver ? "selected" : "";
     }
 

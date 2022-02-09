@@ -1,0 +1,29 @@
+﻿@inject IJSRuntime JSRuntime
+
+<div id="component-tooltip" class="tooltip-container p-2 @_hidden" style="left: @(_point.x)px; top: @(_point.y)px">
+    @if (_model is not null)
+    {
+        <ModDetails Model=_model />
+    }
+</div>
+
+@code {
+    private string _hidden = "visually-hidden";
+    private ArchnemesisModViewModel _model;
+    private (double x, double y) _point { get; set; }
+
+    public async void SetData(ArchnemesisModViewModel model, MouseEventArgs e)
+    {
+        _model = model;
+        if (_model is not null && e is not null)
+        {
+            _hidden = "";
+            _point = (e.PageX + 5, e.PageY + 5);
+        }
+        else
+        {
+            _hidden = "visually-hidden";   
+        }        
+        StateHasChanged();                                                              
+    }
+}

@@ -17,16 +17,19 @@
     {
         <div class="row">
             <div class="col">
-                <button class="btn btn-dark" type="button" @onclick="() => Reset()">Reset</button>
+                <button class="btn btn-secondary" type="button" @onclick="() => Reset()">Reset</button>
             </div>
         </div>    
     }            
 </div>
 
+<TooltipContainer @ref=_tooltip />
+
 @code {
     [Parameter]
     public List<ArchnemesisModViewModel> Mods { get; set; } = new();
     private IList<ArchnemesisModViewModel> _selected = new List<ArchnemesisModViewModel>();
+    private TooltipContainer _tooltip;
 
     public void Reset()
     {
@@ -36,6 +39,8 @@
 
     protected void HighlightHandler(ArchnemesisModViewModel mod, MouseEventArgs e)
     {
+        _tooltip.SetData(mod?.MouseOver ?? false ? mod : null, e);
+
         // remove all styles
         Mods.ForEach(x => x.HighlightStyle = string.Empty);
 

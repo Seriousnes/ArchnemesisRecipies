@@ -8,10 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Components\TooltipContainer.razor.css" />
     <None Remove="Shared\UpdateAvailableDetector.razor.css" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Components\TooltipContainer.razor.css" />
     <Content Include="Shared\UpdateAvailableDetector.razor.css" />
   </ItemGroup>
 

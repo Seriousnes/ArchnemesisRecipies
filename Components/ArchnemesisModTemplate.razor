@@ -26,13 +26,14 @@
 
     [Parameter]
     public Action<ArchnemesisModViewModel, MouseEventArgs> OnMouseOver { get; set; }
-    
+
     void MouseOver(MouseEventArgs e)
     {
         Model.MouseOver = true;
         if (OnMouseOver != null)
         {
-            OnMouseOver(Model, null);    
+            e.Button = -1;
+            OnMouseOver(Model, e);    
         }           
     }
 

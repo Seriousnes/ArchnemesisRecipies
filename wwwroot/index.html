@@ -12,6 +12,7 @@
     <link href="manifest.json" rel="manifest" />
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
     <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -33,6 +34,11 @@
 
         function copyClipboard(value) {
             navigator.clipboard.writeText(value);
+        }
+
+        function positionTooltip(id) {
+            var $this = $(`#${id}`)[0];
+            console.log(`this is ${$this.offsetWidth} x ${$this.offsetHeight}`);
         }
     </script>
 </body>
