@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-02NBuoUQ6q40UU4H6JC24V3mSSbfpT8HXDh9SCjYsVk=",
+      "hash": "sha256-auArzo+5zaLaOkMYA5+V172nfG1skjR9cZfilAC+SDk=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-URCQwDG\/7M\/AijSXRiCdQ+yIa8fA0K1Q\/2SeVovvNjE=",
+      "hash": "sha256-wZr02ZUyIsd+ugkb8DbhJYsEjYK9gQBZZ0+0zsAn+hk=",
       "url": "_framework\/ArchnemesisRecipies.dll"
     },
     {
@@ -49,7 +49,7 @@
       "url": "_framework\/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
     },
     {
-      "hash": "sha256-CMKPbZgHxCQMpaGtGMsr0cDD67v9cba9ghROmnwZhps=",
+      "hash": "sha256-OTyJE+yls5ZwdP+B+mmfGe4IUTfjk1SusYrnQ21xpmM=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll"
     },
     {
@@ -129,6 +129,10 @@
       "url": "_framework\/System.ComponentModel.dll"
     },
     {
+      "hash": "sha256-1yC68F96G1i41adoShqrgxtFrez3RiqToROND67nWRE=",
+      "url": "_framework\/System.ComponentModel.Primitives.dll"
+    },
+    {
       "hash": "sha256-YqyqcjfHI\/2PJfODSaW4YyOgaV0I4rxwudHKRr6hLYo=",
       "url": "_framework\/System.Linq.dll"
     },
@@ -161,7 +165,7 @@
       "url": "_framework\/System.ObjectModel.dll"
     },
     {
-      "hash": "sha256-HiCOnNIO3tYNrozrJ89I9Q0u7mY\/fKcSBGe\/19kwzdg=",
+      "hash": "sha256-L9s1bgINQCDyTNpMJN\/TBb5yHaWUzi6Vq\/1sCsawyNU=",
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
@@ -177,7 +181,7 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-alWzPjpnzj7OJCiCCd7q\/PNKC\/ml\/SJCS\/7D0SKyS1Q=",
+      "hash": "sha256-dhELFo\/ZFd3AXPu9cTJhjVMM4C3CyvnP3PL6tviAiNw=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -201,11 +205,11 @@
       "url": "ArchnemesisRecipies.styles.css"
     },
     {
-      "hash": "sha256-XTKsHSXO72w7pHhUpCqOLeSrXnU7t6DZHX74URmnaNs=",
+      "hash": "sha256-R+PnYx\/86SrIou\/i16cfRUivyl2WL5i+EfSHPWdeG4M=",
       "url": "archnemesis_recipies.json"
     },
     {
-      "hash": "sha256-w5upz0yq2yaFyPXDsxcag32At5MDzXKUKxGE1ooBrnQ=",
+      "hash": "sha256-NgquCwaRHH9SzLfy7BqS7Nxfc70yyaU8\/nVBP\/DNlog=",
       "url": "css\/app.css"
     },
     {
@@ -625,5 +629,5 @@
       "url": "sw-registrator.js"
     }
   ],
-  "version": "IedLr6Nc"
+  "version": "y60liIK7"
 };

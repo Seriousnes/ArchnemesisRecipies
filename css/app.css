@@ -68,11 +68,21 @@ a, .btn-link {
     padding-top: 1.1rem;
 }
 
-img {
+img.bordered {
     border-width: 2px;
     border-color: #222;
     padding: 4px;
+    border-style: solid;    
+}
+
+.recipe-frame {
+    border-width: 2px;
+    display: inline-block;
+    margin: 0px 2px 0px 2px;
     border-style: solid;
+    border-color: var(--title-color);
+    height: 60px;
+    width: 60px;
 }
 
 img.small-image {
@@ -80,6 +90,11 @@ img.small-image {
     transform: scale(0.5);
     border-width: 0px;
     margin: -10px;
+}
+
+img.medium-image {
+    transform: scale(0.75);
+    border-width: 0px;
 }
 
 img.group {
@@ -97,6 +112,10 @@ img.group-end {
 .faded {
     filter: grayscale(100%);
     color: var(--normal-color);
+}
+
+img.special-background {
+    background: radial-gradient(#fff, #222)
 }
 
 img.selected {
