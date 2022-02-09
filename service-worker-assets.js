@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-t3j9FccRGgfAaguy2E+IkeVPJ6dDheRmYWKpFxJFjXg=",
+      "hash": "sha256-W1jttPXw9i1r2tfUPZLCAVA3mU6Hgr9r8RAQD5Rv9q8=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-OJw7CvrUme8AN8p2+b2OpFDxchd6U+zYatUDa9wt7vc=",
+      "hash": "sha256-GDPC8NYqby32HvJnciPyrgC3dYG4GsW+JbLfVWh2YGI=",
       "url": "_framework\/ArchnemesisRecipies.dll"
     },
     {
@@ -49,7 +49,7 @@
       "url": "_framework\/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
     },
     {
-      "hash": "sha256-j3Rk5byEWXTfuR98k5u1tv3ubwedfP+k4xM9v0w+4ag=",
+      "hash": "sha256-CMKPbZgHxCQMpaGtGMsr0cDD67v9cba9ghROmnwZhps=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll"
     },
     {
@@ -177,7 +177,7 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-o+B\/\/a1Pj9hoNjW26asCwg2cQRKRa5GzLlGx0HNHMKY=",
+      "hash": "sha256-alWzPjpnzj7OJCiCCd7q\/PNKC\/ml\/SJCS\/7D0SKyS1Q=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -197,15 +197,15 @@
       "url": "_framework\/System.Text.RegularExpressions.dll"
     },
     {
-      "hash": "sha256-GtOZy7FweaeUTwmegoSBQcI6jkcR9vhx\/+Xi8iKjfZE=",
+      "hash": "sha256-4KXnCw6AHYO+Vnj\/LfBheE0Vz\/73gyRBd2vp9X3\/tHs=",
       "url": "ArchnemesisRecipies.styles.css"
     },
     {
-      "hash": "sha256-8rM4U\/kzke0Eka9NtpUBtPau1x\/GzqNBgX4nLDY6xLk=",
+      "hash": "sha256-XTKsHSXO72w7pHhUpCqOLeSrXnU7t6DZHX74URmnaNs=",
       "url": "archnemesis_recipies.json"
     },
     {
-      "hash": "sha256-ZC0AniQwQvfsuURWAoBb+YkXyAhBh3AwNgxnvVRfCqo=",
+      "hash": "sha256-WFi+wXtZf0fX1axRrzpt61VwrMa8HuIiOPw0nandUIA=",
       "url": "css\/app.css"
     },
     {
@@ -613,7 +613,7 @@
       "url": "images\/rewards\/RewardIconRitual.png"
     },
     {
-      "hash": "sha256-MqeHBmLzSEH1ukLuSNNF5C2EDjN6yb4lmZhi+Rv6Rfg=",
+      "hash": "sha256-4JJd2TJPqJN7BqRLJv00t+dH9fvuLTuq7WxdU035xnY=",
       "url": "index.html"
     },
     {
@@ -621,9 +621,9 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-4Yh4OTT5TEAPNyXEzOG+n5l2HPK294WFItz4SIelj88=",
-      "url": "sample-data\/weather.json"
+      "hash": "sha256-5Q3gmv0MQBu9mNcFRlyeYddd\/deE7tUA1TVKBLSYSaw=",
+      "url": "sw-registrator.js"
     }
   ],
-  "version": "tuluqMK+"
+  "version": "CPJdjNRx"
 };

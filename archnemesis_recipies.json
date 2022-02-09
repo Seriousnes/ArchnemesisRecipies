@@ -614,7 +614,7 @@
       "Empowering Minions"
     ],
     "Effect": "All Reward Types have an additional reward",
-    "Regex": "(emp|inv|frost.s)"
+    "Regex": "(empoweri|inv|frost.s)"
   },
   {
     "Name": "Solaris-touched",
@@ -627,7 +627,7 @@
       "Empowering Minions"
     ],
     "Effect": "All Reward Types have an additional reward",
-    "Regex": "(emp|inv|mag)"
+    "Regex": "(empoweri|inv|mag)"
   },
   {
     "Name": "Arakaali-touched",

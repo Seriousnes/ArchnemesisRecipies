@@ -80,3 +80,21 @@ main[b-b4gbpjcrr0] {
         padding-right: 1.5rem !important;
     }
 }
+/* /Shared/UpdateAvailableDetector.razor.rz.scp.css */
+.floating-update-button[b-lqvfkhl8vt] {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    padding: 1rem 1.5rem;
+    animation: fadein-b-lqvfkhl8vt 2s ease-out;
+}
+
+@keyframes fadein-b-lqvfkhl8vt {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 2rem;
+    }
+}

@@ -75,6 +75,25 @@ img {
     border-style: solid;
 }
 
+img.small-image {
+    padding: 0px;
+    transform: scale(0.5);
+    border-width: 0px;
+    margin: -10px;
+}
+
+img.group {
+    margin-left: -20px;
+}
+
+img.group-start {
+    margin-left: -10px;
+}
+
+img.group-end {
+    margin-right: -10px;
+}
+
 img.faded {
     filter: grayscale(100%)
 }
