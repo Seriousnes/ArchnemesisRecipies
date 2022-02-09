@@ -1,0 +1,20 @@
+﻿<div class="row" @onclick="() => Click()" hidden="@_hidden">
+    <div class="col">
+        <span class="effects">@Count x</span><Image Model=Model AdditonalStyles="small-image"></Image><span class="mod">@Model.Name</span>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public ArchnemesisModViewModel Model { get; set; }
+
+    [Parameter]
+    public int Count { get; set; }
+
+    public bool _hidden => (Count <= 0);
+
+    private void Click()
+    {
+        Count--;
+    }
+}

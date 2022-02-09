@@ -52,11 +52,7 @@
         </div>
         @foreach (var v in _t1List.GroupBy(x => x).OrderBy(x => x.Count()))
         {
-            <div class="row">
-                <div class="col">
-                    <span class="effects">@(v.Count()) x</span><Image Model=v.Key AdditonalStyles="small-image"></Image><span class="mod">@v.Key.Name</span>
-                </div>
-            </div>
+            <RequiredComponent Model=v.Key Count=v.Count() />            
         }
     }             
 </div>
