@@ -6,6 +6,8 @@
     position: absolute;
     display: inline-block;
     width: auto;
+    max-width: 25%;
+    height: auto;
     z-index: 1000;
 }
 /* /Shared/MainLayout.razor.rz.scp.css */
