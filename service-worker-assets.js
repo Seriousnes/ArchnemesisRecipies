@@ -461,11 +461,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-VuxpqiTXQh7K2WEdkbz+Pavz00DqTqjK+qvz9hRWzeo=",
+      "hash": "sha256-F1MEtQgHW6QNvAIyfAsTTHX9TBxEYbDhMBtb+UD4WAA=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-j2MklxOOKiArY+BCWK3q6rCr2dGTexVQ8ADGJyi4yXU=",
+      "hash": "sha256-Tn5J2I3hBQVcD5NoEb\/U0B4rU7YJ2Q+ZZ2qrOZFuoXs=",
       "url": "_framework\/ArchnemesisRecipies.dll"
     },
     {
@@ -817,5 +817,5 @@
       "url": "_content\/Havit.Blazor.Components.Web.Bootstrap\/Havit.Blazor.Components.Web.Bootstrap.bundle.scp.css"
     }
   ],
-  "version": "ghtQN97+"
+  "version": "Xwjh9mJs"
 };
