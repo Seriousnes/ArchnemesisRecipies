@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-VFkPCCWsOGLAQNFTB7uNZJOIsmxrtQ677RrFu5lIbpQ=",
+      "hash": "sha256-D0Ju7GX7v3YqY20rtUugws1iH9z7ewMOCA\/oag5LGOw=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-U\/CecEZYCojra4uW66itwiJFae8j5X0soD1KuZLTubs=",
+      "hash": "sha256-RMwSis5VV5Ppuumj8XlUhnIZXQXTEb\/I2rZbqc7hyY4=",
       "url": "_framework\/ArchnemesisRecipies.dll"
     },
     {
@@ -53,7 +53,7 @@
       "url": "_framework\/Microsoft.AspNetCore.Components.dll"
     },
     {
-      "hash": "sha256-LZtR+atTKsJ6wl+WwBculvu+HXy\/+D+kCxfLiMvDHxg=",
+      "hash": "sha256-B1ZiiCKiUafoE00qXDdMN6Qy8Nx6eLvsNMGGXFf\/3ac=",
       "url": "_framework\/Microsoft.AspNetCore.Components.Web.dll"
     },
     {
@@ -181,7 +181,7 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-dhELFo\/ZFd3AXPu9cTJhjVMM4C3CyvnP3PL6tviAiNw=",
+      "hash": "sha256-C6eGOZUD0u783MMc09lG\/OL9RULYGQuuJDfHX72959U=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -201,7 +201,7 @@
       "url": "_framework\/System.Text.RegularExpressions.dll"
     },
     {
-      "hash": "sha256-4KXnCw6AHYO+Vnj\/LfBheE0Vz\/73gyRBd2vp9X3\/tHs=",
+      "hash": "sha256-ilueDfVmIcUHVIQMWSbky8zLBA9JyDndggeQSMztpk8=",
       "url": "ArchnemesisRecipies.styles.css"
     },
     {
@@ -209,7 +209,7 @@
       "url": "archnemesis_recipies.json"
     },
     {
-      "hash": "sha256-Zs\/1AkGf895drCDhDdCJETCCq+yzbnALWRQAa\/V+jmc=",
+      "hash": "sha256-oFN9zKVGxzrdYVNSDj46SS1xm0umwyu6NtpG+JlZWIE=",
       "url": "css\/app.css"
     },
     {
@@ -617,7 +617,7 @@
       "url": "images\/rewards\/RewardIconRitual.png"
     },
     {
-      "hash": "sha256-4JJd2TJPqJN7BqRLJv00t+dH9fvuLTuq7WxdU035xnY=",
+      "hash": "sha256-rsZ5DAg7DIcwB4iGF9C0EikUhzMnbvUKKCW1NN\/jNvY=",
       "url": "index.html"
     },
     {
@@ -629,5 +629,5 @@
       "url": "sw-registrator.js"
     }
   ],
-  "version": "0+FrY4Rg"
+  "version": "Zko+sgFW"
 };

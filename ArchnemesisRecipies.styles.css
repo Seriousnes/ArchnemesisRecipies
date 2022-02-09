@@ -1,3 +1,13 @@
+/* /Components/TooltipContainer.razor.rz.scp.css */
+.tooltip-container[b-go4lnfjhgw] {
+    border: 1px solid #aa9e82;
+    background: #222;
+    opacity: 1;
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    z-index: 1000;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-b4gbpjcrr0] {
     position: relative;
