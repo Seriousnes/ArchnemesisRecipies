@@ -14,7 +14,7 @@
             @if (!string.IsNullOrEmpty(Model.Type))
             {
                 <div class="col">
-                @foreach (var reward in Model.GetImageUrls())
+                @foreach (var reward in Model.GetImageUrls(group: false))
                 {
                     @((MarkupString)reward);
                 }        

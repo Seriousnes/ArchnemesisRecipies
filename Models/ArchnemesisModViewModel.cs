@@ -19,14 +19,14 @@ namespace ArchnemesisRecipies.Models
         }
 
         public IEnumerable<string> GetImageUrls(bool group = true, string imgStyle = "")
-        {
-            if (group)
+        {            
+            foreach (var rewardGroup in Type.Split(" ").GroupBy(x => x))
             {
-                foreach (var rewardGroup in Type.Split(" ").GroupBy(x => x))
+                if (_rewards.TryGetValue(rewardGroup.Key, out var url))
                 {
-                    if (_rewards.TryGetValue(rewardGroup.Key, out var url))
+                    if (rewardGroup.Count() > 1)
                     {
-                        if (rewardGroup.Count() > 1)
+                        if (group)
                         {
                             var result = new List<string>();
                             for (var i = 0; i < rewardGroup.Count(); i++)
@@ -51,26 +51,20 @@ namespace ArchnemesisRecipies.Models
                         }
                         else
                         {
-                            yield return $"<img class=\"{imgStyle}\" src=\"{url}\" data-bs-toggle=\"tooltip\" data-bs-placement=\"top\" title=\"{rewardGroup.Key}\" />";
-                        }    
-                        
-                        //yield return $"<span class=\"effects\">{(reward.Count() > 1 ? $"{reward.Count()} x" : "")}<img class=\"{imgStyle}\" src=\"{url}\" data-bs-toggle=\"tooltip\" data-bs-placement=\"top\" title=\"{reward.Key}\" /></span>";
+                            yield return $"<span class=\"effects\">{(rewardGroup.Count() > 1 ? $"{rewardGroup.Count()} x" : "")}<img class=\"{imgStyle}\" src=\"{url}\" data-bs-toggle=\"tooltip\" data-bs-placement=\"top\" title=\"{rewardGroup.Key}\" /></span>";
+                        }
                     }
                     else
                     {
-                        yield return "";
-                    }                    
+                        yield return $"<img class=\"{imgStyle}\" src=\"{url}\" data-bs-toggle=\"tooltip\" data-bs-placement=\"top\" title=\"{rewardGroup.Key}\" />";
+                    }    
+                        
+                        
                 }
-            }
-            else
-            {
-                foreach (var reward in Type.Split(" "))
+                else
                 {
-                    if (_rewards.TryGetValue(reward, out var url))
-                    {
-                        yield return $"<img class=\"{imgStyle}\" src=\"{url}\" data-bs-toggle=\"tooltip\" data-bs-placement=\"top\" title=\"{reward}\" />";
-                    }
-                }
+                    yield return "";
+                }                    
             }
         }
 
