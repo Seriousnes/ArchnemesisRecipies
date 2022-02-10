@@ -8,20 +8,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Components\RecipeComponents\RequiredComponent.razor.css" />
     <None Remove="Components\TooltipContainer.razor.css" />
+    <None Remove="Shared\Notification.razor.css" />
     <None Remove="Shared\UpdateAvailableDetector.razor.css" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Components\RecipeComponents\RequiredComponent.razor.css" />
     <Content Include="Components\TooltipContainer.razor.css" />
+    <Content Include="Shared\Notification.razor.css" />
     <Content Include="Shared\UpdateAvailableDetector.razor.css" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="11.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.1" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.1" PrivateAssets="all" />
+    <PackageReference Include="Blazored.LocalStorage" Version="4.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.2" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup>
