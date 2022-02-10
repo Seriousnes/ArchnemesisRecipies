@@ -52,7 +52,7 @@
             }
         }
 
-        SetTooltipData(mod, e);
+        SetTooltipData(mod);
 
         // set selected styles
         HighlightComponents(Mods.Where(x => x.Selected), 0);
@@ -65,7 +65,7 @@
         StateHasChanged();
     }
 
-    private void SetTooltipData(ArchnemesisModViewModel mod, MouseEventArgs e)
+    private void SetTooltipData(ArchnemesisModViewModel mod)
     {
         // don't show tooltip if the mod is selected
         ArchnemesisModViewModel tooltipData = null;
@@ -73,7 +73,7 @@
         {
             tooltipData = mod;
         }
-        _tooltip.SetData(tooltipData, e);
+        _tooltip.SetModel(tooltipData);
     }
 
     private void HighlightComponents(IEnumerable<ArchnemesisModViewModel> mods, int depth)

@@ -160,7 +160,7 @@
 
     private void MouseOver(ArchnemesisModViewModel mod, MouseEventArgs e)
     {
-        _tooltip.SetData(mod?.MouseOver ?? false ? mod : null, e);
+        _tooltip.SetModel(mod?.MouseOver ?? false ? mod : null);
         mod.HighlightStyle = mod.MouseOver ? "selected" : "";
     }    
 
