@@ -1,3 +1,7 @@
+/* /Components/Footer.razor.rz.scp.css */
+span:hover[b-3u8qw3ksue] {
+    cursor: pointer;
+}
 /* /Components/RecipeComponents/RequiredComponent.razor.rz.scp.css */
 div.done[b-c8kis14wey]{
     position: relative;
@@ -150,6 +154,7 @@ main[b-b4gbpjcrr0] {
     bottom: 2rem;
     padding: 1rem 1.5rem;
     animation: fadein-b-lqvfkhl8vt 2s ease-out;
+    z-index: 50;
 }
 
 @keyframes fadein-b-lqvfkhl8vt {
