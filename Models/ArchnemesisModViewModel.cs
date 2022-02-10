@@ -19,7 +19,12 @@ namespace ArchnemesisRecipies.Models
         [JsonIgnore]
         public bool MouseOver { get; set; }
         [JsonIgnore]
-        public bool Selected { get; set; }
+        public bool Selected { get; set; }        
+
+        public string GetElementId()
+        {
+            return Name.ToLower().Replace(' ', '-');
+        }
 
         public string GetStyle(string additionalHighlights = "")
         {
