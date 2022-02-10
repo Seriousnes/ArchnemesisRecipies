@@ -1,3 +1,18 @@
+/* /Components/RecipeComponents/RequiredComponent.razor.rz.scp.css */
+div.done[b-c8kis14wey]{
+    position: relative;
+}
+
+div.done[b-c8kis14wey]:after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background: #c8c8c8;
+    height: 1px;
+    content: "";
+    width: 100%;
+    display: block;
+}
 /* /Components/TooltipContainer.razor.rz.scp.css */
 .tooltip-container[b-go4lnfjhgw] {
     border: 1px solid #aa9e82;
@@ -90,6 +105,42 @@ main[b-b4gbpjcrr0] {
     .top-row[b-b4gbpjcrr0], article[b-b4gbpjcrr0] {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
+    }
+}
+/* /Shared/Notification.razor.rz.scp.css */
+.floating-notification[b-92aw7ea6w5] {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    padding: 1rem 1.5rem;
+    animation: fadein-b-92aw7ea6w5 2s ease-out;
+}
+
+.floating-notification-hide[b-92aw7ea6w5] {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    padding: 1rem 1.5rem;
+    animation: fadeout-b-92aw7ea6w5 1s ease-out;
+}
+
+@keyframes fadein-b-92aw7ea6w5 {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 2rem;
+    }
+}
+
+@keyframes fadeout-b-92aw7ea6w5 {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
     }
 }
 /* /Shared/UpdateAvailableDetector.razor.rz.scp.css */
