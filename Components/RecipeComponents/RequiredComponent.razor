@@ -1,20 +1,31 @@
-﻿<div class="row" @onclick="() => Click()" hidden="@_hidden">
-    <div class="col">
-        <span class="effects">@Count x</span><Image Model=Model AdditonalStyles="small-image"></Image><span class="mod">@Model.Name</span>
+﻿<div class="row" @onmouseup="(e) => Click(e)">
+    <div class="col-md-auto">
+        <div class="@_completed">
+            <span class="effects">@Model.Count x</span><Image Model=Model.Component AdditonalStyles="small-image"></Image><span class="mod">@Model.Component.Name</span>
+        </div>
     </div>
 </div>
 
 @code {
     [Parameter]
-    public ArchnemesisModViewModel Model { get; set; }
+    public RecipeComponentViewModel Model { get; set; }
 
     [Parameter]
-    public int Count { get; set; }
+    public EventCallback OnChange { get; set; }
 
-    public bool _hidden => (Count <= 0);
+    public string _completed => (Model.Count <= 0) ? "done" : "";
 
-    private void Click()
+    private async void Click(MouseEventArgs e)
     {
-        Count--;
+        if (e.Button == 0)
+        {
+            Model.Count--;    
+        }
+        else
+        {
+            Model.Count++;
+        }
+
+        await OnChange.InvokeAsync();
     }
 }
