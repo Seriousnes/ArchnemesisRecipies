@@ -46,6 +46,13 @@ html, body {
     background: #222;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid var(--currency-color);
+}
+
 input::selection {
     color: var(--normal-color);
     background: var(--cold-color);
