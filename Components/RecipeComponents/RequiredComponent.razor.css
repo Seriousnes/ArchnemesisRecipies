@@ -1,0 +1,14 @@
+﻿div.done{
+    position: relative;
+}
+
+div.done:after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background: #c8c8c8;
+    height: 1px;
+    content: "";
+    width: 100%;
+    display: block;
+}

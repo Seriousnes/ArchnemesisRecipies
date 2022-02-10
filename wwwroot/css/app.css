@@ -42,6 +42,15 @@ html, body {
     font-size: .9375rem;
 }
 
+::selection {
+    background: #222;
+}
+
+input::selection {
+    color: var(--normal-color);
+    background: var(--cold-color);
+}
+
 div {
     cursor: default;
 }
