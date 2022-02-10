@@ -8,6 +8,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<None Remove="Components\Footer.razor.css" />
 		<None Remove="Components\RecipeComponents\RequiredComponent.razor.css" />
 		<None Remove="Components\TooltipContainer.razor.css" />
 		<None Remove="Shared\Notification.razor.css" />
@@ -23,6 +24,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<Content Include="Components\Footer.razor.css" />
 		<Content Include="Components\RecipeComponents\RequiredComponent.razor.css" />
 		<Content Include="Components\TooltipContainer.razor.css" />
 		<Content Include="Shared\Notification.razor.css" />
