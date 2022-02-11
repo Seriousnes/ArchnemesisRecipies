@@ -1,4 +1,12 @@
 /* /Components/Footer.razor.rz.scp.css */
+footer[b-3u8qw3ksue] {
+    float: left;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid var(--currency-color);
+}
+
 span:hover[b-3u8qw3ksue] {
     cursor: pointer;
 }
@@ -25,9 +33,15 @@ div.done[b-c8kis14wey]:after {
     position: absolute;
     display: inline-block;
     width: auto;
-    max-width: 25%;
+    max-width: 50vw;
     height: auto;
     z-index: 1000;
+}
+/* /Pages/Combinations.razor.rz.scp.css */
+button.sticky-top[b-wxh047daev] {
+    float: right;
+    position: sticky;
+    top: 0;
 }
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-b4gbpjcrr0] {
