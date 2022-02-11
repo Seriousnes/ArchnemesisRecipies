@@ -5,7 +5,7 @@
     position: absolute;
     display: inline-block;
     width: auto;
-    max-width: 25%;
+    max-width: 50vw;
     height: auto;
     z-index: 1000;
 }
