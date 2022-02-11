@@ -2,6 +2,6 @@
 {
     public class Map : Entity
     {
-        public string Source { get; set; }
+        public string Image { get; set; }
     }
 }

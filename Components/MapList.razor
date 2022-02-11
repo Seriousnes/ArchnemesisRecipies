@@ -1,0 +1,28 @@
+﻿@if (Maps.Any())
+{
+    <div class="row pb-1">
+        <span class="rewards underline">Most common maps</span>
+    </div>
+    <div class="row justify-content-start pb-2">
+    @foreach (var map in Maps)
+    {
+        <div id="@map.GetElementId()" class="col-md-auto">
+            <div class="row">
+                <div class="col" align="center">
+                    <img src="images/maps/@(map.Image)" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-auto">
+                    <span class="mod-name small">@map.Name</span>
+                </div>
+            </div>            
+        </div>
+    }
+    </div>
+}
+
+@code {
+    [Parameter]
+    public IEnumerable<Map> Maps { get; set; }    
+}
