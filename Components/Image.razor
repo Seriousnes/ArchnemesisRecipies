@@ -1,4 +1,4 @@
-﻿<img class="@AdditonalStyles @Model.GetStyle()" src="images/mods/@(Model.Image)"/>@if(ShowName) { @Model.Name }
+﻿<img class="@AdditonalStyles" src="images/mods/@(Model.Image)"/>@if(ShowName) { <span class="pl-2">@Model.Name</span> }
 
 @code {
     [Parameter]

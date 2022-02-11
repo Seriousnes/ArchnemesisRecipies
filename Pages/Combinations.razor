@@ -1,21 +1,17 @@
-﻿<div class="col col-lg-8">            
+﻿<div class="col col-lg-8 scroll-panel">            
     <ModList Mods=Mods OnClick=HighlightHandler OnMouseOver=HighlightHandler />
 </div>
-<div class="col col-lg-4" style="border-left: 1px #aa9e82 solid;">
+<div class="col col-lg-4 scroll-panel" style="border-left: 1px #aa9e82 solid;">
+    @if (_selected.Any())
+    {
+        <button class="btn btn-secondary sticky-top" type="button" @onclick="() => Reset()">Reset</button>                
+    }            
     @foreach (var item in _selected)
     {
         <div class="row">                
             <ModDetails Model=item OnClick=HighlightHandler />
         </div>
-    }   
-    @if (_selected.Any())
-    {
-        <div class="row">
-            <div class="col">
-                <button class="btn btn-secondary" type="button" @onclick="() => Reset()">Reset</button>
-            </div>
-        </div>    
-    }            
+    }       
 </div>
 
 <TooltipContainer @ref=_tooltip />
@@ -53,6 +49,9 @@
         }
 
         SetTooltipData(mod);
+
+        if (_selected.Any() && mod.MouseOver)
+            mod.MouseOver = false;
 
         // set selected styles
         HighlightComponents(Mods.Where(x => x.Selected), 0);

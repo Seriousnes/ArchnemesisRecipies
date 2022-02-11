@@ -26,13 +26,21 @@ namespace ArchnemesisRecipies.Models
             }
         }
 
-        public static RecipeViewModel GetRecipeViewModel(IEnumerable<ArchnemesisModViewModel> items)
+        public void AddMod(ArchnemesisModViewModel mod)
         {
-            return new RecipeViewModel
-            {
-                SelectedMods = items.ToList(),
-                Components = items.SelectMany(x => GetComponentCount(x)).GroupBy(x => x).Select(x => new RecipeComponentViewModel { Component = x.Key, Count = x.Count() }).OrderBy(x => x.Count).ToList()
-            };
+            SelectedMods.Add(mod);
+            UpdateComponents();
+        }
+
+        public void RemoveMod(ArchnemesisModViewModel mod)
+        {
+            SelectedMods.Remove(mod);
+            UpdateComponents();
+        }
+
+        private void UpdateComponents()
+        {
+            Components = SelectedMods.SelectMany(x => GetComponentCount(x)).GroupBy(x => x).Select(x => new RecipeComponentViewModel { Component = x.Key, Count = x.Count() }).OrderBy(x => x.Count).ToList();
         }
 
         private static List<ArchnemesisModViewModel> GetComponentCount(ArchnemesisModViewModel mod)

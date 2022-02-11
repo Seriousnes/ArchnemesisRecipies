@@ -3,10 +3,10 @@
 @inject IMapper _mapper
 @inject ILocalStorageService _localStore
 
-<div class="col col-lg-8">            
+<div class="col col-lg-8 scroll-panel">            
     <ModList Mods=_showMods OnClick=SelectMod OnMouseOver=MouseOver />
 </div>
-<div class="col col-lg-4" style="border-left: 1px #aa9e82 solid;">
+<div class="col col-lg-4 scroll-panel" style="border-left: 1px #aa9e82 solid;">
     <div class="row">
         <h5 class="mod-name">Selected mods for recipe:</h5>
     </div>
@@ -98,7 +98,6 @@
         StateHasChanged();
     }
 
-    private List<ArchnemesisModViewModel> _selectedMods = new();
     private List<ArchnemesisModViewModel> _showMods;
     private RecipeViewModel _recipe = new();
     private TooltipContainer _tooltip;
@@ -141,19 +140,19 @@
 
     private void SelectMod(ArchnemesisModViewModel mod, MouseEventArgs e)
     {
-        if (!_selectedMods.Contains(mod))
+        if (!recipe.SelectedMods.Contains(mod))
         {
-            if (_selectedMods.Count < 4)
+            if (recipe.SelectedMods.Count < 4)
             {
-                _selectedMods.Add(mod);        
+                recipe.AddMod(mod);        
             }            
         }               
-        else if (_selectedMods.Contains(mod))
+        else if (recipe.SelectedMods.Contains(mod))
         {
-            _selectedMods.Remove(mod);
+            recipe.RemoveMod(mod);
         }
+        UpdateSavedRecipe();
 
-        recipe = RecipeViewModel.GetRecipeViewModel(_selectedMods);
         mod.Selected = false;    
         StateHasChanged();
     }   
