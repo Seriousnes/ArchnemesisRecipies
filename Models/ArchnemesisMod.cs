@@ -4,9 +4,8 @@ using System.Text.Json.Serialization;
 namespace ArchnemesisRecipies.Models
 {
     [DebuggerDisplay("{Name}")]
-    public class ArchnemesisMod
+    public class ArchnemesisMod : Entity
     {
-        public string Name { get; set; }
         public string Image { get; set; }
         public string Mod { get; set; }
         public string Type { get; set; }
@@ -14,5 +13,6 @@ namespace ArchnemesisRecipies.Models
         public List<string> ComponentNames { get; set; } = new();
         public string Effect { get; set; }
         public string Regex { get; set; }
+        public List<Map> Maps { get; set; } = new();
     }
 }

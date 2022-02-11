@@ -21,11 +21,6 @@ namespace ArchnemesisRecipies.Models
         [JsonIgnore]
         public bool Selected { get; set; }        
 
-        public string GetElementId()
-        {
-            return Name.ToLower().Replace(' ', '-');
-        }
-
         public string GetStyle(string additionalHighlights = "")
         {
             var highlightStyle = HighlightStyle;
