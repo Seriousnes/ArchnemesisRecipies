@@ -730,6 +730,6 @@
       "Corpse Detonator"
     ],
     "Effect": "Rewards are doubled",
-    "Regex": "(abb|cor|tuk|cor)"
+    "Regex": "(abb|cor|tuk)"
   }
 ]
