@@ -14,7 +14,9 @@ namespace ArchnemesisRecipies.Utility
                 .ForMember(x => x.Effect, src => src.MapFrom(x => x.Effect.Trim()))
                 .ForMember(x => x.Regex, src => src.MapFrom(x => x.Regex))
                 .ForMember(x => x.ComponentNames, src => src.MapFrom(x => x.ComponentNames))
-                .ForMember(x => x.Components, src => src.Ignore());
+                .ForMember(x => x.Components, src => src.Ignore())
+                .ForMember(x => x.Maps, src => src.MapFrom(x => x.Maps))
+                ;
 
             // export recipe maps
             CreateMap<RecipeViewModel, RecipeExportModel>()
