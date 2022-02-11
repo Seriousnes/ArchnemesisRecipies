@@ -1,0 +1,22 @@
+﻿@inject IJSRuntime JSRuntime
+
+<footer class="mt-auto px-4">
+    <div class="row justify-content-center py-3">
+        <div class="col-1">
+            <span class="effects" @onclick="@(() => openUrl("https://discordapp.com/users/127324136560263169"))"><i class="fa-brands fa-discord" style="color: #5865F2"></i> Discord</span>
+        </div>
+        <div class="col-1" align="center">
+            <span class="effects" @onclick="@(() => openUrl("https://www.reddit.com/message/compose?to=ranky26&subject=ArchnemesisRecipe%20Feedback"))"><i class="fa-brands fa-reddit" style="color: #FF4500"></i> Reddit</span>
+        </div>  
+        <div class="col-1" align="center">
+            <span class="effects" @onclick="@(() => openUrl("https://github.com/ranky/ArchnemesisRecipies/issues/new"))"><i class="fa-brands fa-github"></i> Github</span>
+        </div>        
+    </div>    
+</footer>
+
+@code {
+    private async void openUrl(string url)
+    {
+        await JSRuntime.InvokeVoidAsync("open", url, "_blank");   
+    }
+}

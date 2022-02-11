@@ -12,6 +12,7 @@
     <link href="manifest.json" rel="manifest" />
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
     <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+    <script src="https://kit.fontawesome.com/16c27a3a1a.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
@@ -42,19 +43,19 @@
             if (visibility) {
                 $tooltip.attr('hidden', false);
                 let $anchor = $(`#${tooltipFor} img.bordered`);
-                let $window = $(window);
+                let $window = $anchor.parents('.scroll-panel');
                 let anchor = $anchor.get(0).getBoundingClientRect();
 
                 let relativeCenters = alignCenterRelativeTo($tooltip, $anchor);
                 let top = 0;
-                let left = 0;                
+                let left = 0;               
 
                 // bottom if available space, else top
-                if ($tooltip.height() + anchor.bottom + spacing < $window.height()) {
+                if ($tooltip.outerHeight() + anchor.bottom + spacing < $window.height()) {
                     top = anchor.bottom + spacing;
                     left = relativeCenters.x;
                 } else {
-                    top = anchor.top - spacing - $tooltip.height();
+                    top = anchor.top - spacing - $tooltip.outerHeight();
                     left = relativeCenters.x;
                 }
 
@@ -65,9 +66,6 @@
                     let extra = $window.width() - (left + $tooltip.width() + spacing);
                     left -= extra;
                 }
-
-                // adjust for scroll
-                top += window.scrollY;
 
                 $tooltip.css({ top: `${top}px`, left: `${left}px` });
                 $tooltip.css({ opacity: '1' });
