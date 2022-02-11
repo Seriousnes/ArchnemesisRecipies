@@ -213,7 +213,7 @@
       "url": "ArchnemesisRecipies.styles.css"
     },
     {
-      "hash": "sha256-9+mtBdz6P0e3eWMfQGWVU6wsa0T3ByMDfNC4O16IWXE=",
+      "hash": "sha256-O+1hX5Kkre0j0Ft7TlDE00rTKByvlzjxTjdfDh8zD8s=",
       "url": "archnemesis_recipies.json"
     },
     {
@@ -1661,5 +1661,5 @@
       "url": "sw-registrator.js"
     }
   ],
-  "version": "kPuohize"
+  "version": "od3hEy6i"
 };
