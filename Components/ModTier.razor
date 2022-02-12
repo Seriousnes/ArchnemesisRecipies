@@ -1,12 +1,10 @@
-﻿@inject IJSRuntime JSRuntime
-
-<div id="mod-tier-@Tier">
-    <div class="row" @onclick="() => Click()">
+﻿<div id="mod-tier-@Tier">
+    <div class="row">
         <div class="col" align="center">
-            <h3 class="expanded">Tier @Tier</h3>
+            <h3 class="@getClass()"  @onclick="() => _expand = !_expand">Tier @Tier</h3>
         </div>
     </div>
-    <div class="row justify-content-center mods expanded">
+    <div class="row justify-content-center @getClass()">
     @foreach (var mod in Mods)
     {
         <ArchnemesisModTemplate Model=mod OnClick=OnClick OnMouseOver=OnMouseOver />
@@ -22,10 +20,9 @@
     [Parameter]
     public Action<ArchnemesisModViewModel, MouseEventArgs> OnClick { get; set; }
     [Parameter]
-    public Action<ArchnemesisModViewModel, MouseEventArgs> OnMouseOver { get; set; }    
+    public Action<ArchnemesisModViewModel, MouseEventArgs> OnMouseOver { get; set; }
 
-    private async void Click()
-    {
-        await JSRuntime.InvokeVoidAsync("toggleRowCollapsed", Tier);
-    }
+    private string getClass() => _expand ? "expanded" : "collapsed";
+
+    private bool _expand = true;
 }
