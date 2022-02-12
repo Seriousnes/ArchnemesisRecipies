@@ -10,6 +10,32 @@ footer[b-3u8qw3ksue] {
 span:hover[b-3u8qw3ksue] {
     cursor: pointer;
 }
+/* /Components/ModTier.razor.rz.scp.css */
+h3[b-w94b9xabip]::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    color: #b4b4ff;
+    vertical-align: middle;
+}
+
+h3.collapsed[b-w94b9xabip]::after {
+    content: " \f102";    
+}
+
+h3.expanded[b-w94b9xabip]::after {
+    content: " \f103";    
+}
+
+div.row.collapsed[b-w94b9xabip] {
+    height: 0px;
+    overflow: hidden;
+    transition: height 1s;
+}
+
+div.row.expanded[b-w94b9xabip] {
+    transition: height 1s;
+}
 /* /Components/RecipeComponents/RequiredComponent.razor.rz.scp.css */
 div.done[b-c8kis14wey]{
     position: relative;
@@ -33,7 +59,7 @@ div.done[b-c8kis14wey]:after {
     position: absolute;
     display: inline-block;
     width: auto;
-    max-width: 50vw;
+    max-width: 25vw;
     height: auto;
     z-index: 1000;
 }

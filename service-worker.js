@@ -1,4 +1,4 @@
-// version 9c0534153e444de6bb689e93c3c8f178
+// v$GITHUB_RUN_NUMBER
 
 self.importScripts('./service-worker-assets.js');
 self.addEventListener('install', event => event.waitUntil(onInstall(event)));
@@ -46,4 +46,4 @@ async function onFetch(event) {
 
     return cachedResponse || fetch(event.request);
 }
-/* Manifest version: od3hEy6i */
+/* Manifest version: 1sqVgjQ6 */

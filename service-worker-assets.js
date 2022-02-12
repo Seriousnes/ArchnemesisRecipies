@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-pi96JZbGZGnILv5RyNPe+T2Hg8pwL9qJ5XtiFPEhUCg=",
+      "hash": "sha256-YsRRT83Q1m9w5zzxnt\/Mkn2KSfIiCJFJefuzE\/oEkaw=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-8xUaAmw5Qpvq8+q7Tf7UAw5hiHIAnVPZNfAqsc3XWmE=",
+      "hash": "sha256-b5dVB6UIOOD5Y+D3gWMjMf4LEDdpZPcPagR8G09La2Q=",
       "url": "_framework\/ArchnemesisRecipies.dll"
     },
     {
@@ -209,7 +209,7 @@
       "url": "_framework\/System.Threading.dll"
     },
     {
-      "hash": "sha256-ItyQ+qo1udcPMMbGjZoimSLEnjpGkWDtdEs2bx4G4Fg=",
+      "hash": "sha256-nTTmIdwopXLNXQTJ04td8Fb+A9nvJL7Yq9iFWTaoOAk=",
       "url": "ArchnemesisRecipies.styles.css"
     },
     {
@@ -1649,8 +1649,12 @@
       "url": "images\/rewards\/RewardIconRitual.png"
     },
     {
-      "hash": "sha256-JBDBlNN55UU1VbYjPtw7fn+EFWgsp5xn2JNwZHokqCU=",
+      "hash": "sha256-SU7DPaGz1qhxqfPoLs5p70yiVDJ2jPiVz3hdaCOnvk0=",
       "url": "index.html"
+    },
+    {
+      "hash": "sha256-2s5aO2rpW1jbIyXpCEXhdR3BWbNCym9B\/rQ25twN1\/4=",
+      "url": "lib\/scripts.js"
     },
     {
       "hash": "sha256-+bscxHj6iiQZd9QQjwY1aXHVBPk1ctayhmFppGhAV9w=",
@@ -1661,5 +1665,5 @@
       "url": "sw-registrator.js"
     }
   ],
-  "version": "od3hEy6i"
+  "version": "1sqVgjQ6"
 };
