@@ -23,7 +23,7 @@ jobs:
       run: sed -i 's/service-worker.js/ArchnemesisRecipies\/service-worker.js/g' release/wwwroot/sw-registrator.js
 
     - name: Update service-worker version
-      run: sed -i 's/{0}/$GITHUB_RUN_NUMBER/g' release/wwwroot/service-worker.js
+      run: sed -i 's/{0}/${{ github.run_number }}/g' release/wwwroot/service-worker.js
     
     - name: Add .nojekyll file
       run: touch release/wwwroot/.nojekyll
