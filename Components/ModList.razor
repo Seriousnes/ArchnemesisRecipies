@@ -1,16 +1,6 @@
-﻿@foreach (var tier in Mods?.GroupBy(x => x.ModTier).OrderBy(x => x.Key))
+﻿@foreach (var group in Mods?.GroupBy(x => x.ModTier).OrderBy(x => x.Key))
 {
-    <div class="row">
-        <div class="col" align="center">
-                <h3>Tier @tier.Key</h3>
-        </div>
-    </div>
-    <div class="row justify-content-center">
-    @foreach (var mod in tier.OrderBy(x => x.Name))
-    {
-        <ArchnemesisModTemplate Model=mod OnClick=OnClick OnMouseOver=OnMouseOver />
-    }
-    </div>
+    <ModTier Tier=group.Key Mods=@(group.OrderBy(x => x.Name).ToList()) OnClick=OnClick OnMouseOver=OnMouseOver />
 }
 
 @code {

@@ -1,0 +1,31 @@
+﻿@inject IJSRuntime JSRuntime
+
+<div id="mod-tier-@Tier">
+    <div class="row" @onclick="() => Click()">
+        <div class="col" align="center">
+            <h3 class="expanded">Tier @Tier</h3>
+        </div>
+    </div>
+    <div class="row justify-content-center mods expanded">
+    @foreach (var mod in Mods)
+    {
+        <ArchnemesisModTemplate Model=mod OnClick=OnClick OnMouseOver=OnMouseOver />
+    }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int Tier { get; set; }
+    [Parameter]
+    public List<ArchnemesisModViewModel> Mods { get; set; }
+    [Parameter]
+    public Action<ArchnemesisModViewModel, MouseEventArgs> OnClick { get; set; }
+    [Parameter]
+    public Action<ArchnemesisModViewModel, MouseEventArgs> OnMouseOver { get; set; }    
+
+    private async void Click()
+    {
+        await JSRuntime.InvokeVoidAsync("toggleRowCollapsed", Tier);
+    }
+}

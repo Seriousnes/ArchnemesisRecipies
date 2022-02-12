@@ -1,0 +1,25 @@
+﻿h3::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    color: #b4b4ff;
+    vertical-align: middle;
+}
+
+h3.collapsed::after {
+    content: " \f102";    
+}
+
+h3.expanded::after {
+    content: " \f103";    
+}
+
+div.row.collapsed {
+    height: 0px;
+    overflow: hidden;
+    transition: height 1s;
+}
+
+div.row.expanded {
+    transition: height 1s;
+}

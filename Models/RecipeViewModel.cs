@@ -45,9 +45,11 @@ namespace ArchnemesisRecipies.Models
 
         private static List<ArchnemesisModViewModel> GetComponentCount(ArchnemesisModViewModel mod)
         {
-            var result = mod.Components.Where(x => x.ModTier == 1).ToList();
-            result.AddRange(mod.Components.Where(x => x.ModTier > 1).SelectMany(x => GetComponentCount(x)));
-            return result;
+            return mod.ModTier switch
+            {
+                1 => new List<ArchnemesisModViewModel>() { mod },
+                _ => mod.Components.Where(x => x.ModTier == 1).Concat(mod.Components.Where(x => x.ModTier > 1).SelectMany(x => GetComponentCount(x))).ToList()
+            };
         }
     }
 

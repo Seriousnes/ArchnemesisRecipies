@@ -4,7 +4,7 @@
 @inject ILocalStorageService _localStore
 
 <div class="col col-lg-8 scroll-panel">            
-    <ModList Mods=_showMods OnClick=SelectMod OnMouseOver=MouseOver />
+    <ModList Mods=Mods OnClick=SelectMod OnMouseOver=MouseOver />
 </div>
 <div class="col col-lg-4 scroll-panel" style="border-left: 1px #aa9e82 solid;">
     <div class="row">
@@ -86,7 +86,6 @@
     protected override async Task OnParametersSetAsync()
     {
         await base.OnParametersSetAsync();
-        _showMods = Mods.Where(x => x.ModTier > 1).ToList();
 
         // find an existing import
         if (await _localStore.ContainKeyAsync("recipe"))
@@ -98,7 +97,12 @@
         StateHasChanged();
     }
 
-    private List<ArchnemesisModViewModel> _showMods;
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();        
+        await JSRuntime.InvokeVoidAsync("toggleRowCollapsed", 1);
+    }
+
     private RecipeViewModel _recipe = new();
     private TooltipContainer _tooltip;
     private string _importString;
