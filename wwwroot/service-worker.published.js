@@ -1,4 +1,4 @@
-// version 9c0534153e444de6bb689e93c3c8f178
+// v{0}
 
 self.importScripts('./service-worker-assets.js');
 self.addEventListener('install', event => event.waitUntil(onInstall(event)));
