@@ -1,4 +1,4 @@
-// v$GITHUB_RUN_NUMBER
+// v35
 
 self.importScripts('./service-worker-assets.js');
 self.addEventListener('install', event => event.waitUntil(onInstall(event)));
