@@ -1,15 +1,22 @@
 ﻿@inject IJSRuntime JSRuntime
+@inherits ComponentBase
 
 <div id="@Model.GetElementId()" class="col mod @(Model.Fade ? "faded" : "")" align="center">    
     <div class="row">
         <div class="col">
-            <img class="bordered @Model.GetStyle("special-background")" src="images/mods/@(Model.Image)" @onmouseover="MouseOver" @onmouseout="MouseOut" @onclick="Click" />
+            <img class="bordered 
+                @Model.GetStyle("special-background")" src="images/mods/@(Model.Image)" 
+                @onmouseup="(e) => OnClick.InvokeAsync((Model, e))"
+                @ondblclick="(e) => OnClick.InvokeAsync((Model, e))"
+                @onmouseover="(e) => OnMouseOver.InvokeAsync((Model, e))"
+                @onmouseout="(e) => OnMouseOver.InvokeAsync((Model, null))"                
+            />
         </div>
     </div>
     <div class="row"><span class="mod-name">@Model.Name</span></div>
     <div class="row justify-content-center">
         <div class="col" style="display: contents">
-        @foreach (var reward in Model.GetImageUrls(group: true, imgStyle: "small-image"))
+        @foreach (var reward in Model.Rewards.GetImageUrls(group: true, imgStyle: "small-image"))
         {
             @((MarkupString)reward);
         }   
@@ -18,47 +25,46 @@
 </div> 
 
 @code {
-
     [Parameter]
     public ArchnemesisModViewModel Model { get; set; }
     [Parameter]
-    public Action<ArchnemesisModViewModel, MouseEventArgs> OnClick { get; set; }
-
+    public EventCallback<(ArchnemesisModViewModel mod, MouseEventArgs e)> OnClick { get; set; }
     [Parameter]
-    public Action<ArchnemesisModViewModel, MouseEventArgs> OnMouseOver { get; set; }
+    public EventCallback<(ArchnemesisModViewModel mod, MouseEventArgs? e)> OnMouseOver { get; set; }
 
-    void MouseOver(MouseEventArgs e)
-    {
-        Model.MouseOver = true;
-        if (OnMouseOver != null)
-        {
-            e.Button = -1;
-            OnMouseOver(Model, e);    
-        }           
-    }
+    //void MouseOver(MouseEventArgs e)
+    //{
+    //    Model.MouseOver = true;
+    //    if (OnMouseOver != null)
+    //    {
+    //        e.Button = -1;
+    //        OnMouseOver(Model, e);    
+    //    }           
+    //}
 
-    void MouseOut(MouseEventArgs e)
-    {           
-        Model.MouseOver = false;
-        if (OnMouseOver != null)
-        {
-            OnMouseOver(Model, null);
-        }
-    }
+    //void MouseOut(MouseEventArgs e)
+    //{           
+    //    Model.MouseOver = false;
+    //    if (OnMouseOver != null)
+    //    {
+    //        OnMouseOver(Model, null);
+    //    }
+    //}
 
-    async void Click(MouseEventArgs e)
-    {
-        if (e.Detail > 1)
-        {
-            await JSRuntime.InvokeVoidAsync("copyClipboard", $"^{Model.Regex}");
-        }
-        else
-        {
-            Model.Selected = !Model.Selected;
-            if (OnClick != null)
-            {
-                OnClick(Model, e);    
-            }
-        }                                    
-    }
+    //async void Click(MouseEventArgs e)
+    //{
+    //    if (e.Detail > 1)
+    //    {
+    //        await JSRuntime.InvokeVoidAsync("copyClipboard", $"^{Model.Regex}");
+    //    }
+    //    else
+    //    {
+    //        Model.Selected = !Model.Selected;
+    //        if (OnClick != null)
+    //        {
+    //            OnClick(Model, e);    
+    //        }
+    //    }                                    
+    //}
 }
+

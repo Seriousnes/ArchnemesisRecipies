@@ -146,7 +146,7 @@
     "Type": "Weapon Trinkets",
     "Components": [
     ],
-    "Effect": " Items dropped from the Monster and its Minions are Corrupted",
+    "Effect": "Items dropped from the Monster and its Minions are Corrupted",
     "Regex": "bloodletter"
   },
   {
@@ -326,7 +326,7 @@
       "Assassin",
       "Echoist"
     ],
-    "Effect": "  ",
+    "Effect": "",
     "Regex": "(ass|ove|ech)"
   },
   {
@@ -436,7 +436,7 @@
       "Frostweaver",
       "Hasted"
     ],
-    "Effect": "  ",
+    "Effect": "",
     "Regex": "(frostw|has)"
   },
   {
@@ -448,7 +448,7 @@
       "Permafrost",
       "Sentinel"
     ],
-    "Effect": " Rewards are rolled 1 additional time, choosing the rarest result",
+    "Effect": "Rewards are rolled 1 additional time, choosing the rarest result",
     "Regex": "(per|sen)"
   },
   {
@@ -473,7 +473,7 @@
       "Flameweaver",
       "Hasted"
     ],
-    "Effect": "  ",
+    "Effect": "",
     "Regex": "(flamew|has)"
   },
   {
@@ -498,7 +498,7 @@
       "Frostweaver",
       "Stormweaver"
     ],
-    "Effect": "   ",
+    "Effect": "",
     "Regex": "(flamew|frostw|stormw)"
   },
   {
@@ -510,7 +510,7 @@
       "Incendiary",
       "Bonebreaker"
     ],
-    "Effect": " Rewards are rolled 1 additional time, choosing the rarest result",
+    "Effect": "Rewards are rolled 1 additional time, choosing the rarest result",
     "Regex": "(inc|bon)"
   },
   {
@@ -534,7 +534,7 @@
       "Stormweaver",
       "Hasted"
     ],
-    "Effect": "  ",
+    "Effect": "",
     "Regex": "(stormw|has)"
   },
   {
@@ -546,7 +546,7 @@
       "Consecrator",
       "Dynamo"
     ],
-    "Effect": " Rewards are rolled 1 additional time, choosing the rarest result",
+    "Effect": "Rewards are rolled 1 additional time, choosing the rarest result",
     "Regex": "(con|dyn)"
   },
   {
@@ -558,7 +558,7 @@
       "Bloodletter",
       "Chaosweaver"
     ],
-    "Effect": " Items dropped from the Monster and its Minions are Corrupted",
+    "Effect": "Items dropped from the Monster and its Minions are Corrupted",
     "Regex": "(blo|cha)"
   },
   {
@@ -597,7 +597,7 @@
       "Steel-infused",
       "Chaosweaver"
     ],
-    "Effect": " Rewards are rolled 1 additional time, choosing the rarest result",
+    "Effect": "Rewards are rolled 1 additional time, choosing the rarest result",
     "Regex": "(evo|ste|cha)"
   },
   {
@@ -610,7 +610,7 @@
       "Malediction",
       "Corrupter"
     ],
-    "Effect": " Rewards are rolled 1 additional time, choosing the rarest result",
+    "Effect": "Rewards are rolled 1 additional time, choosing the rarest result",
     "Regex": "(hex|mal|cor)"
   },
   {
@@ -662,7 +662,7 @@
       "Storm Strider",
       "Heralding Minions"
     ],
-    "Effect": "  Rewards are rolled 6 additional times, choosing the rarest result",
+    "Effect": "Rewards are rolled 6 additional times, choosing the rarest result",
     "Regex": "(ice|storm.s|her)"
   },
   {
@@ -675,7 +675,7 @@
       "Executioner",
       "Magma Barrier"
     ],
-    "Effect": "  Rewards are rolled 4 additional times, choosing the rarest result",
+    "Effect": "Rewards are rolled 4 additional times, choosing the rarest result",
     "Regex": "(exe|mag|bon)"
   },
   {
@@ -688,7 +688,7 @@
       "Frenzied",
       "Rejuvenating"
     ],
-    "Effect": "  Rewards are rolled 4 additional times, choosing the rarest result",
+    "Effect": "Rewards are rolled 4 additional times, choosing the rarest result",
     "Regex": "(flame.s|rej|fre)"
   },
   {
@@ -715,7 +715,7 @@
       "Mirror Image",
       "Mana Siphoner"
     ],
-    "Effect": "  All Reward Types are Currency",
+    "Effect": "All Reward Types are Currency",
     "Regex": "(lun|sol|mir|man)"
   },
   {

@@ -2,7 +2,7 @@
 
 @if (Model is not null)
 {
-    <div class="">
+    @*<div class="container">*@
         <div class="row" @onclick="CopyRegex">
             <h2 class="mod-name" data-bs-toggle="tooltip" data-bs-placement="top" title="^@Model.Regex">
                 <Image Model=Model ShowName=true />
@@ -31,7 +31,7 @@
                     <span class="rewards">Rewards:</span>
                 </div>
                 <div class="col">
-                    @foreach (var reward in Model.GetImageUrls(group: false))
+                    @foreach (var reward in Model.Rewards.GetImageUrls(group: false))
                     {
                         @((MarkupString)reward)
                     }        
@@ -65,7 +65,7 @@
                 <MapList Maps=Model.Maps></MapList>                
             </div>
         </div>        
-    </div>
+    @*</div>*@
 }
 
 @code {

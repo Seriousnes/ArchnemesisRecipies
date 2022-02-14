@@ -1,11 +1,14 @@
-﻿<img class="@AdditonalStyles" src="images/mods/@(Model.Image)"/>@if(ShowName) { <span class="pl-2">@Model.Name</span> }
+﻿<img class="@ImageStyles" src="images/mods/@(Model.Image)"/>@if(ShowName) { <span class="pl-2 @NameStyles">@Model.Name</span> }
 
 @code {
     [Parameter]
     public ArchnemesisModViewModel Model { get; set; }
 
     [Parameter]
-    public string AdditonalStyles { get; set; }
+    public string ImageStyles { get; set; }
+
+    [Parameter]
+    public string NameStyles { get; set; }
 
     [Parameter]
     public bool ShowName { get; set; }

@@ -3,89 +3,81 @@
 @inject IMapper _mapper
 @inject ILocalStorageService _localStore
 
-<div class="col col-lg-8 scroll-panel">            
-    <ModList Mods=Mods OnClick=SelectMod OnMouseOver=MouseOver />
-</div>
-<div class="col col-lg-4 scroll-panel" style="border-left: 1px #aa9e82 solid;">
-    <div class="row">
-        <h5 class="mod-name">Selected mods for recipe:</h5>
-    </div>
-    <div class="row align-items-center mb-2">
-        <div class="col-8">
-            @if (recipe.SelectedMods.Count == 0)
-            {
-                <div class="row">
-                    <span class="rewards">Select 1 to 4 mods from the list on the left, or import a recipe</span>
+
+
+<div class="row align-items-center mx-1 mb-2">
+    <div class="col-8">
+        @if (recipe.SelectedMods.Count == 0)
+        {
+            <div class="row">
+                <span class="rewards">Select 1 to 4 mods from the list on the left, or import a recipe</span>
+            </div>
+            <div class="row pt-2">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="search-term" autocomplete="off" @bind="importString" @bind:event="oninput" placeholder="Enter an import string">
+                    <button class="btn btn-secondary" type="button" @onclick="() => Import(importString)">Import</button>
                 </div>
-                <div class="row pt-2">
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="search-term" autocomplete="off" @bind="importString" @bind:event="oninput" placeholder="Enter an import string">
-                        <button class="btn btn-secondary" type="button" @onclick="() => Import(importString)">Import</button>
-                    </div>
-                </div>
-            }
-            else
-            {
+            </div>
+        }
+        else
+        {
+            <div class="row">
+                <h5 class="rewards">Selected Mods:</h5>
+            </div>
+            <div class="row justify-content-start">
                 @foreach (var mod in recipe.SelectedMods)
                 {
-                    <img src="images/mods/@(mod.Image)" @onclick="(e) => SelectMod(mod, e)" data-bs-toggle="tooltip" data-bs-placement="top" title="@mod.Name" />                
-                }               
-            }                       
-        </div>
-        <div class="col-4">
-            <div class="row justify-content-end">
-                <div class="col-md-auto">
-                @if(recipe.SelectedMods.Count > 0)
-                {
-                    <button class="btn btn-secondary" type="button" @onclick="() => Export()">Export</button>
-                    <button class="btn btn-secondary" type="button" @onclick="() => Clear()">Clear</button>
+                    <div class="col-3" align="center">                        
+                        <img src="images/mods/@(mod.Image)" @onclick="() => SelectMod(mod)" data-bs-toggle="tooltip" data-bs-placement="top" title="@mod.Name" /><br/>
+                        <span class="mod-name small">@mod.Name</span>
+                    </div>
                 }
-                </div>
+            </div>                          
+        }                       
+    </div>
+    <div class="col-4">
+        <div class="row justify-content-end">
+            <div class="col-md-auto">
+            @if(recipe.SelectedMods.Count > 0)
+            {
+                <button class="btn btn-secondary" type="button" @onclick="() => Export()">Export</button>
+                <button class="btn btn-secondary" type="button" @onclick="() => Clear()">Clear</button>
+            }
             </div>
         </div>
-    </div> 
-    @if(recipe.SelectedMods.Count > 0)
-    {
-        <div class="row">
-            <h5 class="rewards">Effects of selected mods:</h5>                        
-        </div>
-
-        @foreach (var item in recipe.SelectedMods)
-        {
-            <div class="row"><h6 class="mod-name">@item.Name</h6></div>
-            <div class="row">                
-                <div class="col">
-                    <Image Model=item AdditonalStyles="medium-image"></Image><span class="mod">@(!string.IsNullOrEmpty(item.Effect) ? item.Effect : "No additional effects")</span>
-                    <span class="rewards">(</span>
-                    @foreach (var reward in item.GetImageUrls(group: true, imgStyle: "small-image"))
-                    {
-                        @((MarkupString)reward);
-                    }   
-                    <span class="rewards">)</span>
-                </div>
-            </div>
-        }
-
+    </div>
+</div> 
+@if(recipe.SelectedMods.Count > 0)
+{   
+    <div class="px-3">
+        <RewardsCalculator Recipe=recipe></RewardsCalculator>   
+        
+        @*How to build*@
         <div class="row">        
-            <h5 class="rewards">Total T1 mods required:</h5>            
-        </div>
-        @foreach (var c in recipe.Components)
-        {
-            <RequiredComponent Model=c OnChange=UpdateSavedRecipe />            
-        }
-    }             
-</div>
-
-<TooltipContainer @ref=_tooltip />
-
+            <h5 class="rewards">Build Tree:</h5>            
+        </div> 
+    </div>         
+    <div class="tree">
+    @foreach (var c in recipe.SelectedMods)
+    {
+        <RecipeNode @key=c Node=c></RecipeNode>
+    }
+    </div>
+}           
 
 @code {
     [Parameter]
-    public List<ArchnemesisModViewModel> Mods { get; set; } = new();
+    public List<ArchnemesisModViewModel> Mods { get; set; }
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        _recipe = new(_mapper);
+    }
 
     protected override async Task OnParametersSetAsync()
     {
-        await base.OnParametersSetAsync();
+        await base.OnParametersSetAsync();               
 
         // find an existing import
         if (await _localStore.ContainKeyAsync("recipe"))
@@ -103,11 +95,32 @@
         await JSRuntime.InvokeVoidAsync("toggleRowCollapsed", 1);
     }
 
-    private RecipeViewModel _recipe = new();
-    private TooltipContainer _tooltip;
+    public void SelectMod(ArchnemesisModViewModel mod)
+    {
+        var viewModel = recipe.SelectedMods.SingleOrDefault(x => x.Name == mod.Name) ?? _mapper.Map<ArchnemesisModViewModel, RecipeComponentViewModel>(mod);
+        SelectMod(viewModel);
+    }
+
+    public void SelectMod(RecipeComponentViewModel mod)
+    {
+        if (!recipe.SelectedMods.Contains(mod))
+        {
+            if (recipe.SelectedMods.Count < 4)
+            {
+                recipe.AddMod(mod);        
+            }            
+        }               
+        else if (recipe.SelectedMods.Contains(mod))
+        {
+            recipe.RemoveMod(mod);
+        }
+        UpdateSavedRecipe();
+
+        StateHasChanged();
+    }
+
+    private RecipeViewModel _recipe;
     private string _importString;
-
-
     private RecipeViewModel recipe
     {
         get => _recipe;
@@ -120,7 +133,6 @@
             }               
         }
     }
-
     private string importString
     {
         get => _importString;
@@ -139,80 +151,56 @@
 
     private async void UpdateSavedRecipe()
     {
-        await _localStore.SetItemAsStringAsync("recipe", _recipe.Export(_mapper));        
-    }
-
-    private void SelectMod(ArchnemesisModViewModel mod, MouseEventArgs e)
-    {
-        if (!recipe.SelectedMods.Contains(mod))
-        {
-            if (recipe.SelectedMods.Count < 4)
-            {
-                recipe.AddMod(mod);        
-            }            
-        }               
-        else if (recipe.SelectedMods.Contains(mod))
-        {
-            recipe.RemoveMod(mod);
-        }
-        UpdateSavedRecipe();
-
-        mod.Selected = false;    
-        StateHasChanged();
+        //await _localStore.SetItemAsStringAsync("recipe", _recipe.Export(_mapper));        
     }   
-
-    private void MouseOver(ArchnemesisModViewModel mod, MouseEventArgs e)
-    {
-        _tooltip.SetModel(mod?.MouseOver ?? false ? mod : null);
-        mod.HighlightStyle = mod.MouseOver ? "selected" : "";
-    }    
 
     public async void Clear()
     {
         recipe.SelectedMods.Clear();
-        recipe.Components.Clear();
-        if (await _localStore.ContainKeyAsync("recipe"))
-        {
-            await _localStore.RemoveItemAsync("recipe");
-        }
+        //recipe.Components.Clear();
+        //if (await _localStore.ContainKeyAsync("recipe"))
+        //{
+        //    await _localStore.RemoveItemAsync("recipe");
+        //}
     }
 
     private void Import(string importString)
     {
-        Import(RecipeViewModel.Import(importString, _mapper));
-        this.importString = null;
-        StateHasChanged();
+        //Import(RecipeViewModel.Import(importString, _mapper));
+        //this.importString = null;
+        //StateHasChanged();
     }  
 
     private void Import(RecipeViewModel importedRecipe)
     {
-        if (importedRecipe is not null)
-        {
-            // link selected mods
-            importedRecipe.SelectedMods = Mods.Where(x => importedRecipe.SelectedMods.Any(r => r.Name == x.Name)).ToList();
-            importedRecipe.Components.ForEach(c => c.Component = Mods.SingleOrDefault(x => x.Name == c.Component.Name));
-            recipe = importedRecipe;
-        }        
+        //if (importedRecipe is not null)
+        //{
+        //    // link selected mods
+        //    importedRecipe.SelectedMods = Mods.Where(x => importedRecipe.SelectedMods.Any(r => r.Name == x.Name)).ToList();
+        //    importedRecipe.Components.ForEach(c => c.Component = Mods.SingleOrDefault(x => x.Name == c.Component.Name));
+        //    recipe = importedRecipe;
+        //}        
     }
 
     private bool TryImport(string importString)
     {
-        var importedRecipe = RecipeViewModel.Import(importString, _mapper);
-        if (importedRecipe is not null)
-        {               
-            Import(importedRecipe);
-            StateHasChanged();
-            return true;
-        }
-        return false;
+        //var importedRecipe = RecipeViewModel.Import(importString, _mapper);
+        //if (importedRecipe is not null)
+        //{               
+        //    Import(importedRecipe);
+        //    StateHasChanged();
+        //    return true;
+        //}
+        //return false;
+        return true;
     }
 
     private async void Export()
     {
-        var exportString = recipe?.Export(_mapper);
-        if (!string.IsNullOrEmpty(exportString))
-        {
-            await JSRuntime.InvokeVoidAsync("copyClipboard", exportString);
-        }
+        //var exportString = recipe?.Export(_mapper);
+        //if (!string.IsNullOrEmpty(exportString))
+        //{
+        //    await JSRuntime.InvokeVoidAsync("copyClipboard", exportString);
+        //}
     }    
 }

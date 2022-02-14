@@ -5,10 +5,7 @@
         </div>
     </div>
     <div class="row justify-content-center @getClass()">
-    @foreach (var mod in Mods)
-    {
-        <ArchnemesisModTemplate Model=mod OnClick=OnClick OnMouseOver=OnMouseOver />
-    }
+        @Content
     </div>
 </div>
 
@@ -16,11 +13,7 @@
     [Parameter]
     public int Tier { get; set; }
     [Parameter]
-    public List<ArchnemesisModViewModel> Mods { get; set; }
-    [Parameter]
-    public Action<ArchnemesisModViewModel, MouseEventArgs> OnClick { get; set; }
-    [Parameter]
-    public Action<ArchnemesisModViewModel, MouseEventArgs> OnMouseOver { get; set; }
+    public RenderFragment Content { get; set; }
 
     private string getClass() => _expand ? "expanded" : "collapsed";
 

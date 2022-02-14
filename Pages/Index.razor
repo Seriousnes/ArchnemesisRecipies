@@ -3,58 +3,72 @@
 @using System.Text.RegularExpressions
 @inject HttpClient _client
 @inject IMapper _mapper
+@inject IJSRuntime _jsRuntime
 
 <PageTitle>Archnemesis Recipe Helper</PageTitle>
 
-<header class="row mb-3 align-items-center">
+<header class="row mb-1 align-items-center">
     <div class="col-4">
         <div class="input-group">
-            @*<span class="input-group-text" id="search-label">Search</span>*@
             <input type="text" class="form-control" id="search-term" aria-describedby="search-label" autocomplete="off" @bind="searchTerm" @bind:event="oninput" placeholder="Search for name or rewards">
             <button class="btn btn-secondary" type="button" @onclick="() => searchTerm = string.Empty">Clear</button>
         </div>
     </div>
     <div class="col-4">
-        <span class="effects">Mode: </span>
+        @*<span class="effects">Mode: </span>
         @foreach (var mode in (OperationMode[])Enum.GetValues(typeof(OperationMode)))
         {
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="mode" id="mode-@((int)mode)" value="@((int)mode)" checked="@(mode == OperationMode.Combination)" @onchange="OnOperationChange" />
                 <label class="form-check-label effects" for="mode-@((int)mode)">@mode.GetDescription()</label>
             </div>        
-        }
+        }*@
     </div>
 </header>
 <div class="row">
-    @switch (_mode)
-    {
-        case OperationMode.Combination:
-            <Combinations @ref=_combinations Mods=Mods />
-            break;
-        case OperationMode.RecipeBuilder:
-            <Recipe @ref=_recipe Mods=Mods />
-            break;
-    }
+    <div id="mod-list" class="col-lg-7 scroll-panel">        
+        <div class="row mb-3 justify-content-center">
+            <div class="col-auto">
+                <span class="small italic">(Left-click to add/remove from recipe, Right-click to select, click name to copy for in-game search)</span>                
+            </div>
+        </div>
+        @foreach (var tierGroup in Mods.GroupBy(x => x.ModTier))
+        {
+            <ModTier Tier="@tierGroup.Key">
+                <Content>
+                    @foreach (var mod in tierGroup.OrderBy(x => x.Name))
+                    {
+                        <ArchnemesisModTemplate Model=mod OnClick="OnClick" OnMouseOver="OnMouseOver" />
+                    }
+                </Content>
+            </ModTier>
+        }
+    </div>
+    <div class="col-lg-5 scroll-panel px-0" style="border-left: 1px #aa9e82 solid;">        
+        <Recipe @ref="_recipe" Mods=Mods></Recipe>
+    </div>    
 </div>
 
-@code {
-    private List<ArchnemesisModViewModel> Mods { get; set; } = new();    
-    private string _searchTerm;
-    private OperationMode _mode = OperationMode.Combination;
-    private Combinations _combinations;
-    private Recipe _recipe;
+<TooltipContainer @ref="_tooltip"></TooltipContainer>
 
+@code {
     protected override async Task OnInitializedAsync()
     {
         await base.OnInitializedAsync();
         Mods = _mapper.Map<List<ArchnemesisMod>, List<ArchnemesisModViewModel>>(await _client.GetFromJsonAsync<List<ArchnemesisMod>>("archnemesis_recipies.json"));
-
+        
         Mods.ForEach(x => 
         {
             x.Components = Mods.Where(m => x.ComponentNames.Contains(m.Name)).ToList();
             x.ComponentOf = Mods.Where(m => m.ComponentNames.Contains(x.Name)).ToList();
         });
-    }        
+    }    
+
+    private List<ArchnemesisModViewModel> Mods { get; set; } = new();    
+    private string _searchTerm;
+    private OperationMode _mode = OperationMode.Combination;
+    private TooltipContainer _tooltip;
+    private Recipe _recipe;
 
     private string searchTerm
     {
@@ -66,18 +80,92 @@
         }
     }
 
-    private void OnOperationChange(ChangeEventArgs e)
+    private async void OnClick((ArchnemesisModViewModel mod, MouseEventArgs e) args)
     {
-        var newMode = ((OperationMode)Convert.ToInt32(e.Value));
-
-        switch (_mode)
+        var (mod, e) = args;
+        switch (e.Detail)
         {
-            case OperationMode.Combination:
-                _combinations.Reset();
-                break;
-        }
+            case 1:
+                switch (e.Button)
+                {
+                    case 0: // add/remove from recipe
+                        _recipe.SelectMod(mod);
+                        break;
+                    case 2: // set/remove highlight
+                        var isSelected = mod.Selected;
+                        if (!e.ShiftKey)
+                        {
+                            Mods.ForEach(x => x.Selected = false);
+                        }
+                        mod.Selected = !isSelected;
 
-        _mode = newMode;
+                        // remove tooltip after selecting
+                        if (mod.Selected)
+                        {
+                            _tooltip.SetModel(null);                            
+                        }
+
+                        HighlightRelatedMods();
+                        break;
+                }
+                break;
+            case >1:                
+                await _jsRuntime.InvokeVoidAsync("copyClipboard", $"^{mod.Regex}");
+                return;
+        }        
+    }
+
+    private void OnMouseOver((ArchnemesisModViewModel mod, MouseEventArgs e) args)
+    {
+        var (mod, e) = args;
+        _tooltip.SetModel(e is not null ? mod : null);
+        mod.MouseOver = e is not null && !Mods.Any(x => x.Selected);
+        HighlightRelatedMods();
+    }   
+
+    private void HighlightRelatedMods()
+    {
+        // clear styles
+        Mods.ForEach(x => x.HighlightStyle = string.Empty);
+
+        HighlightComponents(Mods.Where(x => x.Selected), 0);
+        HighlightComponents(Mods.Where(x => x.MouseOver), 0);
+
+        // parent styles
+        HighlightParents(Mods.Where(x => x.Selected).SelectMany(x => x.ComponentOf), 1);
+        HighlightParents(Mods.Where(x => x.MouseOver).SelectMany(x => x.ComponentOf), 1);
+
+        StateHasChanged();
+    }
+
+    private void HighlightComponents(IEnumerable<ArchnemesisModViewModel> mods, int depth)
+    {
+        foreach(var mod in mods)
+        {
+            if (string.IsNullOrEmpty(mod.HighlightStyle))
+            {
+                mod.HighlightStyle = depth switch
+                {
+                    0 => "selected",
+                    _ => $"component-{depth}"
+                };    
+            }
+
+            HighlightComponents(mod.Components, depth + 1);
+        }
+    }
+
+    private void HighlightParents(IEnumerable<ArchnemesisModViewModel> mods, int depth)
+    {
+        foreach(var mod in mods)
+        {
+            if (string.IsNullOrEmpty(mod.HighlightStyle))
+            {
+                mod.HighlightStyle = $"parent-{depth}";
+            }
+
+            HighlightParents(mod.ComponentOf, depth + 1);
+        }
     }
 
     private void UpdateSearchResults()

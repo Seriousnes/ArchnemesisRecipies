@@ -1,0 +1,17 @@
+﻿.row {
+    border-bottom: 1px #aa9e82 solid;    
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.col-8 {
+    border-left: 1px #aa9e82 solid;
+}
+
+span {
+    white-space: unset;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

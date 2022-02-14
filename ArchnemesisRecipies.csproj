@@ -8,10 +8,15 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Components\ArchnemesisModTemplate.cs" />
+	  <Compile Remove="Pages\Index.razor.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<None Remove="Components\Footer.razor.css" />
 		<None Remove="Components\ModTier.razor.css" />
-		<None Remove="Components\RecipeComponents\RequiredComponent.razor.css" />
 		<None Remove="Components\TooltipContainer.razor.css" />
+		<None Remove="Pages\Recipe.razor.css" />
 		<None Remove="Shared\Notification.razor.css" />
 		<None Remove="Shared\UpdateAvailableDetector.razor.css" />
 	</ItemGroup>
@@ -27,8 +32,10 @@
 	<ItemGroup>
 		<Content Include="Components\Footer.razor.css" />
 		<Content Include="Components\ModTier.razor.css" />
-		<Content Include="Components\RecipeComponents\RequiredComponent.razor.css" />
+		<Content Include="Components\RecipeNode.razor.css" />
 		<Content Include="Components\TooltipContainer.razor.css" />
+		<Content Include="Pages\Index.razor.cs" />
+		<Content Include="Pages\Recipe.razor.css" />
 		<Content Include="Shared\Notification.razor.css" />
 		<Content Include="Shared\UpdateAvailableDetector.razor.css" />
 	</ItemGroup>
@@ -39,6 +46,7 @@
 		<PackageReference Include="Blazored.LocalStorage" Version="4.2.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.2" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.2" PrivateAssets="all" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>

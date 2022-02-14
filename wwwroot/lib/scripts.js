@@ -14,7 +14,7 @@ function positionTooltip(tooltipFor, visibility) {
     if (visibility) {
         $tooltip.attr('hidden', false);
         let $anchor = $(`#${tooltipFor} img.bordered`);
-        let $window = $anchor.parents('.scroll-panel');
+        let $window = $('#mod-list');
         let anchor = $anchor.get(0).getBoundingClientRect();
 
         let relativeCenters = alignCenterRelativeTo($tooltip, $anchor);
