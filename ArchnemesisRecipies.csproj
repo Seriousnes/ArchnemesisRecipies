@@ -12,15 +12,6 @@
 	  <Compile Remove="Pages\Index.razor.cs" />
 	</ItemGroup>
 
-	<ItemGroup>
-		<None Remove="Components\Footer.razor.css" />
-		<None Remove="Components\ModTier.razor.css" />
-		<None Remove="Components\TooltipContainer.razor.css" />
-		<None Remove="Pages\Recipe.razor.css" />
-		<None Remove="Shared\Notification.razor.css" />
-		<None Remove="Shared\UpdateAvailableDetector.razor.css" />
-	</ItemGroup>
-
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 		<NoWarn>1701;1702;8601;8618;8604;8603;8625;8600</NoWarn>
 	</PropertyGroup>
@@ -28,17 +19,6 @@
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
 		<NoWarn>1701;1702;8601;8618;8604;8603;8625;8600</NoWarn>
 	</PropertyGroup>
-
-	<ItemGroup>
-		<Content Include="Components\Footer.razor.css" />
-		<Content Include="Components\ModTier.razor.css" />
-		<Content Include="Components\RecipeNode.razor.css" />
-		<Content Include="Components\TooltipContainer.razor.css" />
-		<Content Include="Pages\Index.razor.cs" />
-		<Content Include="Pages\Recipe.razor.css" />
-		<Content Include="Shared\Notification.razor.css" />
-		<Content Include="Shared\UpdateAvailableDetector.razor.css" />
-	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="AutoMapper" Version="11.0.1" />

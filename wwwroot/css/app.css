@@ -47,6 +47,10 @@ html, body {
     background: #222;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .scroll-panel {
     height: calc(100vh - 119px);
     overflow-x: hidden;

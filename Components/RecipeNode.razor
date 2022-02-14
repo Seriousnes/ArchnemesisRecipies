@@ -1,20 +1,20 @@
 ﻿<div class="row align-items-center">
     @if (Node.Components.Any())
     {
-        <div class="col-4" align="center">                        
+        <div class="col-4 @isCompleted" align="center" @onclick="() => Node.IsCompleted = !Node.IsCompleted">                        
             <img src="images/mods/@(Node.Image)" /><br/>
             <span class="mod-name small">@Node.Name</span>
         </div>
-        <div class="col-8">
+        <div class="col-8 @isCompleted">
             @foreach (var child in Node.Components)
             {
-                <RecipeNode @key=child Node=child></RecipeNode>
+                <RecipeNode Node=child></RecipeNode>
             }
         </div>
     }
     else
     {
-        <div class="col-auto">
+        <div class="col-auto @isCompleted" @onclick="() => Node.IsCompleted = !Node.IsCompleted">
             <img class="medium-image" src="images/mods/@(Node.Image)">
             <span class="pl-2 mod-name">@Node.Name</span>            
         </div>    
@@ -23,5 +23,7 @@
 
 @code {
     [Parameter]
-    public RecipeComponentViewModel Node { get; set; }    
+    public RecipeComponentViewModel Node { get; set; }
+
+    private string isCompleted => Node.IsCompleted ? "completed" : "";
 }

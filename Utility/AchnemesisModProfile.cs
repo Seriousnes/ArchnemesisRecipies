@@ -28,7 +28,18 @@ namespace ArchnemesisRecipies.Utility
                 .ForMember(x => x.Rewards, src => src.Ignore())
                 .ForMember(x => x.ExpressionEvaluator, src => src.MapFrom(x => x.ExpressionEvaluator));
 
+            CreateMap<RecipeViewModel, RecipeExportModel>()
+                .ForMember(x => x.SelectedMods, src => src.MapFrom(x => x.SelectedMods));
 
+            CreateMap<RecipeExportModel, RecipeViewModel>()
+                .ForMember(x => x.SelectedMods, src => src.MapFrom(x => x.SelectedMods));
+
+            CreateMap<RecipeComponentExportModel, RecipeComponentViewModel>()
+                .ConvertUsing(x => new RecipeComponentViewModel { Name = x.Component, IsCompleted = x.IsCompleted });
+
+            CreateMap<RecipeComponentViewModel, RecipeComponentExportModel>()
+                .ForMember(x => x.Component, src => src.MapFrom(x => x.Name))
+                .ForMember(x => x.IsCompleted, src => src.MapFrom(x => x.IsCompleted));
         }
     }
 }

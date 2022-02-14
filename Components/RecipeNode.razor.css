@@ -15,3 +15,15 @@ span {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.completed {
+    filter: grayscale(100%);
+    color: var(--normal-color);
+    text-decoration: line-through;
+}
+
+/*.in-progress {
+    filter: none !important;
+    color: inherit !important;
+    text-decoration: none !important;
+}*/

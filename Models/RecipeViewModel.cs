@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using ArchnemesisRecipies.Utility;
+using AutoMapper;
 using System.Text;
 using System.Text.Json;
 
@@ -6,48 +7,40 @@ namespace ArchnemesisRecipies.Models
 {
     public class RecipeViewModel
     {
-        private readonly IMapper _mapper;
+        private readonly IMapper _mapper = WrappedMapper.Mapper;
 
         public RecipeViewModel()
         {
         }
 
-        public RecipeViewModel(IMapper mapper)
+        public List<RecipeComponentViewModel> SelectedMods { get; set; } = new();        
+        
+        public string Export()
         {
-            _mapper = mapper;
+            return Convert.ToBase64String(Encoding.UTF8.GetBytes(JsonSerializer.Serialize(_mapper.Map<RecipeExportModel>(this))));
         }
 
-        public List<RecipeComponentViewModel> SelectedMods { get; set; } = new();        
-        public string Export(IMapper mapper)
-        {
-            return Convert.ToBase64String(Encoding.UTF8.GetBytes(JsonSerializer.Serialize(mapper.Map<RecipeViewModel, RecipeExportModel>(this))));
-        }
-        public static RecipeViewModel Import(string importString, IMapper mapper)
+        public void Import(string importString)
         {
             try
             {
-                return mapper.Map<RecipeExportModel, RecipeViewModel>(JsonSerializer.Deserialize<RecipeExportModel>(Convert.FromBase64String(importString)));
+                _mapper.Map(JsonSerializer.Deserialize<RecipeExportModel>(Convert.FromBase64String(importString)), this);
             }
             catch (Exception)
             {
-                return null;
             }
         }
         
         public void AddMod(RecipeComponentViewModel mod)
         {
-            //var recipeComponent = _mapper.Map<ArchnemesisModViewModel, RecipeComponentViewModel>(mod);
             SelectedMods = SelectedMods.Append(mod).ToList();
         }
 
         public void RemoveMod(RecipeComponentViewModel mod)
         {
-            //SelectedMods = SelectedMods.Where(x => x.Name != mod.Name).ToList();
             SelectedMods.Remove(mod);
         }
-
-        //public bool ContainsMod(ArchnemesisModViewModel mod) => SelectedMods.Any(x => x.Name == mod.Name);
-        
+      
         public IEnumerable<(IEnumerable<string> images, string modifier)> CalculateRewards()
         {
             var activeEffects = new List<(IExpressionEvaluator evaluator, string value)>();

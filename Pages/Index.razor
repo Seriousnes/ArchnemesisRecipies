@@ -15,6 +15,12 @@
         </div>
     </div>
     <div class="col-4">
+        <div class="d-flex flex-row">
+            <span class="small italic">Left-click to add/remove from recipe, Right-click to select, click name to copy for in-game search</span><br />
+        </div>
+        <div class="d-flex flex-row">
+            <span class="small italic">Map drop locations are suggestions only and based on various community feedback</span>
+        </div>
         @*<span class="effects">Mode: </span>
         @foreach (var mode in (OperationMode[])Enum.GetValues(typeof(OperationMode)))
         {
@@ -26,12 +32,7 @@
     </div>
 </header>
 <div class="row">
-    <div id="mod-list" class="col-lg-7 scroll-panel">        
-        <div class="row mb-3 justify-content-center">
-            <div class="col-auto">
-                <span class="small italic">(Left-click to add/remove from recipe, Right-click to select, click name to copy for in-game search)</span>                
-            </div>
-        </div>
+    <div id="mod-list" class="col-lg-7 scroll-panel">                
         @foreach (var tierGroup in Mods.GroupBy(x => x.ModTier))
         {
             <ModTier Tier="@tierGroup.Key">
@@ -134,8 +135,6 @@
         // parent styles
         HighlightParents(Mods.Where(x => x.Selected).SelectMany(x => x.ComponentOf), 1);
         HighlightParents(Mods.Where(x => x.MouseOver).SelectMany(x => x.ComponentOf), 1);
-
-        StateHasChanged();
     }
 
     private void HighlightComponents(IEnumerable<ArchnemesisModViewModel> mods, int depth)

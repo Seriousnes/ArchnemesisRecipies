@@ -3,8 +3,6 @@
 @inject IMapper _mapper
 @inject ILocalStorageService _localStore
 
-
-
 <div class="row align-items-center mx-1 mb-2">
     <div class="col-8">
         @if (recipe.SelectedMods.Count == 0)
@@ -60,7 +58,7 @@
     <div class="tree">
     @foreach (var c in recipe.SelectedMods)
     {
-        <RecipeNode @key=c Node=c></RecipeNode>
+        <RecipeNode Node=c></RecipeNode>
     }
     </div>
 }           
@@ -69,15 +67,10 @@
     [Parameter]
     public List<ArchnemesisModViewModel> Mods { get; set; }
 
-    protected override void OnInitialized()
-    {
-        base.OnInitialized();
-        _recipe = new(_mapper);
-    }
-
     protected override async Task OnParametersSetAsync()
     {
-        await base.OnParametersSetAsync();               
+        await base.OnParametersSetAsync();    
+        _recipe = new();
 
         // find an existing import
         if (await _localStore.ContainKeyAsync("recipe"))
@@ -85,14 +78,11 @@
             var savedRecipe = await _localStore.GetItemAsStringAsync("recipe");
             Import(savedRecipe);
         }        
-
-        StateHasChanged();
     }
 
     protected override async Task OnInitializedAsync()
     {
-        await base.OnInitializedAsync();        
-        await JSRuntime.InvokeVoidAsync("toggleRowCollapsed", 1);
+        await base.OnInitializedAsync();                
     }
 
     public void SelectMod(ArchnemesisModViewModel mod)
@@ -115,8 +105,6 @@
             recipe.RemoveMod(mod);
         }
         UpdateSavedRecipe();
-
-        StateHasChanged();
     }
 
     private RecipeViewModel _recipe;
@@ -138,7 +126,7 @@
         get => _importString;
         set 
         {
-            if (!TryImport(value))
+            if (TryParseImportString(value, out _))
             {
                 _importString = value;       
             }
@@ -151,56 +139,63 @@
 
     private async void UpdateSavedRecipe()
     {
-        //await _localStore.SetItemAsStringAsync("recipe", _recipe.Export(_mapper));        
+        await _localStore.SetItemAsStringAsync("recipe", _recipe.Export());        
     }   
 
     public async void Clear()
     {
         recipe.SelectedMods.Clear();
-        //recipe.Components.Clear();
-        //if (await _localStore.ContainKeyAsync("recipe"))
-        //{
-        //    await _localStore.RemoveItemAsync("recipe");
-        //}
+        if (await _localStore.ContainKeyAsync("recipe"))
+        {
+            await _localStore.RemoveItemAsync("recipe");
+        }
     }
 
     private void Import(string importString)
     {
-        //Import(RecipeViewModel.Import(importString, _mapper));
-        //this.importString = null;
-        //StateHasChanged();
+        Import(TryParseImportString(importString, out var import) ? import : null);
+        this.importString = null;
     }  
 
     private void Import(RecipeViewModel importedRecipe)
     {
-        //if (importedRecipe is not null)
-        //{
-        //    // link selected mods
-        //    importedRecipe.SelectedMods = Mods.Where(x => importedRecipe.SelectedMods.Any(r => r.Name == x.Name)).ToList();
-        //    importedRecipe.Components.ForEach(c => c.Component = Mods.SingleOrDefault(x => x.Name == c.Component.Name));
-        //    recipe = importedRecipe;
-        //}        
+        if (importedRecipe is not null)
+        {
+            // link selected mods
+            foreach (var importedMod in importedRecipe.SelectedMods)
+            {
+                var m = Mods.SingleOrDefault(x => x.Name == importedMod.Name);
+                if (m is not null)
+                {
+                    _mapper.Map(m, importedMod);
+                }
+            }
+            importedRecipe.SelectedMods = importedRecipe.SelectedMods.Where(x => !string.IsNullOrEmpty(x.Image)).ToList();
+            recipe = importedRecipe;
+        }        
     }
 
-    private bool TryImport(string importString)
+    private bool TryParseImportString(string importString, out RecipeViewModel result)
     {
-        //var importedRecipe = RecipeViewModel.Import(importString, _mapper);
-        //if (importedRecipe is not null)
-        //{               
-        //    Import(importedRecipe);
-        //    StateHasChanged();
-        //    return true;
-        //}
-        //return false;
-        return true;
+        result = new RecipeViewModel();        
+        try
+        {
+            result.Import(importString);
+            return true;
+        }
+        catch
+        {
+            result = null;
+            return false;
+        }
     }
 
     private async void Export()
     {
-        //var exportString = recipe?.Export(_mapper);
-        //if (!string.IsNullOrEmpty(exportString))
-        //{
-        //    await JSRuntime.InvokeVoidAsync("copyClipboard", exportString);
-        //}
+        var exportString = recipe?.Export();
+        if (!string.IsNullOrEmpty(exportString))
+        {
+            await JSRuntime.InvokeVoidAsync("copyClipboard", exportString);
+        }
     }    
 }
