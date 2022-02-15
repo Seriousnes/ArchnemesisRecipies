@@ -2,6 +2,7 @@
 using AutoMapper;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace ArchnemesisRecipies.Models
 {
@@ -81,6 +82,8 @@ namespace ArchnemesisRecipies.Models
     {
         public string Name { get; set; }
         public List<RecipeComponentViewModel> Components { get; set; }
+        [JsonIgnore]
+        public int ModTier { get; set; }
         public string Type { get; set; }
         public string Effect { get; set; }
         public string Regex { get; set; }
@@ -98,7 +101,8 @@ namespace ArchnemesisRecipies.Models
 
     public class RecipeComponentExportModel
     {
-        public string Component { get; set; }
+        public string Name { get; set; }
+        public List<RecipeComponentExportModel> Components { get; set; }
         public bool IsCompleted { get; set; }
     }
 }

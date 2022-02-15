@@ -22,7 +22,6 @@ namespace ArchnemesisRecipies.Models
     public abstract class ExpressionEvaluator
     {
         protected Regex GetRegex(string matchText) => new(matchText, RegexOptions.IgnoreCase | RegexOptions.Compiled);
-        //public static string MatchText { get; }
     }
 
     public class DefaultExpressionEvaluator : IExpressionEvaluator

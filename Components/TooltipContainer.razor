@@ -11,18 +11,18 @@
     //[Parameter]
     private ArchnemesisModViewModel _model { get; set; }
 
-    public async void SetModel(ArchnemesisModViewModel model)
+    public void SetModel(ArchnemesisModViewModel model)
     {
         _model = model;
         StateHasChanged();
     }
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
+    protected override void OnAfterRender(bool firstRender)
     {
-        await base.OnAfterRenderAsync(firstRender);
+        base.OnAfterRender(firstRender);
         if (!firstRender)
         {
-            await JSRuntime.InvokeVoidAsync("positionTooltip", _model?.GetElementId(), _model != null);
+            JSRuntime.InvokeVoidAsync("positionTooltip", _model?.GetElementId(), _model != null);
         }
     }
 }

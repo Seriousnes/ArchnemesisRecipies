@@ -1,4 +1,23 @@
 ﻿.tree {
-    border-top: 1px #aa9e82 solid;
-    border-bottom: 1px #aa9e82 solid;
+    border-top: 1px var(--currency-color) solid;
+    border-bottom: 1px var(--currency-color) solid;
+}
+
+.recipe-tabs .nav-link {
+    color: var(--currency-color);
+}
+
+.recipe-tabs .nav-link:hover {
+    border-color: var(--currency-color);
+}
+
+.recipe-tabs .nav-link.active {
+    background-color: #616161;
+    color: var(--craftaffectwarning-color);
+    font-weight: 500;
+    border-color: var(--currency-color);
+}
+
+.recipe-tabs.nav.nav-tabs {
+    border-color: var(--currency-color);
 }

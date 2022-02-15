@@ -38,8 +38,8 @@
             <div class="col-md-auto">
             @if(recipe.SelectedMods.Count > 0)
             {
-                <button class="btn btn-secondary" type="button" @onclick="() => Export()">Export</button>
-                <button class="btn btn-secondary" type="button" @onclick="() => Clear()">Clear</button>
+                <button class="btn btn-secondary" type="button" @onclick="Export">Export</button>
+                <button class="btn btn-secondary" type="button" @onclick="Clear">Clear</button>
             }
             </div>
         </div>
@@ -47,19 +47,42 @@
 </div> 
 @if(recipe.SelectedMods.Count > 0)
 {   
-    <div class="px-3">
-        <RewardsCalculator Recipe=recipe></RewardsCalculator>   
+    <div class="px-3 pb-2">
+       <RewardsCalculator Recipe="recipe"></RewardsCalculator>
         
         @*How to build*@
-        <div class="row">        
+        <ul class="recipe-tabs nav nav-tabs">
+            <li class="nav-item" @onclick="() => _activeTab = 1">
+                <span class="nav-link @getTabIsActive(1)">Build Tree</span>
+            </li>
+            <li class="nav-item" @onclick="() => _activeTab = 2">
+                <span class="nav-link @getTabIsActive(2)">T1 Mod Count</span>
+            </li>
+        </ul>
+        @*<div class="row">        
             <h5 class="rewards">Build Tree:</h5>            
-        </div> 
+        </div> *@
     </div>         
     <div class="tree">
-    @foreach (var c in recipe.SelectedMods)
-    {
-        <RecipeNode Node=c></RecipeNode>
-    }
+        @switch (_activeTab)
+        {
+            case 1:
+                foreach (var c in recipe.SelectedMods)
+                {
+                    <RecipeNode @key="c" Node="c" CompletedStateChanged=UpdateSavedRecipe></RecipeNode>
+                }
+                break;
+            case 2:
+                <ul class="py-2 m-0">                
+                @foreach (var (mod, count) in recipe.GetComponents().OrderBy(x => x.Key.Name))
+                {
+                    <li class="mod-name">
+                        <span>@count x</span><img src="images/mods/@mod.Image" class="small-image" /><span class="pl-2">@mod.Name</span>                          
+                    </li>
+                }
+                </ul>
+                break;
+        }
     </div>
 }           
 
@@ -67,27 +90,30 @@
     [Parameter]
     public List<ArchnemesisModViewModel> Mods { get; set; }
 
-    protected override async Task OnParametersSetAsync()
-    {
-        await base.OnParametersSetAsync();    
-        _recipe = new();
-
-        // find an existing import
-        if (await _localStore.ContainKeyAsync("recipe"))
-        {
-            var savedRecipe = await _localStore.GetItemAsStringAsync("recipe");
-            Import(savedRecipe);
-        }        
-    }
-
     protected override async Task OnInitializedAsync()
     {
-        await base.OnInitializedAsync();                
+        await base.OnInitializedAsync();        
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        await base.OnParametersSetAsync();
+
+        if (!_hasLoadedFromLocalStore && Mods.Count > 0)
+        {
+            _hasLoadedFromLocalStore = true;
+            // find an existing import
+            if (await _localStore.ContainKeyAsync("recipe"))
+            {
+                var savedRecipe = await _localStore.GetItemAsStringAsync("recipe");
+                Import(savedRecipe);
+            }
+        }
     }
 
     public void SelectMod(ArchnemesisModViewModel mod)
     {
-        var viewModel = recipe.SelectedMods.SingleOrDefault(x => x.Name == mod.Name) ?? _mapper.Map<ArchnemesisModViewModel, RecipeComponentViewModel>(mod);
+        var viewModel = recipe.SelectedMods.SingleOrDefault(x => x.Name == mod.Name) ?? _mapper.Map<RecipeComponentViewModel>(mod);
         SelectMod(viewModel);
     }
 
@@ -107,7 +133,9 @@
         UpdateSavedRecipe();
     }
 
-    private RecipeViewModel _recipe;
+    private int _activeTab = 1;
+    private bool _hasLoadedFromLocalStore = false;
+    private RecipeViewModel _recipe = new();
     private string _importString;
     private RecipeViewModel recipe
     {
@@ -137,12 +165,14 @@
         }
     }
 
+    private string getTabIsActive(int tab) => tab == _activeTab ? "active" : "";
+
     private async void UpdateSavedRecipe()
     {
         await _localStore.SetItemAsStringAsync("recipe", _recipe.Export());        
     }   
 
-    public async void Clear()
+    public async Task Clear()
     {
         recipe.SelectedMods.Clear();
         if (await _localStore.ContainKeyAsync("recipe"))
@@ -161,16 +191,7 @@
     {
         if (importedRecipe is not null)
         {
-            // link selected mods
-            foreach (var importedMod in importedRecipe.SelectedMods)
-            {
-                var m = Mods.SingleOrDefault(x => x.Name == importedMod.Name);
-                if (m is not null)
-                {
-                    _mapper.Map(m, importedMod);
-                }
-            }
-            importedRecipe.SelectedMods = importedRecipe.SelectedMods.Where(x => !string.IsNullOrEmpty(x.Image)).ToList();
+            importedRecipe.Map(Mods);            
             recipe = importedRecipe;
         }        
     }
@@ -190,7 +211,7 @@
         }
     }
 
-    private async void Export()
+    private async Task Export()
     {
         var exportString = recipe?.Export();
         if (!string.IsNullOrEmpty(exportString))

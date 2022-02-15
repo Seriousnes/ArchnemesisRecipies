@@ -1,24 +1,28 @@
-﻿<div class="">
-    <h5 class="rewards">Calculated Rewards:</h5>                            
-    <ul class="">
-    @foreach (var (images, modifier) in Recipe.CalculateRewards())
-    {
-        <li class="">
-            <div class="d-inline-flex flex-row">
-                <div class="py-1 px-2">
-                @foreach (var img in images)
-                {
-                    @((MarkupString)img);
-                }   
-                </div>
-                <div class="py-1 px-2">
-                    @modifier
-                </div>
-            </div> 
-        </li>
-    }
-    </ul>
-</div>
+﻿@if (Recipe is not null)
+{
+    <div>
+        <h5 class="rewards">Calculated Rewards:</h5>                            
+        <ul>
+        @foreach (var (images, modifier) in Recipe.CalculateRewards())
+        {
+            <li>
+                <div class="d-inline-flex flex-row">
+                    <div class="py-1 px-2">
+                    @foreach (var img in images)
+                    {
+                        @((MarkupString)img);
+                    }   
+                    </div>
+                    <div class="py-1 px-2">
+                        @modifier
+                    </div>
+                </div> 
+            </li>
+        }
+        </ul>
+    </div>    
+}
+
 
 @code {
     [Parameter]

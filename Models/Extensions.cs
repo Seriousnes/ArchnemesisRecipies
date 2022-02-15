@@ -1,9 +1,14 @@
-﻿using System.ComponentModel;
+﻿using ArchnemesisRecipies.Utility;
+using AutoMapper;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
 
 namespace ArchnemesisRecipies.Models
 {
     public static class Extensions
     {
+        private static IMapper _mapper = WrappedMapper.Mapper;
+
         public static string GetDescription(this Enum element)
         {
             var type = element.GetType();
@@ -20,14 +25,72 @@ namespace ArchnemesisRecipies.Models
             return element.ToString();
         }
 
-        public static Stack<TResult> ToStack<TSource, TResult>(this Stack<TSource> stack, Func<TSource, TResult> conversion)
+        public static IEnumerable<T> FlattenRecursiveList<T>(this IEnumerable<T> list, Func<T, IEnumerable<T>> select, Func<T, bool> when)
         {
-            var result = new Stack<TResult>();
-            foreach (var item in stack)
+            var result = new List<T>();
+            result.AddRange(list);
+            if (list.Where(when).Count() > 0)
             {
-                result.Push(conversion(item));
+                result.AddRange(list.FlattenRecursiveList(select, when));
             }
             return result;
+        }
+
+        public static void Map(this RecipeViewModel model, IEnumerable<ArchnemesisModViewModel> mods)
+        {
+            foreach (var component in model.SelectedMods)
+            {
+                component.Map(mods);
+            }    
+        }
+
+        private static void Map(this RecipeComponentViewModel model, IEnumerable<ArchnemesisModViewModel> mods)
+        {
+            // remove components before mapping
+            var components = model.Components;
+            model.Components = null;
+            
+            foreach (var component in components)
+            {
+                component.Map(mods);
+            }
+
+            _mapper.Map(mods.SingleOrDefault(x => x.Name == model.Name), model);
+            model.Components = components;
+        }
+
+        public static Dictionary<RecipeComponentViewModel, int> GetComponents(this RecipeViewModel model)
+        {
+            return model.SelectedMods
+                .SelectMany(x => x.GetComponents())
+                .GroupBy(x => x, new RecipeComponentViewModelEqualityComparer())
+                .ToDictionary(x => x.Key, x => x.Count());
+        }
+
+        public static IEnumerable<RecipeComponentViewModel> GetComponents(this RecipeComponentViewModel model)
+        {
+            return model.ModTier switch
+            {
+                1 => new List<RecipeComponentViewModel> { model },
+                _ => model.Components.Where(x => x.ModTier == 1).Concat(model.Components.Where(x => x.ModTier > 1).SelectMany(x => x.GetComponents()))
+            };
+        }
+
+        public static Dictionary<RecipeComponentViewModel, int> GetComponentCount(this IEnumerable<RecipeComponentViewModel> components)
+        {
+            return components
+                .GroupBy(x => x, new RecipeComponentViewModelEqualityComparer())
+                .ToDictionary(x => x.Key, x => x.Count());
+        }
+
+        private class RecipeComponentViewModelEqualityComparer : IEqualityComparer<RecipeComponentViewModel>
+        {
+            public bool Equals(RecipeComponentViewModel? x, RecipeComponentViewModel? y) => x?.Name == y?.Name;
+
+            public int GetHashCode([DisallowNull] RecipeComponentViewModel obj)
+            {
+                return obj.Name.GetHashCode();
+            }
         }
 
         public static IEnumerable<string> GetImageUrls(this string rewards, bool group = true, string imgStyle = "")
