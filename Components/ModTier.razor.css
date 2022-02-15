@@ -7,11 +7,11 @@
 }
 
 h3.collapsed::after {
-    content: " \f102";    
+    content: " \f103";
 }
 
 h3.expanded::after {
-    content: " \f103";    
+    content: " \f102";
 }
 
 div.row.collapsed {

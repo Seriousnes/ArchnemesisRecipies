@@ -4,8 +4,10 @@
 @inject HttpClient _client
 @inject IMapper _mapper
 @inject IJSRuntime _jsRuntime
+@inject ILocalStorageService _localStore
 
 <PageTitle>Archnemesis Recipe Helper</PageTitle>
+<TooltipContainer @ref="_tooltip"></TooltipContainer>
 
 <header class="row mb-1 align-items-center">
     <div class="col-4">
@@ -14,7 +16,7 @@
             <button class="btn btn-secondary" type="button" @onclick="() => searchTerm = string.Empty">Clear</button>
         </div>
     </div>
-    <div class="col-8">
+    <div class="col-7">
         <div class="d-flex flex-row">
             <span class="small italic">Left-click to add/remove from recipe, right-click to select, click name to copy search for in-game filtering</span><br />
         </div>
@@ -22,9 +24,20 @@
             <span class="small italic">Map drop locations are suggestions only and based on various community feedback. Contact me at links below for corrections.</span>
         </div>        
     </div>
+    <div class="col-1">
+        <div class="d-flex justify-content-end" @onclick="() => isCollapsed = !isCollapsed">
+            <span class="flex-item recipe-toggle @collapsed">@(isCollapsed switch
+                {
+                    true => "Show ",
+                    false => "Hide "
+                })
+                Recipe builder
+            </span>
+        </div>
+    </div>
 </header>
 <div class="row">
-    <div id="mod-list" class="col-lg-7 scroll-panel">                
+    <div id="mod-list" class="@(isCollapsed ? "col-12" : "col-7") scroll-panel">                
         @foreach (var tierGroup in Mods.GroupBy(x => x.ModTier))
         {
             <ModTier Tier="@tierGroup.Key">
@@ -36,20 +49,23 @@
                 </Content>
             </ModTier>
         }
-    </div>
-    <div class="col-lg-5 scroll-panel px-0" style="border-left: 1px #aa9e82 solid;">        
-        <Recipe @ref="_recipe" Mods=Mods></Recipe>
     </div>    
+    <div class="col-5 scroll-panel px-0" style="border-left: 1px #aa9e82 solid; @(isCollapsed ? "display: none;" : "" )">
+        <Recipe @ref="_recipe" Mods=Mods></Recipe>        
+    </div>
 </div>
-
-<TooltipContainer @ref="_tooltip"></TooltipContainer>
 
 @code {
     protected override async Task OnInitializedAsync()
     {
         await base.OnInitializedAsync();
         Mods = _mapper.Map<List<ArchnemesisMod>, List<ArchnemesisModViewModel>>(await _client.GetFromJsonAsync<List<ArchnemesisMod>>("archnemesis_recipies.json"));
-        
+
+        if (await _localStore.ContainKeyAsync("hideRecipe"))
+        {
+            _isCollapsed = await _localStore.GetItemAsync<bool>("hideRecipe");
+        }
+
         Mods.ForEach(x => 
         {
             x.Components = Mods.Where(m => x.ComponentNames.Contains(m.Name)).ToList();
@@ -61,7 +77,6 @@
     private string _searchTerm;
     private TooltipContainer _tooltip;
     private Recipe _recipe;
-
     private string searchTerm
     {
         get => _searchTerm;
@@ -71,6 +86,19 @@
             UpdateSearchResults();
         }
     }
+
+    private bool _isCollapsed;
+    private bool isCollapsed
+    {
+        get => _isCollapsed;
+        set
+        {
+            _isCollapsed = value;
+            _localStore.SetItemAsync("hideRecipe", value);
+        }
+    }
+
+    private string collapsed => isCollapsed ? "collapsed" : "expanded";
 
     private async void OnClick((ArchnemesisModViewModel mod, MouseEventArgs e) args)
     {

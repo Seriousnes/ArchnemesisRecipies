@@ -1,16 +1,26 @@
 ﻿<div class="row align-items-center">
     @if (Node.Components.Any())
     {
-        <div class="col-4 @isCompleted" align="center" @onclick="OnClick">                        
-            <img src="images/mods/@(Node.Image)" /><br/>
-            <span class="mod-name small">@Node.Name</span>
-        </div>
-        <div class="col-8 @isCompleted">
-            @foreach (var child in Node.Components)
-            {
-                <RecipeNode @key="child" Node="child" CompletedStateChanged=CompletedStateChanged></RecipeNode>
-            }
-        </div>
+        @if (Node.IsCompleted)
+        {
+            <div class="d-inline-flex align-items-center @isCompleted" align="center" @onclick="OnClick">                        
+                <img class="medium-image" src="images/mods/@(Node.Image)" />
+                <span class="mod-name small">@Node.Name</span>
+            </div>
+        }
+        else
+        {
+            <div class="col-4 @isCompleted" align="center" @onclick="OnClick">                        
+                <img src="images/mods/@(Node.Image)" /><br/>
+                <span class="mod-name small">@Node.Name</span>
+            </div>
+            <div class="col-8 @isCompleted">
+                @foreach (var child in Node.Components)
+                {
+                    <RecipeNode @key="child" Node="child" CompletedStateChanged=CompletedStateChanged></RecipeNode>
+                }
+            </div>
+        }
     }
     else
     {

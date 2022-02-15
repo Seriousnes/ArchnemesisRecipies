@@ -611,7 +611,7 @@
       "Corrupter"
     ],
     "Effect": "Rewards are rolled 1 additional time, choosing the rarest result",
-    "Regex": "(hex|mal|cor)"
+    "Regex": "(hex|mal|corr)"
   },
   {
     "Name": "Lunaris-touched",
