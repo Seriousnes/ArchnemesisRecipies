@@ -191,7 +191,7 @@
         try
         {
             var r = new Regex(searchTerm, RegexOptions.IgnoreCase);        
-            Mods.ForEach(x => x.Fade = !r.IsMatch(x.Name) && !r.IsMatch(x.Type));
+            Mods.ForEach(x => x.Fade = !r.IsMatch(x.Name) && !r.IsMatch(x.Type) && !r.IsMatch(x.Effect));
         }
         catch { }        
     }
