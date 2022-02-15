@@ -20,11 +20,11 @@ h3[b-w94b9xabip]::after {
 }
 
 h3.collapsed[b-w94b9xabip]::after {
-    content: " \f102";    
+    content: " \f103";
 }
 
 h3.expanded[b-w94b9xabip]::after {
-    content: " \f103";    
+    content: " \f102";
 }
 
 div.row.collapsed[b-w94b9xabip] {
@@ -36,38 +36,71 @@ div.row.collapsed[b-w94b9xabip] {
 div.row.expanded[b-w94b9xabip] {
     transition: height 1s;
 }
-/* /Components/RecipeComponents/RequiredComponent.razor.rz.scp.css */
-div.done[b-c8kis14wey]{
-    position: relative;
+/* /Components/RecipeNode.razor.rz.scp.css */
+.row[b-8m457eq2ge] {
+    border-bottom: 1px #aa9e82 solid;    
 }
 
-div.done[b-c8kis14wey]:after {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    background: #c8c8c8;
-    height: 1px;
-    content: "";
-    width: 100%;
-    display: block;
+.row:last-child[b-8m457eq2ge] {
+    border-bottom: none;
 }
+
+.col-8[b-8m457eq2ge] {
+    border-left: 1px #aa9e82 solid;
+}
+
+span[b-8m457eq2ge] {
+    white-space: unset;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.completed[b-8m457eq2ge] {
+    filter: grayscale(100%);
+    color: var(--normal-color);
+    text-decoration: line-through;
+}
+
+/*.in-progress {
+    filter: none !important;
+    color: inherit !important;
+    text-decoration: none !important;
+}*/
 /* /Components/TooltipContainer.razor.rz.scp.css */
 .tooltip-container[b-go4lnfjhgw] {
     border: 1px solid #aa9e82;
     background: #222;
     opacity: 0;
     position: absolute;
-    display: inline-block;
+    /*display: inline-block;*/
     width: auto;
     max-width: 25vw;
     height: auto;
     z-index: 1000;
 }
-/* /Pages/Combinations.razor.rz.scp.css */
-button.sticky-top[b-wxh047daev] {
-    float: right;
-    position: sticky;
-    top: 0;
+/* /Pages/Recipe.razor.rz.scp.css */
+.tree[b-xfa138whhz] {
+    border-top: 1px var(--currency-color) solid;
+    border-bottom: 1px var(--currency-color) solid;
+}
+
+.recipe-tabs .nav-link[b-xfa138whhz] {
+    color: var(--currency-color);
+}
+
+.recipe-tabs .nav-link:hover[b-xfa138whhz] {
+    border-color: var(--currency-color);
+}
+
+.recipe-tabs .nav-link.active[b-xfa138whhz] {
+    background-color: #616161;
+    color: var(--craftaffectwarning-color);
+    font-weight: 500;
+    border-color: var(--currency-color);
+}
+
+.recipe-tabs.nav.nav-tabs[b-xfa138whhz] {
+    border-color: var(--currency-color);
 }
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-b4gbpjcrr0] {

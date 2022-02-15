@@ -40,10 +40,15 @@ html, body {
     font-family: 'FontinSmallCaps', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
     background-color: #222;
     font-size: .9375rem;
+    color: white;
 }
 
 ::selection {
     background: #222;
+}
+
+.italic {
+    font-style: italic;
 }
 
 .scroll-panel {
@@ -264,4 +269,19 @@ img.parent-6 {
 
 .underline {
     text-decoration: underline;
+}
+
+
+.recipe-toggle::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+}
+
+.recipe-toggle.expanded::after {
+    content: "  \f101";
+}
+
+.recipe-toggle.collapsed::after {
+    content: "  \f100";
 }
