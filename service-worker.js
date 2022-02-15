@@ -1,4 +1,4 @@
-// v36
+// v37
 
 self.importScripts('./service-worker-assets.js');
 self.addEventListener('install', event => event.waitUntil(onInstall(event)));
@@ -46,4 +46,4 @@ async function onFetch(event) {
 
     return cachedResponse || fetch(event.request);
 }
-/* Manifest version: wf3vIuqS */
+/* Manifest version: +wJdbhCX */
