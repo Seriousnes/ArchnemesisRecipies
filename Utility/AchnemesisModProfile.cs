@@ -12,8 +12,10 @@ namespace ArchnemesisRecipies.Utility
                 .ForMember(x => x.ExpressionEvaluator, src => src.MapFrom(x => RewardExpressionEvaluators.GetEvaluator(x.Effect)))
                 ;
 
+            CreateMap<ArchnemesisModViewModel, ArchnemesisModViewModel>();
+
             CreateMap<ArchnemesisModViewModel, RecipeComponentViewModel>()
-                .ForMember(x => x.Components, src => src.MapFrom(x => x.Components))
+                .ForMember(x => x.Components, src => src.MapFrom<RecipeComponentCollectionResolver>())
                 .ForMember(x => x.Rewards, src => src.Ignore())
                 .ForMember(x => x.IsCompleted, src => src.Ignore())
                 ;
