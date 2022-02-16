@@ -21,3 +21,13 @@
 .recipe-tabs.nav.nav-tabs {
     border-color: var(--currency-color);
 }
+
+.list-group-item {
+    color: initial;
+    background: initial;
+    border: none;
+    border-bottom: 1px var(--currency-color) solid;
+}
+.list-group > .list-group-item:last-of-type {
+    border-bottom: none;
+}

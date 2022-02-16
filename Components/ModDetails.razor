@@ -31,7 +31,7 @@
                     <span class="rewards">Rewards:</span>
                 </div>
                 <div class="col">
-                    @foreach (var reward in Model.Rewards.GetImageUrls(group: false))
+                    @foreach (var reward in Model.Rewards.GetImageUrls(group: false, imgStyle: "medium-image"))
                     {
                         @((MarkupString)reward)
                     }        
@@ -73,7 +73,7 @@
     public ArchnemesisModViewModel Model { get; set; }
 
     [Parameter]
-    public Action<ArchnemesisModViewModel, MouseEventArgs> OnClick { get; set; }
+    public EventCallback<(ArchnemesisModViewModel mod, MouseEventArgs e)> OnClick { get; set; }
 
     private async void CopyRegex()
     {
@@ -85,9 +85,8 @@
         this.Model = model;
     }
 
-    void Click(ArchnemesisModViewModel mod, MouseEventArgs e = null)
+    async void Click(ArchnemesisModViewModel mod, MouseEventArgs e = null)
     {
-        mod.Selected = true;
-        OnClick(mod, e);
+        await OnClick.InvokeAsync((mod, e));
     } 
 }

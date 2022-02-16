@@ -180,9 +180,9 @@ namespace ArchnemesisRecipies.Models
 
         private static Dictionary<string, string> _effects = new()
         {
-            { AllRewardsAreThisExpressionEvaluator.MatchText, @"<i class=""fa-solid fa-arrows-rotate""></i>{0}" },
-            { RewardsAreDoubledExpressionEvaluator.MatchText, @"x 2" },
-            { AdditionalRewardForEachRewardTypeExpressionEvaluator.MatchText, @"<i class=""fa-solid fa-plus"">" },
+            { AllRewardsAreThisExpressionEvaluator.MatchText, @"<span class=""small fst-italic me-1"">Rewards converted to</span>{0}" },
+            { RewardsAreDoubledExpressionEvaluator.MatchText, @"<span class=""small fst-italic"">Rewards are doubled</span>" },
+            { AdditionalRewardForEachRewardTypeExpressionEvaluator.MatchText, @"<span class=""small fst-italic"">+1 Rewards</span>" },
             { RewardsRolledAdditionalTimesExpressionEvaluator.MatchText, @"<i class=""fa-solid fa-dice-{0}""></i>" }
         };
 

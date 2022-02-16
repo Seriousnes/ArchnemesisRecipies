@@ -48,27 +48,27 @@
 @if(recipe.SelectedMods.Any())
 {   
     <div class="px-3 pb-2">
-        <RewardsCalculator Recipe="recipe"></RewardsCalculator>
+        <RewardsCalculator Recipe="recipe" />
         
         @*How to build*@
         <ul class="recipe-tabs nav nav-tabs">
-            <li class="nav-item" @onclick="() => _activeTab = 1">
-                <span class="nav-link @getTabIsActive(1)">Build Tree</span>
-            </li>
-            <li class="nav-item" @onclick="() => _activeTab = 2">
-                <span class="nav-link @getTabIsActive(2)">T1 Mod Count</span>
-            </li>
+            @foreach (var tab in (RecipeTab[])Enum.GetValues(typeof(RecipeTab)))
+            {
+                <li class="nav-item" @onclick="() => _activeTab = tab">
+                    <span class="nav-link @getTabIsActive(tab)">@tab.GetDescription()</span>
+                </li>                    
+            }
         </ul>
     </div>         
     <div class="tree">
-        <div style="@(_activeTab == 1 ? "" : "display: none;")">                
+        <div style="@(_activeTab == RecipeTab.BuildTree ? "" : "display: none;")">                
         @foreach (var c in recipe.SelectedMods)
         {
-            <RecipeNode @key="c" Node="c" CompletedStateChanged=UpdateSavedRecipe></RecipeNode>
+            <RecipeNode @key="c" Node="c" CompletedStateChanged=UpdateSavedRecipe />
         }
         </div>
 
-        <ul class="py-2 m-0" style="@(_activeTab == 2 ? "" : "display: none;")">                
+        <ul class="py-2 m-0" style="@(_activeTab == RecipeTab.T1ModCount ? "" : "display: none;")">                
         @foreach (var (mod, count) in recipe.GetComponents().OrderBy(x => x.Key.Name))
         {
             <li>
@@ -76,6 +76,34 @@
             </li>
         }
         </ul>
+        <ol class="list-group" style="@(_activeTab == RecipeTab.ArchnemesisMods ? "" : "display: none;")">
+            @for (var i = 0; i < recipe.SelectedMods.Count; i++)
+            {
+                var mods = recipe.SelectedMods.Take(i + 1);
+                <li class="list-group-item d-flex">
+                    <div class="ms-2 me-auto">
+                        <div class="text-decoration-underline mod-name">Monster @(i + 1)</div>
+                        <div class="d-flex flex-column">
+                            @foreach (var mod in mods.Select(x => x.Mod))
+                            {
+                                <span class="mod">@mod</span>
+                            }
+                        </div>
+                    </div>
+                </li>                
+            }
+        </ol>        
+
+        <ol class="list-group" style="@(_activeTab == RecipeTab.Details ? "" : "display: none;")">
+            @foreach (var mod in recipe.SelectedMods)
+            {
+                <li class="list-group-item d-flex">
+                    <div class="container">
+                        <ModDetails Model="@(Mods.SingleOrDefault(x => x.Name == mod.Name))" />
+                    </div>
+                </li>                
+            }
+        </ol>
     </div>
 }         
 
@@ -126,7 +154,7 @@
         UpdateSavedRecipe();
     }
 
-    private int _activeTab = 1;
+    private RecipeTab _activeTab = RecipeTab.BuildTree;
     private bool _hasLoadedFromLocalStore = false;
     private RecipeViewModel _recipe = new();
     private string _importString;
@@ -158,7 +186,7 @@
         }
     }
 
-    private string getTabIsActive(int tab) => tab == _activeTab ? "active" : "";
+    private string getTabIsActive(RecipeTab tab) => tab == _activeTab ? "active" : "";
 
     private async void UpdateSavedRecipe()
     {

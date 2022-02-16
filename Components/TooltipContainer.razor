@@ -13,6 +13,7 @@
 
     public void SetModel(ArchnemesisModViewModel model)
     {
+        if (_model == model) return;
         _model = model;
         StateHasChanged();
     }

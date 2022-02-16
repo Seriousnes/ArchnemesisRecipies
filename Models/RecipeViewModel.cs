@@ -86,6 +86,8 @@ namespace ArchnemesisRecipies.Models
         public string Type { get; set; }
         public string Effect { get; set; }
         public string Regex { get; set; }
+        [JsonIgnore]
+        public string Mod { get; set; }
         public IEnumerable<string> Rewards => Type.Split(" ");
         public IExpressionEvaluator ExpressionEvaluator { get; set; }
         public bool IsCompleted { get; set; }
