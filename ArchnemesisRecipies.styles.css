@@ -61,11 +61,11 @@ span[b-8m457eq2ge] {
     text-decoration: line-through;
 }
 
-/*.in-progress {
-    filter: none !important;
-    color: inherit !important;
-    text-decoration: none !important;
-}*/
+.no-wrap[b-8m457eq2ge] {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 /* /Components/TooltipContainer.razor.rz.scp.css */
 .tooltip-container[b-go4lnfjhgw] {
     border: 1px solid #aa9e82;
@@ -101,6 +101,16 @@ span[b-8m457eq2ge] {
 
 .recipe-tabs.nav.nav-tabs[b-xfa138whhz] {
     border-color: var(--currency-color);
+}
+
+.list-group-item[b-xfa138whhz] {
+    color: initial;
+    background: initial;
+    border: none;
+    border-bottom: 1px var(--currency-color) solid;
+}
+.list-group > .list-group-item:last-of-type[b-xfa138whhz] {
+    border-bottom: none;
 }
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-b4gbpjcrr0] {

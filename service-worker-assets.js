@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-DyifV\/0FyeGOpaHYn572ST4n2XO85aw6v9P+Vc+YTFM=",
+      "hash": "sha256-KvqzzvAkKTnD4rY\/PCnYLL2GL6JWmYmyT5mZB3hWNHM=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-XEGjlF373KrNDPSq3HPAujQZY9\/3lvMjlLdgRC9CfcM=",
+      "hash": "sha256-p2ecABN7AaKa8nNvY9eHSkFVAJCJ32JlWP4kvVZw51I=",
       "url": "_framework\/ArchnemesisRecipies.dll"
     },
     {
@@ -133,7 +133,7 @@
       "url": "_framework\/System.ComponentModel.dll"
     },
     {
-      "hash": "sha256-OXnh4mh19IDgiPD26fyLiFjDr0cQVKRiH1nvpTi0p\/k=",
+      "hash": "sha256-1yC68F96G1i41adoShqrgxtFrez3RiqToROND67nWRE=",
       "url": "_framework\/System.ComponentModel.Primitives.dll"
     },
     {
@@ -201,7 +201,7 @@
       "url": "_framework\/System.Text.Json.dll"
     },
     {
-      "hash": "sha256-hQagDonr9GArBTJuxtex1sPbNkFoQXYwuEYf3AfUVAk=",
+      "hash": "sha256-hCMp1AwYUb9lwLbZgxbQl1Xplk7RgzQWDdq\/Rc+egkg=",
       "url": "_framework\/System.Text.RegularExpressions.dll"
     },
     {
@@ -209,7 +209,7 @@
       "url": "_framework\/System.Threading.dll"
     },
     {
-      "hash": "sha256-fM5xfaenaOxXLpikFKdVvvoJ0WpFcqOLbIdSnC4xIHA=",
+      "hash": "sha256-qQWVdOMmODxFTyz0Cd+eYTe9eQafAVQigmHN8Bg98Zg=",
       "url": "ArchnemesisRecipies.styles.css"
     },
     {
@@ -1665,5 +1665,5 @@
       "url": "sw-registrator.js"
     }
   ],
-  "version": "+wJdbhCX"
+  "version": "MY7b7eQT"
 };
