@@ -7,6 +7,7 @@ namespace ArchnemesisRecipies.Models
     {
         EffectExpression GetExpression(string expression);
         static string MatchText { get; }
+        string GetMatchText();
     }
 
     public interface IRewardsEvaluator : IExpressionEvaluator
@@ -26,15 +27,19 @@ namespace ArchnemesisRecipies.Models
 
     public class DefaultExpressionEvaluator : IExpressionEvaluator
     {
+
         public EffectExpression GetExpression(string expression)
         {
             return (s) => s;
         }
+
+        public string GetMatchText() => string.Empty;
     }
 
     public class AllRewardsAreThisExpressionEvaluator : ExpressionEvaluator, IExpressionEvaluator, IRewardsEvaluator
     {
         public static string MatchText => @"all reward types are (.*)";
+        public string GetMatchText() => MatchText;
         public EffectExpression GetExpression(string expression)
         {
             var m = GetRegex(MatchText).Match(expression);
@@ -50,6 +55,7 @@ namespace ArchnemesisRecipies.Models
     public class RewardsAreDoubledExpressionEvaluator : ExpressionEvaluator, IExpressionEvaluator, IRewardsEvaluator
     {
         public static string MatchText => @"rewards are doubled";
+        public string GetMatchText() => MatchText;
         public EffectExpression GetExpression(string expression)
         {
             var m = GetRegex(MatchText).Match(expression);
@@ -65,6 +71,7 @@ namespace ArchnemesisRecipies.Models
     public class AdditionalRewardForEachRewardTypeExpressionEvaluator : ExpressionEvaluator, IExpressionEvaluator, IRewardsEvaluator
     {
         public static string MatchText => @"all reward types have an additional reward";
+        public string GetMatchText() => MatchText;
         public EffectExpression GetExpression(string expression)
         {
             var m = GetRegex(MatchText).Match(expression);
@@ -92,6 +99,7 @@ namespace ArchnemesisRecipies.Models
     public class RewardsRolledAdditionalTimesExpressionEvaluator : ExpressionEvaluator, IExpressionEvaluator, IRarityEvaluator
     {
         public static string MatchText => @"Rewards are rolled (\d+) additional time(?:s)?, choosing the rarest result";
+        public string GetMatchText() => MatchText;
         public EffectExpression GetExpression(string expression)
         {
             var r = GetRegex(MatchText);

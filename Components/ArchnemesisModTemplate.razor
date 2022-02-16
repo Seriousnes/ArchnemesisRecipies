@@ -15,11 +15,16 @@
     </div>
     <div class="row" @onclick="Copy" ><span class="mod-name">@Model.Name</span></div>
     <div class="row justify-content-center">
-        <div class="col" style="display: contents">
+        <div class="col align-middle rewards" style="display: inline-block">
         @foreach (var reward in Model.Rewards.GetImageUrls(group: true, imgStyle: "small-image"))
         {
             @((MarkupString)reward);
         }   
+        @if (!string.IsNullOrEmpty(Model.Effect))
+        {
+            <br/>
+            @Model.GetEffectIcon()
+        }
         </div>
     </div>      
 </div> 

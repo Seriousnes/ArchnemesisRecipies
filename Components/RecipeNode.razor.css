@@ -22,8 +22,8 @@ span {
     text-decoration: line-through;
 }
 
-/*.in-progress {
-    filter: none !important;
-    color: inherit !important;
-    text-decoration: none !important;
-}*/
+.no-wrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

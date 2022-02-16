@@ -9,31 +9,25 @@
 <PageTitle>Archnemesis Recipe Helper</PageTitle>
 <TooltipContainer @ref="_tooltip"></TooltipContainer>
 
-<header class="row mb-1 align-items-center">
-    <div class="col-4">
+<header class="d-flex mb-1 align-items-center">
+    <div class="d-flex w-25 me-4">
         <div class="input-group">
             <input type="text" class="form-control" id="search-term" aria-describedby="search-label" autocomplete="off" @bind="searchTerm" @bind:event="oninput" placeholder="Search for name or rewards">
             <button class="btn btn-secondary" type="button" @onclick="() => searchTerm = string.Empty">Clear</button>
         </div>
     </div>
-    <div class="col-7">
-        <div class="d-flex flex-row">
-            <span class="small italic">Left-click to add/remove from recipe, right-click to select, click name to copy search for in-game filtering</span><br />
-        </div>
-        <div class="d-flex flex-row">
-            <span class="small italic">Map drop locations are suggestions only and based on various community feedback. Contact me at links below for corrections.</span>
-        </div>        
+    <div class="d-flex flex-column">
+        <span class="small italic">Left-click to add/remove from recipe, right-click to select, click name to copy search for in-game filtering</span>
+        <span class="small italic">Map drop locations are suggestions only and based on various community feedback. Contact me at links below for corrections.</span>
     </div>
-    <div class="col-1">
-        <div class="d-flex justify-content-end" @onclick="() => isCollapsed = !isCollapsed">
-            <span class="flex-item recipe-toggle @collapsed">@(isCollapsed switch
-                {
-                    true => "Show ",
-                    false => "Hide "
-                })
-                Recipe builder
-            </span>
-        </div>
+    <div class="ms-auto justify-content-end" @onclick="() => isCollapsed = !isCollapsed">
+        <span class="flex-item recipe-toggle @collapsed">@(isCollapsed switch
+            {
+                true => "Show ",
+                false => "Hide "
+            })
+            Recipe builder
+        </span>
     </div>
 </header>
 <div class="row">

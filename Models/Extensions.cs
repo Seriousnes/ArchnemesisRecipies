@@ -1,13 +1,15 @@
 ﻿using ArchnemesisRecipies.Utility;
 using AutoMapper;
+using Microsoft.AspNetCore.Components;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
+using System.Text.RegularExpressions;
 
 namespace ArchnemesisRecipies.Models
 {
     public static class Extensions
     {
-        private static IMapper _mapper = WrappedMapper.Mapper;
+        private static IMapper _mapper = WrappedMapper.Mapper;        
 
         public static string GetDescription(this Enum element)
         {
@@ -147,6 +149,50 @@ namespace ArchnemesisRecipies.Models
                 }
             }
         }
+
+        public static MarkupString GetEffectIcon(this ArchnemesisModViewModel model)
+        {
+            if (model.ExpressionEvaluator is IExpressionEvaluator evaluator)
+            {
+                if (_effects.TryGetValue(evaluator.GetMatchText(), out var effect))
+                {
+                    var r = Regex.Match(model.Effect, evaluator.GetMatchText(), RegexOptions.IgnoreCase);
+                    if (r.Groups.Count > 0)
+                    {
+                        var replacment = r.Groups[1].Value.Replace(" ", "");
+                        if (evaluator is AllRewardsAreThisExpressionEvaluator && _rewards.TryGetValue(replacment, out var imgUrl))
+                        {
+                            return (MarkupString)string.Format(effect, $"<img class=\"small-image\" src=\"{imgUrl}\" data-bs-toggle=\"tooltip\" data-bs-placement=\"top\" title=\"{replacment}\" />");
+                        }
+
+                        if (evaluator is RewardsRolledAdditionalTimesExpressionEvaluator && _numToWord.TryGetValue(replacment, out var dieSides))
+                        {
+                            return (MarkupString)string.Format(effect, dieSides);
+                        }                            
+                    }
+
+                    return (MarkupString)effect;
+                }
+            }
+
+            return (MarkupString)string.Empty;
+        }
+
+        private static Dictionary<string, string> _effects = new()
+        {
+            { AllRewardsAreThisExpressionEvaluator.MatchText, @"<i class=""fa-solid fa-arrows-rotate""></i>{0}" },
+            { RewardsAreDoubledExpressionEvaluator.MatchText, @"x 2" },
+            { AdditionalRewardForEachRewardTypeExpressionEvaluator.MatchText, @"<i class=""fa-solid fa-plus"">" },
+            { RewardsRolledAdditionalTimesExpressionEvaluator.MatchText, @"<i class=""fa-solid fa-dice-{0}""></i>" }
+        };
+
+        private static Dictionary<string, string> _numToWord = new()
+        {
+            { "1", "one" },
+            { "2", "two" },
+            { "4", "four" },
+            { "6", "six" }
+        };
 
         private static Dictionary<string, string> _rewards = new()
         {

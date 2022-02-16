@@ -78,9 +78,8 @@ namespace ArchnemesisRecipies.Models
         }
     }
 
-    public class RecipeComponentViewModel
+    public class RecipeComponentViewModel : Entity
     {
-        public string Name { get; set; }
         public List<RecipeComponentViewModel> Components { get; set; }
         [JsonIgnore]
         public int ModTier { get; set; }
