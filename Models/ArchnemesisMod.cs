@@ -13,7 +13,6 @@ namespace ArchnemesisRecipies.Models
         public List<string> ComponentNames { get; set; } = new();
         public string Effect { get; set; }
         public string Regex { get; set; }
-        [JsonPropertyName("Maps")]
-        public List<string> MapNames { get; set; } = new();
+        public List<Map> Maps { get; set; } = new();
     }
 }

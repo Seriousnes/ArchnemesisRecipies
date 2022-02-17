@@ -54,7 +54,6 @@
     {
         await base.OnInitializedAsync();
         Mods = _mapper.Map<List<ArchnemesisMod>, List<ArchnemesisModViewModel>>(await _client.GetFromJsonAsync<List<ArchnemesisMod>>("archnemesis_recipies.json"));
-        Mods.LoadMaps(await _client.GetFromJsonAsync<IEnumerable<Map>>("maps.json"));
 
         if (await _localStore.ContainKeyAsync("hideRecipe"))
         {

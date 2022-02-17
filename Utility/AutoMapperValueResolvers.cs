@@ -16,4 +16,9 @@ namespace ArchnemesisRecipies.Utility
             return result;
         }
     }
+
+    public class MapTierResolver : ITypeConverter<string, Tier>
+    {
+        public Tier Convert(string source, Tier destination, ResolutionContext context) => Extensions.FromString<Tier>(source);
+    }
 }

@@ -1,14 +1,14 @@
 ﻿<div class="d-flex flex-column align-items-center pe-3">
-    <div id="@Model.GetElementId()" class="map-container">
-        <img class="underlay medium-image" src="images/maps/base/baseicon.png" />
-        <img class="overlay medium-image" src="images/maps/glyphs/@($"{Model.Name.ToLower()}.png")" />                   
+    <div id="@Model.GetElementId()" class="map-container" data-bs-toggle="tooltip" data-bs-placement="top" title="@Model.Influence.GetDescription()" >
+        <img class="underlay medium-image" src="@Model.GetBase()" />
+        <img class="overlay medium-image @Model.GetTierStyle()" src="@Model.GetGlyph()" />                   
     </div>
     <div class="mt-auto">
-        <span class="mod-name small">@Model.Name</span>
+        <span class="mod-name small">@Model.Name @(Model.MinimumTier > 0 ? $"(T{Model.MinimumTier}+)" : "")</span>        
     </div>
 </div>
 
 @code {
     [Parameter]
-    public Map Model { get; set; }
+    public Map Model { get; set; }    
 }

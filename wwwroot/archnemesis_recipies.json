@@ -7,7 +7,12 @@
     "Components": [
     ],
     "Effect": "",
-    "Regex": "toxic"
+    "Regex": "toxic",
+    "Maps": [
+      { "Name": "Ashen Wood" },
+      { "Name": "Grotto" },
+      { "Name": "Toxic Sewer" }
+    ]
   },
   {
     "Name": "Chaosweaver",
@@ -17,7 +22,14 @@
     "Components": [
     ],
     "Effect": "",
-    "Regex": "chaosweaver"
+    "Regex": "chaosweaver",
+    "Maps": [
+      { "Name": "Arcade" },
+      { "Name": "Crimson Temple" },
+      { "Name": "Defiled Cathedral" },
+      { "Name": "Orchard" },
+      { "Name": "Phantasmagoria" }
+    ]
   },
   {
     "Name": "Frostweaver",
@@ -37,7 +49,13 @@
     "Components": [
     ],
     "Effect": "",
-    "Regex": "permafrost"
+    "Regex": "permafrost",
+    "Maps": [
+      { "Name": "Moon Temple" },
+      { "Name": "Peninsula" },
+      { "Name": "Primordial Pool" },
+      { "Name": "Spider Forest" }
+    ]
   },
   {
     "Name": "Hasted",
@@ -47,7 +65,11 @@
     "Components": [
     ],
     "Effect": "",
-    "Regex": "hasted"
+    "Regex": "hasted",
+    "Maps": [
+      { "Name": "Arcade" },
+      { "Name": "Port" }
+    ]
   },
   {
     "Name": "Deadeye",
@@ -57,7 +79,12 @@
     "Components": [
     ],
     "Effect": "",
-    "Regex": "deadeye"
+    "Regex": "deadeye",
+    "Maps": [
+      { "Name": "Arcade" },
+      { "Name": "Basilica" },
+      { "Name": "Thicket" }
+    ]
   },
   {
     "Name": "Bombardier",
@@ -67,7 +94,12 @@
     "Components": [
     ],
     "Effect": "",
-    "Regex": "bombardier"
+    "Regex": "bombardier",
+    "Maps": [
+      { "Name": "Coral Ruins" },
+      { "Name": "Peninsula" },
+      { "Name": "Phantasmagoria" }
+    ]
   },
   {
     "Name": "Flameweaver",
@@ -87,7 +119,11 @@
     "Components": [
     ],
     "Effect": "",
-    "Regex": "incendiary"
+    "Regex": "incendiary",
+    "Maps": [
+      { "Name": "Thicket" },
+      { "Name": "Port" }
+    ]
   },
   {
     "Name": "Arcane Buffer",
@@ -97,7 +133,10 @@
     "Components": [
     ],
     "Effect": "",
-    "Regex": "arcane.buffer"
+    "Regex": "arcane.buffer",
+    "Maps": [
+      { "Name": "Ashen Wood" }
+    ]
   },
   {
     "Name": "Echoist",
@@ -107,7 +146,10 @@
     "Components": [
     ],
     "Effect": "",
-    "Regex": "echoist"
+    "Regex": "echoist",
+    "Maps": [
+      { "Name": "Coral Ruins" }
+    ]
   },
   {
     "Name": "Stormweaver",
@@ -127,7 +169,12 @@
     "Components": [
     ],
     "Effect": "",
-    "Regex": "dynamo"
+    "Regex": "dynamo",
+    "Maps": [
+      { "Name": "Beach" },
+      { "Name": "Fields" },
+      { "Name": "Strand" }
+    ]
   },
   {
     "Name": "Bonebreaker",
@@ -137,7 +184,11 @@
     "Components": [
     ],
     "Effect": "",
-    "Regex": "bonebreaker"
+    "Regex": "bonebreaker",
+    "Maps": [
+      { "Name": "Beach" },
+      { "Name": "Primordial Pool" }
+    ]
   },
   {
     "Name": "Bloodletter",
@@ -147,7 +198,11 @@
     "Components": [
     ],
     "Effect": "Items dropped from the Monster and its Minions are Corrupted",
-    "Regex": "bloodletter"
+    "Regex": "bloodletter",
+    "Maps": [
+      { "Name": "Grotto" },
+      { "Name": "Orchard" }
+    ]
   },
   {
     "Name": "Steel-infused",
@@ -157,7 +212,13 @@
     "Components": [
     ],
     "Effect": "",
-    "Regex": "steel-infused"
+    "Regex": "steel-infused",
+    "Maps": [
+      { "Name": "Acid Caverns" },
+      { "Name": "Crimson Temple" },
+      { "Name": "Ivory Temple" },
+      { "Name": "Thicket" }
+    ]
   },
   {
     "Name": "Gargantuan",
@@ -167,7 +228,14 @@
     "Components": [
     ],
     "Effect": "",
-    "Regex": "gargantuan"
+    "Regex": "gargantuan",
+    "Maps": [
+      { "Name": "Ashen Wood" },
+      { "Name": "Basilica" },
+      { "Name": "Dry Sea" },
+      { "Name": "Orchard" },
+      { "Name": "Thicket" }
+    ]
   },
   {
     "Name": "Berserker",
@@ -188,7 +256,19 @@
     ],
     "Effect": "",
     "Regex": "sentinel",
-    "Maps": [ "Peninsula", "Armory" ]
+    "Maps": [
+      { "Name": "Arcade" },
+      { "Name": "Beach" },
+      { "Name": "Coves" },
+      { "Name": "Cemetery" },
+      { "Name": "Coral Ruins" },
+      { "Name": "Dunes" },
+      { "Name": "Graveyard" },
+      { "Name": "Plaza" },
+      { "Name": "Port" },
+      { "Name": "Strand" },
+      { "Name": "Summit" }
+    ]
   },
   {
     "Name": "Juggernaut",
@@ -198,7 +278,11 @@
     "Components": [
     ],
     "Effect": "",
-    "Regex": "juggernaut"
+    "Regex": "juggernaut",
+    "Maps": [
+      { "Name": "Thicket" },
+      { "Name": "Arcade" }
+    ]
   },
   {
     "Name": "Vampiric",
@@ -208,7 +292,13 @@
     "Components": [
     ],
     "Effect": "",
-    "Regex": "vampiric"
+    "Regex": "vampiric",
+    "Maps": [
+      { "Name": "City Square" },
+      { "Name": "Fields" },
+      { "Name": "Phantasmagoria" },
+      { "Name": "Strand" }
+    ]
   },
   {
     "Name": "Overcharged",
@@ -218,7 +308,10 @@
     "Components": [
     ],
     "Effect": "",
-    "Regex": "overcharged"
+    "Regex": "overcharged",
+    "Maps": [
+      { "Name": "Thicket" }
+    ]
   },
   {
     "Name": "Soul Conduit",
@@ -228,7 +321,17 @@
     "Components": [
     ],
     "Effect": "",
-    "Regex": "soul.conduit"
+    "Regex": "soul.conduit",
+    "Maps": [
+      { "Name": "Ashen Wood" },
+      { "Name": "Bone Crypt" },
+      { "Name": "Cemetery" },
+      { "Name": "City Square" },
+      { "Name": "Fields" },
+      { "Name": "Necropolis" },
+      { "Name": "Promenade" },
+      { "Name": "Tower" }
+    ]
   },
   {
     "Name": "Opulent",
@@ -248,7 +351,14 @@
     "Components": [
     ],
     "Effect": "",
-    "Regex": "malediction"
+    "Regex": "malediction",
+    "Maps": [
+      { "Name": "Beach" },
+      { "Name": "Crimson Temple" },
+      { "Name": "Grotto" },
+      { "Name": "Primordial Pool" },
+      { "Name": "Orchard" }
+    ]
   },
   {
     "Name": "Consecrator",
@@ -268,7 +378,15 @@
     "Components": [
     ],
     "Effect": "",
-    "Regex": "frenzied"
+    "Regex": "frenzied",
+    "Maps": [
+      { "Name": "Beach" },
+      { "Name": "Burial Chambers" },
+      { "Name": "Mesa" },
+      { "Name": "Port" },
+      { "Name": "Moon Temple" },
+      { "Name": "Thicket" }
+    ]
   },
   {
     "Name": "Heralding Minions",

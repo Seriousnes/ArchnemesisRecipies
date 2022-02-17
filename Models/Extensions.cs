@@ -27,6 +27,8 @@ namespace ArchnemesisRecipies.Models
             return element.ToString();
         }
 
+        public static T FromString<T>(string value) where T : Enum => Enum.GetValues(typeof(T)).Cast<T>().SingleOrDefault(x => x.ToString() == value);
+
         public static IEnumerable<T> FlattenRecursiveList<T>(this IEnumerable<T> list, Func<T, IEnumerable<T>> select, Func<T, bool> when)
         {
             var result = new List<T>();
@@ -59,11 +61,6 @@ namespace ArchnemesisRecipies.Models
 
             _mapper.Map(mods.SingleOrDefault(x => x.Name == model.Name), model);
             model.Components = components;
-        }
-
-        public static void LoadMaps(this List<ArchnemesisModViewModel> mods, IEnumerable<Map> maps)
-        {
-            mods.ForEach(x => x.Maps = maps.Where(m => x.MapNames.Contains(m.Name)).ToList());
         }
 
         public static Dictionary<RecipeComponentViewModel, int> GetComponents(this RecipeViewModel model)
