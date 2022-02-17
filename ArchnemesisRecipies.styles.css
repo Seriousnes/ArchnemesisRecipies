@@ -43,6 +43,11 @@ span:hover[b-3u8qw3ksue] {
 .low-tier[b-6bbznvgjnm] {
     filter: none;
 }
+
+.map-name[b-6bbznvgjnm] {
+    text-align: center;
+    overflow-wrap: anywhere;
+}
 /* /Components/ModTier.razor.rz.scp.css */
 h3[b-w94b9xabip]::after {
     font-family: "Font Awesome 5 Free";

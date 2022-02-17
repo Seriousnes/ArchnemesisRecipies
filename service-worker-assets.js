@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-bwCHwfKgkzRrQlaEmt5+JD1v9AO6qJIKrx8pCGkRB04=",
+      "hash": "sha256-eqWTmVMVLWQJKjHPEY8IP01BNu8J41iibr6npZ0sKaE=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-BrtoDM8JqbUyzChadVpNU5cPl5WWzbOwUT2ll2A64PE=",
+      "hash": "sha256-8mQI66e3p8\/8VltgDOZgoT77luDfIyaHEdR3C\/frD4I=",
       "url": "_framework\/ArchnemesisRecipies.dll"
     },
     {
@@ -185,7 +185,7 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-vEwysrLmFNZ676UbLzjPnPHeK3r6bu8YuqqQnonc+\/4=",
+      "hash": "sha256-pfcmIwRuctC8Y0AvZkoWdCVRg5b1G6bmiuwhxurUS9I=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -197,7 +197,7 @@
       "url": "_framework\/System.Text.Encodings.Web.dll"
     },
     {
-      "hash": "sha256-36oNfHqjsdFkfykIDDGMgWw65TZDtp+v0HJb8AMwMVU=",
+      "hash": "sha256-dYsThSi\/E78ZUPvfpKBNrnEGJw664JM8TJ60FJesJ7g=",
       "url": "_framework\/System.Text.Json.dll"
     },
     {
@@ -209,11 +209,11 @@
       "url": "_framework\/System.Threading.dll"
     },
     {
-      "hash": "sha256-dyx4POpG5\/ZoT4WO\/6MnI7DuRhJvhYQL2Uuw9ZV2tls=",
+      "hash": "sha256-MeuPGNgfWvufOzg+FVOA6a3AviYGjGXbnSPxfOHg7Zk=",
       "url": "ArchnemesisRecipies.styles.css"
     },
     {
-      "hash": "sha256-qqYE6hHC7XqUh5Y9Zmm0ByziFaVWYcW6HjkHW77y2Sc=",
+      "hash": "sha256-TpR0mUsBQr9Xnz\/RMPdO4RjIZviqiiQOO4hwmBrtUp8=",
       "url": "archnemesis_recipies.json"
     },
     {
@@ -565,6 +565,10 @@
       "url": "images\/maps\/glyphs\/academy.png"
     },
     {
+      "hash": "sha256-7kamTIyKMqR6sy1JyHqZe8ToHmERANiQpHnqYD7sp98=",
+      "url": "images\/maps\/glyphs\/acidcaverns.png"
+    },
+    {
       "hash": "sha256-3VGJgaDo+p2k3n9IFvSVzCZgILmbKoH+kECBrDtD2is=",
       "url": "images\/maps\/glyphs\/acidlakes.png"
     },
@@ -605,6 +609,10 @@
       "url": "images\/maps\/glyphs\/arsenal.png"
     },
     {
+      "hash": "sha256-WLevkQSN6cUjMZ0Qmz1lPlLsz0iI+j+CvW5xgUZeBk8=",
+      "url": "images\/maps\/glyphs\/ashenwood.png"
+    },
+    {
       "hash": "sha256-fFXqFwTapr2nQg5wSK24a8FTRJcqYfAxsmmdrYdf3Wc=",
       "url": "images\/maps\/glyphs\/atoll.png"
     },
@@ -641,6 +649,10 @@
       "url": "images\/maps\/glyphs\/bog.png"
     },
     {
+      "hash": "sha256-edLmqRHthGHRjGcF7vG+rvaaGuwvKJYauf7C3HhL3QE=",
+      "url": "images\/maps\/glyphs\/bonecrypt.png"
+    },
+    {
       "hash": "sha256-OHhLwXh3\/dShhGC7QBke5gn9Y03RnhI9yNmRmV+3IqU=",
       "url": "images\/maps\/glyphs\/boulevard.png"
     },
@@ -671,10 +683,6 @@
     {
       "hash": "sha256-h2xO33jJOFIHP0TFUjxPNgZOlkN+REPZOQf5Wzb59Es=",
       "url": "images\/maps\/glyphs\/castleruins.png"
-    },
-    {
-      "hash": "sha256-edLmqRHthGHRjGcF7vG+rvaaGuwvKJYauf7C3HhL3QE=",
-      "url": "images\/maps\/glyphs\/catacomb.png"
     },
     {
       "hash": "sha256-vo6Pc2CIpMZVNFQUycbq3gYu2Y5qIQgNaW2pD4muC3U=",
@@ -721,16 +729,16 @@
       "url": "images\/maps\/glyphs\/colosseum.png"
     },
     {
+      "hash": "sha256-vQLIAYRjJpcQU28dKz0wiPT4WuVj+\/WbH0+x7D\/CScY=",
+      "url": "images\/maps\/glyphs\/coralruins.png"
+    },
+    {
       "hash": "sha256-p91rKTaIw5RqjY\/CBYE9B22JoKZ+mI31ukTcWFdGe7U=",
       "url": "images\/maps\/glyphs\/core.png"
     },
     {
       "hash": "sha256-8NXDx6wHGWbjIwjfI19zD3LP8lHFHnyH7AHfICr7SXk=",
       "url": "images\/maps\/glyphs\/corpse.png"
-    },
-    {
-      "hash": "sha256-vQLIAYRjJpcQU28dKz0wiPT4WuVj+\/WbH0+x7D\/CScY=",
-      "url": "images\/maps\/glyphs\/corpsetrench.png"
     },
     {
       "hash": "sha256-n6KQicJJSEiRF0uYZeJH4dvh268P++gieDPJt2X9cq0=",
@@ -754,7 +762,7 @@
     },
     {
       "hash": "sha256-yhH6t4swQBVW6+pEKUrJ9TM5X08k\/U7E\/\/mSjfg7rgU=",
-      "url": "images\/maps\/glyphs\/crimsontownship.png"
+      "url": "images\/maps\/glyphs\/crimsontemple.png"
     },
     {
       "hash": "sha256-0tb+ykt57xk3z36YbQvWIqmJqPJ6VEs66Dvj5kbWrLE=",
@@ -777,16 +785,12 @@
       "url": "images\/maps\/glyphs\/desert.png"
     },
     {
-      "hash": "sha256-kKyWE4X8lgAE+PK9VKr0VJ8jhE\/L6eLO+DrgaGW3zM8=",
-      "url": "images\/maps\/glyphs\/desertshipgraveyard.png"
-    },
-    {
       "hash": "sha256-IG+AhMZi\/F9xMz\/U9irhV2fsk8SfcvwYk1u2U\/PQASI=",
       "url": "images\/maps\/glyphs\/dig.png"
     },
     {
-      "hash": "sha256-WLevkQSN6cUjMZ0Qmz1lPlLsz0iI+j+CvW5xgUZeBk8=",
-      "url": "images\/maps\/glyphs\/drywoods.png"
+      "hash": "sha256-kKyWE4X8lgAE+PK9VKr0VJ8jhE\/L6eLO+DrgaGW3zM8=",
+      "url": "images\/maps\/glyphs\/drysea.png"
     },
     {
       "hash": "sha256-PSqjF0hxAaJAo92hJwYxaruDFEwpEt1EvhULRrmAOyY=",
@@ -885,10 +889,6 @@
       "url": "images\/maps\/glyphs\/lookout.png"
     },
     {
-      "hash": "sha256-mBGdT1T4mPHzD\/a6Q0FMx+vOfTjtqYMPTPvbmzXKmSY=",
-      "url": "images\/maps\/glyphs\/lunaristemple.png"
-    },
-    {
       "hash": "sha256-wQTMOppEBQLvpjy1Oc2NCpe+TZLtWYwzGT\/LKylEbZk=",
       "url": "images\/maps\/glyphs\/malformation.png"
     },
@@ -915,6 +915,10 @@
     {
       "hash": "sha256-AXY1o06idq3hM+N7ihIEneXR\/kVa33aZQAWcXNc18yI=",
       "url": "images\/maps\/glyphs\/minotaur.png"
+    },
+    {
+      "hash": "sha256-mBGdT1T4mPHzD\/a6Q0FMx+vOfTjtqYMPTPvbmzXKmSY=",
+      "url": "images\/maps\/glyphs\/moontemple.png"
     },
     {
       "hash": "sha256-vwLpWczYlKsZ0nQtRuWQ65chhz2ZZ079e2EcGRiVrEo=",
@@ -985,6 +989,10 @@
       "url": "images\/maps\/glyphs\/plaza.png"
     },
     {
+      "hash": "sha256-VMtL8yyZrKE7NC8YyfrgceurfXaE+BhfdVT7toPb7Pg=",
+      "url": "images\/maps\/glyphs\/port.png"
+    },
+    {
       "hash": "sha256-VTsSN3nS\/O37xthzQQ49vDn60ztqqY+iVeCy1N+R+Es=",
       "url": "images\/maps\/glyphs\/precinct.png"
     },
@@ -1003,10 +1011,6 @@
     {
       "hash": "sha256-D4y16dtMRD7Jc5z8CLmeHzmC2xcMW5GjHhCHWEI84rs=",
       "url": "images\/maps\/glyphs\/quarry.png"
-    },
-    {
-      "hash": "sha256-VMtL8yyZrKE7NC8YyfrgceurfXaE+BhfdVT7toPb7Pg=",
-      "url": "images\/maps\/glyphs\/quay.png"
     },
     {
       "hash": "sha256-jEQ7OB4iw+pm+rYffiTKvSfa7tebFw3AMDdvuQ\/KGoY=",
@@ -1045,10 +1049,6 @@
       "url": "images\/maps\/glyphs\/sepulchre.png"
     },
     {
-      "hash": "sha256-rqOe8vYH9VOeVJHJHrlVeUAWr0wAFgmkbgPrf3V3e90=",
-      "url": "images\/maps\/glyphs\/sewer.png"
-    },
-    {
       "hash": "sha256-HMqUTNa7hmUBwylZOe5ZgSINKjRtGZPtYqu4pzqMkfg=",
       "url": "images\/maps\/glyphs\/shipyard.png"
     },
@@ -1079,10 +1079,6 @@
     {
       "hash": "sha256-8yv3RHPri6D4mEDtndg1bQJ3HYSLtlUpOBLEJ5bWy34=",
       "url": "images\/maps\/glyphs\/strand.png"
-    },
-    {
-      "hash": "sha256-7kamTIyKMqR6sy1JyHqZe8ToHmERANiQpHnqYD7sp98=",
-      "url": "images\/maps\/glyphs\/sulphurvents.png"
     },
     {
       "hash": "sha256-ApyqcmO4JeX8smJKkkCYd4Rp3lSGXhGnVVtf4U1oqkM=",
@@ -1119,6 +1115,10 @@
     {
       "hash": "sha256-ghpSwO6nBtlP0l2sjxF+Y4JABYSuwPSZ14DEQFt9EoY=",
       "url": "images\/maps\/glyphs\/tower.png"
+    },
+    {
+      "hash": "sha256-rqOe8vYH9VOeVJHJHrlVeUAWr0wAFgmkbgPrf3V3e90=",
+      "url": "images\/maps\/glyphs\/toxicsewer.png"
     },
     {
       "hash": "sha256-6lEdYtooHXFxLMhh8KdhiHWf30+CWP4o84y1uhkI6QE=",
@@ -1289,13 +1289,9 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-MMKV\/oUWZ+EkKtn32Kcm88t8oBSJSu+4\/nZwAGvCmBg=",
-      "url": "maps.json"
-    },
-    {
       "hash": "sha256-5Q3gmv0MQBu9mNcFRlyeYddd\/deE7tUA1TVKBLSYSaw=",
       "url": "sw-registrator.js"
     }
   ],
-  "version": "dxwvuYfJ"
+  "version": "vrqque15"
 };
