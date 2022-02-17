@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-KvqzzvAkKTnD4rY\/PCnYLL2GL6JWmYmyT5mZB3hWNHM=",
+      "hash": "sha256-bwCHwfKgkzRrQlaEmt5+JD1v9AO6qJIKrx8pCGkRB04=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-p2ecABN7AaKa8nNvY9eHSkFVAJCJ32JlWP4kvVZw51I=",
+      "hash": "sha256-BrtoDM8JqbUyzChadVpNU5cPl5WWzbOwUT2ll2A64PE=",
       "url": "_framework\/ArchnemesisRecipies.dll"
     },
     {
@@ -209,15 +209,15 @@
       "url": "_framework\/System.Threading.dll"
     },
     {
-      "hash": "sha256-qQWVdOMmODxFTyz0Cd+eYTe9eQafAVQigmHN8Bg98Zg=",
+      "hash": "sha256-dyx4POpG5\/ZoT4WO\/6MnI7DuRhJvhYQL2Uuw9ZV2tls=",
       "url": "ArchnemesisRecipies.styles.css"
     },
     {
-      "hash": "sha256-Phmuq+w1gEiS10jRe2ndJLePX87fvvx7Rt2duszOQoo=",
+      "hash": "sha256-qqYE6hHC7XqUh5Y9Zmm0ByziFaVWYcW6HjkHW77y2Sc=",
       "url": "archnemesis_recipies.json"
     },
     {
-      "hash": "sha256-VmBy7BEhtB1oAzv1ZMhxJ9kAe7khDFFWe9VIyRz+baI=",
+      "hash": "sha256-NIx1D3Jya6oD2Y1AnJzTo18c6f0IcTFv+h+RBSzAGss=",
       "url": "css\/app.css"
     },
     {
@@ -277,1280 +277,908 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-47vtzkZpm8Fupp0ntVcc9r5Ln64T22pJAhdhmOouNw4=",
-      "url": "images\/maps\/Abyss.png"
+      "hash": "sha256-U8nH+sYvRE9SbcHSosZ+id1GTBbXIRWBHaUZuCPevO8=",
+      "url": "images\/archnemesis\/abberath-touched.png"
     },
     {
-      "hash": "sha256-zl4+ozso\/X1FBbcOTCV7IDVF1GqiRd\/ezUFdS1HCJds=",
-      "url": "images\/maps\/Academy.png"
+      "hash": "sha256-uIUvJfNC6TM\/ELqB6FLaMWfZefeCfCo\/PnHnNmeqnDA=",
+      "url": "images\/archnemesis\/arakaali-touched.png"
     },
     {
-      "hash": "sha256-BTEJOOAbJuxwZzzCaYAZAmgWLonB9Q1+rjNCHCEROho=",
-      "url": "images\/maps\/Alleyways.png"
+      "hash": "sha256-ZiwyZOp1aQvXuhj0Wks6Y3FSDIdrByLMbN0CbMrF0z0=",
+      "url": "images\/archnemesis\/arcane-buffer.png"
     },
     {
-      "hash": "sha256-3MH14yvDeJ39O5OUw+5csDIRc+2Bj8JuhrJGVngRAec=",
-      "url": "images\/maps\/Antiquary.png"
+      "hash": "sha256-t2IX1ytH1lBpLJeZnXyNtEALl0cc9PPzvD90Ou9hze0=",
+      "url": "images\/archnemesis\/assassin.png"
     },
     {
-      "hash": "sha256-PMXLHyKGPCHbi9E\/rNcUpcM1bH3SQpu4QP+sqcD4PN8=",
-      "url": "images\/maps\/Arachnid.png"
+      "hash": "sha256-NG2pjPwAsgSF680+jT0jLwNg5i0BFDdH2ZFdEf4B2UA=",
+      "url": "images\/archnemesis\/berserker.png"
     },
     {
-      "hash": "sha256-PRqi2oTi3AC9hj3ywBrtBLe99WZbhA5gudkwWwcrunI=",
-      "url": "images\/maps\/ArachnidNest.png"
+      "hash": "sha256-3jABtNuIV2B1zNDykuAEg5kDhW2DNnPvu3xz8AgkWWE=",
+      "url": "images\/archnemesis\/bloodletter.png"
     },
     {
-      "hash": "sha256-\/mVYkF8xquGgp+6rywO438ynXa4DCFWpYdtCcAPKuWw=",
-      "url": "images\/maps\/Arcade.png"
+      "hash": "sha256-hGULceuR6Pu+6nknurEMGgIMa1mFZOr3PWTPfqI9x70=",
+      "url": "images\/archnemesis\/bombardier.png"
     },
     {
-      "hash": "sha256-DWJ8e6Ul63i2hRhDMa6zIoz5ZZvrSDqJmIip4caFrw0=",
-      "url": "images\/maps\/Arena.png"
+      "hash": "sha256-gL3YpMqZRRUlQKCU8RUvwJ5YiVax3ggd5dFufjDhClw=",
+      "url": "images\/archnemesis\/bonebreaker.png"
     },
     {
-      "hash": "sha256-YSiDDGZL\/Y9hR3U5FzLXjvSYs364kR8b2kyfNT5yNt8=",
-      "url": "images\/maps\/AridLake.png"
+      "hash": "sha256-mVXHeSMV1+hd+SuFotOa8+UUKwql5Pjc8DDU8P8Bgt8=",
+      "url": "images\/archnemesis\/brine-king-touched.png"
     },
     {
-      "hash": "sha256-X58jO0\/yZsGYiU3x47oM4CbZINuuM4c57Jt178chSus=",
-      "url": "images\/maps\/Armory.png"
+      "hash": "sha256-Jm5cULcCyGNi5\/MgMNLPrcbxcRSR9FLg1XULmu8XDj4=",
+      "url": "images\/archnemesis\/chaosweaver.png"
     },
     {
-      "hash": "sha256-TktiKdbGKkZW2N8\/4wWtVzDp5P9PbRyaSbybJhJjpBE=",
-      "url": "images\/maps\/Arsenal.png"
+      "hash": "sha256-5kPXCISZ+BdpaFCasRMV7HYPJw4PDHXbynGJAr4zYpY=",
+      "url": "images\/archnemesis\/consecrator.png"
     },
     {
-      "hash": "sha256-mqSvtVWVB+83L\/Vwzh3Gv3yoyNghKH2DTQW15smUIWM=",
-      "url": "images\/maps\/AtlasMapGuardianChaos.png"
+      "hash": "sha256-vuY+MXVUB7Ov3HRwOazu4\/haSlR\/IZ9cXSe7tnpx0S4=",
+      "url": "images\/archnemesis\/corpse-detonator.png"
     },
     {
-      "hash": "sha256-qLmnWAj0BV2+bSpsAH5CyTM2fAUeiRn+nGD7ujyiglM=",
-      "url": "images\/maps\/AtlasMapGuardianFire.png"
+      "hash": "sha256-Rh3O81bN0AeycHUNPI8IWKJsNKIvWPCaZQGBcaw3Nkk=",
+      "url": "images\/archnemesis\/corrupter.png"
     },
     {
-      "hash": "sha256-8qurrM5e3xf3dzfGBej2l28kdO4RNwWw+1mFDR7jzZ4=",
-      "url": "images\/maps\/AtlasMapGuardianHoly.png"
+      "hash": "sha256-krR0XQ4LpfnHxuokRoNqUdsthjbn5cthox\/efOBmsfw=",
+      "url": "images\/archnemesis\/crystal-skinned.png"
     },
     {
-      "hash": "sha256-hVrQ5dkTf8V+CcaBP1ktYjyWtrCypalDKtkBLMF9O\/8=",
-      "url": "images\/maps\/AtlasMapGuardianLightning.png"
+      "hash": "sha256-n18VsmvWwecVJAvJCLh5BwUFd8BkU6gtmKFmlDDJW7Y=",
+      "url": "images\/archnemesis\/deadeye.png"
     },
     {
-      "hash": "sha256-fAlopdWpUTQW4jXDbP8bgUJforCBjT0JOVpSVaWjxhg=",
-      "url": "images\/maps\/Atoll.png"
+      "hash": "sha256-JvmBOtmuVs7KHPghiZPDo+n5Uikp0mYRmSdh7gwtjGI=",
+      "url": "images\/archnemesis\/drought-bringer.png"
     },
     {
-      "hash": "sha256-3B9VJpa7wzBd7ORDprPPxAnYwOETsVgZI9fI\/GYe2rg=",
-      "url": "images\/maps\/Barrows.png"
+      "hash": "sha256-usQdqnbYaIl5GKAScCjiLvbJHJL3Rhl5\/d8wqX+u\/QI=",
+      "url": "images\/archnemesis\/dynamo.png"
     },
     {
-      "hash": "sha256-Gw55lnJ5b8aR6MrcZ0yKZB3wLB0sJCEbxg8UdHwdIqQ=",
-      "url": "images\/maps\/Basilica.png"
+      "hash": "sha256-mm0asY7RI4fPcz4\/IIAmuhMXoU51YHNtgqIFg5FoRQ8=",
+      "url": "images\/archnemesis\/echoist.png"
     },
     {
-      "hash": "sha256-Dafmf2ayzjpOMB2Nh541I5zJ1QKeNWr9tiIr7yMGD44=",
-      "url": "images\/maps\/Baths.png"
+      "hash": "sha256-3uI7bIFixCQ3J+bSKudoPhHlXohE2EQbBLUr5RtgNZ0=",
+      "url": "images\/archnemesis\/effigy.png"
     },
     {
-      "hash": "sha256-9S1qg7SLMxLNXLwuHkuOz+AVeOfkXfi13Lj\/4TFqTQY=",
-      "url": "images\/maps\/Bazaar.png"
+      "hash": "sha256-jTKQXOoYqNXPNKdjt+WnIpGQ6+BkxhGsZ\/QeHe9xROI=",
+      "url": "images\/archnemesis\/empowered-elements.png"
     },
     {
-      "hash": "sha256-fjknNrUT4ZZllHjSh+isTrfXBHWCDXUoiz99Ksx\/5mA=",
-      "url": "images\/maps\/Beach.png"
+      "hash": "sha256-muAbuWysngqioN+mlH+d\/7ydQSklCvHti5xT3tu4zvE=",
+      "url": "images\/archnemesis\/empowering-minions.png"
     },
     {
-      "hash": "sha256-ekQsdyHsgIBuqMTnaEB0ZcT5seIA1EVrui+2KHEUh+U=",
-      "url": "images\/maps\/Beacon.png"
+      "hash": "sha256-MRD28aeNepVLB55o2dtfoDjydoiCQP7Fc1jdWWGj2BM=",
+      "url": "images\/archnemesis\/entangler.png"
     },
     {
-      "hash": "sha256-487smWNASOdw9atOK+EgVAE9lC3xOryZfYF0OnqlGkM=",
-      "url": "images\/maps\/Belfry.png"
+      "hash": "sha256-MEht9pZNYmGDVbYJ0SHW9DPUs5\/ixcG9pCxJwJJ8Wkk=",
+      "url": "images\/archnemesis\/evocationist.png"
     },
     {
-      "hash": "sha256-Z4bPTW\/RfLIye4fdDd2t5T2KyTVY6ZhMDScZ6wtje14=",
-      "url": "images\/maps\/Bog.png"
+      "hash": "sha256-t+VpaPobPz5w4PhNPeVmnX8mqsYwpR1AZ5IpdgfqsJk=",
+      "url": "images\/archnemesis\/executioner.png"
     },
     {
-      "hash": "sha256-cGwt7lb8W84ui1TYBGTa\/C38q79FT4DBtf6Zh\/xosuM=",
-      "url": "images\/maps\/Boulevard.png"
+      "hash": "sha256-0Frih9z5NfdHbVTb0yPanq72DOch+NNQXOkMBr2zdFc=",
+      "url": "images\/archnemesis\/flame-strider.png"
     },
     {
-      "hash": "sha256-XR5MhEr\/ZrGPQRMHuKmobIFSnf2IfnJ8uXbuo6wlCnM=",
-      "url": "images\/maps\/Bramblefall.png"
+      "hash": "sha256-khdikoInLWSo0GMPJJQqK4w7CySRkfp4cRCHpNF9tds=",
+      "url": "images\/archnemesis\/flameweaver.png"
     },
     {
-      "hash": "sha256-J6gf5dYaOcFBGgOne9Nhdlk0FelXS05dE3\/Nla2s9JI=",
-      "url": "images\/maps\/BreachFragmentsChaos.png"
+      "hash": "sha256-2JshC0KVMdEkT1II47b5+E8jE6H\/zy2id8j1mgsxZ1c=",
+      "url": "images\/archnemesis\/frenzied.png"
     },
     {
-      "hash": "sha256-9dZKdL19yeGrE1BJFQ3HNu1AwutAP7KEOeebznzaZag=",
-      "url": "images\/maps\/BreachFragmentsCold.png"
+      "hash": "sha256-AypqQw6R1BuLabckYBaweMUkSrFVPKHZKBrvCXsdwPw=",
+      "url": "images\/archnemesis\/frost-strider.png"
     },
     {
-      "hash": "sha256-COPJSWko4OSK8Bs3wdercBhtIPm0JvBWoAqgSIICnMI=",
-      "url": "images\/maps\/BreachFragmentsFire.png"
+      "hash": "sha256-7M\/N9HKb+fnS8jdJme2peWpo\/yNVPo1Jyek9v0aMfpI=",
+      "url": "images\/archnemesis\/frostweaver.png"
     },
     {
-      "hash": "sha256-w\/27OcikMe9Rm8exb3T+xj1aPX7stDEZsJTCH5iuYc8=",
-      "url": "images\/maps\/BreachFragmentsLightning.png"
+      "hash": "sha256-XeF3+0zfHsr6cuqjlaR5RmjxUZ+f6mupdge\/Aq4qJMQ=",
+      "url": "images\/archnemesis\/gargantuan.png"
     },
     {
-      "hash": "sha256-naUtFACIGkwgpdEBM4IaZGXgArwLnF0J4s9EASu9Iw8=",
-      "url": "images\/maps\/BreachFragmentsPhysical.png"
+      "hash": "sha256-9DFz+Di7nQXRZC068u\/LDqfDHGMiQb6VnIGKDClUcoE=",
+      "url": "images\/archnemesis\/hasted.png"
     },
     {
-      "hash": "sha256-aXMYZtm7WjW5G3Q385zGNszp+Wc3cwUvvxFOdaXw8\/Q=",
-      "url": "images\/maps\/BurialChambers.png"
+      "hash": "sha256-LUsJT3n3UECoSYRGAXbjhe7ssFqXb7qhRDQCnuRX6kM=",
+      "url": "images\/archnemesis\/heralding-minions.png"
     },
     {
-      "hash": "sha256-fhtJRvhRAww1FfE01xr5M5I7mqMteiqvPx+IE2uiIOY=",
-      "url": "images\/maps\/Burn.png"
+      "hash": "sha256-U0k0\/58jzeTtrB2HXerD8KzY7MBvPkTDL\/ZzatmlEas=",
+      "url": "images\/archnemesis\/hexer.png"
     },
     {
-      "hash": "sha256-G3PVmMb4lSOCkABT9MT1nWu5ulMMdcLFnvlFWprQu88=",
-      "url": "images\/maps\/Cage.png"
+      "hash": "sha256-LCVLEnwS2llKFFVcGDIz109zO78ZNnE7RtWbNLuPeB0=",
+      "url": "images\/archnemesis\/ice-prison.png"
     },
     {
-      "hash": "sha256-FQl83gXLkLE4OGGIb+f1onl7XkrZBmgiFrYH5zAukIE=",
-      "url": "images\/maps\/Canyon.png"
+      "hash": "sha256-tafParYGFgJnTG\/yrLsMbXXubvp7nAR4aDdm7Q0JhiA=",
+      "url": "images\/archnemesis\/incendiary.png"
     },
     {
-      "hash": "sha256-H6ZuzrAxS6LcD1BLei3EUMB6YT8NIV6hsvaEmjWIxCY=",
-      "url": "images\/maps\/Carcass.png"
+      "hash": "sha256-ROL+KnD6VCal\/hJubn+SDPHu3bCB8bvAMlYy2DS2vHI=",
+      "url": "images\/archnemesis\/innocence-touched.png"
     },
     {
-      "hash": "sha256-Qrx1QOd50m1hi+wJsOf\/JqjAUnrbFJBm8OzEv66zcZw=",
-      "url": "images\/maps\/CastleRuins.png"
+      "hash": "sha256-z7epueQoDoYVIXymKswXE0W7mIO2+qKOem9eob81Nzw=",
+      "url": "images\/archnemesis\/invulnerable.png"
     },
     {
-      "hash": "sha256-5wcYoxzFWLrTHjie0rihH8q55PTVViSKR39+Cwk0ayA=",
-      "url": "images\/maps\/Catacomb.png"
+      "hash": "sha256-BK1VAuR9v2q51mwYZe\/VPiufzR5Hb0T1ZwRB1xRmrN0=",
+      "url": "images\/archnemesis\/juggernaut.png"
     },
     {
-      "hash": "sha256-aNhx\/WQI6d2n0RS6xLRxTgxpr+ahEs3gKbBPkaUdgIw=",
-      "url": "images\/maps\/Cavern.png"
+      "hash": "sha256-BzUR6GzlTn6m4GPOF20jDijasSiYe2SuJlQfOkix0C8=",
+      "url": "images\/archnemesis\/kitava-touched.png"
     },
     {
-      "hash": "sha256-xj8IhQs3YfcJmt6CMUVqLQPNkW4qOmEB+Tc0rQkl\/qc=",
-      "url": "images\/maps\/Celestial.png"
+      "hash": "sha256-zzm\/ON4pRmVmDnoafVzHWqHL7AD0asb44EWBzZdi3LI=",
+      "url": "images\/archnemesis\/lunaris-touched.png"
     },
     {
-      "hash": "sha256-gJuewgBRw42pD9WGexfoJbQdU1lLqWLkO81B4+uKeog=",
-      "url": "images\/maps\/Cells.png"
+      "hash": "sha256-MCimULiciFcsOIK9LNjneH+s1ruJxAFgEByeswxBnok=",
+      "url": "images\/archnemesis\/magma-barrier.png"
     },
     {
-      "hash": "sha256-qROwoXPPi9otOhG+wkhLvJ284LmnQa0f7rhrHC1Jqpk=",
-      "url": "images\/maps\/Cemetery.png"
+      "hash": "sha256-3Jr5pwrlebq4k4uad3kvTQrrT6w0yDYhSKmxhW65Oh4=",
+      "url": "images\/archnemesis\/malediction.png"
     },
     {
-      "hash": "sha256-lJC4x5PlV2QgEQiuABdRR9QIABAVk9a\/PsJVGR22gDw=",
-      "url": "images\/maps\/Chambers.png"
+      "hash": "sha256-5aVqYpCRHd+8cselSLeRkcMrj95TAJf915EGGvxKb+Q=",
+      "url": "images\/archnemesis\/mana-siphoner.png"
     },
     {
-      "hash": "sha256-O7PXdTuOntP9xKbBHhJKbFBjjvDnvZgYeheCrkXRcy8=",
-      "url": "images\/maps\/Channel.png"
+      "hash": "sha256-VgguhuA1hT6KERGfaiYp+iB7rcGsXe3a56BFX3sqC6w=",
+      "url": "images\/archnemesis\/mirror-image.png"
     },
     {
-      "hash": "sha256-XoHgJeo0T4rmDd6o0odhX43U0UntITJuIQ1Dvmc646s=",
-      "url": "images\/maps\/Chateau.png"
+      "hash": "sha256-rAScQjmHxCiZdk0fSLKWaoT3fj4ebNP8rYBma8iS7Nk=",
+      "url": "images\/archnemesis\/necromancer.png"
     },
     {
-      "hash": "sha256-FLXEybm4eGvq0wN7q4y+FQPfy8E1Da92nHudTJEyY7w=",
-      "url": "images\/maps\/ChayulasChargedBreachstone.png"
+      "hash": "sha256-RBSBUOxhMbs7EvtHqdMBg5Syl9GX\/ah7sPrxD2Jn5sI=",
+      "url": "images\/archnemesis\/opulent.png"
     },
     {
-      "hash": "sha256-DmAH+3WFjI\/AzZ6Pau2G8b3xowT827q8sdfGD28okx4=",
-      "url": "images\/maps\/ChayulasEnrichedBreachstone.png"
+      "hash": "sha256-2b4WS0ax\/jBLbTYat9ZQ\/n85Qq53ZwP9F5zf4rlcl10=",
+      "url": "images\/archnemesis\/overcharged.png"
     },
     {
-      "hash": "sha256-11OUS7uuvTmFeIEAKWZTeiMU0kUYrkANGwIfBQlb1yI=",
-      "url": "images\/maps\/ChayulasFlawlessBreachstone.png"
+      "hash": "sha256-wDnt5OD2vrj38mWY+S1cmqn8chEGmdhly\/uObY7r7Nk=",
+      "url": "images\/archnemesis\/permafrost.png"
     },
     {
-      "hash": "sha256-5apZNTaf+snP7+OsWFAR56ASCiTHqP8AoLN2\/JygFNs=",
-      "url": "images\/maps\/ChayulasPureBreachstone.png"
+      "hash": "sha256-YYY3R6aw9S\/WTwpmMpbNAK3cCI5LVL1XDLvf4faR9ho=",
+      "url": "images\/archnemesis\/rejuvenating.png"
     },
     {
-      "hash": "sha256-9xzl8fOe5E\/VqjkVUjlxQ4vtoijEfvpHK4HWn2VOuW8=",
-      "url": "images\/maps\/Chimera.png"
+      "hash": "sha256-X0QDL4j3rOHiYglulL5Q+OMSbfu6f9Hinw2EjR3KQv0=",
+      "url": "images\/archnemesis\/sentinel.png"
     },
     {
-      "hash": "sha256-BK7V4K\/n+Z5LxYsyPfKeFEJk7\/cnxsm\/2QaFtdUw7wk=",
-      "url": "images\/maps\/CitySquare.png"
+      "hash": "sha256-7+Y9NmpF2wv4nNNu1\/WDTq\/XPn2C\/8kpjku2Ao73USs=",
+      "url": "images\/archnemesis\/shakari-touched.png"
     },
     {
-      "hash": "sha256-fr1po\/u2SQK46y4O8sDp3Hs3tuRgW6aOPcQMymYV3Ew=",
-      "url": "images\/maps\/ColdRiver.png"
+      "hash": "sha256-Qy00TmaMQJNiKV7payF6da7g5769waQFyt02M1w1LOw=",
+      "url": "images\/archnemesis\/solaris-touched.png"
     },
     {
-      "hash": "sha256-BFmqVU2KogM+owldFcvkHreVWm3pfXOrfUtHDsTFWBs=",
-      "url": "images\/maps\/Colonnade.png"
+      "hash": "sha256-xE8AvjlzLVeofLSxByxp1tmOI+jnp4mO8nEaZ2hady8=",
+      "url": "images\/archnemesis\/soul-conduit.png"
     },
     {
-      "hash": "sha256-e2mAHypjBY3EXx0ztbC58RS6gvBn7jOlqTlSCKXM2Ao=",
-      "url": "images\/maps\/Colosseum.png"
+      "hash": "sha256-8nNWkXniAFpvnINFkvNPJwK3LEqjlJVcGlf\/\/tLC37M=",
+      "url": "images\/archnemesis\/soul-eater.png"
     },
     {
-      "hash": "sha256-U6EyLEjRanoljU2bBsOG+pHuivtD\/UZ1u+pnraB1huo=",
-      "url": "images\/maps\/Core.png"
+      "hash": "sha256-lc6JMaxTh6MjTTkiz0NgPrlzCRctXszAs6cqOb6YDK4=",
+      "url": "images\/archnemesis\/steel-infused.png"
     },
     {
-      "hash": "sha256-bOZYUp4J2fa2EO60HGMEjuKXJecX9m9xeM43nuleu3Y=",
-      "url": "images\/maps\/Corpse.png"
+      "hash": "sha256-MwVHzfgzMha6HPjBwAKTvGMfndaGGXTI2Gpk2ligKw8=",
+      "url": "images\/archnemesis\/storm-strider.png"
     },
     {
-      "hash": "sha256-bkKDIFpJ14INjeIthoBKOglRUKLZLn9pNCA8Eg+YNSM=",
-      "url": "images\/maps\/CorpseTrench.png"
+      "hash": "sha256-saOsowzMWFDJRIRGsCoXlknLBCLRr6qTA4g\/My7C5Rs=",
+      "url": "images\/archnemesis\/stormweaver.png"
     },
     {
-      "hash": "sha256-JI923kA++7GCyNPxhAhtD2tCfgcyJ85xYRNv7xyltcA=",
-      "url": "images\/maps\/Corrosion.png"
+      "hash": "sha256-SMSQGPO\/1Jmnfi9CztB5bBHJ+CV4YmO0P32TK9CSHYk=",
+      "url": "images\/archnemesis\/temporal-bubble.png"
     },
     {
-      "hash": "sha256-v3y0DtOGKTlNX+MhfdNLRxns2AlB7cGHvxJx6aibasc=",
-      "url": "images\/maps\/Courthouse.png"
+      "hash": "sha256-MSkd50DJeDd2ghuJP199xSKaIKGi5kuvs4caPyXqJAs=",
+      "url": "images\/archnemesis\/toxic.png"
     },
     {
-      "hash": "sha256-+qTyP2U+VSvGUskYsrzwBdAI5FPJlnnqRFXir\/wBz14=",
-      "url": "images\/maps\/Courtyard.png"
+      "hash": "sha256-nVzUgjHYf8tPejh+6KNAnphg4eRPg8prth65n7ksLb0=",
+      "url": "images\/archnemesis\/treant-horde.png"
     },
     {
-      "hash": "sha256-BeyQxTlBR3hIgkBfDGXQIA4LRKdQg1iEsI9eukM7c2M=",
-      "url": "images\/maps\/Coves.png"
+      "hash": "sha256-ln6ChChLc8q4lLdo8ZfdlNFiz11bqzztjspkTrntZdg=",
+      "url": "images\/archnemesis\/trickster.png"
     },
     {
-      "hash": "sha256-PiFAeI+hC2EX0gi82sOvuyGgW1h2KfZ\/2S8jaSfLnjM=",
-      "url": "images\/maps\/Crematorium.png"
+      "hash": "sha256-RhaPsBumll0pTtHIu3dxN5crDQmECai6QwPBHEIfF3Q=",
+      "url": "images\/archnemesis\/tukohama-touched.png"
     },
     {
-      "hash": "sha256-1LYAbsCXjoi+RMxVAVvvAbnnbXTPfp5FVMEIYXkqc0U=",
-      "url": "images\/maps\/CrimsonTownship.png"
+      "hash": "sha256-2huhQeJqGt1WvKOp3ZV73A63\/7mp+ohJ8IdSzw8qYK0=",
+      "url": "images\/archnemesis\/vampiric.png"
     },
     {
-      "hash": "sha256-CB2NvJDY25D7HdGQhNnWtpVOxkIhKtGFl\/eXkTj2FR4=",
-      "url": "images\/maps\/Crypt.png"
+      "hash": "sha256-EwX8dXI8nYhBVOS7ZyqIOPElCiBcxvycEaTdjO0WSKc=",
+      "url": "images\/maps\/base\/baseicon.png"
     },
     {
-      "hash": "sha256-SSi6q5WeTE8\/eHFsil\/F7fBipAjoHO1yDwSL8Z5IYto=",
-      "url": "images\/maps\/CrystalOre.png"
+      "hash": "sha256-zKdVEX\/HUyDb0T0Dy1KVFuvYNw5YjkweihuFbMSkHq0=",
+      "url": "images\/maps\/base\/delirious.png"
     },
     {
-      "hash": "sha256-AjW1k+\/kGyXtcbCAUMNtw+C8FjMIIt0pelVCk8+9\/U4=",
-      "url": "images\/maps\/CurrencyRerollRare.png"
+      "hash": "sha256-45t+rYK442251602o+p5x9YMBE8dh9YaAHyd\/F8FuC4=",
+      "url": "images\/maps\/base\/drawn.png"
     },
     {
-      "hash": "sha256-VVazLavMalkHGZ9e4IOWz4nwqgc1VFQcXgsKRtjD7Gk=",
-      "url": "images\/maps\/DarkForest.png"
+      "hash": "sha256-ZTSoY4Qt0gaHbvMBXhVJANPaO1FCoz3PLtwTTo09wKk=",
+      "url": "images\/maps\/base\/elder.png"
     },
     {
-      "hash": "sha256-v+sYB\/mVN7CGxjDyTQ6vmk1BTfVON+9tfSaHdgK7MSo=",
-      "url": "images\/maps\/DeathandTaxes.png"
+      "hash": "sha256-7+oGWsJRyEaLPXmpA0x8mBj2W9GA33xFjD875bCbx5g=",
+      "url": "images\/maps\/base\/infected.png"
     },
     {
-      "hash": "sha256-ls2FWomxNHJgUlwH1oKSi1w09fUFe9iEdqr4SO1C9PE=",
-      "url": "images\/maps\/DefiledCathedral.png"
+      "hash": "sha256-m6ohHDex1yX2LzXSy8J6RPCvGNHUocHjaGxH6wUhs6U=",
+      "url": "images\/maps\/base\/shaper.png"
     },
     {
-      "hash": "sha256-QiqEY5QQXruFqBXdHSXhdu7PcmjlR9CEdBF0wPNWVvk=",
-      "url": "images\/maps\/DeliriumFragment.png"
+      "hash": "sha256-2yvPpQL5rxsdipoxAV+S8R2vsvQlTZQIaeeEh8gmSYY=",
+      "url": "images\/maps\/base\/uberblight.png"
     },
     {
-      "hash": "sha256-Id1wbSeBWFbxRa0XywBqMdORw9L888SCfgGTd1j9MYg=",
-      "url": "images\/maps\/Desert.png"
+      "hash": "sha256-jyRUWxfrqfCvAjnb88n5Ux99FsXdxdcTAMwnKk6PHQw=",
+      "url": "images\/maps\/glyphs\/abyss.png"
     },
     {
-      "hash": "sha256-k0HO0WGDqm4x3CMQqsmZkCSakgg\/mGdxHJAWQkxAz3Q=",
-      "url": "images\/maps\/DesertShipGraveyard.png"
+      "hash": "sha256-twfso2nAS1CCGdLeIVYuAWZvD5Q+HjZ8jcoLYQ+bIm4=",
+      "url": "images\/maps\/glyphs\/academy.png"
     },
     {
-      "hash": "sha256-w0yOyNd56VD1p\/bM0c9jm\/KYX308hIru\/ezeoOq5oHw=",
-      "url": "images\/maps\/Dig.png"
+      "hash": "sha256-3VGJgaDo+p2k3n9IFvSVzCZgILmbKoH+kECBrDtD2is=",
+      "url": "images\/maps\/glyphs\/acidlakes.png"
     },
     {
-      "hash": "sha256-lq9lICdBci1BuPReh6iP\/gq8Tx+WrmnCDjR6FvTXE04=",
-      "url": "images\/maps\/Doryanis.png"
+      "hash": "sha256-uCKVv53YbBdM4lzZnbU+93fVOpeB1TbY9iiKs98Mf9w=",
+      "url": "images\/maps\/glyphs\/alleyways.png"
     },
     {
-      "hash": "sha256-aKlEJiUK8\/VM+x\/2KY972Au4vSV9cg1dGaYSuUvrsWA=",
-      "url": "images\/maps\/DryPeninsula.png"
+      "hash": "sha256-+GhBiAvlpwdql6vVNT41PiVrHe9+TrIRWk0PfNw6Bbg=",
+      "url": "images\/maps\/glyphs\/antiquary.png"
     },
     {
-      "hash": "sha256-rPHugTA+7J7YVeHmF7EZnF4i4mpq3UhRUYNk2+Qpj7w=",
-      "url": "images\/maps\/DryWoods.png"
+      "hash": "sha256-MrPtX\/ABJlItxXRrbUEJvqlcNN8ilQz0Ujjr\/Z9\/APs=",
+      "url": "images\/maps\/glyphs\/arachnid.png"
     },
     {
-      "hash": "sha256-Hu4bYR6+bejNfIApY89I4Duohu5tNakb5VWt3Kh4r5g=",
-      "url": "images\/maps\/Dunes.png"
+      "hash": "sha256-Xd9zaAe8FRUUfbzCYsqWD1d7i5VFU7a9uIk1RrLE5+o=",
+      "url": "images\/maps\/glyphs\/arachnidnest.png"
     },
     {
-      "hash": "sha256-ynyLbkszDkU0WGZwc6vxdF12YZI9k5E9jc4y2f22dX0=",
-      "url": "images\/maps\/Dungeon.png"
+      "hash": "sha256-ZmaqTtXVASMNvS3uv5Ye4iyJjQzsmpSrh5BI6qMKHec=",
+      "url": "images\/maps\/glyphs\/arcade.png"
     },
     {
-      "hash": "sha256-p7j0j\/PTN7TEw2Z+Yg4\/yZhXNFaiO7\/D39h6AY6MGec=",
-      "url": "images\/maps\/EshsChargedBreachstone.png"
+      "hash": "sha256-wZu1uY6kaoouUWy\/Iip5Vgbeb7KpF4nMgzocut\/4NK8=",
+      "url": "images\/maps\/glyphs\/arena.png"
     },
     {
-      "hash": "sha256-u4OSxNG5pc+hJIck65aXvZrHo02BU9Y+wJrLkun6DF8=",
-      "url": "images\/maps\/EshsEnrichedBreachstone.png"
+      "hash": "sha256-PKNNtEcF23fZBH9XU2UHV3hDSrNTs\/13E4z5ePnGZ+Y=",
+      "url": "images\/maps\/glyphs\/aridlake.png"
     },
     {
-      "hash": "sha256-d7cU0FGmXFG3CX4DpBz\/qpM2JZ3QIyI05uU7SOJD3z0=",
-      "url": "images\/maps\/EshsFlawlessBreachstone.png"
+      "hash": "sha256-YVkiBvvY9t\/SOOpYf0mkmK1tV8KV3k9Vc+D50XGfhmM=",
+      "url": "images\/maps\/glyphs\/armory.png"
     },
     {
-      "hash": "sha256-\/Ss0YSsmfFY8lFcErqluWV+tsOds25Nnv+j\/axTpXaw=",
-      "url": "images\/maps\/EshsPureBreachstone.png"
+      "hash": "sha256-8H6GxnTSmTSFZ\/Z30eI7Lv2jszPhBpqKcHpkEnHBTg0=",
+      "url": "images\/maps\/glyphs\/arsenal.png"
     },
     {
-      "hash": "sha256-zHEAKuxC4pLdavdCtn4tJHSrJyGANG\/FhW9vuVJN+v4=",
-      "url": "images\/maps\/Estuary.png"
+      "hash": "sha256-fFXqFwTapr2nQg5wSK24a8FTRJcqYfAxsmmdrYdf3Wc=",
+      "url": "images\/maps\/glyphs\/atoll.png"
     },
     {
-      "hash": "sha256-nSy2DkePY9Wh2St8ShmKwT9Phs5eSvyM9H7PRNLv6xo=",
-      "url": "images\/maps\/EternalEmpireFragment.png"
+      "hash": "sha256-LgmaINSbHCT+mh\/AWMSgN5UzWm1HQO+25gpw2wRjekc=",
+      "url": "images\/maps\/glyphs\/barrows.png"
     },
     {
-      "hash": "sha256-7FVNnM6Yi4VEulXnpxYxsC7sOYKtMxe02Mxowl0QaqM=",
-      "url": "images\/maps\/Excavation.png"
+      "hash": "sha256-piy+Fep7V\/1ETCJNJkOKECoFNo\/vrEt2GOQwkN5IB7k=",
+      "url": "images\/maps\/glyphs\/basilica.png"
     },
     {
-      "hash": "sha256-kYuQNY5NR0k\/H7gZIq9fkauwnUoiIiX1wqLAz\/kEW+o=",
-      "url": "images\/maps\/Factory.png"
+      "hash": "sha256-R0g7T7BOjxQPS15ZFkX1MqsOFc+HpUHE\/qJKUyJTNe4=",
+      "url": "images\/maps\/glyphs\/baths.png"
     },
     {
-      "hash": "sha256-Ahwo6b+9wfIPIJnGXDu7\/sm8siurWeQLA52bSNjpopI=",
-      "url": "images\/maps\/FairgravesMap01.png"
+      "hash": "sha256-oXAWaQl0wCLFzwKMQkljJkH3NLQP4Fnd4C0BVp2s0Ao=",
+      "url": "images\/maps\/glyphs\/bazaar.png"
     },
     {
-      "hash": "sha256-prAvzWzzvud5lToWdLDoLnJuxnaJUVUXk2+Hjg3xheo=",
-      "url": "images\/maps\/Fields.png"
+      "hash": "sha256-4TgajNOM67r2T4G6S0hrCB9g\/tOZF+KQ82rKh332XiM=",
+      "url": "images\/maps\/glyphs\/beach.png"
     },
     {
-      "hash": "sha256-Q22CQ+LQwL+rNQdv\/\/pOFwAQmGyO1wOA0IvoN2BYsDU=",
-      "url": "images\/maps\/ForbiddenWoods.png"
+      "hash": "sha256-xy9PzRoNTMFNOK2sf7e6mpXZHLoIWGUiCbx+Piprkvs=",
+      "url": "images\/maps\/glyphs\/beacon.png"
     },
     {
-      "hash": "sha256-uSwGnu0A04L\/O5kjYtCgqQsJrSbs19XaDAIJa1x9UlA=",
-      "url": "images\/maps\/ForkingRiver.png"
+      "hash": "sha256-jvBjD4rQu3WEtAGWPHS6UG2zGJ7CXFXD6Lu6mgDTDqY=",
+      "url": "images\/maps\/glyphs\/belfry.png"
     },
     {
-      "hash": "sha256-o8eNGRWzbcmrpsFWAH7Zylu8wO4nHoiX2ofcwMtvFFA=",
-      "url": "images\/maps\/FragmentChimera.png"
+      "hash": "sha256-akeq76DqKHaaQKNBFDhYQWY2zuHOLO+fYgutpHRJvDA=",
+      "url": "images\/maps\/glyphs\/bog.png"
     },
     {
-      "hash": "sha256-IAFWIBfAJ8uVSpTwWF3WgpdfZUNKrPj7YAXbyIP7qnE=",
-      "url": "images\/maps\/FragmentHydra.png"
+      "hash": "sha256-OHhLwXh3\/dShhGC7QBke5gn9Y03RnhI9yNmRmV+3IqU=",
+      "url": "images\/maps\/glyphs\/boulevard.png"
     },
     {
-      "hash": "sha256-dffHZEOgPe3XLONTYWxCxxArOjTPSMxDSkPQNDinHa0=",
-      "url": "images\/maps\/FragmentMinotaur.png"
+      "hash": "sha256-6pRFFle402FL0\/di7U0hX\/zEDSUBxTsXzrR0oUqZdmI=",
+      "url": "images\/maps\/glyphs\/bramblefall.png"
     },
     {
-      "hash": "sha256-tIlQbj5uvRGWnzsDCoc+yRKrzLcKcsLl0IoQ4iPYjQA=",
-      "url": "images\/maps\/FragmentPhoenix.png"
+      "hash": "sha256-s9XitQiZIwhJCPJN3gCS2XInhlVbmHT7cbGP80uo0ZY=",
+      "url": "images\/maps\/glyphs\/burialchambers.png"
     },
     {
-      "hash": "sha256-yliVaDb2Bc57R9GNaziil8hvcybON0hiF4wl+FI6+sM=",
-      "url": "images\/maps\/FrozenCabins.png"
+      "hash": "sha256-j3aMTvuhqTn7zETM0cjNN4EblZbhTC1YcUPIjiI9fDQ=",
+      "url": "images\/maps\/glyphs\/burn.png"
     },
     {
-      "hash": "sha256-j9j8wlEFuhTVPMnrurfY0q3l17I28ycXRso1H+ut25s=",
-      "url": "images\/maps\/FungalCaverns.png"
+      "hash": "sha256-34m8uDcKbnoP+\/vbXICdGGgXiRa\/1lxvXC8ZMK4Kxdo=",
+      "url": "images\/maps\/glyphs\/cage.png"
     },
     {
-      "hash": "sha256-Q9UHgp5f8gyjk2Zc7E0y41ifWWz1kzGF63y6c5qdJsc=",
-      "url": "images\/maps\/Ghetto.png"
+      "hash": "sha256-6iwaZPuSrd\/u7Y4u5cVCZgXs1BHVVqEYtxSSDyO2ido=",
+      "url": "images\/maps\/glyphs\/canyon.png"
     },
     {
-      "hash": "sha256-xfbdxwuQqYpa+3C8iaT2WQFu+hlZPhITh6PmzNCiQwY=",
-      "url": "images\/maps\/Glacier.png"
+      "hash": "sha256-cVMADUiT01EHQ2VnJBBYxCXx9rCmhFPInG9TIEjAKeY=",
+      "url": "images\/maps\/glyphs\/carcass.png"
     },
     {
-      "hash": "sha256-FQUs5WNJDMfsrYE71a1g3OwJYrCPCKWK1rNJohomITM=",
-      "url": "images\/maps\/Graveyard.png"
+      "hash": "sha256-h2xO33jJOFIHP0TFUjxPNgZOlkN+REPZOQf5Wzb59Es=",
+      "url": "images\/maps\/glyphs\/castleruins.png"
     },
     {
-      "hash": "sha256-2vPeYl\/ZBum\/\/rUunqyYvCJdKeiRXCi7hsQneEULi9E=",
-      "url": "images\/maps\/Grotto.png"
+      "hash": "sha256-edLmqRHthGHRjGcF7vG+rvaaGuwvKJYauf7C3HhL3QE=",
+      "url": "images\/maps\/glyphs\/catacomb.png"
     },
     {
-      "hash": "sha256-6z0+Q3tSQNpYIEInXz6W+CcE+oyURhPh1VxEa7QbEjo=",
-      "url": "images\/maps\/HallOfGrandmasters.png"
+      "hash": "sha256-vo6Pc2CIpMZVNFQUycbq3gYu2Y5qIQgNaW2pD4muC3U=",
+      "url": "images\/maps\/glyphs\/cavern.png"
     },
     {
-      "hash": "sha256-vEJHAyh6NPh1kVImAvirzqchf43MBb1L+ZOOV3RN+G8=",
-      "url": "images\/maps\/HallowedGround.png"
+      "hash": "sha256-j\/4pg9iJQslUss12+3DhHNpzsHvxm0Xlag6yF93Sry0=",
+      "url": "images\/maps\/glyphs\/cells.png"
     },
     {
-      "hash": "sha256-gJJfGTcSNInP3iPm8vEGi1dz4zh3VoGpecqEyDr\/1r8=",
-      "url": "images\/maps\/HarbingerRed.png"
+      "hash": "sha256-OJG8R1\/xDPskfE+cB1PJ4xhqUQdPI1gLRdUM0ByeOfo=",
+      "url": "images\/maps\/glyphs\/cemetery.png"
     },
     {
-      "hash": "sha256-3pSctDdpX8u+6vYOuPq742NH9jzZpWrQGQzyZbbOYoU=",
-      "url": "images\/maps\/HarbingerUber.png"
+      "hash": "sha256-NloRTyY+stM5t7Xmv+c9hGMp+BpH5wqwR49PL4m6s8Q=",
+      "url": "images\/maps\/glyphs\/chambers.png"
     },
     {
-      "hash": "sha256-0keeWG2jiNo\/h6BejIYqoQ7r\/Ty+Ehe0EO35R1vrlA4=",
-      "url": "images\/maps\/HarbingerWhite.png"
+      "hash": "sha256-GuGpw46sh5Rm1FyuXVno\/\/hAtV1JRT\/YaBNITxqPo+A=",
+      "url": "images\/maps\/glyphs\/channel.png"
     },
     {
-      "hash": "sha256-PRqi2oTi3AC9hj3ywBrtBLe99WZbhA5gudkwWwcrunI=",
-      "url": "images\/maps\/HighGardens.png"
+      "hash": "sha256-tZY0WjE3opnVZ1V3i\/HiWH1jmE6NppRKw04OV3Zzxf0=",
+      "url": "images\/maps\/glyphs\/chateau.png"
     },
     {
-      "hash": "sha256-aMPg8IHs\/0OBvDzi+9OvyfM1hXm8xLPoAjfOF23LIOQ=",
-      "url": "images\/maps\/Hydra.png"
+      "hash": "sha256-GMRdwEtkzp8oZGNsZQg7P0VNGF0Qk2t+V5AtI+QF1Fg=",
+      "url": "images\/maps\/glyphs\/chimera.png"
     },
     {
-      "hash": "sha256-RnYfp9ndmztC6I7hT8QAxuw7YBFZMZq8aoQFBmm4aIE=",
-      "url": "images\/maps\/Iceberg.png"
+      "hash": "sha256-LRTl7lA8wTyEVfUP3Kcz6zKPwh+zJqT8Crm4qx9DBqY=",
+      "url": "images\/maps\/glyphs\/citysquare.png"
     },
     {
-      "hash": "sha256-DqgauS6Ii03KbeAtaXqSmtQj+W4LYzG6I6GHnlafPok=",
-      "url": "images\/maps\/Infestation.png"
+      "hash": "sha256-s3lt1dtpX553yBk0wn2o7plzo0IVtrQfP8o2PQIggxA=",
+      "url": "images\/maps\/glyphs\/coldriver.png"
     },
     {
-      "hash": "sha256-u1j1kXWRdL4Ubcum\/KXLnAPqEhBUUOEN9QHYnwfwJ4A=",
-      "url": "images\/maps\/IvoryTemple.png"
+      "hash": "sha256-PcJZLtHk75ipW4PKsliym\/zsiMsNVwK7W487PWerHHs=",
+      "url": "images\/maps\/glyphs\/colonnade.png"
     },
     {
-      "hash": "sha256-\/rA8xe9QobQvE0OWfEebunTg8et6bF7ZIh4ZFZNdOxA=",
-      "url": "images\/maps\/JungleValley.png"
+      "hash": "sha256-jlqulOzSYmtWMpjKEFvDFLAGC2W6b4dHIfUboJN6tV4=",
+      "url": "images\/maps\/glyphs\/colosseum.png"
     },
     {
-      "hash": "sha256-73+xrQUbTY7InVoQrRa2NntqNVfrHzDhxiKqbx641Pw=",
-      "url": "images\/maps\/KaruiFragment.png"
+      "hash": "sha256-p91rKTaIw5RqjY\/CBYE9B22JoKZ+mI31ukTcWFdGe7U=",
+      "url": "images\/maps\/glyphs\/core.png"
     },
     {
-      "hash": "sha256-GhCUz4aH7RzQJPJ4Ndog3med50hMX0c54Q3+eyhyKDA=",
-      "url": "images\/maps\/Laboratory.png"
+      "hash": "sha256-8NXDx6wHGWbjIwjfI19zD3LP8lHFHnyH7AHfICr7SXk=",
+      "url": "images\/maps\/glyphs\/corpse.png"
     },
     {
-      "hash": "sha256-InjTUvSMF6vAmCR4JQAF2O32oj8TKrsM+z5+wRbFqYQ=",
-      "url": "images\/maps\/Labyrinth.png"
+      "hash": "sha256-vQLIAYRjJpcQU28dKz0wiPT4WuVj+\/WbH0+x7D\/CScY=",
+      "url": "images\/maps\/glyphs\/corpsetrench.png"
     },
     {
-      "hash": "sha256-jW59pNfp2Kx5FFXcD1JZgf\/eI+0cjCYnlMgWGyBsd0M=",
-      "url": "images\/maps\/LabyrinthHarvest.png"
+      "hash": "sha256-n6KQicJJSEiRF0uYZeJH4dvh268P++gieDPJt2X9cq0=",
+      "url": "images\/maps\/glyphs\/corrosion.png"
     },
     {
-      "hash": "sha256-pBBki5YnRgopNWa13hcGuY7hbQW8uQyDgo6PWQlDmS0=",
-      "url": "images\/maps\/LabyrinthHarvestInfused1.png"
+      "hash": "sha256-cDLLqzclcLhC9h0puTIqypEj9Xz6L0uozrEJaPw\/L5o=",
+      "url": "images\/maps\/glyphs\/courthouse.png"
     },
     {
-      "hash": "sha256-HYt2Dtw1l0kgLc3CjCiwO\/hvbIY0mW8ysTTjq\/EylsA=",
-      "url": "images\/maps\/LabyrinthHarvestInfused2.png"
+      "hash": "sha256-m7sNxYNiNdkkd8C4\/ZzOxdlbsN\/nLdf1UOKUCJIeQGg=",
+      "url": "images\/maps\/glyphs\/courtyard.png"
     },
     {
-      "hash": "sha256-uvcrXAtm9xjMXIOR9968BVIyX8vInES31qQshvS6qTM=",
-      "url": "images\/maps\/Lair.png"
+      "hash": "sha256-G6lJTyn8\/LF8WZ\/8x5AXBkOzF4ci+so+\/8xL8sZT+\/A=",
+      "url": "images\/maps\/glyphs\/coves.png"
     },
     {
-      "hash": "sha256-KRvqZ+DXmbD\/zbbx3yWpJq9b7RksJ2GMChxq9XiWENw=",
-      "url": "images\/maps\/Lookout.png"
+      "hash": "sha256-hriDdOZrmiASv5fT7v3KdbOecbGcH3vkKy77wxaea+Y=",
+      "url": "images\/maps\/glyphs\/crematorium.png"
     },
     {
-      "hash": "sha256-VK0+BNQnVYokGsc1xw5V1oSHw+QAUCCslCYUAO8D3U4=",
-      "url": "images\/maps\/LunarisTemple.png"
+      "hash": "sha256-yhH6t4swQBVW6+pEKUrJ9TM5X08k\/U7E\/\/mSjfg7rgU=",
+      "url": "images\/maps\/glyphs\/crimsontownship.png"
     },
     {
-      "hash": "sha256-QAuMRV2Eruhd0CW\/m3biPR+G8vUCIddMGI8LUGaeAfE=",
-      "url": "images\/maps\/MaelstromofChaos.png"
+      "hash": "sha256-0tb+ykt57xk3z36YbQvWIqmJqPJ6VEs66Dvj5kbWrLE=",
+      "url": "images\/maps\/glyphs\/crypt.png"
     },
     {
-      "hash": "sha256-K4qctTNbAacWFFEhND6IxY6NN6uZ1hZGD\/B3m6BG\/Ns=",
-      "url": "images\/maps\/Malformation.png"
+      "hash": "sha256-zhXnCLCfXZ0bJLI+kg1YHnm9HoWz79f9pVDeSIZobKI=",
+      "url": "images\/maps\/glyphs\/crystalore.png"
     },
     {
-      "hash": "sha256-tQgpxB3VtsJ3mKXB41xgqRfsXnhtJyPcwhRzeuBH6H0=",
-      "url": "images\/maps\/MarakethFragment.png"
+      "hash": "sha256-jOu4fnqBNqLLg0F8Rgph4B88VOzn97arjzkcgl2\/tHY=",
+      "url": "images\/maps\/glyphs\/darkforest.png"
     },
     {
-      "hash": "sha256-srF2dCjcZOS0LfuaeAHcnRHboSWPNlmCY0wgp4J03g8=",
-      "url": "images\/maps\/Marshes.png"
+      "hash": "sha256-tRSPQTRm\/Nym5bk3R5M52KCuymvuc7EE2ZrRogdycBo=",
+      "url": "images\/maps\/glyphs\/defiledcathedral.png"
     },
     {
-      "hash": "sha256-KrLivrct+Q6PH9jrBHDqpMuHC51oWUbnqSUN0ADmiYI=",
-      "url": "images\/maps\/Mausoleum.png"
+      "hash": "sha256-qtYv5zla5MM6AjN+9ohpoCxuWtYEwYgSLCL6VSbU4sQ=",
+      "url": "images\/maps\/glyphs\/desert.png"
     },
     {
-      "hash": "sha256-1zuOgg2BOe0diDwgP6YwmKP7YEkTxWvsyxkG172EVFY=",
-      "url": "images\/maps\/MavenKey.png"
+      "hash": "sha256-kKyWE4X8lgAE+PK9VKr0VJ8jhE\/L6eLO+DrgaGW3zM8=",
+      "url": "images\/maps\/glyphs\/desertshipgraveyard.png"
     },
     {
-      "hash": "sha256-cL8RkYsrDqxZyJlpimRnWv+gNpMQQnm8NwYU\/iEGMhg=",
-      "url": "images\/maps\/Maze.png"
+      "hash": "sha256-IG+AhMZi\/F9xMz\/U9irhV2fsk8SfcvwYk1u2U\/PQASI=",
+      "url": "images\/maps\/glyphs\/dig.png"
     },
     {
-      "hash": "sha256-lOQiLUv4aW\/4PIYqIEmLjFXj8XYkbu\/9g2TR5Oht4lQ=",
-      "url": "images\/maps\/Mesa.png"
+      "hash": "sha256-WLevkQSN6cUjMZ0Qmz1lPlLsz0iI+j+CvW5xgUZeBk8=",
+      "url": "images\/maps\/glyphs\/drywoods.png"
     },
     {
-      "hash": "sha256-0fbRgTul62Wyyva2J6JyebkPqeZ92BDGzLOcEcYN0js=",
-      "url": "images\/maps\/MineralPools.png"
+      "hash": "sha256-PSqjF0hxAaJAo92hJwYxaruDFEwpEt1EvhULRrmAOyY=",
+      "url": "images\/maps\/glyphs\/dunes.png"
     },
     {
-      "hash": "sha256-EvWKt3apULgP5CGP23JH145HoVDVlWrOJ1De9s8DvsI=",
-      "url": "images\/maps\/Minotaur.png"
+      "hash": "sha256-fK8+R6XJy1N8bkH0F552OxJPEpHw3W1ooLYnyrQo8CY=",
+      "url": "images\/maps\/glyphs\/dungeon.png"
     },
     {
-      "hash": "sha256-P9XyFHn6ly0qobqTvjXB3tr3+rscpg3bG4+TP1zna0w=",
-      "url": "images\/maps\/MudGeyser.png"
+      "hash": "sha256-39fQJk\/kSMu3kbFBuNH0WwgdhSnOt86vEcfRxpAggIE=",
+      "url": "images\/maps\/glyphs\/estuary.png"
     },
     {
-      "hash": "sha256-WuwdXmnoxSbNZqscRkL5vwAI\/CtRBS5l15+iZLo9kDY=",
-      "url": "images\/maps\/Museum.png"
+      "hash": "sha256-p1dZgFLw5SbABl4CEhSuOWJvaPbQ8m4RmshheC+GtZs=",
+      "url": "images\/maps\/glyphs\/excavation.png"
     },
     {
-      "hash": "sha256-IctQRoyPL9CQHcMCBrRmePQ8pHjPTGJydh7pN2mKdfM=",
-      "url": "images\/maps\/musicbox.png"
+      "hash": "sha256-fHulFfopEyspc9wu98TBbfypxIjm\/Ve4p5uIYEvuGGY=",
+      "url": "images\/maps\/glyphs\/factory.png"
     },
     {
-      "hash": "sha256-6Px8rmmoi8KVbWS3kyfg9\/QiiR\/NgXKcr7r1\/NcOfeo=",
-      "url": "images\/maps\/musicbox(1).png"
+      "hash": "sha256-u4PvHdXUZOB\/8UnwPyytrEitNmjSD2W813Jduhz0254=",
+      "url": "images\/maps\/glyphs\/fields.png"
     },
     {
-      "hash": "sha256-thr3gBXQRVv+0eu8Mq\/dtLCJ+ALntyla7EnAa3K1Ce4=",
-      "url": "images\/maps\/Necropolis.png"
+      "hash": "sha256-yMQ5N1K7SeoPowI2ieE7mG3f4uU6yL+ToAj4hA+KwFI=",
+      "url": "images\/maps\/glyphs\/forbiddenwoods.png"
     },
     {
-      "hash": "sha256-rFfGCV4pzwmk+mPH0D9hNfkz3F1bxoCj7FvfregpGfI=",
-      "url": "images\/maps\/NullVoid1.png"
+      "hash": "sha256-O4sEMnLc5MwJzPZOYcQcYnj3UK9z9sid1B4ImnBqRlA=",
+      "url": "images\/maps\/glyphs\/forkingriver.png"
     },
     {
-      "hash": "sha256-mKeWQCO+JTgZcouLadQEBsQcSU0WR0EyIcNj1U\/u7P8=",
-      "url": "images\/maps\/NullVoid2.png"
+      "hash": "sha256-VMZnBre27V+M4fw4E4sZfar85o7Ggdqqj5plJTiqFGA=",
+      "url": "images\/maps\/glyphs\/frozencabins.png"
     },
     {
-      "hash": "sha256-jb7nWfbAuHMq1qQAKpQGUFYw37T3ETbxW9Bvul3g7ho=",
-      "url": "images\/maps\/NullVoid3.png"
+      "hash": "sha256-bXZkki80E3B2BB1e3oDFUMZDcp\/di3P3JZ5Il556pdc=",
+      "url": "images\/maps\/glyphs\/fungalcaverns.png"
     },
     {
-      "hash": "sha256-zn\/5SeCJ\/5fO0afcWOWmXG10mfQvzvUum0keTqfWBxw=",
-      "url": "images\/maps\/NullVoid4.png"
+      "hash": "sha256-O4g682fi7Pa4F169dxdhzzeoypzomuRdsP27zwJvXYs=",
+      "url": "images\/maps\/glyphs\/ghetto.png"
     },
     {
-      "hash": "sha256-W1Kukozws7+0Mkr5HTVexG7BvgRSWIV\/7QThaUR62ng=",
-      "url": "images\/maps\/NullVoid5.png"
+      "hash": "sha256-1Oj0lK76+R0mJ24EuYG55TxwDpoPS2\/skzwfVk5HHug=",
+      "url": "images\/maps\/glyphs\/glacier.png"
     },
     {
-      "hash": "sha256-qhlQOzrGXrXNhjwlRmDuPAeErlu\/G2o2oOjmi2cX684=",
-      "url": "images\/maps\/Oasis.png"
+      "hash": "sha256-i26bsPl8NVq9jvgX+QkqbDjtK6JJGFk6jVEi5I4OQd4=",
+      "url": "images\/maps\/glyphs\/gorge.png"
     },
     {
-      "hash": "sha256-C2FS65VbNRXb\/VZRMbSkngy31dUWkAUM2qYKfbHecTE=",
-      "url": "images\/maps\/oba.png"
+      "hash": "sha256-5NRMkJETxVS40JjkVotxNlubO\/3WeK7n5rhkmRS+0V8=",
+      "url": "images\/maps\/glyphs\/graveyard.png"
     },
     {
-      "hash": "sha256-7gTnG\/ksJgHSmsKkIKzLr5qZpTLNCijJ99yo9LxISvA=",
-      "url": "images\/maps\/olmec.png"
+      "hash": "sha256-oWiy7edirbhyopNxf7WLR2Duc\/eWbx8y4AjH6o8tuAM=",
+      "url": "images\/maps\/glyphs\/grotto.png"
     },
     {
-      "hash": "sha256-XfaquKG\/U5JFJAqYfN4u4VqkEXJjkq9rC2bewiQjHeY=",
-      "url": "images\/maps\/Orchard.png"
+      "hash": "sha256-4zDTCDV+HUsHx2mtTlGFiQ7zFQZUzBa355lRcFvu5B0=",
+      "url": "images\/maps\/glyphs\/highgardens.png"
     },
     {
-      "hash": "sha256-y+SG4wtZaRhVrjAa6moVUGMtl8WGghXcemUAX4lW9kc=",
-      "url": "images\/maps\/OshabiMap.png"
+      "hash": "sha256-6nnFT8CnvBFvH88mgJRV+hRrq6aAghzlhSSD756dp0I=",
+      "url": "images\/maps\/glyphs\/hydra.png"
     },
     {
-      "hash": "sha256-rQRpSzYeedMmRvGe81a9oFAziaiW+NDUJ4s\/XSxTIa0=",
-      "url": "images\/maps\/OvergrownRuin.png"
+      "hash": "sha256-yvqbsSYqKoPOHxX6jLM277MtOopIcNm0jJQc5PZdm+I=",
+      "url": "images\/maps\/glyphs\/iceberg.png"
     },
     {
-      "hash": "sha256-bcRaXKgs9owctzNWk9LiepYAyWH3NhO32aJfph7LoSo=",
-      "url": "images\/maps\/OvergrownShrine.png"
+      "hash": "sha256-\/Yln\/zne3jtw4yWcgww8lUpzWGFVJmanO+l0wRLRbIk=",
+      "url": "images\/maps\/glyphs\/infestation.png"
     },
     {
-      "hash": "sha256-metrRh+T9l\/0nshXc62pPnBauCPmAvcGEZuDuc\/JEys=",
-      "url": "images\/maps\/Palace.png"
+      "hash": "sha256-g9WtbjtGY8wQMjVZytlE5l0UZa3WtkCfhew4JyAjZKQ=",
+      "url": "images\/maps\/glyphs\/ivorytemple.png"
     },
     {
-      "hash": "sha256-7X5bLEtJhMqLrXbq4ZseRbQwokNWTeC1t0YeEOznwWQ=",
-      "url": "images\/maps\/PaleCourt01.png"
+      "hash": "sha256-ybd4XtQgIX6c3KnMhc6dG8OjQr9b7U2iw9ID+WewLaY=",
+      "url": "images\/maps\/glyphs\/junglevalley.png"
     },
     {
-      "hash": "sha256-Y7+zMfKaIzgyjeGX9NM4jfH4QljvcxGKTvFHZasvITo=",
-      "url": "images\/maps\/PaleCourt02.png"
+      "hash": "sha256-IIys2gq+Cc+bdvnMdTjn89qOaX4n4zhVPub8A0wADVI=",
+      "url": "images\/maps\/glyphs\/laboratory.png"
     },
     {
-      "hash": "sha256-ci8LLeWlKUc7BLCkv0Dr\/6BXFVb8ihu+ehTYg9N2gXI=",
-      "url": "images\/maps\/PaleCourt03.png"
+      "hash": "sha256-Lcr1k\/d\/R1HQ\/fT6KznvwLkIsNT7eBto5XDwVOxVcRE=",
+      "url": "images\/maps\/glyphs\/lair.png"
     },
     {
-      "hash": "sha256-3vshdpmCVFspfC6NMHm\/MMBHWmofh5OiF8Fl3BmeY\/w=",
-      "url": "images\/maps\/PaleCourt04.png"
+      "hash": "sha256-ZQfT3m+PY5p2g1v3W\/AhZYKeDO1NEb8+dZzKglf3Xn0=",
+      "url": "images\/maps\/glyphs\/lookout.png"
     },
     {
-      "hash": "sha256-F\/kDL69SzmZPksvwAHn4MfO9ypFsKKSIGnrspUrshOY=",
-      "url": "images\/maps\/Park.png"
+      "hash": "sha256-mBGdT1T4mPHzD\/a6Q0FMx+vOfTjtqYMPTPvbmzXKmSY=",
+      "url": "images\/maps\/glyphs\/lunaristemple.png"
     },
     {
-      "hash": "sha256-iZ1Nr8rRVXrSHcjyCFGJcJ0TrgfK\/Icu5CDw\/iOEiXA=",
-      "url": "images\/maps\/Pen.png"
+      "hash": "sha256-wQTMOppEBQLvpjy1Oc2NCpe+TZLtWYwzGT\/LKylEbZk=",
+      "url": "images\/maps\/glyphs\/malformation.png"
     },
     {
-      "hash": "sha256-x\/Jx7dFBtXSiciWTwV0fikJm4wrgWdTBcQzoNf6H3wc=",
-      "url": "images\/maps\/PerandusManor.png"
+      "hash": "sha256-MtvYUJfhjKmICqVJvJ3oqcwsdjzVNT8TNiImUNyMK3E=",
+      "url": "images\/maps\/glyphs\/marshes.png"
     },
     {
-      "hash": "sha256-eT7WoARnKgfKX7gqF6uoGWJuDwoglxLxmqV3Y0F3vx0=",
-      "url": "images\/maps\/Phantasmagoria.png"
+      "hash": "sha256-dQnwExqFM32apnn\/ukujTXFFI3+lMHHkulydDY+LUxI=",
+      "url": "images\/maps\/glyphs\/mausoleum.png"
     },
     {
-      "hash": "sha256-vGWMHnoRR3a0ANLIe1y7QSj3A8gq4JHwo3g4V7\/XE2g=",
-      "url": "images\/maps\/Phoenix.png"
+      "hash": "sha256-K8jlEcodBmN7IdyJc4oA2rS1NMBszPZGdcfyjXtwjP0=",
+      "url": "images\/maps\/glyphs\/maze.png"
     },
     {
-      "hash": "sha256-yGXRA0KQiJjrYk3qocZxcFTc5wmvJa\/iKzxyVKzMIEs=",
-      "url": "images\/maps\/Pier.png"
+      "hash": "sha256-1iaGfvV6lTDv6xd3JfUeqrLm2\/pcDIQ7Z4rK0DLoaQw=",
+      "url": "images\/maps\/glyphs\/mesa.png"
     },
     {
-      "hash": "sha256-62ENCJF2EAypZhLqCeRK\/UXsORb8qjTRW5intKoIPkI=",
-      "url": "images\/maps\/PillarsOfVastiri.png"
+      "hash": "sha256-DRkAbETnXNdaJeqa8Qq50CCCGfCLCTtb2X3bRV2qeJI=",
+      "url": "images\/maps\/glyphs\/mineralpools.png"
     },
     {
-      "hash": "sha256-I2a\/yK6Ym5lL58SK5DeAPQpCh8Lb9kypddr1z1cVfFA=",
-      "url": "images\/maps\/Pit1.png"
+      "hash": "sha256-AXY1o06idq3hM+N7ihIEneXR\/kVa33aZQAWcXNc18yI=",
+      "url": "images\/maps\/glyphs\/minotaur.png"
     },
     {
-      "hash": "sha256-naiWldrx\/YNZV77dElSnawo8HcxGAKFW\/NO5Sr2RTdU=",
-      "url": "images\/maps\/Plateau.png"
+      "hash": "sha256-vwLpWczYlKsZ0nQtRuWQ65chhz2ZZ079e2EcGRiVrEo=",
+      "url": "images\/maps\/glyphs\/mudgeyser.png"
     },
     {
-      "hash": "sha256-WzpVfvg0+qVxLnpdNDSnMOkto72kxOqQdcC28SMcgMY=",
-      "url": "images\/maps\/Plaza.png"
+      "hash": "sha256-fudiJKD8BkcMTtkIEUrUaG6w4FSCmzLuCSSHuM7J6QI=",
+      "url": "images\/maps\/glyphs\/museum.png"
     },
     {
-      "hash": "sha256-hWFLUThAaXsknaji9oXmxMDlOpiB4GzvvTJ6B0ehlt8=",
-      "url": "images\/maps\/PoorjoysAsylum.png"
+      "hash": "sha256-Oyvo325L89VNbM8NrfSfnjpg3xhBIrHTuLpZWgq05mI=",
+      "url": "images\/maps\/glyphs\/necropolis.png"
     },
     {
-      "hash": "sha256-vmsXBqxVpaxRLne0iwa+FVgR9gj2uy9BQirWwbaySt4=",
-      "url": "images\/maps\/Precinct.png"
+      "hash": "sha256-\/GvAIgB0GiORb\/SoGZgSH87RVBII4cImIiANKV980NM=",
+      "url": "images\/maps\/glyphs\/oasis.png"
     },
     {
-      "hash": "sha256-biLAVhNgfRtYZcTQKyT5lV5\/5TTHyJ4\/bFDldySSC+o=",
-      "url": "images\/maps\/PrimevalRuins.png"
+      "hash": "sha256-ko5Bu0SYjelyMG+LUSz1dVqLmEy6VsY7mphCPPlXbLs=",
+      "url": "images\/maps\/glyphs\/orchard.png"
     },
     {
-      "hash": "sha256-7pK3HKtKEIJin9aGBhG0TTCtILc7hUO13tDsasF4M6Q=",
-      "url": "images\/maps\/PrimordialPool.png"
+      "hash": "sha256-0QtP2x69AWVWxieqw3aZ778xF3YaMEnkmP59bwLFRkE=",
+      "url": "images\/maps\/glyphs\/overgrownruin.png"
     },
     {
-      "hash": "sha256-odwuTYUWpVNTdUF16PF1BpSj1wBQu586+nJ3nBfcEZ0=",
-      "url": "images\/maps\/Promenade.png"
+      "hash": "sha256-P27+JGgd4TPAdz6gVVj1m7J2dY85CHvd9mmwVGSbgrE=",
+      "url": "images\/maps\/glyphs\/overgrownshrine.png"
     },
     {
-      "hash": "sha256-rGGbM8t3LoijCbyXObhu+\/ldvACKDrBRU6rEKgjpKFc=",
-      "url": "images\/maps\/PutridCloister.png"
+      "hash": "sha256-NrHK416P3v2LNOCZAn5OV7ID+MbH+VU01cgN9MbY2LQ=",
+      "url": "images\/maps\/glyphs\/palace.png"
     },
     {
-      "hash": "sha256-xreWsRu3tNqfGuOLMs5hH\/iuGXQRclhjydfuA7HTEHo=",
-      "url": "images\/maps\/Quarry.png"
+      "hash": "sha256-pUx9yFRbyy2dn2ZjnqkOG2nZZ94I0z\/+iiYeFmqiC8M=",
+      "url": "images\/maps\/glyphs\/park.png"
     },
     {
-      "hash": "sha256-UQZHKH3swxeuTYwa7aIJVCUWViTHhj+X8yxfoi61VAU=",
-      "url": "images\/maps\/Quay.png"
+      "hash": "sha256-Rt5AllN429lsE2azyROmqqHucWEAewa6u2L2yRMU7Io=",
+      "url": "images\/maps\/glyphs\/pen.png"
     },
     {
-      "hash": "sha256-YeU00Ax5Ieh3bi+I5PXpviyoXNXexz\/t0wenJp6CKRQ=",
-      "url": "images\/maps\/Racecourse.png"
+      "hash": "sha256-Q2chpEJ\/zr02OKFm0UpJRvqImUUSvWQMui6\/blIO\/JQ=",
+      "url": "images\/maps\/glyphs\/peninsula.png"
     },
     {
-      "hash": "sha256-eC56XMYy\/NPfupvs2orZBBLwLU4I0qs+QeCYDjgbUpA=",
-      "url": "images\/maps\/Ramparts.png"
+      "hash": "sha256-ydf2igsQOIp983vtDeGv1EyA8jGiTpzvO3+mY8ZZYiM=",
+      "url": "images\/maps\/glyphs\/phantasmagoria.png"
     },
     {
-      "hash": "sha256-+JUpXUjq74NehsuSl1JgUuEvosBHnPCK+NBk0Nbrimw=",
-      "url": "images\/maps\/Reef.png"
+      "hash": "sha256-j6B6gv5k9WQeWzcW47uy+q8m05m7\/pIOEIeMDkbkmic=",
+      "url": "images\/maps\/glyphs\/phoenix.png"
     },
     {
-      "hash": "sha256-iEdYJfTo5CARmo8D0l2S2P8s9yhpknlJlHjy7Ugm0AA=",
-      "url": "images\/maps\/Residence.png"
+      "hash": "sha256-OKfUoUF+rFjAOU0i8ntf0Aa+t8NzbeDDaGZHeRBgN3M=",
+      "url": "images\/maps\/glyphs\/pier.png"
     },
     {
-      "hash": "sha256-yXya6NWBMnnCCiKbruyoDj\/qWDKqDXRyF1hcbs+mWSM=",
-      "url": "images\/maps\/RobotTunnelSilo.png"
+      "hash": "sha256-+zYThtrErZQ3E9uGN56ZbYqLzEoj3DWxMTFqhCBNMO4=",
+      "url": "images\/maps\/glyphs\/pit.png"
     },
     {
-      "hash": "sha256-lhhuHs4o3RpWb+YPD+P3Fb7Tf4m3NMHzRpgGPY760uQ=",
-      "url": "images\/maps\/Sanctuary.png"
+      "hash": "sha256-wdWZEaSwzuQRLg3fKqIm8p4LOEK+XTTf4dLYtIy01do=",
+      "url": "images\/maps\/glyphs\/plateau.png"
     },
     {
-      "hash": "sha256-K0VT1M\/w0zk8zzoUff2NCJuYftAVtZUBJIRsMdhhTpM=",
-      "url": "images\/maps\/Scriptorium.png"
+      "hash": "sha256-H0\/LIfq3PVWc5OWcuBDjNSwwQU58CY\/uiMRBoFUuV9s=",
+      "url": "images\/maps\/glyphs\/plaza.png"
     },
     {
-      "hash": "sha256-WrdWUnKrhS27Ga44KHMx\/2ZhBEkOHLb0uTdLcm8PX0A=",
-      "url": "images\/maps\/Sepulchre.png"
+      "hash": "sha256-VTsSN3nS\/O37xthzQQ49vDn60ztqqY+iVeCy1N+R+Es=",
+      "url": "images\/maps\/glyphs\/precinct.png"
     },
     {
-      "hash": "sha256-nTt73ml8Y5c6oiX4i8fK1oE\/YQ7I7Md4O2FOfxo4a2Q=",
-      "url": "images\/maps\/Sewer.png"
+      "hash": "sha256-DkxwZAAkfCQCEY4PxzdsYkFjtuj15Y2WiWHu\/b0VBBg=",
+      "url": "images\/maps\/glyphs\/primevalruins.png"
     },
     {
-      "hash": "sha256-LoCdd6+yoKAxVRbYne6Snaltte+L8UvG4TGCDiHZYw0=",
-      "url": "images\/maps\/Shipyard.png"
+      "hash": "sha256-HLdWx78ke\/jS7Y\/Zx27e515mZexMO5+F3JrZOBADVP8=",
+      "url": "images\/maps\/glyphs\/primordialpool.png"
     },
     {
-      "hash": "sha256-xAupjhztD+6JZ7K6XtMYr0uqEn+9DqPeB0yvmPdq9d8=",
-      "url": "images\/maps\/Shore.png"
+      "hash": "sha256-73hchKN6d8g4UOT+83KEXU1hiFDpOdi7pWDU3w813K8=",
+      "url": "images\/maps\/glyphs\/promenade.png"
     },
     {
-      "hash": "sha256-JOwJAlhWUvKJdFwVGz\/zY3j25dfi5UMHMLHJ9D22R68=",
-      "url": "images\/maps\/Shrine.png"
+      "hash": "sha256-D4y16dtMRD7Jc5z8CLmeHzmC2xcMW5GjHhCHWEI84rs=",
+      "url": "images\/maps\/glyphs\/quarry.png"
     },
     {
-      "hash": "sha256-AB7Rwi1pmeZu9fuf7EuL57giGdEZ5vWioKOXsoOD7Ao=",
-      "url": "images\/maps\/SpiderForest.png"
+      "hash": "sha256-VMtL8yyZrKE7NC8YyfrgceurfXaE+BhfdVT7toPb7Pg=",
+      "url": "images\/maps\/glyphs\/quay.png"
     },
     {
-      "hash": "sha256-qzYMnDCIQWn2o4Z2\/F+\/jx9R2NHPDV8dgM\/ZT5UqOcc=",
-      "url": "images\/maps\/SpiderLair.png"
+      "hash": "sha256-jEQ7OB4iw+pm+rYffiTKvSfa7tebFw3AMDdvuQ\/KGoY=",
+      "url": "images\/maps\/glyphs\/racecourse.png"
     },
     {
-      "hash": "sha256-n9PU+skOD9RQiaO6PxgZlA38qS4dnaxf0j0OEJ4ihIk=",
-      "url": "images\/maps\/Stagnation.png"
+      "hash": "sha256-FspUrQ6hj02Nb25ErizrJfc10bsfhTfM8LftG0xoFAw=",
+      "url": "images\/maps\/glyphs\/ramparts.png"
     },
     {
-      "hash": "sha256-3ev3+ZvRw\/I+AY3rVFjyYctbbgloZlKCvDKQA9v4GsQ=",
-      "url": "images\/maps\/Strand.png"
+      "hash": "sha256-xJjQPLkH3Z0gVKTgH+i\/ltZfKXVFqgMg8bskyGG1Sa4=",
+      "url": "images\/maps\/glyphs\/reef.png"
     },
     {
-      "hash": "sha256-IevUu\/Awif66CDhmBu+tQseaky36bwU4kUkVfc49Poo=",
-      "url": "images\/maps\/SulphurVents.png"
+      "hash": "sha256-jRZLNNGTNa66zBK+DvsnCLYBZMYXeY8eucz+40XVmJU=",
+      "url": "images\/maps\/glyphs\/residence.png"
     },
     {
-      "hash": "sha256-lWxvG23IrUSE\/dtyLKI4yzPeVdcrYLqd7VkCGs0S2eM=",
-      "url": "images\/maps\/SulphurWastes.png"
+      "hash": "sha256-k7DTzRBwKOy2cBl\/lzrvbXll7Z\/2IcaPyoKOWoGhLl0=",
+      "url": "images\/maps\/glyphs\/ring.png"
     },
     {
-      "hash": "sha256-EcQlVxlWbIOSNeR1F\/8atgJ0srkaUPzjaddqAjWD7Ms=",
-      "url": "images\/maps\/Summit.png"
+      "hash": "sha256-kSZdbHsLXf3XpRshpAoX31CO4chYl3EtM79fCB70Kpw=",
+      "url": "images\/maps\/glyphs\/robottunnelsilo.png"
     },
     {
-      "hash": "sha256-Giext7cv06baWmLWDqtp26a0DUt4d2W9V+XKf1fz3aQ=",
-      "url": "images\/maps\/SunkenCity.png"
+      "hash": "sha256-1k1OZU8h8wPJsXwD6MwVBMHYwEXVtxNx7cAJWR7b8Vk=",
+      "url": "images\/maps\/glyphs\/sanctuary.png"
     },
     {
-      "hash": "sha256-M43aFZcT9yB0toCYREC5Hzo9GVlZy54bmmQT5LoINUo=",
-      "url": "images\/maps\/SynthesisBossGuardianMap.png"
+      "hash": "sha256-KU57YExnujnLkxTRbsvvXKrF03pT7zXEKYPXhL2xG\/E=",
+      "url": "images\/maps\/glyphs\/scriptorium.png"
     },
     {
-      "hash": "sha256-yD2RwdYI1xBXn7FZJZXNjirX3fVCJc6L0K1rLB\/A\/TQ=",
-      "url": "images\/maps\/SynthesisColdGuardianMap.png"
+      "hash": "sha256-YitoJ19ZFDKZsfB0CAFxV4vPRv+al1Xff2ExODy+Pvk=",
+      "url": "images\/maps\/glyphs\/sepulchre.png"
     },
     {
-      "hash": "sha256-F4vr7onIepULYG7RLCB5UG8ObsJj0GFLOJxrdf8fk4w=",
-      "url": "images\/maps\/SynthesisFireGuardianMap.png"
+      "hash": "sha256-rqOe8vYH9VOeVJHJHrlVeUAWr0wAFgmkbgPrf3V3e90=",
+      "url": "images\/maps\/glyphs\/sewer.png"
     },
     {
-      "hash": "sha256-YbmVdqVjQNgdbIXlhkWnt6pK1X7SyoQf6f5wxpxCnHY=",
-      "url": "images\/maps\/SynthesisGolemGuardianMap.png"
+      "hash": "sha256-HMqUTNa7hmUBwylZOe5ZgSINKjRtGZPtYqu4pzqMkfg=",
+      "url": "images\/maps\/glyphs\/shipyard.png"
     },
     {
-      "hash": "sha256-ik0Jv0zsnEcie1OATJTiVNmxhl43vW9vpOvNinPJM5E=",
-      "url": "images\/maps\/SynthesisLightningGuardianMap.png"
+      "hash": "sha256-oB3TYBO7YKA5x\/zyRiqBbg9TSbV7FhO2EAGitS9iqLw=",
+      "url": "images\/maps\/glyphs\/shore.png"
     },
     {
-      "hash": "sha256-OBUwdyEfUChYBB7amTc\/IGtRcXromRpVKG\/6IeZTEP4=",
-      "url": "images\/maps\/TemplarFragment.png"
+      "hash": "sha256-Y5ZzTuDY16LUHNni989TiN4hahnohFzbZOqPX2g9bc8=",
+      "url": "images\/maps\/glyphs\/shrine.png"
     },
     {
-      "hash": "sha256-cxa06zaJe+2G0ZoIcguVO1xc6bjMSxw\/usEWRoYiNaQ=",
-      "url": "images\/maps\/Temple.png"
+      "hash": "sha256-NLk9YFUjOpEU7qRe5j+PkXZEf0An2+Rk6zHLlcWIRY0=",
+      "url": "images\/maps\/glyphs\/spiderforest.png"
     },
     {
-      "hash": "sha256-6PI3OiI5c6gNctP1TCbmYo6FZ1xx5puBRk3H+nYHOjo=",
-      "url": "images\/maps\/TempleMap.png"
+      "hash": "sha256-T0gUbp5lX1v3RwJTCVNvdcZ8N3sKwKSoaMInuHU+oWc=",
+      "url": "images\/maps\/glyphs\/spiderlair.png"
     },
     {
-      "hash": "sha256-nCrrFEAerRGeTRfhKPOGF57x0JmysMjZhkjpdIiwaPQ=",
-      "url": "images\/maps\/Terrace.png"
+      "hash": "sha256-d2uFLyOHEgWbxK3bY0AkSKNCWdnK076wVBIO+0oNHUA=",
+      "url": "images\/maps\/glyphs\/springs.png"
     },
     {
-      "hash": "sha256-cxV0I3ea9mgi1p9mqwTlL8otyldyBzmkTcEa9aZTO3w=",
-      "url": "images\/maps\/ThaumaturgyDungeon.png"
+      "hash": "sha256-3vKOXTvEPoLlajL3jrFWwoWznw3diq3IqUwP1FTWz7s=",
+      "url": "images\/maps\/glyphs\/stagnation.png"
     },
     {
-      "hash": "sha256-dtdqFwLfiqGDiRz\/1B9NQaI6aGVgzDEulGuWdxNq\/Uo=",
-      "url": "images\/maps\/TheVinktarSquare.png"
+      "hash": "sha256-8yv3RHPri6D4mEDtndg1bQJ3HYSLtlUpOBLEJ5bWy34=",
+      "url": "images\/maps\/glyphs\/strand.png"
     },
     {
-      "hash": "sha256-NFHyFufQ4ALOCmOSlIXJBmtYCyMyk8M3DV4nQ6RNT\/o=",
-      "url": "images\/maps\/Thicket.png"
+      "hash": "sha256-7kamTIyKMqR6sy1JyHqZe8ToHmERANiQpHnqYD7sp98=",
+      "url": "images\/maps\/glyphs\/sulphurvents.png"
     },
     {
-      "hash": "sha256-OtkYA6ACRTb5U3fkij0oDXk0t0iQiKVGA6pxQ23fbAU=",
-      "url": "images\/maps\/TimelessConflictEternal.png"
+      "hash": "sha256-ApyqcmO4JeX8smJKkkCYd4Rp3lSGXhGnVVtf4U1oqkM=",
+      "url": "images\/maps\/glyphs\/sulphurwastes.png"
     },
     {
-      "hash": "sha256-8\/5bH\/Tp\/k2XWP9W1ZmSOE3eQ4dc4Wje86EodoO5aXQ=",
-      "url": "images\/maps\/TimelessConflictKarui.png"
+      "hash": "sha256-2HlJshClOmPyTaIghx5XJuc75Vwcf6TsypVSka9xeqU=",
+      "url": "images\/maps\/glyphs\/summit.png"
     },
     {
-      "hash": "sha256-2SNTZictqnTFdgN216mcRhuD4mZzXqHrmPWVO1AsnMg=",
-      "url": "images\/maps\/TimelessConflictMaraketh.png"
+      "hash": "sha256-Gdr42DwyccdyhjKLH0Bqxn3atJ2+123R0IK8FsCUL68=",
+      "url": "images\/maps\/glyphs\/sunkencity.png"
     },
     {
-      "hash": "sha256-bik3D7f2A3u4HfMOat8ntmA55fUdlWO9s1tlQUB4rgs=",
-      "url": "images\/maps\/TimelessConflictTemplar.png"
+      "hash": "sha256-lIiy1Lq2q1aNMEBLs4NOda\/+XwBf+n8axVV57WI22sI=",
+      "url": "images\/maps\/glyphs\/temple.png"
     },
     {
-      "hash": "sha256-hgrToLCAu391\/x9a1mkjzCdTkXwb25SBeEu0xAdnUtA=",
-      "url": "images\/maps\/TimelessConflictVaal.png"
+      "hash": "sha256-5AKLxB1ybQMBz2viU\/EPNCX+mGWYnJVlf46D4Ovxs44=",
+      "url": "images\/maps\/glyphs\/terrace.png"
     },
     {
-      "hash": "sha256-szcR496Jl+DD0hbzMxBVlPhXcL6xtGk3I\/hiI7m+h+A=",
-      "url": "images\/maps\/Tower.png"
+      "hash": "sha256-1osk7seFMhK\/Gl\/f1GEnHeuPVcC2VWeHpvXQLpKWxiE=",
+      "url": "images\/maps\/glyphs\/thaumaturgydungeon.png"
     },
     {
-      "hash": "sha256-xJ63Bfp2Y0Y\/ufM9eu17tZk5f65TFOFHpzc5IDehvfc=",
-      "url": "images\/maps\/Tribunal.png"
+      "hash": "sha256-sRjMYIedm1tfYlEBgidomTzDIfkNkH7OGZ9rdbvQ\/NA=",
+      "url": "images\/maps\/glyphs\/thicket.png"
     },
     {
-      "hash": "sha256-uVEf3cKtYgsPMXF8ARi6w4aFB5rSfxCNHETrrAZ61RQ=",
-      "url": "images\/maps\/TropicalIsland.png"
+      "hash": "sha256-o6lZXRxOSrq+N2J0+GwZy8+zfU78hJ4ld8q1Xpilql4=",
+      "url": "images\/maps\/glyphs\/torturechamber.png"
     },
     {
-      "hash": "sha256-wIgVDYShL\/a5lRGf5lfJ7v2EXPNJxFX8D4jp66vmAag=",
-      "url": "images\/maps\/TulsChargedBreachstone.png"
+      "hash": "sha256-ghpSwO6nBtlP0l2sjxF+Y4JABYSuwPSZ14DEQFt9EoY=",
+      "url": "images\/maps\/glyphs\/tower.png"
     },
     {
-      "hash": "sha256-ZgExsEVnNMhAdtS+51WjT1jR5nkCLQMJFMqLKqEgLI8=",
-      "url": "images\/maps\/TulsEnrichedBreachstone.png"
+      "hash": "sha256-6lEdYtooHXFxLMhh8KdhiHWf30+CWP4o84y1uhkI6QE=",
+      "url": "images\/maps\/glyphs\/tribunal.png"
     },
     {
-      "hash": "sha256-ApIM6SEP8owT7AWo51OyNSG4PiUzazEjWv6X2dR4OXk=",
-      "url": "images\/maps\/TulsFlawlessBreachstone.png"
+      "hash": "sha256-zkRSjSrDd0PTZFzdg42b8bF7Q4fbt+nhZufjA34P1yo=",
+      "url": "images\/maps\/glyphs\/tropicalisland.png"
     },
     {
-      "hash": "sha256-Qvu9zTApwzh5+IAFBZrOKJ7ZtAJGcZgOBVotUlBf4lo=",
-      "url": "images\/maps\/TulsPureBreachstone.png"
+      "hash": "sha256-VeKuk\/HTgAjSdPYD3eB+h1b\/n+XIbYXsHbv1vHJ2Yqk=",
+      "url": "images\/maps\/glyphs\/undergroundriver.png"
     },
     {
-      "hash": "sha256-9fCTLpRnnAJdBdK1DKLf2mh5QSB5mqOQraxB7AAk8ok=",
-      "url": "images\/maps\/UberElder01.png"
+      "hash": "sha256-Ea81nMvUDyVMbfrkcXsSCOqA0OivttB+XgZ1JyCnq9M=",
+      "url": "images\/maps\/glyphs\/undergroundsea.png"
     },
     {
-      "hash": "sha256-NJ8KXKenGuF6WKyrzreO8RQLA1JlBAN8qkXzfd4ROV8=",
-      "url": "images\/maps\/UberElder02.png"
+      "hash": "sha256-t5SY5SuKCJj4urlbwI9icfcYrDQ\/mksmKrMjCydNtck=",
+      "url": "images\/maps\/glyphs\/vaalcity.png"
     },
     {
-      "hash": "sha256-tJNXuzTodW371iH6v4o5\/EwYaZBNa20wMdOXPlyqvLE=",
-      "url": "images\/maps\/UberElder03.png"
+      "hash": "sha256-aI2vPi0fvMMsBA7VI13lhDICZvrtDzqrUh806bZh\/aA=",
+      "url": "images\/maps\/glyphs\/vaalpyramid.png"
     },
     {
-      "hash": "sha256-x6klR+wFC+ADZPkCwOmeKHu1TM1w480UdIFAlwe\/qgI=",
-      "url": "images\/maps\/UberElder04.png"
+      "hash": "sha256-NEd3gqt2aa5EzOgAmCaZjTg\/pmXfVnpJyJTr5zA7quk=",
+      "url": "images\/maps\/glyphs\/vaaltemple.png"
     },
     {
-      "hash": "sha256-VrTF61rc1GdcbsMb51p9KDDtnCh8Je2hgnotHXf1GAY=",
-      "url": "images\/maps\/UberVaal01.png"
+      "hash": "sha256-qFgPXW2dOLYWF+qisaz+AeYMJ5L7LZl8wbPdTJBhnfs=",
+      "url": "images\/maps\/glyphs\/vaaltemplebase.png"
     },
     {
-      "hash": "sha256-nBog9ozZeMfnodiDZowFLjfbImyWBWMJSGXTd5nfwE0=",
-      "url": "images\/maps\/UberVaal02.png"
+      "hash": "sha256-LXnJyzf00oN5zPSPMcgkzeWGD8w4FGJ+p+ZCsNS7j1M=",
+      "url": "images\/maps\/glyphs\/vault.png"
     },
     {
-      "hash": "sha256-xFJUkksJJLeNdIf\/8nsiOsBs49BS+9WuyyClYcO0ITM=",
-      "url": "images\/maps\/UberVaal03.png"
+      "hash": "sha256-b2vC1VokhZmFo+uwMcgctmNDL0F+T+dsYIMYnzCk+A8=",
+      "url": "images\/maps\/glyphs\/villa.png"
     },
     {
-      "hash": "sha256-eGvgowZfJMpJrt96+5\/xrSbGyOJ\/i8\/F3ESng+G5f5M=",
-      "url": "images\/maps\/UberVaal04.png"
+      "hash": "sha256-SW2OLimO1pjTGoelzGGtW\/Fg8+D7k3pZLEIgdYCq\/X4=",
+      "url": "images\/maps\/glyphs\/volcano.png"
     },
     {
-      "hash": "sha256-\/VbfwTk0lj3oxg2rxUrT+ojUnDBnPhhKAk1EXc4\/BXY=",
-      "url": "images\/maps\/UltimatumTrialBase.png"
+      "hash": "sha256-41alMtWP7PaQVX6qQw7j9D9onVhXMnJ48mqmVt7tdwM=",
+      "url": "images\/maps\/glyphs\/wasteland.png"
     },
     {
-      "hash": "sha256-DLSk+OvwlFfVhd5c964iMUfx9tPGBUDD7LYIci3P1wQ=",
-      "url": "images\/maps\/UndeadSiege.png"
+      "hash": "sha256-93neXeaYmyxmhezlmybCup8bmS\/54Zcn+fRvZsoWerE=",
+      "url": "images\/maps\/glyphs\/wastepool.png"
     },
     {
-      "hash": "sha256-oS0zA34Uij\/UM6X3IQMNviAi62AKzJFhjpp2kklI9Zg=",
-      "url": "images\/maps\/UndergroundRiver.png"
+      "hash": "sha256-OBwozSAwLGpbFTnJo6ZD\/p0uvJzcF52DVW1DUnycI7A=",
+      "url": "images\/maps\/glyphs\/waterways.png"
     },
     {
-      "hash": "sha256-zqsDqG+OFX8su+dkT5odAkV3jaKyhjIIahdv+0T3ROA=",
-      "url": "images\/maps\/UndergroundSea.png"
-    },
-    {
-      "hash": "sha256-RVksRnsYtOZVYKiXkGNk1GjZxRpzZlJT4s1h\/7GfKX4=",
-      "url": "images\/maps\/UniqueMap1.png"
-    },
-    {
-      "hash": "sha256-1kPInp8Ylq98NEEne1ukEmDjPEA1YQ5hN0gtoTmQ9Sg=",
-      "url": "images\/maps\/UniqueMap2.png"
-    },
-    {
-      "hash": "sha256-xCAH0gB5KcvTqSpTO9Wk4LMkoTISsYc4zwr+1Wm36eM=",
-      "url": "images\/maps\/UniqueMapEye.png"
-    },
-    {
-      "hash": "sha256-1iGuecxfWOMBqfkEwVlGijPZ8surTvCmaCFbIuw0Ua0=",
-      "url": "images\/maps\/UulNetolsChargedBreachstone.png"
-    },
-    {
-      "hash": "sha256-D6GoK\/+rN5mng1hy69TjK0R4QeepWe1AADivCzoPF0Q=",
-      "url": "images\/maps\/UulNetolsEnrichedBreachstone.png"
-    },
-    {
-      "hash": "sha256-YVSqp8\/CRqmtp5oWCEOSOINit5bZRkNruVX5fKLq4+Y=",
-      "url": "images\/maps\/UulNetolsFlawlessBreachstone.png"
-    },
-    {
-      "hash": "sha256-iH5MUAn4h7a4WPKkRs\/D9EYHu6CpFVdORViPcan1yBI=",
-      "url": "images\/maps\/UulNetolsPureBreachstone.png"
-    },
-    {
-      "hash": "sha256-AFWoQs7a0dPdzrCqcPN\/jFNMFTrQPCuKr5hhDz+YiPs=",
-      "url": "images\/maps\/Vaal01.png"
-    },
-    {
-      "hash": "sha256-ourF\/HDM0y8pTXBLNXMS+hNZUZly3IiwtLAA6dVl1KE=",
-      "url": "images\/maps\/Vaal02.png"
-    },
-    {
-      "hash": "sha256-Kr\/K\/let1i53JbziIPRvok7ttLsqr4bTxH0KbpFX4Pk=",
-      "url": "images\/maps\/Vaal03.png"
-    },
-    {
-      "hash": "sha256-elKgcTVchURdNBboDFNMat7l9c7QRBIangjf2BjEQyQ=",
-      "url": "images\/maps\/Vaal04.png"
-    },
-    {
-      "hash": "sha256-GXAC8nYnmG8J1jP9ceoJ9+c39eZSaFtf3YSqw2N4lEo=",
-      "url": "images\/maps\/VaalCity.png"
-    },
-    {
-      "hash": "sha256-RfJ48rnfoYY\/IaeAor0s3RuQFO\/mC1cy2KYz\/0B8V0o=",
-      "url": "images\/maps\/VaalFragment.png"
-    },
-    {
-      "hash": "sha256-rToQoHNlo7V7fT+1ZIMN4K3P1Ci13MckotAnxMZrNn8=",
-      "url": "images\/maps\/VaalPyramid.png"
-    },
-    {
-      "hash": "sha256-bfaO5AonYHPNWRa6Wd6Kb3Mbqq\/IKP6Gxno25I3C6H4=",
-      "url": "images\/maps\/VaalTempleBase.png"
-    },
-    {
-      "hash": "sha256-uh13fafZOP\/2IV2FFRoil4b48XI6NNbMZCTm8yUjDvk=",
-      "url": "images\/maps\/Vault.png"
-    },
-    {
-      "hash": "sha256-wjoy2vxkXDxVaVRxJcw5KSJrSaAG2HPJU3JIw4wCGsQ=",
-      "url": "images\/maps\/VaultMap.png"
-    },
-    {
-      "hash": "sha256-TF0cNMKjANbaaBrrgmnGH662Fgov8FwhyZYo9d9wvF0=",
-      "url": "images\/maps\/VaultMap3.png"
-    },
-    {
-      "hash": "sha256-t2vh9z8H2UttKkBExOXqp\/NStbQlNlhi9T++4tFvzxw=",
-      "url": "images\/maps\/VaultMap4.png"
-    },
-    {
-      "hash": "sha256-uSv7xiOwKobrfGA9\/oTMDk7HKi4AYgT1FpL0R2kfb2w=",
-      "url": "images\/maps\/Villa.png"
-    },
-    {
-      "hash": "sha256-Qg3tvCSQIS4y2mFcFD48Dfo+awp3fE8m5gPHt09niwU=",
-      "url": "images\/maps\/Volcano.png"
-    },
-    {
-      "hash": "sha256-\/SABz0sx5Mtnq053lqvl4bARwE3bYBSGt8YYLHcnKG8=",
-      "url": "images\/maps\/Wasteland.png"
-    },
-    {
-      "hash": "sha256-qJ9kpOdIDS0atIjafOz9ZNp00NcHW++yT8qpoBow7J0=",
-      "url": "images\/maps\/WastePool.png"
-    },
-    {
-      "hash": "sha256-gGRwsVfIS+\/bFcnps18ugPfjhqMPkpSdDCwvXND6+fI=",
-      "url": "images\/maps\/Waterways.png"
-    },
-    {
-      "hash": "sha256-6mnRCoYB1dj9ecXoT4E+W0arxrGPdWcjEhnsNw3B0iw=",
-      "url": "images\/maps\/Wharf.png"
-    },
-    {
-      "hash": "sha256-jIiB9hBxX78UllgzOtKmg4K+JxXKpo\/HKQ+\/Cx0IFvQ=",
-      "url": "images\/maps\/WolfMap.png"
-    },
-    {
-      "hash": "sha256-X2ld5VzGntnuHlaoPVQPC+Hio8myt2osg\/m9Fp05cL4=",
-      "url": "images\/maps\/XophsChargedBreachstone.png"
-    },
-    {
-      "hash": "sha256-7aZX7AKWSt7kOsRWqWjRGhciOUnVCvNLWheF712YUB8=",
-      "url": "images\/maps\/XophsEnrichedBreachstone.png"
-    },
-    {
-      "hash": "sha256-gtvhdkMDwz1gc2PQF9ShicoaZ4iVqLmx64iDWGXq59g=",
-      "url": "images\/maps\/XophsFlawlessBreachstone.png"
-    },
-    {
-      "hash": "sha256-REVE1s5vO7h0b4ZWHEPF+NawJgvjJMYvrXpgHOhGLCY=",
-      "url": "images\/maps\/XophsPureBreachstone.png"
-    },
-    {
-      "hash": "sha256-W49xsUNxURZdY8KsPuQCH+dapYjxIWyQLOX+EV+c8mY=",
-      "url": "images\/mods\/ModPantheonAbberath.png"
-    },
-    {
-      "hash": "sha256-lIX8wJykrRuL2IHN\/Ufi6ZNfiWQMZOWrkgsLG1EUBHE=",
-      "url": "images\/mods\/ModPantheonArakaali.png"
-    },
-    {
-      "hash": "sha256-fSQXC6ilNKP0iNO38eXCsETzne1GVgKag1DgasJDZJU=",
-      "url": "images\/mods\/ModPantheonBrineking.png"
-    },
-    {
-      "hash": "sha256-b7rqv1BNyUW3rFYRz6a1zq+MmA15BCd3hgN\/XnpANtQ=",
-      "url": "images\/mods\/ModPantheonInnocence.png"
-    },
-    {
-      "hash": "sha256-HY4W4XWn7v0AaIrhAPaaS5IMwOHUtyevBi8gLcsNQDw=",
-      "url": "images\/mods\/ModPantheonKitava.png"
-    },
-    {
-      "hash": "sha256-cxFFE+KhJCvQqKzG2DrP6w44\/zWcYfVUp8jIiOG\/jaQ=",
-      "url": "images\/mods\/ModPantheonLunaris.png"
-    },
-    {
-      "hash": "sha256-btTljioo5e3usJowIMtYBBmrIDX88rAKho1o2fAxdJ4=",
-      "url": "images\/mods\/ModPantheonShakari.png"
-    },
-    {
-      "hash": "sha256-fY5MHYzLtPkYO9FAho4X\/ib9uEsIpBeCpUJtz3TM+fI=",
-      "url": "images\/mods\/ModPantheonSolaris.png"
-    },
-    {
-      "hash": "sha256-\/VPOZO+b+huOEIqqof82p3I2s4itzsJMuHYvHlWANJI=",
-      "url": "images\/mods\/ModPantheonTukohama.png"
-    },
-    {
-      "hash": "sha256-sg+\/3J\/WSFl2i3mgMfdBnihDG8WlSeAs9qaId1cmnAk=",
-      "url": "images\/mods\/ModRareKillBloodletter.png"
-    },
-    {
-      "hash": "sha256-eGhcJwEg2u712\/b2Z2+1zNKT+4AzSAV4l4nRXsn\/nTA=",
-      "url": "images\/mods\/ModRareKillBombardier.png"
-    },
-    {
-      "hash": "sha256-DWnolwqtNX3KIEElwXR1I59SSlfQwUPzOO6f+8Zcuj8=",
-      "url": "images\/mods\/ModRareKillBonebreaker.png"
-    },
-    {
-      "hash": "sha256-rL3bVS+w6fZP296gaW8StMt++XQEGYeRldL2Tx4FBXg=",
-      "url": "images\/mods\/ModRareKillCaster.png"
-    },
-    {
-      "hash": "sha256-rG47+VcOU\/keB3kfgMp8MckfntOR9r55MWAZAzNxHCg=",
-      "url": "images\/mods\/ModRareKillChargegenerator.png"
-    },
-    {
-      "hash": "sha256-cLOUsS7crAAmS5B7ooB3GHwgybpvQriAMjjem\/Lbq90=",
-      "url": "images\/mods\/ModRareKillConsecration.png"
-    },
-    {
-      "hash": "sha256-VwvJtZijmIShj2TCMcIYb0QmY38bhMDk062L4Urserc=",
-      "url": "images\/mods\/ModRareKillDeadeye.png"
-    },
-    {
-      "hash": "sha256-yOZ3\/kpP9zSfILa+jDAHG95aEI20S3jfYYR9MOiTSf8=",
-      "url": "images\/mods\/ModRareKillDefender.png"
-    },
-    {
-      "hash": "sha256-rVvuLeaAcpKNm5VEDrqlDfbPUJNzM30SXc+GRAP3YYA=",
-      "url": "images\/mods\/ModRareKillEnergyShield.png"
-    },
-    {
-      "hash": "sha256-f9w2yIbNQQINVm8XfRvhOVrixY5VykY3As+drKQN1\/M=",
-      "url": "images\/mods\/ModRareKillFire.png"
-    },
-    {
-      "hash": "sha256-b1UmgKIzPBsuCX38wHtWm2b6DnIy4aNb3dxA2Qy\/9Ec=",
-      "url": "images\/mods\/ModRareKillFlametouched.png"
-    },
-    {
-      "hash": "sha256-mfMpZeOLehnqIPHPyGlWkTVlHzMY5kA6crpeKkNyq5s=",
-      "url": "images\/mods\/ModRareKillFreezer.png"
-    },
-    {
-      "hash": "sha256-HkVvAHPOsemuXc4DBAr0EdAUtxk6l5r5yrmo7jWhkBM=",
-      "url": "images\/mods\/ModRareKillFrosttouched.png"
-    },
-    {
-      "hash": "sha256-5QCCXOLjUOkE3fn4f8WxevFHGeX0NFM1f3xfTMEC4iE=",
-      "url": "images\/mods\/ModRareKillGargantuan.png"
-    },
-    {
-      "hash": "sha256-E2vEaC\/vHCySm\/IspqFnntXzCOsZZGnOnZFbHVW1\/Hg=",
-      "url": "images\/mods\/ModRareKillJuggernaut.png"
-    },
-    {
-      "hash": "sha256-oVegK1Hk1Tw89Fo2xZe5kp5JsgQc1KwVJX\/Rnhln5dI=",
-      "url": "images\/mods\/ModRareKillOppressor.png"
-    },
-    {
-      "hash": "sha256-HXXJmkcozYzf2SH5sTLVqc4sLhE33OJ3ZsL7g7F64Co=",
-      "url": "images\/mods\/ModRareKillPoison.png"
-    },
-    {
-      "hash": "sha256-ckZ\/uVROvIcWjSPc0hltMEYO\/Lq6umZ6zlhblnHVN1E=",
-      "url": "images\/mods\/ModRareKillRage.png"
-    },
-    {
-      "hash": "sha256-S3jbssel4WyGnovKAsM3xdOsNvyCTZ4EiM7MEmYAnRQ=",
-      "url": "images\/mods\/ModRareKillRampage.png"
-    },
-    {
-      "hash": "sha256-nT17\/gwXX\/dod\/866f4D8e2JEus9qG211V14thMZ8YY=",
-      "url": "images\/mods\/ModRareKillShocker.png"
-    },
-    {
-      "hash": "sha256-XZwIZ2x872VPyRZzgcUY7M\/PpvmLigIzPv9SgOY45bg=",
-      "url": "images\/mods\/ModRareKillSoulconduit.png"
-    },
-    {
-      "hash": "sha256-wRc9rQY4ZW4OlKZiNeOs3Hoh9Wl95uY41cHqAZXaKKU=",
-      "url": "images\/mods\/ModRareKillSpeed.png"
-    },
-    {
-      "hash": "sha256-azvuENInjsisv5q7+KHzvTTI8JKqjgAQJV0vIuxqBAs=",
-      "url": "images\/mods\/ModRareKillSteelattuned.png"
-    },
-    {
-      "hash": "sha256-ZE5XDvADk\/xTlTZjG\/+n\/SzMDQE9BviuCGcmqgAxbT0=",
-      "url": "images\/mods\/ModRareKillStormtouched.png"
-    },
-    {
-      "hash": "sha256-BYWcA+wXfAaLzn3uvMAoFhcg7sFWk3XXpfUv1dPxtmk=",
-      "url": "images\/mods\/ModRareKillVampiric.png"
-    },
-    {
-      "hash": "sha256-S\/f3BaDWqh+6aqS+A9ewxAIE0oUhxnEg\/hE3PURm4QI=",
-      "url": "images\/mods\/ModRareKillVoidtouched.png"
-    },
-    {
-      "hash": "sha256-1bYwytn1F51I8i3XVjjzUdStIXcW03tSVKvbqD7TEQk=",
-      "url": "images\/mods\/ModRareKillWealthy.png"
-    },
-    {
-      "hash": "sha256-QrHYAjr8XELOPnFZIMJ7fVMuIpph73wF+qw8HZVVe7U=",
-      "url": "images\/mods\/ModRecipeAssassin.png"
-    },
-    {
-      "hash": "sha256-aHKRJ7w0BZw\/blBFApsK9PgBe9RuQ\/BaRYJLAhOVgj4=",
-      "url": "images\/mods\/ModRecipeCold.png"
-    },
-    {
-      "hash": "sha256-EwQ9xWiKTnDs6Ab0KQc3CG3D5KREB96LqGg\/y2LymgU=",
-      "url": "images\/mods\/ModRecipeCorpseeploder.png"
-    },
-    {
-      "hash": "sha256-ojIw33icFcot54nGa2NF24wievTMfMVhVkfl8uqrpnE=",
-      "url": "images\/mods\/ModRecipeCorrupter.png"
-    },
-    {
-      "hash": "sha256-7FzqyakFCNHMynpqOGPHEycuAa1oFid5slXg1F\/Eq+A=",
-      "url": "images\/mods\/ModRecipeCycleofelements.png"
-    },
-    {
-      "hash": "sha256-CWuZQnLTxh1oh2M8kXT8RCUQv\/lsrF\/Y8r7+0tTAYoI=",
-      "url": "images\/mods\/ModRecipeDivinetouched.png"
-    },
-    {
-      "hash": "sha256-kUSSYY8jlzWZ9tr+6es4GRmRRmSX\/T7vceeoVYCMWQs=",
-      "url": "images\/mods\/ModRecipeExecutioner.png"
-    },
-    {
-      "hash": "sha256-Pk7CDkz0J1osP7TLHqiOUDl2VNDWZl+828rBRuUTzdo=",
-      "url": "images\/mods\/ModRecipeFire.png"
-    },
-    {
-      "hash": "sha256-oGz66wVbLBcfrOojVnIxX22UoPIX76g9WGa82f2zp0Y=",
-      "url": "images\/mods\/ModRecipeFlaskdrain.png"
-    },
-    {
-      "hash": "sha256-Mc0zluluGazrkozolAB10eXaj095HbO1kCtqtq7oC2c=",
-      "url": "images\/mods\/ModRecipeFrostwalker.png"
-    },
-    {
-      "hash": "sha256-YyR7pFnSNp9gnPWUsDPLpgNOQJ+OWm1STocZMsVqbiU=",
-      "url": "images\/mods\/ModRecipeGraspingVines.png"
-    },
-    {
-      "hash": "sha256-q2mkL9+OGXLKJE4AESdNDowEuEyG3HxoYtDb5LANY4I=",
-      "url": "images\/mods\/ModRecipeHeraldoftheobelisk.png"
-    },
-    {
-      "hash": "sha256-V9ghdzlRI0\/ozfyhh\/NNH4OhBakp5ZI\/t1bxcQyjSFs=",
-      "url": "images\/mods\/ModRecipeHexer.png"
-    },
-    {
-      "hash": "sha256-K+AM91zAFMomQoZkDB+osWDTppRZkt91NsWTKttzv0Q=",
-      "url": "images\/mods\/ModRecipeLightningwalker.png"
-    },
-    {
-      "hash": "sha256-ejQMlr+5ZLhWjg0EGlBeGgOd7+UfIy2EEtieO3w6s8E=",
-      "url": "images\/mods\/ModRecipeLivingCrystal.png"
-    },
-    {
-      "hash": "sha256-\/pRaTSIO3aoFA7bmgUc++Wsi4O9cBdx8TW9m3PIiBwY=",
-      "url": "images\/mods\/ModRecipeManaDonut.png"
-    },
-    {
-      "hash": "sha256-U6cvBwzId97WHEXXGDjCwRA0zbx7eoigTTvBc\/J+VT8=",
-      "url": "images\/mods\/ModRecipeMirrorImage.png"
-    },
-    {
-      "hash": "sha256-UARTf+eEXsZe5hUb3m8x0DxYDlWNyHymhz7x03ytjNg=",
-      "url": "images\/mods\/ModRecipeNecromancer.png"
-    },
-    {
-      "hash": "sha256-cArM3YfIH30OLmnSDYEQoMHRW7NXp9xdKgNSECrEhx0=",
-      "url": "images\/mods\/ModRecipePrismatic.png"
-    },
-    {
-      "hash": "sha256-Evk1JMTnr9l0Fqjg1Xoiv9Qn3Ys1DHDGWYll4QuGeQ8=",
-      "url": "images\/mods\/ModRecipeRejuvenating.png"
-    },
-    {
-      "hash": "sha256-TmyQgUClsGZVNQA7EF+Z+t++RAvmD5ZdDr8o121poXs=",
-      "url": "images\/mods\/ModRecipeSaplings.png"
-    },
-    {
-      "hash": "sha256-YQrsMgKjmjZQUB7Gp7XKq15AD7w2szxgzAKeA1K9EzM=",
-      "url": "images\/mods\/ModRecipeSouleater.png"
-    },
-    {
-      "hash": "sha256-LRk18LZRU7SA0l04Is+Mpvryp5yQ01ymU4flY9yLngw=",
-      "url": "images\/mods\/ModRecipeTimeBubble.png"
-    },
-    {
-      "hash": "sha256-0Q\/IZAw1QvJG4rlhIorP7CpalWpxmjE6ihnbmOVXpcI=",
-      "url": "images\/mods\/ModRecipeTrickster.png"
-    },
-    {
-      "hash": "sha256-TzdZAuIFEj5NiaX0V5V2FGlHVkR1W1iXje24OG7uSoQ=",
-      "url": "images\/mods\/ModRecipeUnionofsouls.png"
-    },
-    {
-      "hash": "sha256-zgpMU36zUpY0IXKfLaaD+AF3DDOKue3806S9fsPw\/Rw=",
-      "url": "images\/mods\/ModRecipeVolatileflameblood.png"
-    },
-    {
-      "hash": "sha256-HqfUWDf2DFwJ7PJVR21mdw4PO\/pw1br3BVlF+mfbajg=",
-      "url": "images\/mods\/ModRecipeVoodoodoll.png"
+      "hash": "sha256-6QLjAKwyPZIszIzsUkmRGfa7nSo9ajKYp0+UcUh+JuY=",
+      "url": "images\/maps\/glyphs\/wharf.png"
     },
     {
       "hash": "sha256-jtn\/vf+M1o4LhaqOCV7h9ppZlFBKHUqdOmHV6GX1Dc8=",
@@ -1661,9 +1289,13 @@
       "url": "manifest.json"
     },
     {
+      "hash": "sha256-MMKV\/oUWZ+EkKtn32Kcm88t8oBSJSu+4\/nZwAGvCmBg=",
+      "url": "maps.json"
+    },
+    {
       "hash": "sha256-5Q3gmv0MQBu9mNcFRlyeYddd\/deE7tUA1TVKBLSYSaw=",
       "url": "sw-registrator.js"
     }
   ],
-  "version": "MY7b7eQT"
+  "version": "dxwvuYfJ"
 };

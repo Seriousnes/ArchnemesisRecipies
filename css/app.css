@@ -36,6 +36,11 @@
     --craftaffectwarning-color: #ebc850;
 }
 
+img.archnemesis-icon {
+    height: 58px;
+    width: 58px;
+}
+
 html, body {
     font-family: 'FontinSmallCaps', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
     background-color: #222;

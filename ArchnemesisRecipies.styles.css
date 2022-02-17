@@ -10,6 +10,39 @@ footer[b-3u8qw3ksue] {
 span:hover[b-3u8qw3ksue] {
     cursor: pointer;
 }
+/* /Components/MapContainer.razor.rz.scp.css */
+.map-container[b-6bbznvgjnm] {
+    position: relative;
+}
+
+.map-container img[b-6bbznvgjnm] {
+    height: 58px;
+    width: 58px;
+
+}
+
+.underlay[b-6bbznvgjnm] {
+    z-index: 1;
+}
+
+.overlay[b-6bbznvgjnm] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.high-tier[b-6bbznvgjnm] {
+    filter: grayscale(1) invert(1) invert(9%) sepia(95%) saturate(7312%) hue-rotate(7deg) brightness(90%) contrast(111%); /*convert to red --corrupted-color)*/
+}
+
+.mid-tier[b-6bbznvgjnm] {
+    filter: grayscale(1) invert(1) invert(80%) sepia(44%) saturate(2001%) hue-rotate(2deg) brightness(107%) contrast(98%); /*convert to yellow --rare-color)*/
+}
+
+.low-tier[b-6bbznvgjnm] {
+    filter: none;
+}
 /* /Components/ModTier.razor.rz.scp.css */
 h3[b-w94b9xabip]::after {
     font-family: "Font Awesome 5 Free";

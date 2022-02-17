@@ -188,16 +188,7 @@
     ],
     "Effect": "",
     "Regex": "sentinel",
-    "Maps": [
-      {
-        "Name": "Peninsula",
-        "Image": "DryPeninsula.png"
-      },
-      {
-        "Name": "Armory",
-        "Image": "Armory.png"
-      }
-    ]
+    "Maps": [ "Peninsula", "Armory" ]
   },
   {
     "Name": "Juggernaut",
