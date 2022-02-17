@@ -67,7 +67,7 @@ namespace ArchnemesisRecipies.Models
                 unmodifiedRewards.AddRange(mod.Rewards);
                 var rewards = string.Join(" ", unmodifiedRewards);
                 var modifier = "";
-                foreach (var (evaluator, value) in activeEffects)
+                foreach (var (evaluator, value) in activeEffects.OrderByDescending(x => x.evaluator?.Priority))
                 {
                     rewards = evaluator is IRewardsEvaluator rewardEvaluator ? rewardEvaluator.GetExpression(value)(rewards) : rewards;
                     modifier = evaluator is IRarityEvaluator rarityEvaluator ? rarityEvaluator.GetExpression(value)(modifier) : modifier;

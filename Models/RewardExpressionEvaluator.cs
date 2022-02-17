@@ -8,6 +8,7 @@ namespace ArchnemesisRecipies.Models
         EffectExpression GetExpression(string expression);
         static string MatchText { get; }
         string GetMatchText();
+        Priority Priority { get; }
     }
 
     public interface IRewardsEvaluator : IExpressionEvaluator
@@ -27,6 +28,7 @@ namespace ArchnemesisRecipies.Models
 
     public class DefaultExpressionEvaluator : IExpressionEvaluator
     {
+        public Priority Priority => Priority.Low;
 
         public EffectExpression GetExpression(string expression)
         {
@@ -39,6 +41,7 @@ namespace ArchnemesisRecipies.Models
     public class AllRewardsAreThisExpressionEvaluator : ExpressionEvaluator, IExpressionEvaluator, IRewardsEvaluator
     {
         public static string MatchText => @"all reward types are (.*)";
+        public Priority Priority => Priority.Low;
         public string GetMatchText() => MatchText;
         public EffectExpression GetExpression(string expression)
         {
@@ -54,6 +57,7 @@ namespace ArchnemesisRecipies.Models
 
     public class RewardsAreDoubledExpressionEvaluator : ExpressionEvaluator, IExpressionEvaluator, IRewardsEvaluator
     {
+        public Priority Priority => Priority.High;
         public static string MatchText => @"rewards are doubled";
         public string GetMatchText() => MatchText;
         public EffectExpression GetExpression(string expression)
@@ -71,6 +75,7 @@ namespace ArchnemesisRecipies.Models
     public class AdditionalRewardForEachRewardTypeExpressionEvaluator : ExpressionEvaluator, IExpressionEvaluator, IRewardsEvaluator
     {
         public static string MatchText => @"all reward types have an additional reward";
+        public Priority Priority => Priority.High;
         public string GetMatchText() => MatchText;
         public EffectExpression GetExpression(string expression)
         {
@@ -98,6 +103,7 @@ namespace ArchnemesisRecipies.Models
 
     public class RewardsRolledAdditionalTimesExpressionEvaluator : ExpressionEvaluator, IExpressionEvaluator, IRarityEvaluator
     {
+        public Priority Priority => Priority.Low;
         public static string MatchText => @"Rewards are rolled (\d+) additional time(?:s)?, choosing the rarest result";
         public string GetMatchText() => MatchText;
         public EffectExpression GetExpression(string expression)
@@ -116,6 +122,12 @@ namespace ArchnemesisRecipies.Models
 
             return (s) => s;
         }
+    }
+
+    public enum Priority
+    {
+        Low,
+        High
     }
 
     public static class RewardExpressionEvaluators
