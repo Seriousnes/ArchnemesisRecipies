@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-eqWTmVMVLWQJKjHPEY8IP01BNu8J41iibr6npZ0sKaE=",
+      "hash": "sha256-GTlXvNknhTxYtMHkcG2m2rjFCDNDp2aruON2rwi7KD0=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-8mQI66e3p8\/8VltgDOZgoT77luDfIyaHEdR3C\/frD4I=",
+      "hash": "sha256-pOarc0tVuh4ZxULC2Hz7S+dFkdylEUkTtGK1\/2TRNf8=",
       "url": "_framework\/ArchnemesisRecipies.dll"
     },
     {
@@ -1293,5 +1293,5 @@
       "url": "sw-registrator.js"
     }
   ],
-  "version": "vrqque15"
+  "version": "1\/rC+SPO"
 };
