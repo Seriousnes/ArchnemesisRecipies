@@ -9,6 +9,7 @@ namespace ArchnemesisRecipies.Utility
         {
             CreateMap<ArchnemesisMod, ArchnemesisModViewModel>()
                 .ForMember(x => x.Components, src => src.Ignore())                
+                .ForMember(x => x.Maps, src => src.Ignore())
                 .ForMember(x => x.ExpressionEvaluator, src => src.MapFrom(x => RewardExpressionEvaluators.GetEvaluator(x.Effect)))
                 ;
 

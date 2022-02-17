@@ -49,6 +49,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<Folder Include="wwwroot\images\archnemesis\" />
 		<Folder Include="wwwroot\images\rewards\" />
 	</ItemGroup>
 

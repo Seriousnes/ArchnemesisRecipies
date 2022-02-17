@@ -5,7 +5,7 @@
     @*<div class="container">*@
         <div class="row" @onclick="CopyRegex">
             <h2 class="mod-name" data-bs-toggle="tooltip" data-bs-placement="top" title="^@Model.Regex">
-                <Image Model=Model ShowName=true />
+                <img src="images/archnemesis/@(Model.Image)"/><span class="ms-2">@Model.Name</span>
             </h2>            
         </div>
         @if (!string.IsNullOrEmpty(Model.Mod))

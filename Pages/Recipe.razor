@@ -26,7 +26,7 @@
                 @foreach (var mod in recipe.SelectedMods)
                 {
                     <div class="col-3" align="center">                        
-                        <img src="images/mods/@(mod.Image)" @onclick="() => SelectMod(mod)" data-bs-toggle="tooltip" data-bs-placement="top" title="@mod.Name" /><br/>
+                        <img src="images/archnemesis/@(mod.Image)" @onclick="() => SelectMod(mod)" data-bs-toggle="tooltip" data-bs-placement="top" title="@mod.Name" /><br/>
                         <span class="mod-name small">@mod.Name</span>
                     </div>
                 }
@@ -72,7 +72,7 @@
         @foreach (var (mod, count) in recipe.GetComponents().OrderBy(x => x.Key.Name))
         {
             <li>
-                @count x<img src="images/mods/@mod.Image" class="small-image pr-2" /><span class="mod-name">@mod.Name</span>
+                @count x<img src="images/archnemesis/@mod.Image" class="archnemesis-icon mall-image pr-2" /><span class="mod-name">@mod.Name</span>
             </li>
         }
         </ul>

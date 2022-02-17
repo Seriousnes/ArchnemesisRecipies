@@ -61,6 +61,11 @@ namespace ArchnemesisRecipies.Models
             model.Components = components;
         }
 
+        public static void LoadMaps(this List<ArchnemesisModViewModel> mods, IEnumerable<Map> maps)
+        {
+            mods.ForEach(x => x.Maps = maps.Where(m => x.MapNames.Contains(m.Name)).ToList());
+        }
+
         public static Dictionary<RecipeComponentViewModel, int> GetComponents(this RecipeViewModel model)
         {
             return model.SelectedMods

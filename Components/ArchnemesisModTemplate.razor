@@ -4,8 +4,8 @@
 <div id="@Model.GetElementId()" class="col mod @(Model.Fade ? "faded" : "")" align="center">    
     <div class="row">
         <div class="col">
-            <img class="bordered 
-                @Model.GetStyle("special-background")" src="images/mods/@(Model.Image)" 
+            <img class="bordered archnemesis-icon
+                @Model.GetStyle("special-background")" src="images/archnemesis/@(Model.Image)" 
                 @onmouseup="(e) => OnClick.InvokeAsync((Model, e))"
                 @ondblclick="(e) => OnClick.InvokeAsync((Model, e))"
                 @onmouseover="(e) => OnMouseOver.InvokeAsync((Model, e))"

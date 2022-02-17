@@ -4,14 +4,14 @@
         @if (Node.IsCompleted)
         {
             <div class="d-inline-flex align-items-center @isCompleted" align="center" @onclick="OnClick">                        
-                <img class="medium-image" src="images/mods/@(Node.Image)" />
+                <img class="archnemesis-icon medium-image" src="images/archnemesis/@(Node.Image)" />
                 <span class="mod-name small">@Node.Name</span>
             </div>
         }
         else
         {
             <div class="col-4 mod-name small no-wrap @isCompleted" align="center" @onclick="OnClick">                        
-                <img src="images/mods/@(Node.Image)" /><br/>
+                <img class="archnemesis-icon" src="images/archnemesis/@(Node.Image)" /><br/>
                 @Node.Name
             </div>
             <div class="col-8 @isCompleted">
@@ -25,7 +25,7 @@
     else
     {
         <div class="col-auto mod-name no-wrap @isCompleted" @onclick="OnClick">
-            <img class="medium-image" src="images/mods/@(Node.Image)">
+            <img class="archnemesis-icon medium-image" src="images/archnemesis/@(Node.Image)">
             @Node.Name
         </div>    
     }

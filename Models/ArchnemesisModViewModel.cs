@@ -24,6 +24,8 @@ namespace ArchnemesisRecipies.Models
         public IEnumerable<string> Rewards => Type.Split(" ");
         [JsonIgnore]
         public IExpressionEvaluator ExpressionEvaluator { get; set; }
+        [JsonIgnore]
+        public List<Map> Maps { get; set; }
 
         public string GetStyle(string additionalHighlights = "")
         {
