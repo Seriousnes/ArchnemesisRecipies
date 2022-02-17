@@ -1,0 +1,32 @@
+﻿.map-container {
+    position: relative;
+}
+
+.map-container img {
+    height: 58px;
+    width: 58px;
+
+}
+
+.underlay {
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.high-tier {
+    filter: grayscale(1) invert(1) invert(9%) sepia(95%) saturate(7312%) hue-rotate(7deg) brightness(90%) contrast(111%); /*convert to red --corrupted-color)*/
+}
+
+.mid-tier {
+    filter: grayscale(1) invert(1) invert(80%) sepia(44%) saturate(2001%) hue-rotate(2deg) brightness(107%) contrast(98%); /*convert to yellow --rare-color)*/
+}
+
+.low-tier {
+    filter: none;
+}

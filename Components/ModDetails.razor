@@ -2,70 +2,68 @@
 
 @if (Model is not null)
 {
-    @*<div class="container">*@
-        <div class="row" @onclick="CopyRegex">
-            <h2 class="mod-name" data-bs-toggle="tooltip" data-bs-placement="top" title="^@Model.Regex">
-                <img src="images/archnemesis/@(Model.Image)"/><span class="ms-2">@Model.Name</span>
-            </h2>            
+    <div class="row" @onclick="CopyRegex">
+        <h2 class="mod-name" data-bs-toggle="tooltip" data-bs-placement="top" title="^@Model.Regex">
+            <img src="images/archnemesis/@(Model.Image)"/><span class="ms-2">@Model.Name</span>
+        </h2>            
+    </div>
+    @if (!string.IsNullOrEmpty(Model.Mod))
+    {
+        <div class="row pb-1">
+            <div class="col">
+                <span class="mod">@Model.Mod</span>    
+            </div>
         </div>
-        @if (!string.IsNullOrEmpty(Model.Mod))
-        {
-            <div class="row pb-1">
-                <div class="col">
-                    <span class="mod">@Model.Mod</span>    
-                </div>
+    }
+    @if (!string.IsNullOrEmpty(Model.Effect))
+    {
+        <div class="row pb-1">
+            <div class="col">
+                <span class="effects">@Model.Effect</span>    
             </div>
-        }
-        @if (!string.IsNullOrEmpty(Model.Effect))
-        {
-            <div class="row pb-1">
-                <div class="col">
-                    <span class="effects">@Model.Effect</span>    
-                </div>
-            </div>
-        }
-        @if (!string.IsNullOrEmpty(Model.Type))
-        {
-            <div class="row justify-content-start align-items-center">
-                <div class="col-md-auto">
-                    <span class="rewards">Rewards:</span>
-                </div>
-                <div class="col">
-                    @foreach (var reward in Model.Rewards.GetImageUrls(group: false, imgStyle: "medium-image"))
-                    {
-                        @((MarkupString)reward)
-                    }        
-                </div>                
-            </div>   
-        }
-        <div class="row">
+        </div>
+    }
+    @if (!string.IsNullOrEmpty(Model.Type))
+    {
+        <div class="row justify-content-start align-items-center">
             <div class="col-md-auto">
-                <div class="row justify-content-start">
-                    @if (Model.Components.Any())
-                    {
-                        <ModDetailComponents Components=Model.Components OnClick=Click>
-                            <Title>
-                                <span class="builds-from underline">Builds from</span>
-                            </Title>
-                        </ModDetailComponents>  
-                    }
-                </div>
-                <div class="row justify-content-start">
-                    @if (Model.ComponentOf.Any())
-                    {
-                        <ModDetailComponents Components=Model.ComponentOf OnClick=Click>
-                            <Title>
-                                <span class="builds-into underline">Builds into</span>
-                            </Title>
-                        </ModDetailComponents>
-                    }        
-                </div>
+                <span class="rewards">Rewards:</span>
             </div>
-            <div class="col-md-auto">
-                <MapList Maps=Model.Maps></MapList>                
+            <div class="col">
+                @foreach (var reward in Model.Rewards.GetImageUrls(group: false, imgStyle: "medium-image"))
+                {
+                    @((MarkupString)reward)
+                }        
+            </div>                
+        </div>   
+    }
+    <div class="row">
+        <div class="col-md-auto">
+            <div class="row justify-content-start">
+                @if (Model.Components.Any())
+                {
+                    <ModDetailComponents Components=Model.Components OnClick=Click>
+                        <Title>
+                            <span class="builds-from underline">Builds from</span>
+                        </Title>
+                    </ModDetailComponents>  
+                }
             </div>
-        </div>        
-    @*</div>*@
+            <div class="row justify-content-start">
+                @if (Model.ComponentOf.Any())
+                {
+                    <ModDetailComponents Components=Model.ComponentOf OnClick=Click>
+                        <Title>
+                            <span class="builds-into underline">Builds into</span>
+                        </Title>
+                    </ModDetailComponents>
+                }        
+            </div>
+        </div>
+        <div class="col-md-auto">
+            <MapList Maps=Model.Maps></MapList>                
+        </div>
+    </div>        
 }
 
 @code {

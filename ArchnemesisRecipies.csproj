@@ -21,6 +21,14 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <None Remove="Components\MapContainer.razor.css" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="Components\MapContainer.razor.css" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="AutoMapper" Version="11.0.1" />
 		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
 		<PackageReference Include="Blazored.LocalStorage" Version="4.2.0" />
@@ -50,6 +58,7 @@
 
 	<ItemGroup>
 		<Folder Include="wwwroot\images\archnemesis\" />
+		<Folder Include="wwwroot\images\maps\base\" />
 		<Folder Include="wwwroot\images\rewards\" />
 	</ItemGroup>
 

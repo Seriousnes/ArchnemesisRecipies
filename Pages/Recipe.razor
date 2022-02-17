@@ -72,7 +72,7 @@
         @foreach (var (mod, count) in recipe.GetComponents().OrderBy(x => x.Key.Name))
         {
             <li>
-                @count x<img src="images/archnemesis/@mod.Image" class="archnemesis-icon mall-image pr-2" /><span class="mod-name">@mod.Name</span>
+                @count x<img src="images/archnemesis/@mod.Image" class="archnemesis-icon small-image pr-2" /><span class="mod-name">@mod.Name</span>
             </li>
         }
         </ul>

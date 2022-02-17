@@ -1,0 +1,14 @@
+﻿<div class="d-flex flex-column align-items-center pe-3">
+    <div id="@Model.GetElementId()" class="map-container">
+        <img class="underlay medium-image" src="images/maps/base/baseicon.png" />
+        <img class="overlay medium-image" src="images/maps/glyphs/@($"{Model.Name.ToLower()}.png")" />                   
+    </div>
+    <div class="mt-auto">
+        <span class="mod-name small">@Model.Name</span>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Map Model { get; set; }
+}
