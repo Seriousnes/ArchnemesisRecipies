@@ -1,11 +1,17 @@
-﻿<div class="d-flex flex-column align-items-center pe-3">
-    <div id="@Model.GetElementId()" class="map-container" data-bs-toggle="tooltip" data-bs-placement="top" title="@Model.Influence.GetDescription()" >
-        <img class="underlay medium-image" src="@Model.GetBase()" />
-        <img class="overlay medium-image @Model.GetTierStyle()" src="@Model.GetGlyph()" />                   
+﻿<div class="col-2">
+    <div class="row justify-content-center">
+        <div class="d-flex flex-row justify-content-center">
+            <div id="@Model.GetElementId()" class="map-container" data-bs-toggle="tooltip" data-bs-placement="top" title="@Model.Influence.GetDescription()" >
+                <img class="underlay medium-image" src="@Model.GetBase()" />
+                <img class="overlay medium-image @Model.GetTierStyle()" src="@Model.GetGlyph()" />                   
+            </div>            
+        </div>
     </div>
-    <div class="mt-auto">
-        <span class="mod-name small">@Model.Name @(Model.MinimumTier > 0 ? $"(T{Model.MinimumTier}+)" : "")</span>        
-    </div>
+    <div class="row justify-content-center">
+        <div class="d-flex flex-row justify-content-center mod-name small map-name">
+            @Model.Name @(Model.MinimumTier > 0 ? $"(T{Model.MinimumTier}+)" : "")
+        </div>
+    </div>      
 </div>
 
 @code {

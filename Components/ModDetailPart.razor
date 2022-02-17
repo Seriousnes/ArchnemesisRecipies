@@ -1,0 +1,22 @@
+﻿@typeparam TItem
+
+<div class="row pb-1">
+    @Title
+</div>
+<div class="row justify-content-start pb-2">
+@foreach (var item in Items)
+{
+    @ItemTemplate(item);
+}
+</div> 
+
+@code {
+    [Parameter]
+    public RenderFragment Title { get; set; }
+
+    [Parameter]
+    public RenderFragment<TItem> ItemTemplate { get; set; }
+
+    [Parameter]
+    public IReadOnlyList<TItem> Items { get; set; }
+}

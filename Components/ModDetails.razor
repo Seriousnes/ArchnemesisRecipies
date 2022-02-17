@@ -42,26 +42,38 @@
             <div class="row justify-content-start">
                 @if (Model.Components.Any())
                 {
-                    <ModDetailComponents Components=Model.Components OnClick=Click>
-                        <Title>
-                            <span class="builds-from underline">Builds from</span>
-                        </Title>
-                    </ModDetailComponents>  
+                    <ModDetailPart Items="Model.Components" Context="component">
+                        <Title><span class="builds-from underline">Builds from</span></Title>
+                        <ItemTemplate>
+                            <ModDetailComponent Model=component OnClick=Click />
+                        </ItemTemplate>
+                    </ModDetailPart>                    
                 }
             </div>
             <div class="row justify-content-start">
                 @if (Model.ComponentOf.Any())
                 {
-                    <ModDetailComponents Components=Model.ComponentOf OnClick=Click>
-                        <Title>
-                            <span class="builds-into underline">Builds into</span>
-                        </Title>
-                    </ModDetailComponents>
+                    <ModDetailPart Items="Model.ComponentOf" Context="component">
+                        <Title><span class="builds-into underline">Builds into</span></Title>
+                        <ItemTemplate>
+                            <ModDetailComponent Model=component OnClick=Click />
+                        </ItemTemplate>
+                    </ModDetailPart>                    
                 }        
             </div>
         </div>
         <div class="col-md-auto">
-            <MapList Maps=Model.Maps></MapList>                
+            <div class="row justify-content-start">
+            @if (Model.Maps.Any())
+            {
+                <ModDetailPart Items="Model.Maps" Context="map">
+                    <Title><span class="rewards underline">Most common maps</span></Title>
+                    <ItemTemplate>
+                        <MapContainer Model="map" />
+                    </ItemTemplate>
+                </ModDetailPart>
+            }
+            </div>           
         </div>
     </div>        
 }

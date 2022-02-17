@@ -30,3 +30,8 @@
 .low-tier {
     filter: none;
 }
+
+.map-name {
+    text-align: center;
+    overflow-wrap: anywhere;
+}

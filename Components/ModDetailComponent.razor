@@ -1,0 +1,21 @@
+﻿<div class="col-md-auto">
+    <div class="row">
+        <div class="col" align="center">
+            <img class="archnemesis-icon" src="images/archnemesis/@(Model.Image)" @onclick="(e) => OnClick(Model, e)" />
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-auto">
+            <span class="mod-name small">@Model.Name</span>
+        </div>
+    </div>            
+</div>
+
+
+@code {
+    [Parameter]
+    public ArchnemesisModViewModel Model { get; set; }
+
+    [Parameter]
+    public Action<ArchnemesisModViewModel, MouseEventArgs> OnClick { get; set; }
+}
