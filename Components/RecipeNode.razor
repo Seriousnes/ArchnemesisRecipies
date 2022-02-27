@@ -3,14 +3,14 @@
     {
         @if (Node.IsCompleted)
         {
-            <div class="d-inline-flex align-items-center @isCompleted" align="center" @onclick="OnClick" @onmouseup="() => FindMod.InvokeAsync(Node.Name)">                        
+            <div class="d-inline-flex align-items-center @isCompleted" align="center" @onmouseup="OnClick">
                 <img class="archnemesis-icon medium-image" src="images/archnemesis/@(Node.Image)" />
                 <span class="@_colour small">@Node.Name</span>
             </div>
         }
         else
         {
-            <div class="col-4 @_colour small no-wrap @isCompleted" align="center" @onclick="OnClick" @onmouseup="() => FindMod.InvokeAsync(Node.Name)">                        
+            <div class="col-4 @_colour small no-wrap @isCompleted" align="center" @onmouseup="OnClick">                        
                 <img class="archnemesis-icon" src="images/archnemesis/@(Node.Image)" /><br/>
                 @Node.Name
             </div>
@@ -24,7 +24,7 @@
     }
     else
     {
-        <div class="col-auto @_colour no-wrap @isCompleted" @onclick="OnClick" @onmouseup="() => FindMod.InvokeAsync(Node.Name)">
+        <div class="col-auto @_colour no-wrap @isCompleted" @onmouseup="OnClick">
             <img class="archnemesis-icon medium-image" src="images/archnemesis/@(Node.Image)">
             @Node.Name
         </div>    
@@ -39,10 +39,18 @@
     [Parameter]
     public EventCallback<string> FindMod { get; set; }
 
-    public async void OnClick(MouseEventArgs e)
+    private async void OnClick(MouseEventArgs e)
     {
-        Node.IsCompleted = !Node.IsCompleted;
-        await CompletedStateChanged.InvokeAsync();
+        switch (e.Button)
+        {
+            case 0:
+                Node.IsCompleted = !Node.IsCompleted;
+                await CompletedStateChanged.InvokeAsync();
+                break;
+            case 2:
+                await FindMod.InvokeAsync(Node.Name);
+                break;
+        }        
     }
 
     private string isCompleted => Node.IsCompleted ? "completed" : "";
