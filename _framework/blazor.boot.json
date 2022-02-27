@@ -7,11 +7,11 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "ArchnemesisRecipies.dll": "sha256-KVN+yY30Sp\/03w1Y1kydCtrcWsqtByKSXTHo2+0zz6Y=",
+      "ArchnemesisRecipies.dll": "sha256-eyp2aeqsGWI2oSctQPbB3iChz02S92wynlQoo7F9d60=",
       "AutoMapper.dll": "sha256-uNYyaL9rpjmA2uF9zP55k5t9afAfIQUk0oArKTAeAS0=",
       "AutoMapper.Extensions.Microsoft.DependencyInjection.dll": "sha256-o+ciZOc+lg+enKIuHnXAnocXep\/1rkNZ0wj+RhtAqyI=",
       "Blazored.LocalStorage.dll": "sha256-6RRoYeDP3d0xabXmcCMF66wXeJlXVPem28Trs8sQiis=",
-      "Microsoft.AspNetCore.Components.dll": "sha256-axH+hS4+0YQj07MjxKL22W59iGuB2JnVEIifwWYG1UQ=",
+      "Microsoft.AspNetCore.Components.dll": "sha256-3+CJsSaEmlpqKL3WvUVloivSiTK1lt7ysLlyD+u14Ec=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-rn5vvzoLfVl7sUR9CXzZoqxoiIfRvmztJB4cbcR5tbg=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-yUU\/mWWa82QWVsGQj6w\/j4ja+GJcNtYn9qS4hbsDCPU=",
       "Microsoft.CSharp.dll": "sha256-08jxOpygUAKtn0+a+KAxNkBSM15mwfTG45NTQoibFeU=",

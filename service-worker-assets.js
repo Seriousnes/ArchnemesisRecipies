@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-k7kIK+m0Y1AyIFeM67eCMO1iwTwVoJmBjIaZFSCVciU=",
+      "hash": "sha256-77aXVzmz\/mz6S5eYArgJPW02CDwUP+mK1vIPUFE38Mc=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-KVN+yY30Sp\/03w1Y1kydCtrcWsqtByKSXTHo2+0zz6Y=",
+      "hash": "sha256-eyp2aeqsGWI2oSctQPbB3iChz02S92wynlQoo7F9d60=",
       "url": "_framework\/ArchnemesisRecipies.dll"
     },
     {
@@ -53,7 +53,7 @@
       "url": "_framework\/Blazored.LocalStorage.dll"
     },
     {
-      "hash": "sha256-axH+hS4+0YQj07MjxKL22W59iGuB2JnVEIifwWYG1UQ=",
+      "hash": "sha256-3+CJsSaEmlpqKL3WvUVloivSiTK1lt7ysLlyD+u14Ec=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll"
     },
     {
@@ -209,15 +209,15 @@
       "url": "_framework\/System.Threading.dll"
     },
     {
-      "hash": "sha256-MeuPGNgfWvufOzg+FVOA6a3AviYGjGXbnSPxfOHg7Zk=",
+      "hash": "sha256-6eOlGd4n+LglmIBtACXtL+RnhHuQfPf+r9JLBy8zCOc=",
       "url": "ArchnemesisRecipies.styles.css"
     },
     {
-      "hash": "sha256-TpR0mUsBQr9Xnz\/RMPdO4RjIZviqiiQOO4hwmBrtUp8=",
+      "hash": "sha256-w53iB6kdJ2TqdP2\/5\/1gwo8C7IJUa81HYGHpl69Wn50=",
       "url": "archnemesis_recipies.json"
     },
     {
-      "hash": "sha256-NIx1D3Jya6oD2Y1AnJzTo18c6f0IcTFv+h+RBSzAGss=",
+      "hash": "sha256-4QlGUp8+QFvntw6L4ZgMTvtbBZYzzPRfks79okDoonE=",
       "url": "css\/app.css"
     },
     {
@@ -1293,5 +1293,5 @@
       "url": "sw-registrator.js"
     }
   ],
-  "version": "9MiicKlr"
+  "version": "kHZsYR5o"
 };
