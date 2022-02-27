@@ -26,7 +26,7 @@
                 @foreach (var mod in recipe.SelectedMods)
                 {
                     <div class="col-3" align="center">                        
-                        <img src="images/archnemesis/@(mod.Image)" @onclick="() => SelectMod(mod)" @onmouseup="() => FindMod.InvokeAsync(mod.Name)" data-bs-toggle="tooltip" data-bs-placement="top" title="@mod.Name" /><br/>
+                        <img src="images/archnemesis/@(mod.Image)" @onmouseup="(e) => OnClick(e, mod)" data-bs-toggle="tooltip" data-bs-placement="top" title="@mod.Name" /><br/>
                         <span class="@(ArchnemesisModViewModel.GetColour(mod.ModTier)) small">@mod.Name</span>
                     </div>
                 }
@@ -82,7 +82,7 @@
                 var mods = recipe.SelectedMods.Take(i + 1);
                 <li class="list-group-item d-flex">
                     <div class="ms-2 me-auto">
-                        <div class="text-decoration-underline mod-name">Monster @(i + 1)</div>
+                        <div class="text-decoration-underline normal">Monster @(i + 1)</div>
                         <div class="d-flex flex-column">
                             @foreach (var mod in mods.Select(x => x.Mod))
                             {
@@ -133,6 +133,19 @@
                 Import(savedRecipe);
             }
         }
+    }
+
+    public async void OnClick(MouseEventArgs e, RecipeComponentViewModel mod)
+    {
+        switch (e.Button)
+        {
+            case 0:
+                SelectMod(mod);                
+                break;
+            case 2:
+                await FindMod.InvokeAsync(mod.Name);
+                break;
+        }        
     }
 
     public void SelectMod(ArchnemesisModViewModel mod)
