@@ -1,6 +1,6 @@
 ﻿<div id="mod-tier-@Tier">
     <div class="row">
-        <div class="col" align="center">
+        <div class="col @(ArchnemesisModViewModel.GetColour(Tier))" align="center">
             <h3 class="@getClass()"  @onclick="() => _expand = !_expand">Tier @Tier</h3>
         </div>
     </div>

@@ -51,8 +51,8 @@
     "Effect": "",
     "Regex": "permafrost",
     "Maps": [
-      { "Name": "Moon Temple" },
-      { "Name": "Peninsula" },
+      { "Name": "Moon Temple", "MinimumTier": 10 },
+      { "Name": "Peninsula", "MinimumTier": 16 },
       { "Name": "Primordial Pool" },
       { "Name": "Spider Forest" }
     ]

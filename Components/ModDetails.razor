@@ -3,7 +3,7 @@
 @if (Model is not null)
 {
     <div class="row" @onclick="CopyRegex">
-        <h2 class="mod-name" data-bs-toggle="tooltip" data-bs-placement="top" title="^@Model.Regex">
+        <h2 class="@Model.Colour" data-bs-toggle="tooltip" data-bs-placement="top" title="^@Model.Regex">
             <img src="images/archnemesis/@(Model.Image)"/><span class="ms-2">@Model.Name</span>
         </h2>            
     </div>
@@ -43,7 +43,7 @@
                 @if (Model.Components.Any())
                 {
                     <ModDetailPart Items="Model.Components" Context="component">
-                        <Title><span class="builds-from underline">Builds from</span></Title>
+                        <Title><span class="underline normal">Builds from</span></Title>
                         <ItemTemplate>
                             <ModDetailComponent Model=component OnClick=Click />
                         </ItemTemplate>
@@ -54,7 +54,7 @@
                 @if (Model.ComponentOf.Any())
                 {
                     <ModDetailPart Items="Model.ComponentOf" Context="component">
-                        <Title><span class="builds-into underline">Builds into</span></Title>
+                        <Title><span class="underline normal">Builds into</span></Title>
                         <ItemTemplate>
                             <ModDetailComponent Model=component OnClick=Click />
                         </ItemTemplate>
@@ -67,7 +67,7 @@
             @if (Model.Maps.Any())
             {
                 <ModDetailPart Items="Model.Maps" Context="map">
-                    <Title><span class="rewards underline">Most common maps</span></Title>
+                    <Title><span class="normal underline">Most common maps</span></Title>
                     <ItemTemplate>
                         <MapContainer Model="map" />
                     </ItemTemplate>

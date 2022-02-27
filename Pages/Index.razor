@@ -45,7 +45,7 @@
         }
     </div>    
     <div class="col-5 scroll-panel px-0" style="border-left: 1px #aa9e82 solid; @(isCollapsed ? "display: none;" : "" )">
-        <Recipe @ref="_recipe" Mods=Mods></Recipe>        
+        <Recipe @ref="_recipe" Mods=Mods FindMod=FindMod></Recipe>        
     </div>
 </div>
 
@@ -94,7 +94,16 @@
 
     private string collapsed => isCollapsed ? "collapsed" : "expanded";
 
-    private async void OnClick((ArchnemesisModViewModel mod, MouseEventArgs e) args)
+    private async void FindMod(string value)
+    {
+        var mod = Mods.SingleOrDefault(x => x.Name == value);
+        if (mod is not null)
+        {
+            await OnClick((mod, new MouseEventArgs { Detail = 1, Button = 2 }));
+        }
+    }
+
+    private async Task OnClick((ArchnemesisModViewModel mod, MouseEventArgs e) args)
     {
         var (mod, e) = args;
         switch (e.Detail)
