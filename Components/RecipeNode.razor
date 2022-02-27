@@ -3,28 +3,28 @@
     {
         @if (Node.IsCompleted)
         {
-            <div class="d-inline-flex align-items-center @isCompleted" align="center" @onclick="OnClick">                        
+            <div class="d-inline-flex align-items-center @isCompleted" align="center" @onclick="OnClick" @onmouseup="() => FindMod.InvokeAsync(Node.Name)">                        
                 <img class="archnemesis-icon medium-image" src="images/archnemesis/@(Node.Image)" />
-                <span class="mod-name small">@Node.Name</span>
+                <span class="@_colour small">@Node.Name</span>
             </div>
         }
         else
         {
-            <div class="col-4 mod-name small no-wrap @isCompleted" align="center" @onclick="OnClick">                        
+            <div class="col-4 @_colour small no-wrap @isCompleted" align="center" @onclick="OnClick" @onmouseup="() => FindMod.InvokeAsync(Node.Name)">                        
                 <img class="archnemesis-icon" src="images/archnemesis/@(Node.Image)" /><br/>
                 @Node.Name
             </div>
             <div class="col-8 @isCompleted">
                 @foreach (var child in Node.Components)
                 {
-                    <RecipeNode @key="child" Node="child" CompletedStateChanged=CompletedStateChanged></RecipeNode>
+                    <RecipeNode @key="child" Node="child" CompletedStateChanged=CompletedStateChanged FindMod=FindMod></RecipeNode>
                 }
             </div>
         }
     }
     else
     {
-        <div class="col-auto mod-name no-wrap @isCompleted" @onclick="OnClick">
+        <div class="col-auto @_colour no-wrap @isCompleted" @onclick="OnClick" @onmouseup="() => FindMod.InvokeAsync(Node.Name)">
             <img class="archnemesis-icon medium-image" src="images/archnemesis/@(Node.Image)">
             @Node.Name
         </div>    
@@ -36,6 +36,8 @@
     public RecipeComponentViewModel Node { get; set; }
     [Parameter]
     public EventCallback CompletedStateChanged { get; set; }
+    [Parameter]
+    public EventCallback<string> FindMod { get; set; }
 
     public async void OnClick(MouseEventArgs e)
     {
@@ -44,4 +46,5 @@
     }
 
     private string isCompleted => Node.IsCompleted ? "completed" : "";
+    private string _colour => ArchnemesisModViewModel.GetColour(Node.ModTier);
 }

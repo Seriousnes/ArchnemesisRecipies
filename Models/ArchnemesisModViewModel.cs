@@ -36,5 +36,16 @@ namespace ArchnemesisRecipies.Models
             }
             return string.Join(" ", highlightStyle, Fade ? "faded" : "");
         }
+
+        public string Colour => GetColour(ModTier);
+
+        public static string GetColour(int tier) => tier switch
+        {
+            2 => "magic",
+            3 => "rare",
+            4 => "unique",
+            5 => "relic",
+            _ => "normal"
+        };
     }
 }

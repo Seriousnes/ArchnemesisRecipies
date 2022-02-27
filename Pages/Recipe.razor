@@ -26,8 +26,8 @@
                 @foreach (var mod in recipe.SelectedMods)
                 {
                     <div class="col-3" align="center">                        
-                        <img src="images/archnemesis/@(mod.Image)" @onclick="() => SelectMod(mod)" data-bs-toggle="tooltip" data-bs-placement="top" title="@mod.Name" /><br/>
-                        <span class="mod-name small">@mod.Name</span>
+                        <img src="images/archnemesis/@(mod.Image)" @onclick="() => SelectMod(mod)" @onmouseup="() => FindMod.InvokeAsync(mod.Name)" data-bs-toggle="tooltip" data-bs-placement="top" title="@mod.Name" /><br/>
+                        <span class="@(ArchnemesisModViewModel.GetColour(mod.ModTier)) small">@mod.Name</span>
                     </div>
                 }
             </div>                          
@@ -64,7 +64,7 @@
         <div style="@(_activeTab == RecipeTab.BuildTree ? "" : "display: none;")">                
         @foreach (var c in recipe.SelectedMods)
         {
-            <RecipeNode @key="c" Node="c" CompletedStateChanged=UpdateSavedRecipe />
+            <RecipeNode @key="c" Node="c" CompletedStateChanged=UpdateSavedRecipe FindMod=FindMod />
         }
         </div>
 
@@ -110,6 +110,9 @@
 @code {
     [Parameter]
     public List<ArchnemesisModViewModel> Mods { get; set; }
+
+    [Parameter]
+    public EventCallback<string> FindMod { get; set; }
 
     protected override async Task OnInitializedAsync()
     {

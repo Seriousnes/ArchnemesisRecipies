@@ -36,6 +36,38 @@
     --craftaffectwarning-color: #ebc850;
 }
 
+.normal, .effects {
+    color: var(--normal-color);
+}
+
+.magic {
+    color: var(--magic-color);
+}
+
+.rare {
+    color: var(--rare-color);
+}
+
+.unique {
+    color: var(--unique-color);
+}
+
+.relic {
+    color: var(--green-color);
+}
+
+.mod {
+    color: var(--magic-color);
+}
+
+.rewards {
+    color: var(--currency-color);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 img.archnemesis-icon {
     height: 58px;
     width: 58px;
@@ -73,14 +105,6 @@ div {
 
 h1:focus {
     outline: none;
-}
-
-h2 {
-    color: var(--rare-color)
-}
-
-h3 {
-    color: var(--magic-color)
 }
 
 a, .btn-link {
@@ -246,34 +270,6 @@ img.parent-6 {
 
 .blazor-error-boundary::after {
     content: "An error has occurred."
-}
-
-.mod-name {
-    color: var(--craftaffectwarning-color);
-}
-
-.mod {
-    color: var(--magic-color);
-}
-
-.rewards {
-    color: var(--currency-color);
-}
-
-.effects {
-    color: white;
-}
-
-.builds-into {
-    color: var(--divination-color);
-}
-
-.builds-from {
-    color: var(--rare-color);    
-}
-
-.underline {
-    text-decoration: underline;
 }
 
 
